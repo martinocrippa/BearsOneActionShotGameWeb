@@ -17,7 +17,7 @@ export default {
     },
     floors: {
       a: room('terra', say(
-        'BENVENUTO ALL\'ALLENAMENTO! Cammina con ↑ ↓ e girati con ← →. A e D ti spostano di lato. Esci dalla porta!',
+        'BENVENUTO ALL\'ALLENAMENTO! Cammina con ↑ ↓ e girati con ← →. A e D ti spostano di lato. Esci dal passaggio!',
         'BENVENUTI! CHI GUIDA: ↑ ↓ per camminare, ← → per spostarsi di lato. CHI SPARA: A e D per girarsi e mirare.')),
       b: room('erba', say(
         'Sagome di CARTONE! Girati verso una: il mirino diventa ROSSO. Poi SPARA con SPAZIO!',

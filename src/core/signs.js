@@ -2,7 +2,9 @@
 // Written in the level definition: signs: [{ x, z, text, to }] — x, z = column and row in the map text,
 // to = 'exit' | a key id (where the key lies) | 'door:<key id>' (the door it opens) | absent (no arrow).
 // The arrow follows the real way there (around walls, through doors), not the straight line.
-import { cellCenter } from './level.js';
+// A sign whose goal cannot be reached yet (the yellow card lies behind the whistle door) asks for the key that comes
+// first instead: "FIND THE WHISTLE FIRST!", with the arrow to it, until that key is in the bear's paws.
+import { cellCenter, progression } from './level.js';
 
 // Where a sign points to: the cells of its target.
 export function signTargets(level, to) {
@@ -13,6 +15,31 @@ export function signTargets(level, to) {
     return level.cells.filter(c => c.door?.key === key).map(c => [c.cx, c.cz]);
   }
   return level.entities.filter(e => e.type === 'item' && e.id === to).map(e => [e.cx, e.cz]);
+}
+
+// The order the bear can get the level's keys in: round 0 = the keys it reaches from the start, round 1 = the keys
+// it reaches once those are in its paws, and so on (progression() with only the keys of the earlier rounds on the map).
+// exitRound = the first round in which the exit is reached.
+export function keyRounds(level, { bossOpens = '' } = {}) {
+  const isKey = e => e.type === 'item' && e.key;
+  const rounds = new Map();
+  let exitRound = null;
+  for (let round = 0; round < 10; round++) {
+    const r = progression({ ...level, entities: level.entities.filter(e => !isKey(e) || rounds.has(e.id)) }, { bossOpens });
+    if (r.exit && exitRound === null) exitRound = round;
+    const fresh = level.entities.filter(e => isKey(e) && !rounds.has(e.id) && r.reach.has(e.cx + ',' + e.cz));
+    if (!fresh.length) break;
+    for (const e of fresh) rounds.set(e.id, round);
+  }
+  return { rounds, exitRound };
+}
+
+// The keys the bear must hold before a sign's goal (a key or the exit) can be reached, in the order it gets them.
+// None for a door sign: it names the door it stands by.
+export function signNeeds(sign, { rounds, exitRound }) {
+  const goal = sign.to === 'exit' ? exitRound : rounds.get(sign.to);
+  if (goal === null || goal === undefined) return [];
+  return [...rounds].filter(([, r]) => r < goal).sort((a, b) => a[1] - b[1]).map(([k]) => k);
 }
 
 // Walkable for the arrow: open floors, doors and moving walls (they open), the low boards. Never a secret wall:

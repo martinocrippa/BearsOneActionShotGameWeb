@@ -28,7 +28,6 @@ export default {
     floors: {
       '.': { style: 'neve', slow: 0.85, color: '#eef3f8' },     // snow: a bit slow
       ',': { style: 'sentiero', color: '#8d8578' },             // main street, plaza
-      i: { style: 'ghiaccio', slip: true, color: '#bfe3f5' },   // ice (ground level)
       '>': { style: 'ghiaccio', h: 1.6, slip: true, color: '#bfe3f5' }, // the frozen pond, up on the plateau
       '=': { style: 'assi_neve', h: 0.2, color: '#a07a5a' },    // plank bridge
       ';': { style: 'assi_neve', ceil: 3, ceilStyle: 'baita', ceilColor: '#6b4a2f', light: 0.75, color: '#a07a5a' }, // inside the chalets

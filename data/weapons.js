@@ -1,7 +1,8 @@
 // The bear's weapons. `effect` is what happens to an opponent knocked out by this weapon.
 // To add a weapon: add an entry here, its drawings, and (if needed) a new effect in data/enemies.js.
 // Projectiles: `count` pellets per shot, `spread` (radians), `ttl` seconds of flight, `size` metres of the
-// 256 px drawing, `splash` = area knock-out where it lands { radius, damage }.
+// 256 px drawing, `splash` = area knock-out where it lands { radius, damage }. `face` = the bear's HUD face while
+// firing it (hud/face_<bear>/<face>).
 export const WEAPONS = {
   zampata: {
     slot: 1, name: 'Zampata', ammo: null, cooldown: 0.45,
@@ -45,7 +46,7 @@ export const WEAPONS = {
   fizz: {
     slot: 8, name: 'Estintore FIZZ', ammo: 'fizz', cost: 1, cooldown: 0.09,
     projectile: { kind: 'fizz', speed: 13, damage: [3, 5], spread: 0.13, count: 2, ttl: 0.4, size: 1.1 },
-    effect: 'rutto', sound: 'fizz', frames: { idle: 'idle_1', fire: [['spray_1', 45], ['spray_2', 45]] },
+    effect: 'rutto', sound: 'fizz', face: 'fizz', frames: { idle: 'idle_1', fire: [['spray_1', 45], ['spray_2', 45]] },
   },
   // DOOM's BFG 9000: a giant gumball. Everybody near where it lands bursts into sweets and vanishes.
   bfg: {

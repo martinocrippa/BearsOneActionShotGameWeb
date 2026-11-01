@@ -33,7 +33,7 @@ Per controllare un livello: `node scripts/check-level.mjs levels/defs/e1m2.js`. 
 | `6` | Oca (vola) | Cacodemon |
 | `7` | Papero in picchiata (vola) | Lost Soul |
 | `8` | Gallo generale (mini-boss) | Baron of Hell |
-| `9` | Maiale del Brescia (boss) | Cyberdemon |
+| `9` | Maiale in blu (boss) | Cyberdemon |
 
 ### Oggetti
 | Car. | Cosa | Car. | Cosa |
@@ -57,7 +57,7 @@ Per controllare un livello: `node scripts/check-level.mjs levels/defs/e1m2.js`. 
 | `F` | 8 Estintore FIZZ |
 | `W` | 9 B.F.G. (Big Fat Gumball) |
 
-Tutti gli altri caratteri li sceglie ogni livello nella sua legenda: le lettere libere `a b e f i j n p s t v w x y z C I N O R T` e i simboli come `# . , ~ = ^ % _ - + * & @ ! ? ; < > / [ ] { } ' " |`. Se una legenda usa un carattere della tabella sopra, vale la legenda.
+Tutti gli altri caratteri li sceglie ogni livello nella sua legenda: le lettere libere `a b e f i j n p s t v w x y z C I N O R T` e i simboli come `# . , ~ = ^ % _ - + * & @ ! ? ; < > / [ ] { } ( ) ' " | 0` e il backtick. Se una legenda usa un carattere della tabella sopra, vale la legenda.
 
 ## La legenda di un livello (`levels/defs/e1mN.js`)
 
@@ -68,7 +68,7 @@ legend: {
     '#': 'cava',                       // muro: il disegno è textures/wall_cava
     '|': { style: 'rete', rail: true },// ringhiera/rete: ferma l'orso ma ci si vede e ci si spara attraverso
     'n': { style: 'muretto', h: 1.2 }, // muretto basso: ci si vede e ci si spara sopra
-    'o': { style: 'cartelloni', h: 1.2, low: true }, // in più ci si salta sopra e lo si scavalca (gli avversari no)
+    'v': { style: 'cartelloni', h: 1.2, low: true }, // in più ci si salta sopra e lo si scavalca (gli avversari no)
     '%': { style: 'legno', switch: 'N' }, // LEVA sul muro: toccandola muove tutte le celle con il carattere N
     'N': { style: 'cancello', mover: true }, // muro che sprofonda quando scatta la sua leva
   },
@@ -83,7 +83,7 @@ legend: {
     '&': { style: 'assi', h: 2, lift: 0 },                              // ASCENSORE: sta a 2 m, scende a 0 quando arrivi
     '_': { style: 'pietra', h: -2, to: 0 },                             // pavimento che SALE a 0 quando scatta la leva con '_' (ponte)
     '*': { style: 'erba', trigger: 'N' },                               // camminandoci sopra scatta tutto ciò che ha il carattere N
-    '1': { style: 'erba', say: 'Premi SPAZIO per sparare!' },           // ALLENAMENTO: la prima volta che ci passi mostra
+    'a': { style: 'erba', say: 'Premi SPAZIO per sparare!' },           // ALLENAMENTO: la prima volta che ci passi mostra
                                                                         // l'istruzione (testo, o { solo, coop })
   },
   decor: { a: 'albero_autunno', x: 'canne', p: { id: 'panchina' } },  // decorazioni (vedi data/items.js DECOR;
@@ -111,7 +111,7 @@ legend: {
                              // secretNext: 8 → dopo l'uscita segreta Q (solo se il livello ne ha una, come E1M3)
   fogNear: 50, fogFar: 120,  // facoltativi: nebbia da/a quanti metri (di base 50/120)
   bossOpens: 'N',            // facoltativo: quando il boss si addormenta scattano le celle con N
-  intro: 'Find the BLUE FEATHER!', // primo messaggio (in inglese)
+  intro: 'Find the BLUE QUAIL FEATHER!', // primo messaggio (in inglese)
 }
 ```
 ## Cartelli con le indicazioni
@@ -125,7 +125,7 @@ signs: [
 ```
 - `x`, `z`: colonna e riga della mappa di testo (si parte da 0). Il cartello sta sul pavimento di quella cella: deve essere libera (niente oggetti, avversari o decorazioni).
 - `text`: le parole, in inglese e brevi (stanno su 3 righe al massimo).
-- `to`: dove porta la freccia: `'exit'`, l'id di una chiave (dove sta la chiave) o `'door:<id chiave>'` (la porta che apre). La freccia segue la strada vera, gira con lo sguardo di chi legge e non svela mai i passaggi segreti.
+- `to`: dove porta la freccia: `'exit'`, l'id di una chiave (dove sta la chiave) o `'door:<id chiave>'` (la porta che apre). La freccia segue la strada vera, gira con lo sguardo di chi legge e non svela mai i passaggi segreti. Se l'obiettivo (una chiave o l'uscita) si raggiunge solo con una chiave che l'orso non ha ancora, il cartello scrive da solo "FIND THE <chiave> FIRST!" con la freccia verso quella chiave; i cartelli delle porte restano come sono.
 - `node scripts/place-signs.mjs levels/defs/e1mN.js` propone i cartelli lungo la catena partenza → chiave → porta → … → uscita; poi si guardano nel gioco e si sistemano a mano. `npm test` controlla che ogni cartello stia su un pavimento raggiungibile e che la freccia trovi la strada.
 
 - `training: true` (solo `levels/defs/training.js`): gli avversari diventano sagome di cartone che si rialzano, il livello non salva nulla e finisce con la sua pagella.

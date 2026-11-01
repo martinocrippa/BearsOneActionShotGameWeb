@@ -47,10 +47,12 @@ export function napTaken(s) {
   return s.lives <= 0;
 }
 
-// Which HUD face to show. `hurt` = just hit, `grin` = just picked up a new weapon, `trapped` = tied up.
-export function faceFor(s, { hurt = false, grin = false, trapped = false } = {}) {
+// Which HUD face to show. `hurt` = just hit, `grin` = just picked up a new weapon, `trapped` = tied up,
+// `firing` = the face of the weapon being fired (the FIZZ extinguisher's spiral eyes), if it has one.
+export function faceFor(s, { hurt = false, grin = false, trapped = false, firing = null } = {}) {
   if (s.god) return 'invincibile';
   if (trapped) return 'trapped';
+  if (firing) return firing;
   if (grin) return 'ghigno';
   if (s.value >= 85) return 'sbadiglio';
   if (hurt) return 'colpito';

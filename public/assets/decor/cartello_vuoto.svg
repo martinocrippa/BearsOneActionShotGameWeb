@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 384" width="256" height="384" style="display: block" role="img" aria-label="Cartello di legno vuoto">
+  <defs><clipPath id="cvB"><path d="M14 30 C90 32 170 36 244 40 C243 112 240 186 238 258 C164 255 90 251 18 248 C17 176 15 102 14 30 Z"/></clipPath></defs>
+  <g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M115 236 C116 290 115 336 113 378 L143 379 C141 336 141 290 142 236 Z" fill="#6B4226" stroke-width="6"/>
+    <path d="M110 380 L146 380" fill="none" stroke-width="6"/>
+    <path d="M134 272 l7 -9 M134 296 l7 -9 M134 320 l7 -9 M134 344 l7 -9 M134 366 l7 -9" fill="none" stroke-width="2"/>
+    <path d="M121 262 C122 290 121 320 120 350" fill="none" stroke="#8B5A36" stroke-width="3"/>
+    <path d="M14 30 C90 32 170 36 244 40 C243 112 240 186 238 258 C164 255 90 251 18 248 C17 176 15 102 14 30 Z" fill="#F4ECD8" stroke-width="9"/>
+    <g clip-path="url(#cvB)" fill="none" stroke-width="2.2"><path d="M20 258 l14 -18"/><path d="M33 258 l14 -18"/><path d="M46 258 l14 -18"/><path d="M59 258 l14 -18"/><path d="M72 258 l14 -18"/><path d="M85 258 l14 -18"/><path d="M98 258 l14 -18"/><path d="M111 258 l14 -18"/><path d="M124 258 l14 -18"/><path d="M137 258 l14 -18"/><path d="M150 258 l14 -18"/><path d="M163 258 l14 -18"/><path d="M176 258 l14 -18"/><path d="M189 258 l14 -18"/><path d="M202 258 l14 -18"/><path d="M215 258 l14 -18"/><path d="M228 258 l14 -18"/><path d="M241 258 l14 -18"/></g>
+    <path d="M24 37 C80 39 140 42 200 45" fill="none" stroke="#FFFFFF" stroke-width="3" opacity=".7"/>
+    <path d="M14 30 C90 32 170 36 244 40 C243 112 240 186 238 258 C164 255 90 251 18 248 C17 176 15 102 14 30 Z" fill="none" stroke-width="9"/>
+    <g fill="#111" stroke="none">
+      <circle cx="30" cy="48" r="5"/><circle cx="226" cy="56" r="5"/><circle cx="32" cy="234" r="5"/><circle cx="224" cy="242" r="5"/>
+    </g>
+    <g fill="#F4ECD8" stroke="none" opacity=".9">
+      <circle cx="28.5" cy="46.5" r="1.4"/><circle cx="224.5" cy="54.5" r="1.4"/><circle cx="30.5" cy="232.5" r="1.4"/><circle cx="222.5" cy="240.5" r="1.4"/>
+    </g>
+  </g>
+</svg>

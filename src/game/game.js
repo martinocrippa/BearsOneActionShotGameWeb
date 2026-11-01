@@ -6,7 +6,7 @@ import { slide, floorUnder, ceilingOver, cellAtWorld, isSolid, blocksSight, line
 import { createSleep, addSleep, addArmor, napTaken, faceFor } from '../core/sleep.js';
 import { createCheatReader } from '../core/cheats.js';
 import { encodePassword } from '../core/password.js';
-import { signDirection, arrowFor } from '../core/signs.js';
+import { signDirection, arrowFor, keyRounds, signNeeds } from '../core/signs.js';
 import { signTexture } from '../art/signs.js';
 import { WEAPONS, AMMO, START_WEAPONS, weaponBySlot } from '../../data/weapons.js';
 import { ITEMS, DECOR, KEYS } from '../../data/items.js';
@@ -73,7 +73,7 @@ export class Game {
     const start = this.level.start;
     this.player = {
       x: start.x, z: start.z, y: start.y, vy: 0, yaw: 0, pitch: 0, r: 0.35, eye: bear.eyeHeight,
-      onGround: true, jumpHeld: false, cooldown: 0, bob: 0, hurtT: 0, grinT: 0, shakeT: 0, pushT: 0, sink: 0, inMud: false, mudFlashT: 0,
+      onGround: true, jumpHeld: false, cooldown: 0, bob: 0, hurtT: 0, grinT: 0, fireFaceT: 0, shakeT: 0, pushT: 0, sink: 0, inMud: false, mudFlashT: 0,
       weapons: [...START_WEAPONS], weapon: 'fionda', infinite: false, keys: new Set(), backpack: false,
       ammo: Object.fromEntries(Object.entries(AMMO).map(([k, a]) => [k, a.start])),
       sleep: createSleep(), boots: 0, trapT: 0, trapKind: null, vx: 0, vz: 0, charge: 0,
@@ -115,11 +115,16 @@ export class Game {
       return ex;
     });
     this.secretSpots = ents.filter(e => e.type === 'secretSpot').map(e => ({ ...e, found: false }));
-    // signposts (levelDef.signs): their arrow follows the way to a key, a door or the exit
+    // signposts (levelDef.signs): their arrow follows the way to a key, a door or the exit; a sign whose goal comes
+    // later asks for the keys it needs first (see src/core/signs.js)
+    const order = keyRounds(this.level, { bossOpens: levelDef.bossOpens });
     this.signs = (levelDef.signs || []).map(s => {
       const c = cellCenter(s.x, s.z);
       const bb = new Billboard(this.scene, { width: 1.5, height: 2.25, foot: 6 / 384 }); // the board ~1.3 m wide, at eye height
-      return { text: s.text, dir: signDirection(this.level, s), x: c.x, z: c.z, y: this.level.at(s.x, s.z)?.h ?? 0, bb, arrow: undefined };
+      return {
+        text: s.text, dir: signDirection(this.level, s), needs: signNeeds(s, order), dirs: new Map(), cx: s.x, cz: s.z,
+        x: c.x, z: c.z, y: this.level.at(s.x, s.z)?.h ?? 0, bb, arrow: undefined, shown: undefined,
+      };
     });
     this.staticObstacles = this.decor.filter(d => d.r > 0).map(d => (d.obstacle = { x: d.x, z: d.z, r: d.r }))
       .concat(this.checkpoints.map(c => ({ x: c.x, z: c.z, r: 0.35 })))
@@ -284,6 +289,7 @@ export class Game {
       p.charge = 0;
     } else this.weaponView.fire();
     p.cooldown = w.cooldown;
+    if (w.face) p.fireFaceT = 0.3;
     if (w.ammo && !p.infinite) p.ammo[w.ammo] -= w.cost;
     play(w.sound);
     // Shooting is noisy: opponents nearby wake up (as in DOOM).
@@ -866,7 +872,7 @@ export class Game {
     this.handleEvents();
     if (this.paused) return;
     this.movePlayer(dt);
-    p.cooldown -= dt; p.hurtT -= dt; p.grinT -= dt; p.shakeT -= dt; p.pushT -= dt;
+    p.cooldown -= dt; p.hurtT -= dt; p.grinT -= dt; p.fireFaceT -= dt; p.shakeT -= dt; p.pushT -= dt;
     this.weatherDt = (this.weatherDt || 0) + dt;
     if (this.input.firing) this.tryFire(dt); else p.charge = 0;
     for (const e of this.enemies) e.update(dt);
@@ -883,7 +889,7 @@ export class Game {
       this.hud.showMap(this.input.isDown('Tab'));
       this.hud.update({
         bear: this.bear, weapon: p.weapon, ammo: p.ammo, infinite: p.infinite, sleep: p.sleep,
-        mood: faceFor(p.sleep, { hurt: p.hurtT > 0, grin: p.grinT > 0, trapped: p.trapT > 0 }),
+        mood: faceFor(p.sleep, { hurt: p.hurtT > 0, grin: p.grinT > 0, trapped: p.trapT > 0, firing: p.fireFaceT > 0 && WEAPONS[p.weapon].face }),
         keyList: [...p.keys], owned: p.weapons,
       });
       this.hud.drawMap(this);
@@ -904,8 +910,12 @@ export class Game {
     for (const d of this.decor) if (!d.popped) { d.bb.light = lightAt(d.x, d.z); d.bb.place(d.x, d.y, d.z, p.yaw); }
     for (const c of this.checkpoints) c.bb.place(c.x, c.y, c.z, p.yaw);
     for (const s of this.signs) {
-      const arrow = arrowFor(s.dir, p.yaw); // the arrow turns with the way you look at the sign
-      if (arrow !== s.arrow) { s.bb.texture = signTexture(s.text, arrow); s.arrow = arrow; }
+      // until the keys that come first are in the bear's paws, the sign asks for the first of them
+      const first = s.needs.find(k => !p.keys.has(k));
+      if (first && !s.dirs.has(first)) s.dirs.set(first, signDirection(this.level, { x: s.cx, z: s.cz, to: first }));
+      const text = first ? `FIND THE ${KEYS[first]?.name || 'KEY'} FIRST!` : s.text;
+      const arrow = arrowFor(first ? s.dirs.get(first) : s.dir, p.yaw); // the arrow turns with the way you look at the sign
+      if (arrow !== s.arrow || text !== s.shown) { s.bb.texture = signTexture(text, arrow); s.arrow = arrow; s.shown = text; }
       s.bb.light = lightAt(s.x, s.z);
       s.bb.place(s.x, s.y, s.z, p.yaw);
     }

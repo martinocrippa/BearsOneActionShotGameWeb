@@ -55,5 +55,5 @@ export default {
   },
   sky: { key: 'textures/sky_e1m2', top: '#f3b48a', bottom: '#f7c9a8', ground: '#6f8f46' }, horizon: 'hills',
   weather: 'leaves', exitProp: 'lever', next: 2,
-  intro: 'Find the BLUE FEATHER and open the quail pen!',
+  intro: 'Find the BLUE QUAIL FEATHER and open the quail pen!',
 };

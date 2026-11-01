@@ -7,7 +7,7 @@ import { bearFace } from '../art/bear.js';
 import { assetUrl } from '../art/registry.js';
 import { splatOf, SPLAT_COLORS } from '../art/sprites.js';
 import { HIT_FLASH } from '../art/placeholders.js';
-import { KEYS } from '../../data/items.js';
+import { KEYS, ITEMS } from '../../data/items.js';
 import { CELL } from '../core/level.js';
 
 const PILLOW = '<svg viewBox="0 0 40 28" aria-hidden="true"><path d="M4 6 C14 2 26 2 36 6 C38 14 38 18 36 24 C26 28 14 28 4 24 C2 18 2 12 4 6 Z" fill="#fff" stroke="#111" stroke-width="3"/><path d="M12 12 H28 M12 18 H24" stroke="#8fb8ff" stroke-width="2.5"/></svg>';
@@ -59,7 +59,7 @@ export function createHud(root) {
   function faceHtml(bear, mood) {
     const url = assetUrl(`hud/face_${bear.id}/${mood}`);
     if (url) return img(url);
-    if (mood === 'trapped') return faceHtml(bear, 'colpito');
+    if (mood === 'trapped' || mood === 'fizz') return faceHtml(bear, 'colpito');
     return bearFace(bear, mood);
   }
 
@@ -170,7 +170,8 @@ export function createHud(root) {
     },
     // DOOM's automap, shown while TAB is held down (letting go brings the game back: no one gets stuck in it)
     showMap(on) { mapOn = on; mapCanvas.classList.toggle('show', on); },
-    // DOOM's automap: the walls the bear has seen (all of them with the map item), doors in their key's colour.
+    // DOOM's automap: the walls the bear has seen (all of them with the map item), doors in their key's colour,
+    // the keys still to pick up (a dot of the same colour) and the exits.
     drawMap(game) {
       if (!mapOn) return;
       const lv = game.level, w = mapCanvas.clientWidth, h = mapCanvas.clientHeight;
@@ -190,6 +191,12 @@ export function createHud(root) {
           ctx.fillStyle = '#111';
         } else ctx.fillStyle = c.fx?.liquid ? '#8fb8ff' : c.h > 0.3 ? '#d9c7a0' : '#efe4c8';
         ctx.fillRect(x, y, s + 0.5, s + 0.5);
+      }
+      for (const it of game.items) {
+        const key = !it.taken && ITEMS[it.id]?.key;
+        if (!key || !seen(Math.floor(it.x / CELL), Math.floor(it.z / CELL))) continue;
+        ctx.fillStyle = KEYS[key]?.color || '#ffd400'; ctx.strokeStyle = '#111'; ctx.lineWidth = 2;
+        ctx.beginPath(); ctx.arc(ox + (it.x / CELL) * s, oy + (it.z / CELL) * s, Math.max(4, s * 0.7), 0, 7); ctx.fill(); ctx.stroke();
       }
       for (const ex of game.exits) if (seen(ex.cx, ex.cz)) { ctx.fillStyle = ex.secret ? '#1f5fbf' : '#e3262b'; ctx.fillRect(ox + ex.cx * s, oy + ex.cz * s, s, s); }
       const p = game.player, px = ox + (p.x / CELL) * s, pz = oy + (p.z / CELL) * s;

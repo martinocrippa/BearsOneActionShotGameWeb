@@ -924,6 +924,17 @@
   "source": "zip"
  },
  {
+  "key": "decor/cartello_vuoto",
+  "path": "decor/cartello_vuoto.svg",
+  "w": 256,
+  "h": 384,
+  "anchor": [
+   128,
+   384
+  ],
+  "source": "zip"
+ },
+ {
   "key": "decor/cassa_palloni",
   "path": "decor/cassa_palloni.svg",
   "w": 512,

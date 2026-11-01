@@ -54,6 +54,25 @@ test('no cheat code ends with another one (the shorter one would always fire fir
   }
 });
 
+test('a sign whose goal comes later asks for the keys it needs first, and shows the way to them', async () => {
+  const { keyRounds, signNeeds, signDirection } = await import('../src/core/signs.js');
+  for (const d of DEFS) {
+    const level = parseLevel(readFileSync(new URL(`../levels/${d.file}`, import.meta.url), 'utf8'), d.legend);
+    const order = keyRounds(level, { bossOpens: d.bossOpens });
+    assert.notEqual(order.exitRound, null, `${d.id}: the exit is never reached`);
+    assert.equal(order.rounds.size, (d.legend.keys || []).length, `${d.id}: a key is never reached`);
+    for (const s of d.signs || []) for (const k of signNeeds(s, order)) {
+      assert.notEqual(signDirection(level, { x: s.x, z: s.z, to: k }), null, `${d.id} sign "${s.text}": no way to ${k}`);
+    }
+  }
+  // E1M3: the yellow card lies behind the whistle door, so its sign asks for the whistle first; door signs never do
+  const d = DEFS.find(x => x.id === 'E1M3');
+  const order = keyRounds(parseLevel(readFileSync(new URL(`../levels/${d.file}`, import.meta.url), 'utf8'), d.legend), d);
+  assert.deepEqual(signNeeds({ to: 'cartellino' }, order), ['fischietto']);
+  assert.deepEqual(signNeeds({ to: 'exit' }, order), ['fischietto', 'cartellino']);
+  assert.deepEqual(signNeeds({ to: 'door:cartellino' }, order), []);
+});
+
 test('every signpost stands on a floor the bear reaches, and its arrow finds the way to its target', async () => {
   const { progression } = await import('../src/core/level.js');
   const { signDirection } = await import('../src/core/signs.js');
