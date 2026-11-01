@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Fionda di caramelle da raccogliere">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M50 244 l8 -8 M62 244 l8 -8 M74 244 l8 -8 M86 244 l8 -8 M98 244 l8 -8 M110 244 l8 -8 M122 244 l8 -8 M134 244 l8 -8 M146 244 l8 -8 M158 244 l8 -8 M170 244 l8 -8 M182 244 l8 -8 M194 244 l8 -8" fill="none" stroke-width="2"/>
+  <g transform="translate(112 200) rotate(-78) scale(.42) translate(-512 -373)">
+    <path d="M446 248 C470 300 554 300 578 248" fill="none" stroke-width="26"/>
+    <path d="M446 248 C470 300 554 300 578 248" fill="none" stroke="#FF2D8A" stroke-width="13"/>
+    <path d="M488 512 L494 386 L436 254 C432 244 446 234 456 240 L512 340 L568 240 C578 234 592 244 588 254 L530 386 L536 512 Z" fill="#C8A06A" stroke-width="12"/>
+    <path d="M492 404 L532 404 L533 424 L492 424 Z M492 450 L534 450 L535 470 L492 470 Z" fill="#6B4226" stroke-width="9"/>
+    <path d="M520 360 l14 -20 M526 400 l12 -17 M560 280 l12 -17" fill="none" stroke-width="5"/>
+    <path d="M492 290 C498 306 526 306 532 290 C524 282 500 282 492 290 Z" fill="#6B4226" stroke-width="9"/>
+  </g>
+  <g transform="translate(186 222) scale(.8)">
+    <path d="M-14 0 L-30 -12 L-28 12 Z M14 0 L30 -12 L28 12 Z" fill="#FFD400" stroke-width="4"/>
+    <ellipse cx="0" cy="0" rx="16" ry="12" fill="#E3262B" stroke-width="5.5"/>
+    <path d="M-6 -10 L1 10 M6 -10 L12 7" fill="none" stroke="#F4ECD8" stroke-width="3.5"/>
+  </g>
+  <g transform="translate(212 208) rotate(30) scale(.8)">
+    <path d="M-14 0 L-30 -12 L-28 12 Z M14 0 L30 -12 L28 12 Z" fill="#FFD400" stroke-width="4"/>
+    <ellipse cx="0" cy="0" rx="16" ry="12" fill="#E3262B" stroke-width="5.5"/>
+    <path d="M-6 -10 L1 10 M6 -10 L12 7" fill="none" stroke="#F4ECD8" stroke-width="3.5"/>
+  </g>
+  <g transform="translate(220 230) rotate(-15) scale(.8)">
+    <path d="M-14 0 L-30 -12 L-28 12 Z M14 0 L30 -12 L28 12 Z" fill="#FFD400" stroke-width="4"/>
+    <ellipse cx="0" cy="0" rx="16" ry="12" fill="#E3262B" stroke-width="5.5"/>
+    <path d="M-6 -10 L1 10 M6 -10 L12 7" fill="none" stroke="#F4ECD8" stroke-width="3.5"/>
+  </g>
+</g>
+</svg>

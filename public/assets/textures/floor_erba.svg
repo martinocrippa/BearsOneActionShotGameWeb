@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Texture ripetibile: erba">
+  <defs>
+    <path id="eTuft" d="M-12 6 L-7 -10 L-3 2 L1 -14 L4 2 L9 -9 L12 6 Z" fill="#2F8A3A" stroke="#111" stroke-width="3" stroke-linejoin="round"/>
+    <path id="eBlade" d="M-6 4 L-2 -8 M2 4 L5 -6" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round"/>
+    <pattern id="ePat" width="256" height="256" patternUnits="userSpaceOnUse">
+      <rect width="256" height="256" fill="#8CC85A"/>
+      <use href="#eTuft" transform="translate(30 40)"/><use href="#eTuft" transform="translate(120 28) scale(.8)"/><use href="#eTuft" transform="translate(200 70)"/>
+      <use href="#eTuft" transform="translate(70 120) scale(1.1)"/><use href="#eTuft" transform="translate(170 150) scale(.9)"/><use href="#eTuft" transform="translate(40 200)"/>
+      <use href="#eTuft" transform="translate(130 220) scale(.8)"/><use href="#eTuft" transform="translate(226 210)"/>
+      <use href="#eBlade" transform="translate(90 70)"/><use href="#eBlade" transform="translate(220 120)"/><use href="#eBlade" transform="translate(20 140)"/><use href="#eBlade" transform="translate(110 176)"/><use href="#eBlade" transform="translate(190 30)"/><use href="#eBlade" transform="translate(80 240)"/>
+      <circle cx="150" cy="96" r="5" fill="#FFD400" stroke="#111" stroke-width="2"/><circle cx="60" cy="166" r="4" fill="#F4ECD8" stroke="#111" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#ePat)"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Matita gialla gigante sdraiata a terra">
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M60 488 H470" stroke-width="5"/>
+<path d="M120 370 L400 370 L400 482 L120 482 Z" fill="#FFD74A" stroke-width="6"/>
+<path d="M120 407 H400 M120 445 H400" fill="none" stroke-width="3"/>
+<path d="M130 388 H390" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+<path d="M400 370 L476 426 L400 482 Z" fill="#F3D9B1" stroke-width="6"/>
+<path d="M400 370 C410 390 400 410 412 426 C400 444 410 462 400 482" fill="none" stroke-width="3"/>
+<path d="M448 406 L476 426 L448 446 Z" fill="#2A2A30" stroke-width="4"/>
+<path d="M92 370 H120 V482 H92 Z" fill="#9C968A" stroke-width="5"/>
+<path d="M100 370 V482 M112 370 V482" fill="none" stroke-width="3"/>
+<path d="M48 378 C40 378 36 390 36 400 V452 C36 468 44 482 58 482 H92 V370 H58 Z" fill="#FF8FB3" stroke-width="6"/>
+<path d="M300 478 l8 -11 M316 478 l8 -11 M332 478 l8 -11 M348 478 l8 -11 M364 478 l8 -11 M380 478 l8 -11" fill="none" stroke-width="2"/>
+</g>
+</svg>

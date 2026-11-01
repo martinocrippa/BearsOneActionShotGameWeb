@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Texture ripetibile: fango appiccicoso con bolle, frame 1">
+  <defs>
+    <pattern id="mDot" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="1.6" fill="#111"/><circle cx="12" cy="12" r="1.6" fill="#111"/></pattern>
+    <g id="mBub" stroke="#111" stroke-linejoin="round"><circle r="14" fill="#7A5134" stroke-width="4"/><path d="M-7 -6 C-5 -9 -1 -10 2 -9" fill="none" stroke="#F4ECD8" stroke-width="3" stroke-linecap="round"/></g>
+  </defs>
+  <rect width="512" height="512" fill="#7A5134"/>
+  <rect width="512" height="512" fill="url(#mDot)" opacity=".45"/>
+  <g fill="none" stroke="#111" stroke-width="3" stroke-linecap="round">
+    <path d="M60 80 C90 70 120 90 150 80 M300 60 C330 52 360 70 390 60 M180 230 C210 220 240 240 270 230 M380 300 C410 292 440 310 470 300 M50 380 C80 370 110 390 140 380 M240 440 C270 432 300 450 330 440"/>
+  </g>
+  <use href="#mBub" transform="translate(110 150)"/><use href="#mBub" transform="translate(132 168) scale(.6)"/>
+  <use href="#mBub" transform="translate(360 150) scale(1.2)"/>
+  <use href="#mBub" transform="translate(250 330)"/>
+  <use href="#mBub" transform="translate(440 420) scale(.8)"/>
+  <use href="#mBub" transform="translate(70 470) scale(.7)"/>
+</svg>

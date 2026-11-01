@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Texture ripetibile: assi della passerella con chiodi">
+  <rect width="512" height="512" fill="#C8A06A"/>
+  <g fill="none" stroke="#111" stroke-linecap="round">
+    <path d="M0 30 C120 26 260 34 512 30 M0 96 C140 92 300 100 512 96 M0 158 C110 154 280 162 512 158 M0 226 C150 222 310 230 512 226 M0 286 C130 282 260 290 512 286 M0 352 C120 348 290 356 512 352 M0 414 C140 410 270 418 512 414 M0 482 C130 478 300 486 512 482" stroke-width="2.5"/>
+    <path d="M20 60 l9 -12 M150 124 l9 -12 M330 60 l9 -12 M90 188 l9 -12 M400 252 l9 -12 M240 316 l9 -12 M60 380 l9 -12 M440 444 l9 -12 M300 508 l3 -4 M300 -4 l-3 4 M190 444 l9 -12 M470 124 l9 -12" stroke-width="2"/>
+    <path d="M0 0 H512 M0 64 H512 M0 128 H512 M0 192 H512 M0 256 H512 M0 320 H512 M0 384 H512 M0 448 H512 M0 512 H512" stroke-width="6"/>
+    <path d="M200 0 V64 M440 64 V128 M120 128 V192 M330 192 V256 M60 256 V320 M260 320 V384 M470 384 V448 M160 448 V512" stroke-width="5"/>
+  </g>
+  <g fill="#111">
+    <circle cx="188" cy="16" r="4"/><circle cx="188" cy="48" r="4"/><circle cx="212" cy="16" r="4"/><circle cx="212" cy="48" r="4"/>
+    <circle cx="428" cy="80" r="4"/><circle cx="428" cy="112" r="4"/><circle cx="452" cy="80" r="4"/><circle cx="452" cy="112" r="4"/>
+    <circle cx="108" cy="144" r="4"/><circle cx="108" cy="176" r="4"/><circle cx="132" cy="144" r="4"/><circle cx="132" cy="176" r="4"/>
+    <circle cx="318" cy="208" r="4"/><circle cx="318" cy="240" r="4"/><circle cx="342" cy="208" r="4"/><circle cx="342" cy="240" r="4"/>
+    <circle cx="48" cy="272" r="4"/><circle cx="48" cy="304" r="4"/><circle cx="72" cy="272" r="4"/><circle cx="72" cy="304" r="4"/>
+    <circle cx="248" cy="336" r="4"/><circle cx="248" cy="368" r="4"/><circle cx="272" cy="336" r="4"/><circle cx="272" cy="368" r="4"/>
+    <circle cx="458" cy="400" r="4"/><circle cx="458" cy="432" r="4"/><circle cx="482" cy="400" r="4"/><circle cx="482" cy="432" r="4"/>
+    <circle cx="148" cy="464" r="4"/><circle cx="148" cy="496" r="4"/><circle cx="172" cy="464" r="4"/><circle cx="172" cy="496" r="4"/>
+  </g>
+</svg>

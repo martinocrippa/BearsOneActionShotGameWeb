@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Ceppo con un fungo">
+  <g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M150 488 C160 470 168 452 170 430 L172 330 L340 330 L342 430 C344 452 352 470 364 488 Z" fill="#6B4226" stroke-width="5"/>
+    <path d="M150 488 C140 488 132 482 138 474 C146 466 156 470 160 478 M364 488 C374 488 382 482 376 474 C368 466 358 470 354 478" fill="#6B4226" stroke-width="4"/>
+    <path d="M200 350 C198 380 204 420 200 460 M240 352 C242 390 238 430 244 470 M300 350 C302 392 296 430 304 472" fill="none" stroke-width="3"/>
+    <path d="M318 484 l10 -14 M326 466 l9 -12 M328 446 l8 -11 M330 426 l8 -11 M330 406 l8 -11 M330 386 l8 -11 M330 366 l8 -11" fill="none" stroke-width="2"/>
+    <path d="M256 304 C304 304 342 316 342 330 C342 346 304 358 256 358 C208 358 170 346 170 330 C170 316 208 304 256 304 Z" fill="#C8A06A" stroke-width="5"/>
+    <path d="M256 316 C286 316 312 322 312 331 C312 340 286 346 256 346 C226 346 200 340 200 331 C200 322 226 316 256 316 Z M256 324 C274 324 288 327 288 331 C288 335 274 338 256 338 C238 338 224 335 224 331 C224 327 238 324 256 324 Z" fill="none" stroke-width="3"/>
+    <path d="M150 462 C150 446 162 438 176 438 C190 438 200 446 200 460 Z" fill="#E3262B" stroke-width="4"/>
+    <path d="M166 462 L166 486 L184 486 L184 462" fill="#F4ECD8" stroke-width="4"/>
+    <circle cx="172" cy="450" r="4" fill="#F4ECD8" stroke-width="2"/>
+  </g>
+</svg>

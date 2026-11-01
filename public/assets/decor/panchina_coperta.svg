@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Panchina coperta a bordo campo">
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M70 488 L76 150 M436 488 L442 150" fill="none" stroke-width="12"/>
+<path d="M70 488 L76 150 M436 488 L442 150" fill="none" stroke="#14161A" stroke-width="6"/>
+<path d="M50 160 C60 90 140 52 256 50 C372 48 452 90 462 160 L462 300 L50 300 Z" fill="#7FD0F0" fill-opacity=".45" stroke-width="5"/>
+<path d="M50 300 L462 300" fill="none" stroke-width="5"/>
+<path d="M90 120 C140 80 200 70 250 68" fill="none" stroke="#FFFFFF" stroke-width="7"/>
+<path d="M100 150 C130 128 160 118 190 114" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+<path d="M50 160 C60 90 140 52 256 50 C372 48 452 90 462 160" fill="none" stroke="#14161A" stroke-width="9"/>
+<path d="M110 392 L402 392 L402 412 L110 412 Z" fill="#14161A" stroke-width="4"/>
+<path d="M130 360 C130 330 136 312 160 312 C184 312 190 330 190 360 L194 392 L126 392 Z" fill="#FF7A12" stroke-width="4"/><path d="M174 330 l7 -10 M178 350 l7 -10" fill="none" stroke-width="2"/><path d="M222 360 C222 330 228 312 252 312 C276 312 282 330 282 360 L286 392 L218 392 Z" fill="#FF7A12" stroke-width="4"/><path d="M266 330 l7 -10 M270 350 l7 -10" fill="none" stroke-width="2"/><path d="M314 360 C314 330 320 312 344 312 C368 312 374 330 374 360 L378 392 L310 392 Z" fill="#FF7A12" stroke-width="4"/><path d="M358 330 l7 -10 M362 350 l7 -10" fill="none" stroke-width="2"/>
+<path d="M126 412 L124 488 M392 412 L394 488" fill="none" stroke-width="7"/>
+<path d="M40 488 C160 482 360 494 476 486" fill="none" stroke-width="4"/>
+<path d="M440 250 l8 -11 M440 270 l8 -11 M440 290 l8 -11 M390 460 l8 -11 M400 470 l8 -11" fill="none" stroke="#111" stroke-width="2"/>
+</g>
+</svg>

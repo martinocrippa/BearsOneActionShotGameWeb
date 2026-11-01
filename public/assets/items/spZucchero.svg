@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Lancia-zucchero-filato a terra da raccogliere">
+
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M30 234 l6 -8 M40 234 l6 -8 M50 234 l6 -8 M60 234 l6 -8 M70 234 l6 -8 M80 234 l6 -8 M90 234 l6 -8 M100 234 l6 -8 M110 234 l6 -8 M120 234 l6 -8 M130 234 l6 -8 M140 234 l6 -8 M150 234 l6 -8 M160 234 l6 -8 M170 234 l6 -8 M180 234 l6 -8 M190 234 l6 -8 M200 234 l6 -8 M210 234 l6 -8 M220 234 l6 -8" fill="none" stroke-width="2"/>
+  <defs><clipPath id="zcP"><path d="M28 186 L154 160 L160 222 L34 214 Z"/></clipPath></defs>
+  <path d="M28 186 L154 160 L160 222 L34 214 Z" fill="#FFFFFF" stroke-width="5"/>
+  <g clip-path="url(#zcP)" stroke="none" fill="#FF2D8A"><path d="M40 230 L70 160 L86 160 L56 230 Z M86 230 L116 160 L132 160 L102 230 Z M132 230 L162 160 L170 160 L148 230 Z"/></g>
+  <path d="M28 186 L154 160 L160 222 L34 214 Z" fill="none" stroke-width="5"/>
+  <path d="M30 198 L156 182 L157 194 L32 206 Z" fill="#FFD400" stroke-width="3"/>
+  <path d="M60 214 C60 224 74 228 82 220" fill="none" stroke-width="4"/>
+  <ellipse cx="164" cy="190" rx="16" ry="40" fill="#FF2D8A" stroke-width="5"/>
+  <ellipse cx="166" cy="190" rx="9" ry="30" fill="#7D5CFF" stroke-width="3"/>
+  <path d="M168 168 C176 140 206 136 214 154 C236 150 244 176 228 186 C244 200 230 224 208 216 C198 232 176 224 172 212 Z" fill="#FF8FB3" stroke-width="5"/>
+  <path d="M194 168 C200 158 210 158 214 166 M200 196 C206 186 216 186 220 194" fill="none" stroke="#FF2D8A" stroke-width="3"/>
+  <path d="M186 160 C192 152 202 148 210 150" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+  <path d="M140 220 l8 -11 M150 220 l8 -11 M214 220 l8 -11" fill="none" stroke-width="2"/>
+</g>
+</svg>

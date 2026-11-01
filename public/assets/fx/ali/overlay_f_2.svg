@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Ali d angioletto e aureola, frame 2">
+<g  stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M200 300 C170 296 130 300 90 320 C66 332 60 350 76 356 C62 368 66 386 86 386 C78 400 90 416 110 410 C108 426 126 434 142 422 C160 430 184 404 200 340 Z" fill="#FFFFFF" stroke-width="5"/>
+<path d="M84 330 C116 326 150 322 186 316 M80 360 C112 352 148 340 186 326 M98 392 C126 376 160 356 190 334 M130 412 C150 392 172 366 194 342" fill="none" stroke-width="3"/>
+<path d="M140 410 l8 -11 M150 404 l8 -11 M160 396 l8 -11 M170 386 l8 -11" fill="none" stroke-width="2"/>
+</g>
+<g transform="translate(512 0) scale(-1 1)" stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M200 300 C170 296 130 300 90 320 C66 332 60 350 76 356 C62 368 66 386 86 386 C78 400 90 416 110 410 C108 426 126 434 142 422 C160 430 184 404 200 340 Z" fill="#FFFFFF" stroke-width="5"/>
+<path d="M84 330 C116 326 150 322 186 316 M80 360 C112 352 148 340 186 326 M98 392 C126 376 160 356 190 334 M130 412 C150 392 172 366 194 342" fill="none" stroke-width="3"/>
+<path d="M140 410 l8 -11 M150 404 l8 -11 M160 396 l8 -11 M170 386 l8 -11" fill="none" stroke-width="2"/>
+</g>
+<g transform="translate(0 4)"><g stroke-linecap="round">
+<ellipse cx="256" cy="170" rx="58" ry="16" fill="none" stroke="#111" stroke-width="14"/>
+<ellipse cx="256" cy="170" rx="58" ry="16" fill="none" stroke="#D4A017" stroke-width="7"/>
+<path d="M214 164 C226 158 240 156 252 156" fill="none" stroke="#FFD400" stroke-width="3"/>
+<path d="M190 150 l-12 -8 M322 150 l12 -8 M256 140 l0 -14" stroke="#111" stroke-width="4"/>
+</g></g>
+</svg>

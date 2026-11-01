@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Papero in picchiata stun f frame 1">
+<defs>
+<path id="pStar" d="M0 -11 L3 -3 L11 -3 L5 2 L7 10 L0 5 L-7 10 L-5 2 L-11 -3 L-3 -3 Z" fill="#FFD400" stroke="#111" stroke-width="2.5" stroke-linejoin="round"/>
+</defs>
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<g transform="rotate(-6 256 476) translate(0 9)">
+<g transform="translate(256 0) scale(.9 1) translate(-256 0)">
+<g transform="matrix(1 0 0 -1 0 728)">
+<path d="M212 384 C176 366 148 340 132 308 C152 314 168 320 184 330 C170 314 162 298 158 280 C182 294 204 316 218 344 Z M300 384 C336 366 364 340 380 308 C360 314 344 320 328 330 C342 314 350 298 354 280 C330 294 308 316 294 344 Z" fill="#FFD400" stroke-width="5"/>
+<path d="M176 340 L196 352 M168 318 L190 336 M336 340 L316 352 M344 318 L322 336" fill="none" stroke-width="3"/>
+</g>
+</g>
+<path d="M244 452 L240 466 M268 452 L272 466" fill="none" stroke-width="8"/><path d="M244 452 L240 466 M268 452 L272 466" fill="none" stroke="#FF5A1F" stroke-width="3.5"/>
+<path d="M226 472 L240 462 L252 472 C246 476 232 476 226 472 Z M260 472 L272 462 L286 472 C280 476 266 476 260 472 Z" fill="#FF5A1F" stroke-width="4"/>
+<path d="M212 392 C206 420 220 452 256 454 C292 452 306 420 300 392 C294 370 278 362 256 362 C234 362 218 370 212 392 Z" fill="#FFD400" stroke-width="5"/>
+<path d="M270 450 l10 -14 M282 444 l10 -14 M292 434 l8 -11 M297 421 l6 -9" fill="none" stroke-width="2"/>
+<path d="M236 404 C244 410 250 410 256 404 M256 418 C262 424 268 424 274 418" fill="none" stroke-width="3"/>
+<path d="M220 344 C214 318 232 300 256 300 C280 300 298 318 292 344 C286 360 272 368 256 368 C240 368 226 360 220 344 Z" fill="#FFD400" stroke-width="5"/>
+<path d="M266 366 l8 -11 M276 362 l8 -11 M284 356 l7 -10" fill="none" stroke-width="2"/>
+<circle cx="240" cy="338" r="11" fill="#F4ECD8" stroke-width="3"/><path d="M240 338 m-1.5 0 a1.5 1.5 0 1 1 3 0 a3.5 3.5 0 1 1 -7 0 a5.5 5.5 0 1 1 11 0 a7 7 0 1 1 -14 0" fill="none" stroke-width="2"/>
+<circle cx="273" cy="337" r="13" fill="#F4ECD8" stroke-width="3"/><path d="M273 337 m-1.5 0 a1.5 1.5 0 1 1 3 0 a3.5 3.5 0 1 1 -7 0 a5.5 5.5 0 1 1 11 0 a7 7 0 1 1 -14 0" fill="none" stroke-width="2"/>
+<g transform="rotate(-14 256 300) translate(0 -4)">
+<path d="M206 334 C204 296 228 276 256 276 C284 276 308 296 306 334 C288 328 224 328 206 334 Z" fill="#9C968A" stroke-width="5"/>
+<path d="M200 334 C232 324 280 324 312 334" fill="none" stroke-width="10"/><path d="M200 334 C232 324 280 324 312 334" fill="none" stroke="#9C968A" stroke-width="5"/>
+<path d="M238 290 C244 296 250 296 254 290" fill="none" stroke-width="3"/>
+<path d="M286 310 l7 -10 M292 318 l6 -9" fill="none" stroke-width="2"/>
+<path d="M264 300 C264 292 280 292 280 300 Z" fill="#6B4226" stroke-width="2.5"/>
+<path d="M266 300 C266 310 272 315 272 315 C272 315 278 310 278 300 Z" fill="#D4A017" stroke-width="2.5"/>
+</g>
+<path d="M234 352 C240 344 272 344 278 352 C282 364 270 374 256 374 C242 374 230 364 234 352 Z" fill="#FF5A1F" stroke-width="4"/>
+<circle cx="248" cy="353" r="1.8" fill="#111" stroke="none"/><circle cx="264" cy="353" r="1.8" fill="#111" stroke="none"/>
+<path d="M238 362 C250 367 262 367 276 359" fill="none" stroke-width="3"/>
+<path d="M254 362 C252 376 260 384 268 378 C270 372 268 366 266 360 Z" fill="#FF8FB3" stroke-width="3"/>
+</g>
+<path d="M190 262 C200 236 312 236 322 262 C312 284 200 284 190 262 Z" fill="none" stroke-width="2.5" stroke-dasharray="7 7"/>
+<use href="#pStar" transform="translate(196 268) scale(1.4)"/>
+<use href="#pStar" transform="translate(260 244) scale(1.6)"/>
+<use href="#pStar" transform="translate(318 266) scale(1.4)"/>
+</g>
+</svg>

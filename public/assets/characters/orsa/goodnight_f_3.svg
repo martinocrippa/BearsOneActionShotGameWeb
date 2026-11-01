@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Orsa addormentata in piedi con berretto e Zzz">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<path class="fur" d="M226 430 L226 466 L250 466 L250 430 Z M262 430 L262 466 L286 466 L286 430 Z" fill="#8B5A36" stroke-width="5"/>
+<path d="M224 444 L252 444 L252 470 L254 488 L212 488 C210 476 216 468 226 466 Z M288 444 L260 444 L260 470 L258 488 L300 488 C302 476 296 468 286 466 Z" fill="#F4ECD8" stroke-width="5"/>
+<path d="M226 452 H250 M226 464 H250 M218 477 H252 M262 452 H286 M262 464 H286 M260 477 H294" fill="none" stroke="#E3262B" stroke-width="6" stroke-linecap="butt"/>
+<path d="M224 444 L252 444 L252 470 L254 488 L212 488 C210 476 216 468 226 466 Z M288 444 L260 444 L260 470 L258 488 L300 488 C302 476 296 468 286 466 Z" fill="none" stroke-width="5"/>
+<path class="fur" d="M198 330 L194 384 L208 386 L210 336 Z M190 384 C184 396 194 406 206 402 C212 398 212 390 208 386 Z M314 330 L318 384 L304 386 L302 336 Z M322 384 C328 396 318 406 306 402 C300 398 300 390 304 386 Z" fill="#8B5A36" stroke-width="5"/>
+<path d="M212 278 L196 330 L210 336 L222 300 Z M300 278 L316 330 L302 336 L290 300 Z" fill="#F4ECD8" stroke-width="5"/>
+<path d="M212 278 C228 268 284 268 300 278 L314 432 L198 432 Z" fill="#F4ECD8" stroke-width="5"/>
+<g fill="#7D5CFF" stroke="none"><circle cx="232" cy="300" r="5"/><circle cx="256" cy="290" r="5"/><circle cx="280" cy="300" r="5"/><circle cx="240" cy="330" r="5"/><circle cx="272" cy="330" r="5"/><circle cx="222" cy="360" r="5"/><circle cx="256" cy="360" r="5"/><circle cx="290" cy="360" r="5"/><circle cx="236" cy="392" r="5"/><circle cx="274" cy="392" r="5"/><circle cx="214" cy="420" r="5"/><circle cx="252" cy="420" r="5"/><circle cx="296" cy="420" r="5"/><circle cx="204" cy="310" r="4"/><circle cx="308" cy="310" r="4"/></g>
+<path d="M296 428 l10 -14 M300 410 l8 -11 M298 390 l6 -9 M294 370 l6 -9 M284 330 l6 -9" fill="none" stroke-width="2"/>
+<g transform="translate(256 175) scale(1.05) rotate(-14 0 92)">
+<path d="M-44 30 C-74 30 -86 64 -78 96 C-70 78 -62 62 -46 56 Z" fill="#5A3620" stroke-width="4.8"/>
+<path class="fur" d="M-50 54 C-56 26 -40 2 0 0 C40 2 56 26 50 54 C46 74 32 90 0 98 C-32 90 -46 74 -50 54 Z" fill="#8B5A36" stroke-width="4.8"/>
+<path d="M22 90 l10 -14 M30 84 l10 -14 M38 76 l9 -12" fill="none" stroke-width="1.9"/>
+<path d="M-50 58 L-58 64 L-48 68 L-54 76 L-44 76 M50 58 L58 64 L48 68 L54 76 L44 76" fill="none" stroke-width="2.9"/>
+<path class="fur-light" d="M-22 60 C-16 48 16 48 22 60 C26 76 14 90 0 92 C-14 90 -26 76 -22 60 Z" fill="#D9A877" stroke-width="2.9"/>
+<path d="M-10 60 C-6 54 6 54 10 60 C6 68 -6 68 -10 60 Z" fill="#111" stroke="none"/>
+<path d="M-30 42 C-24 48 -14 48 -8 42 M8 42 C14 48 24 48 30 42" fill="none" stroke-width="3.8"/>
+<path d="M-4 78 C-2 84 6 84 8 78 C4 76 0 76 -4 78 Z" fill="#111" stroke-width="2.5"/>
+<circle cx="16" cy="70" r="10" fill="#FFFFFF" stroke-width="2.9"/><path d="M11 66 C12 63 15 61 18 61" fill="none" stroke-width="1.9"/>
+<path d="M-52 32 C-50 -4 -24 -22 2 -22 C30 -22 52 -6 56 18 C68 22 80 34 84 48 L74 52 C68 40 60 34 50 32 Z" fill="#7D5CFF" stroke-width="4.8"/>
+<path d="M28 -10 l8 -11 M36 -2 l8 -11 M42 8 l7 -10" fill="none" stroke-width="1.9"/>
+<path d="M-52 32 C-20 22 20 22 52 32" fill="none" stroke-width="14"/><path d="M-52 32 C-20 22 20 22 52 32" fill="none" stroke="#F4ECD8" stroke-width="8"/>
+<circle cx="80" cy="58" r="10" fill="#F4ECD8" stroke-width="3.8"/>
+</g>
+<g fill="none">
+<g transform="translate(340 150) scale(1.4)"><path d="M0 0 H14 L0 16 H14" stroke-width="7"/><path d="M0 0 H14 L0 16 H14" stroke="#7D5CFF" stroke-width="3.5"/></g>
+<g transform="translate(366 112) scale(1.15)"><path d="M0 0 H14 L0 16 H14" stroke-width="8"/><path d="M0 0 H14 L0 16 H14" stroke="#7D5CFF" stroke-width="4"/></g>
+<g transform="translate(388 80) scale(.9)"><path d="M0 0 H14 L0 16 H14" stroke-width="9"/><path d="M0 0 H14 L0 16 H14" stroke="#7D5CFF" stroke-width="4.5"/></g>
+</g>
+</g>
+</svg>

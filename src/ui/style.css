@@ -1,0 +1,278 @@
+/* ORSI! — punk record-cover look: black ink, flat loud colours, Bangers + Permanent Marker. */
+:root {
+  --ink: #111;
+  --paper: #efe4c8;
+  --pink: #ff2d8a;
+  --yellow: #ffd400;
+  --teal: #28c2b4;
+  --red: #e3262b;
+  --blue: #1f5fbf;
+  --night: #141a36;
+  --hud-h: clamp(78px, 13vh, 128px);
+  --title: "Bangers", Impact, sans-serif;
+  --hand: "Permanent Marker", "Comic Sans MS", cursive;
+  --mono: "Courier Prime", "Courier New", monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--night); color: var(--ink); font: 16px/1.4 system-ui, "Segoe UI", sans-serif; }
+#app { position: fixed; inset: 0; }
+#app > canvas { display: block; } /* sized by the renderer: the area above the status bar */
+.ui { position: absolute; inset: 0; pointer-events: none; }
+.grain { position: absolute; inset: 0; pointer-events: none; z-index: 10; opacity: .2; mix-blend-mode: multiply; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E"); }
+
+/* ---------- in-game overlays ---------- */
+.vignette { position: absolute; inset: 0; opacity: 0; background: radial-gradient(ellipse at center, transparent 35%, rgba(30, 30, 90, .55) 65%, rgba(10, 10, 40, .97) 100%); transition: opacity .3s; }
+.ui:not(.playing) .vignette, .ui:not(.playing) .crosshair, .ui:not(.playing) .messages, .ui:not(.playing) .popup { display: none; }
+.flash { position: absolute; inset: 0; opacity: 0; }
+.flash.hurt { background: #b48cff; animation: flash .6s ease-out; }
+.flash.pickup { background: var(--yellow); animation: flash-soft .35s ease-out; }
+.flash.mud { background: #6b4423; animation: flash-soft .45s ease-out; }
+@keyframes flash { from { opacity: .75; } to { opacity: 0; } }
+/* the opponent's shot splats on the screen, then slides down and fades */
+.splats { position: absolute; inset: 0; pointer-events: none; }
+.splats img { position: absolute; width: min(34vw, 420px); transform: translate(-50%, -50%) rotate(var(--rot)); animation: splat-screen 1.3s ease-in forwards; }
+@keyframes splat-screen { 0% { transform: translate(-50%, -50%) rotate(var(--rot)) scale(.3); opacity: 1; } 12% { transform: translate(-50%, -50%) rotate(var(--rot)) scale(1.1); } 20% { transform: translate(-50%, -50%) rotate(var(--rot)) scale(1); opacity: 1; } 100% { transform: translate(-50%, -20%) rotate(var(--rot)) scale(1); opacity: 0; } }
+/* wading in the mud: a brown band with drips covers the bottom of the view */
+.mud-band { position: absolute; left: 0; right: 0; bottom: calc(var(--hud-h) - 4px); height: 22vh; opacity: 0; transform: translateY(40%); transition: opacity .25s, transform .25s; pointer-events: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60' preserveAspectRatio='none'%3E%3Cpath d='M0 22 Q12 10 25 20 T50 18 T75 24 T100 16 T125 22 T150 14 T175 22 T200 18 V60 H0 Z' fill='%236b4423' stroke='%23111' stroke-width='2.5'/%3E%3Cpath d='M0 0' fill='none'/%3E%3Cellipse cx='38' cy='36' rx='7' ry='4' fill='%238a5a30' stroke='%23111' stroke-width='2'/%3E%3Cellipse cx='118' cy='42' rx='9' ry='5' fill='%238a5a30' stroke='%23111' stroke-width='2'/%3E%3Cellipse cx='168' cy='33' rx='5' ry='3' fill='%238a5a30' stroke='%23111' stroke-width='2'/%3E%3C/svg%3E") bottom / 100% 100% no-repeat; }
+.ui.in-mud .mud-band { opacity: 1; transform: none; animation: mud-wobble .6s ease-in-out infinite alternate; }
+@keyframes mud-wobble { to { transform: translateY(6%); } }
+.ui.in-water .mud-band { filter: hue-rotate(170deg) saturate(1.6) brightness(1.5); }
+/* tied up with licorice: dark strands across the edges of the view */
+.trapped { position: absolute; inset: 0; pointer-events: none; display: none; }
+.trapped.licorice, .trapped.jelly { display: block; }
+.trapped img { width: 100%; height: 100%; object-fit: cover; }
+.trapped.licorice:empty { background:
+  linear-gradient(28deg, transparent 0 8%, #2a1a1a 8% 11%, transparent 11% 88%, #2a1a1a 88% 91%, transparent 91%),
+  linear-gradient(-24deg, transparent 0 14%, #2a1a1a 14% 17%, transparent 17% 82%, #2a1a1a 82% 85%, transparent 85%);
+  animation: wriggle .25s ease-in-out infinite alternate; }
+.trapped.jelly:empty { background: radial-gradient(ellipse at center, transparent 45%, rgba(90, 176, 48, .75) 80%); }
+@keyframes wriggle { to { transform: translateX(6px) rotate(.6deg); } }
+/* DOOM's automap (TAB) */
+/* (#app beats the generic `#app canvas` rule of the 3D view) */
+#app .automap { position: absolute; left: 6%; top: 4%; width: 88%; height: calc(92% - var(--hud-h)); display: none; background: rgba(244, 236, 216, .9); border: 5px solid var(--ink); box-shadow: 8px 8px 0 rgba(0, 0, 0, .35); }
+#app .automap.show { display: block; }
+/* training instructions */
+.instruct { position: absolute; left: 50%; top: 9%; transform: translateX(-50%) translateY(-20px); width: min(86vw, 860px); padding: 14px 22px; background: var(--paper); border: 5px solid var(--ink); box-shadow: 8px 8px 0 rgba(0, 0, 0, .35); font: clamp(18px, 2.8vh, 26px)/1.3 var(--hand); color: var(--ink); text-align: center; opacity: 0; pointer-events: none; z-index: 2; transition: opacity .3s, transform .3s; }
+.instruct.show { opacity: 1; transform: translateX(-50%); }
+.ui:not(.playing) .instruct { display: none; }
+/* pickup captions above the weapon */
+.tags { position: absolute; left: 50%; bottom: calc(var(--hud-h) + 26vh); transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; pointer-events: none; z-index: 2; }
+.tags p { margin: 0; font: clamp(20px, 3.4vh, 30px)/1.1 var(--title); letter-spacing: .04em; -webkit-text-stroke: 1.5px var(--ink); text-shadow: 3px 3px 0 var(--ink); white-space: nowrap; animation: tag-up 1.4s ease-out forwards; }
+@keyframes tag-up { 0% { opacity: 0; transform: translateY(12px) scale(.7); } 12% { opacity: 1; transform: none; } 75% { opacity: 1; } 100% { opacity: 0; transform: translateY(-40px); } }
+.ui:not(.playing) .tags { display: none; }
+.ui:not(.playing) .mud-band, .ui:not(.playing) .splats, .ui:not(.playing) .trapped{ display: none; }
+#app .ui:not(.playing) .automap { display: none; }
+/* layers: mud band under the weapon; splats, flashes and texts over it; status bar on top */
+.mud-band { z-index: 0; } .weapon-view { z-index: 1; } .splats, .flash, .messages, .popup, .trapped { z-index: 2; } .automap { z-index: 4; } .hud { z-index: 3; }
+@keyframes flash-soft { from { opacity: .3; } to { opacity: 0; } }
+.crosshair { position: absolute; left: 50%; top: calc((100% - var(--hud-h)) / 2); width: 22px; height: 22px; transform: translate(-50%, -50%); transition: left .08s linear, top .08s linear; }
+/* the auto-aim has an opponent: the crosshair sits on it and turns red */
+.crosshair.locked { width: 34px; height: 34px; }
+.crosshair.locked::before, .crosshair.locked::after { background: var(--red); }
+.crosshair.locked::before { left: 15px; height: 30px; } .crosshair.locked::after { top: 15px; width: 30px; }
+.crosshair.locked { border-radius: 50%; box-shadow: 0 0 0 3px var(--red), 0 0 0 5px var(--ink); }
+.crosshair.drawn.locked img { filter: drop-shadow(0 0 0 var(--red)) sepia(1) saturate(8) hue-rotate(-30deg); }
+.crosshair::before, .crosshair::after { content: ""; position: absolute; background: #fff; box-shadow: 0 0 0 2px var(--ink); }
+.crosshair::before { left: 10px; top: 2px; width: 3px; height: 18px; }
+.crosshair::after { top: 10px; left: 2px; height: 3px; width: 18px; }
+.crosshair.drawn { width: 44px; height: 44px; }
+.crosshair.drawn::before, .crosshair.drawn::after { display: none; }
+.crosshair img { width: 100%; height: 100%; }
+.popup { position: absolute; left: 50%; top: 18%; width: min(60vw, 720px); transform: translateX(-50%) scale(.6); opacity: 0; pointer-events: none; }
+.popup img { width: 100%; height: auto; display: block; }
+.popup.show { animation: popup 2.2s ease-out forwards; }
+@keyframes popup { 0% { opacity: 0; transform: translateX(-50%) scale(.6) rotate(-6deg); } 10% { opacity: 1; transform: translateX(-50%) scale(1.08) rotate(2deg); } 18% { transform: translateX(-50%) scale(1) rotate(-1deg); } 80% { opacity: 1; } 100% { opacity: 0; transform: translateX(-50%) scale(1) translateY(-20px); } }
+.messages { position: absolute; top: 14px; left: 18px; right: 18px; }
+.messages p { margin: 0 0 4px; font: 28px/1.1 var(--title); letter-spacing: .03em; color: #fff; text-shadow: 3px 3px 0 var(--ink), -2px -2px 0 var(--ink), 2px -2px 0 var(--ink), -2px 2px 0 var(--ink); transition: opacity .6s; }
+.messages p.gone { opacity: 0; }
+
+/* ---------- weapon (bottom centre, above the status bar) ---------- */
+.weapon-view { position: absolute; left: 50%; bottom: calc(var(--hud-h) - 6px); width: min(40vw, 560px); transform: translateX(-50%); } /* + the walking sway, set by weaponView.bob() */
+.weapon-view svg, .weapon-view img { display: block; width: 100%; height: auto; }
+/* Claude Design frames: fur recoloured for the chosen bear */
+.weapon-view.drawn .fur { fill: var(--fur) !important; }
+.weapon-view.drawn .fur-light { fill: var(--fur-light) !important; }
+.weapon-view .w-flash { opacity: 0; }
+.weapon-view.fire .w-flash { opacity: 1; }
+.weapon-view.fire svg, .weapon-view.fire img { transform: translateY(26px); }
+.weapon-view.fire .w-ammo { opacity: 0; }
+.weapon-view.fire .w-band path { d: path("M420 190 L512 230 M604 190 L512 230"); }
+.weapon-view .w-swipe { transform-origin: 800px 512px; }
+.weapon-view.fire .w-swipe { animation: swipe .32s ease-out; }
+.weapon-view.fire:has(.w-swipe) svg { transform: none; }
+@keyframes swipe { 0% { transform: rotate(0); } 45% { transform: translate(-260px, -40px) rotate(-38deg); } 100% { transform: rotate(0); } }
+.weapon-view.raise svg { animation: raise .25s ease-out; }
+@keyframes raise { from { transform: translateY(60%); } to { transform: none; } }
+
+/* ---------- status bar ---------- */
+.hud { position: absolute; left: 0; right: 0; bottom: 0; height: var(--hud-h); display: grid; grid-template-columns: 1fr 2fr auto .9fr .9fr 1.4fr; background: var(--paper); border-top: 6px solid var(--ink); }
+.hud-cell { border-right: 5px solid var(--ink); padding: 6px 12px; display: flex; flex-direction: column; justify-content: center; min-width: 0; font-family: var(--title); }
+.hud-cell:last-child { border-right: 0; }
+.hud .lbl { font-size: clamp(14px, 2.2vh, 20px); letter-spacing: .05em; }
+.hud-ammo { align-items: center; }
+.hud-ammo b { font-weight: 400; font-size: clamp(36px, 7vh, 64px); line-height: 1; color: var(--red); -webkit-text-stroke: 2px var(--ink); }
+.hud-ammo span { font-size: clamp(12px, 2vh, 18px); }
+.hud-sleep .bar { position: relative; height: clamp(18px, 3.6vh, 32px); background: #fff; border: 4px solid var(--ink); margin: 4px 0; }
+.hud-sleep .bar i { position: absolute; left: 0; top: 0; bottom: 0; background: #6c7ce0; background-image: radial-gradient(#111 1.3px, transparent 1.6px); background-size: 7px 7px; transition: width .2s; }
+.hud-sleep .bar.high i { background-color: #3b5bdb; animation: pulse .8s infinite alternate; }
+/* sleep going up: the bar glows violet; hit: the whole box jolts */
+.hud-sleep.rising .bar { box-shadow: 0 0 0 4px #7d5cff, 0 0 18px 6px #7d5cff; }
+.hud-sleep.rising .bar i { filter: brightness(1.4); }
+.hud-sleep.bump { animation: bump .4s ease-out; }
+@keyframes bump { 0%, 100% { transform: none; } 20% { transform: translateX(-8px) rotate(-1.5deg); } 45% { transform: translateX(7px) rotate(1deg); } 70% { transform: translateX(-4px); } }
+@keyframes pulse { to { filter: brightness(1.35); } }
+.hud-sleep .bar em { position: absolute; right: 8px; top: 50%; transform: translateY(-50%); font-style: normal; font-size: clamp(14px, 2.4vh, 22px); }
+.hud-sleep .lives { display: flex; gap: 6px; height: clamp(14px, 2.6vh, 24px); }
+.hud-sleep .lives svg { height: 100%; width: auto; flex: none; }
+.hud-face { width: calc(var(--hud-h) * 1.15); padding: 2px; background: var(--yellow); }
+.hud-face svg, .hud-face img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.hud-armor .cup { display: flex; align-items: center; gap: 6px; }
+.hud-armor .cup svg, .hud-armor .cup img { height: clamp(26px, 5vh, 46px); width: auto; }
+.hud-armor b { font-weight: 400; font-size: clamp(22px, 4vh, 38px); color: #7a3b12; }
+.hud-armor.empty .cup { opacity: .35; }
+.hud-keys .keys img { height: clamp(26px, 5vh, 46px); width: auto; }
+.hud-sleep .lives img { height: 100%; width: auto; }
+.hud-sleep .lives img.used { opacity: .45; }
+.hud-keys .keys { display: flex; gap: 6px; align-items: center; min-height: clamp(26px, 5vh, 46px); }
+.hud-keys .keys svg { height: clamp(26px, 5vh, 46px); width: auto; flex: none; }
+.hud-keys .keys .empty { width: 32px; height: 70%; border: 3px dashed #b9ae96; border-radius: 50%; }
+.hud-arms .slots { display: grid; grid-template-columns: repeat(5, 1fr); font-size: clamp(18px, 3.4vh, 30px); line-height: 1.05; color: var(--ink); }
+/* Claude Design's HUD rule: owned weapons in black, the active one on a yellow box, the others at 22% */
+.hud-arms .slots span { opacity: .22; text-align: center; }
+.hud-arms .slots .owned { opacity: 1; }
+.hud-arms .slots .current { background: var(--yellow); box-shadow: inset 0 0 0 3px var(--ink); }
+
+/* ---------- full-screen pages (DOOM-style: a picture, a few huge words) ---------- */
+.screen { position: absolute; inset: 0; z-index: 5; display: none; overflow: hidden; pointer-events: auto; background: #000; }
+.screen.show { display: block; }
+.screen .page { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 16px; overflow: auto; z-index: 2; }
+.screen.night { background: var(--night); color: #fff; }
+.screen.black { background: #000; color: var(--paper); }
+kbd { display: inline-block; font: 400 clamp(16px, 2.4vh, 22px)/1 var(--title); letter-spacing: .05em; color: var(--ink); background: #fff; border: 3px solid var(--ink); border-bottom-width: 6px; border-radius: 6px; padding: 4px 8px; margin-right: 4px; }
+
+/* -- the flyer (title picture) -- */
+.flyer { position: absolute; inset: 0; background: var(--pink); overflow: hidden; }
+.flyer .rays { position: absolute; inset: -50%; background: repeating-conic-gradient(from 0deg at 50% 62%, rgba(0, 0, 0, .16) 0 7deg, transparent 7deg 16deg); }
+.flyer .dots { position: absolute; inset: 0; background-image: radial-gradient(rgba(0, 0, 0, .28) 1.2px, transparent 1.6px); background-size: 7px 7px; mix-blend-mode: multiply; }
+.flyer .logo { position: absolute; left: 50%; top: 3vh; transform: translateX(-50%) rotate(-4deg); margin: 0; font: 400 clamp(110px, 30vh, 300px)/.85 var(--title); color: var(--red); -webkit-text-stroke: 5px var(--ink); text-shadow: 10px 10px 0 var(--yellow), 14px 14px 0 var(--ink); letter-spacing: .03em; white-space: nowrap; }
+.flyer .band { position: absolute; left: 0; right: 0; bottom: 0; height: 58vh; display: flex; align-items: flex-end; justify-content: center; }
+.flyer .bears-row { display: flex; align-items: flex-end; height: 100%; }
+.flyer .bust { height: 84%; width: auto; margin: 0 -5vh; filter: drop-shadow(8px 0 0 rgba(0, 0, 0, .35)); }
+.flyer .bust:nth-child(2) { height: 92%; position: relative; z-index: 1; }
+.flyer .bust.flip { transform: scaleX(-1); }
+.flyer .foe { position: absolute; bottom: -12vh; height: 95vh; width: auto; z-index: 2; filter: drop-shadow(6px 6px 0 rgba(0, 0, 0, .4)); }
+.flyer .foe.left { left: -16vh; }
+.flyer .foe.right { right: -16vh; transform: scaleX(-1); }
+.flyer .tape { position: absolute; width: 22vh; height: 5vh; background: rgba(255, 240, 180, .75); border: 2px solid rgba(0, 0, 0, .15); }
+.flyer .tape.t1 { left: -3vh; top: 4vh; transform: rotate(-35deg); }
+.flyer .tape.t2 { right: -3vh; top: 4vh; transform: rotate(35deg); }
+.flyer .sticker { position: absolute; right: 7vw; top: 30vh; font: 400 clamp(24px, 5vh, 46px)/1 var(--title); background: var(--yellow); border: 4px solid var(--ink); padding: 6px 14px; transform: rotate(8deg); box-shadow: 5px 5px 0 var(--ink); }
+
+/* -- Claude Design's animated cover -- */
+.flyer.animated { background: #ff2d8a; display: flex; align-items: center; justify-content: center; }
+.flyer.animated svg { width: 100%; height: 100%; display: block; }
+.flyer.drawn { background: #ff2d8a; }
+.flyer .cover-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.flyer .cover-band { position: absolute; left: 0; right: 0; bottom: 3vh; display: flex; justify-content: center; align-items: flex-end; gap: 2vw; height: 52vh; }
+.flyer .cover-bear { height: 100%; width: auto; filter: brightness(0); transform: translateY(6vh) scale(.82); transition: filter .5s, transform 1.6s ease-out; }
+.flyer.alive .cover-bear { filter: drop-shadow(6px 6px 0 rgba(0, 0, 0, .35)); transform: translateY(0) scale(1.08); }
+.flyer.still .cover-bear { transition: none; }
+.flyer.drawn .foe { position: absolute; bottom: -8vh; height: 58vh; width: auto; z-index: 2; filter: drop-shadow(6px 6px 0 rgba(0, 0, 0, .4)); }
+.flyer.drawn .foe.left { left: -10vh; }
+.flyer.drawn .foe.right { right: -10vh; transform: scaleX(-1); }
+
+/* -- title: the picture and "press a key" -- */
+.title-hit { position: absolute; inset: 0; background: none; border: 0; cursor: pointer; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 3vh; }
+.title-hit:focus { outline: none; }
+.press { font: 400 clamp(28px, 5vh, 48px)/1 var(--title); letter-spacing: .08em; color: #fff; -webkit-text-stroke: 2px var(--ink); text-shadow: 4px 4px 0 var(--ink); background: var(--ink); padding: 8px 20px; animation: blink 1s step-end infinite; }
+@keyframes blink { 50% { opacity: .15; } }
+
+/* -- menus over the darkened picture -- */
+.screen.menu .flyer { filter: brightness(.38) saturate(.8); }
+.screen.menu .flyer .logo { top: 1vh; transform: translateX(-50%) rotate(-4deg) scale(.55); transform-origin: top center; }
+.doom-menu { text-align: center; position: relative; padding-top: 14vh; }
+.doom-menu.main { padding-top: 22vh; }
+.menu-title { margin: 0 0 2vh; font: 400 clamp(34px, 7vh, 64px)/1 var(--title); letter-spacing: .06em; color: var(--yellow); -webkit-text-stroke: 2px var(--ink); text-shadow: 5px 5px 0 var(--ink); transform: rotate(-2deg); }
+.menu-list { display: flex; flex-direction: column; align-items: center; gap: .6vh; margin-top: 1vh; }
+.mi { position: relative; font: 400 clamp(40px, 8.5vh, 84px)/1.02 var(--title); letter-spacing: .05em; color: var(--red); -webkit-text-stroke: 3px var(--ink); text-shadow: 6px 6px 0 var(--ink); background: none; border: 0; padding: 0 .2em; cursor: pointer; transition: transform .08s; }
+.mi[data-small] { font-size: clamp(22px, 4vh, 36px); color: var(--paper); margin-top: 1.5vh; text-shadow: 3px 3px 0 var(--ink); -webkit-text-stroke: 2px var(--ink); }
+.mi:focus, .mi:hover { outline: none; color: var(--yellow); transform: scale(1.06) rotate(-1deg); }
+/* the cursor: a bear paw, like DOOM's skull */
+.mi:focus::before { content: ""; position: absolute; left: -1.05em; top: 50%; width: .85em; height: .85em; transform: translateY(-50%); background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cellipse cx='50' cy='62' rx='30' ry='25' fill='%238b5a36' stroke='%23111' stroke-width='6'/%3E%3Cellipse cx='50' cy='66' rx='15' ry='11' fill='%23d9a877' stroke='%23111' stroke-width='4'/%3E%3Cg fill='%23d9a877' stroke='%23111' stroke-width='4'%3E%3Cellipse cx='22' cy='34' rx='9' ry='11'/%3E%3Cellipse cx='40' cy='22' rx='9' ry='11'/%3E%3Cellipse cx='60' cy='22' rx='9' ry='11'/%3E%3Cellipse cx='78' cy='34' rx='9' ry='11'/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat; animation: paw .5s ease-in-out infinite alternate; }
+@keyframes paw { to { transform: translateY(-50%) rotate(-14deg) scale(1.1); } }
+
+.bears { display: flex; gap: 3vw; justify-content: center; margin: 1vh 0; flex-wrap: wrap; }
+.bear-card { background: none; border: 0; padding: 0; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 1vh; transition: transform .1s; }
+.bear-card svg { width: clamp(150px, 30vh, 280px); height: auto; border: 5px solid var(--ink); box-shadow: 8px 8px 0 var(--ink); }
+.bear-card b { font: 400 clamp(30px, 6vh, 56px)/1 var(--title); letter-spacing: .05em; color: var(--red); -webkit-text-stroke: 2px var(--ink); text-shadow: 4px 4px 0 var(--ink); }
+.bear-card:focus, .bear-card:hover { outline: none; transform: translateY(-1.5vh) rotate(-2deg); }
+.bear-card:focus b, .bear-card:hover b { color: var(--yellow); }
+.bear-card:focus svg { box-shadow: 8px 8px 0 var(--yellow), 13px 13px 0 var(--ink); }
+
+.keys-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3vw; text-align: left; background: var(--paper); border: 5px solid var(--ink); box-shadow: 8px 8px 0 var(--ink); padding: 2vh 2.5vw; margin: 0 auto; max-width: 900px; }
+.keys-grid h3 { font: 400 clamp(26px, 4.5vh, 40px)/1 var(--title); margin: 0 0 1vh; color: var(--red); }
+.keys-grid p { margin: .8vh 0; display: flex; align-items: center; flex-wrap: wrap; gap: 4px; }
+.keys-grid b { font: 400 clamp(20px, 3.2vh, 30px)/1 var(--title); letter-spacing: .05em; margin-left: 6px; }
+.keys-grid .who { font: 400 clamp(16px, 2.4vh, 22px)/1 var(--title); color: #7a6f58; margin-top: 1.4vh; }
+.keys-foot { font: 700 clamp(15px, 2.3vh, 22px) var(--mono); color: var(--paper); letter-spacing: .05em; margin-top: 2vh; }
+.code-input { font: 400 clamp(36px, 7vh, 60px) var(--title); letter-spacing: .15em; text-align: center; width: min(460px, 90vw); padding: 8px; border: 5px solid var(--ink); box-shadow: 6px 6px 0 var(--ink); text-transform: uppercase; }
+.err { font: 400 32px var(--title); color: var(--yellow); -webkit-text-stroke: 1px var(--ink); }
+.code-line { font: 700 clamp(16px, 2.5vh, 24px) var(--mono); letter-spacing: .06em; color: var(--paper); margin-top: 3vh; }
+.code-line b { color: var(--yellow); font-weight: 400; letter-spacing: .12em; }
+
+.level-card { text-align: center; }
+.level-card .lvl { font: 400 clamp(28px, 5vh, 46px)/1 var(--title); color: var(--yellow); margin: 0; letter-spacing: .1em; }
+.level-card h2 { margin: 0; font: 400 clamp(70px, 17vh, 170px)/.9 var(--title); color: var(--red); -webkit-text-stroke: 4px var(--ink); text-shadow: 8px 8px 0 var(--ink); transform: rotate(-3deg); }
+.level-card .go { margin-top: 5vh; font: 400 clamp(34px, 7vh, 64px)/1 var(--title); letter-spacing: .08em; background: var(--yellow); border: 5px solid var(--ink); box-shadow: 7px 7px 0 var(--ink); padding: 8px 28px; cursor: pointer; animation: blink 1s step-end infinite; }
+.level-card .go:focus { outline: none; }
+
+.sleep { text-align: center; }
+.sleep .pj { width: clamp(170px, 40vh, 300px); margin: 0 auto; animation: sway 1.6s ease-in-out infinite alternate; }
+.sleep .pj svg, .sleep .pj img { width: 100%; height: auto; display: block; }
+.sleep .pillows img { height: 100%; width: auto; }
+.sleep .pillows img.used { opacity: .4; }
+.sleep h2 { margin: 1vh 0; font: 400 clamp(46px, 9vh, 80px)/1 var(--title); color: #cfe0ff; letter-spacing: .05em; }
+.sleep .pillows { display: flex; gap: 10px; justify-content: center; height: 34px; }
+.sleep .pillows svg { height: 100%; width: auto; }
+.sleep .mi { font-size: clamp(30px, 5vh, 48px); }
+@keyframes sway { from { transform: rotate(-4deg); } to { transform: rotate(4deg) translateY(6px); } }
+
+.report .lvl { font: 400 clamp(26px, 4.5vh, 40px)/1 var(--title); color: var(--paper); margin: 0; letter-spacing: .08em; }
+.report table { margin: 1vh auto 2vh; border-collapse: collapse; font: 400 clamp(30px, 6vh, 56px)/1.15 var(--title); letter-spacing: .05em; }
+.report td { padding: 0 2vw; text-align: left; color: var(--red); -webkit-text-stroke: 2px var(--ink); text-shadow: 4px 4px 0 var(--ink); }
+.report td + td { text-align: right; color: var(--yellow); min-width: 3.2em; }
+.report .par td { font-size: .6em; color: var(--paper); -webkit-text-stroke: 1px var(--ink); }
+.report .mi { font-size: clamp(32px, 6vh, 56px); }
+
+.lose-wrap { text-align: center; }
+.lose { font: 400 clamp(80px, 22vh, 220px)/1 var(--title); color: var(--red); -webkit-text-stroke: 4px var(--ink); text-shadow: 8px 8px 0 #333; letter-spacing: .06em; margin: 0 0 3vh; }
+.lose-wrap .mi { font-size: clamp(34px, 6vh, 56px); }
+
+/* ---------- SWEET SHOT (bonus) ---------- */
+#app > canvas.sweetshot { position: absolute; inset: 0; width: 100%; height: 100%; }
+.level-card .howto { max-width: 820px; margin: 14px auto 20px; padding: 14px 20px; background: var(--paper); border: 4px solid var(--ink); box-shadow: 6px 6px 0 rgba(0, 0, 0, .35); font: clamp(18px, 2.8vh, 26px)/1.35 var(--hand); color: var(--ink); }
+.report .stars { margin: 0 0 8px; font-size: 64px; letter-spacing: 12px; }
+.report .star { color: rgba(244, 236, 216, .25); -webkit-text-stroke: 2px var(--ink); }
+.report .star.on { color: var(--yellow); }
+/* ---------- end of the episode ---------- */
+.ending { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px; padding: 24px; background: var(--night) center / cover no-repeat; }
+.ending-text { max-width: 760px; background: rgba(20, 26, 54, .82); border: 5px solid var(--ink); padding: 22px 28px; box-shadow: 10px 10px 0 rgba(0, 0, 0, .4); }
+.ending-text p { margin: 0 0 12px; font: 22px/1.45 var(--mono); color: var(--paper); opacity: 0; animation: type-in .9s ease-out forwards; }
+.ending.still .ending-text p { animation: none; opacity: 1; }
+/* the small present at the top of the ending, and what is inside */
+.ending .gift { position: absolute; top: 14px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 8px; padding: 4px 12px 4px 4px; background: var(--paper); border: 4px solid var(--ink); box-shadow: 5px 5px 0 rgba(0, 0, 0, .4); font: 22px var(--title); color: var(--ink); cursor: pointer; animation: gift-wiggle 1.6s ease-in-out infinite; }
+.ending .gift img { width: 56px; height: 56px; }
+.ending .gift:focus { outline: 4px solid var(--yellow); }
+@keyframes gift-wiggle { 0%, 80%, 100% { transform: translateX(-50%) rotate(0); } 85% { transform: translateX(-50%) rotate(-6deg); } 90% { transform: translateX(-50%) rotate(6deg); } }
+.ending.still { gap: 14px; }
+.gift-card { display: flex; gap: 12px; align-items: center; max-width: min(92vw, 620px); padding: 10px 16px; background: var(--paper); border: 5px solid var(--ink); box-shadow: 8px 8px 0 rgba(0, 0, 0, .4); color: var(--ink); }
+.gift-card img { width: 84px; height: 84px; flex: none; }
+.gift-card h3 { margin: 0 0 4px; font: 30px var(--title); color: var(--blue); }
+.gift-card p { margin: 0; font: 15px/1.35 var(--mono); }
+.gift-card .mi[data-small] { font-size: 22px; margin-top: 6px; }
+.teaser { justify-content: flex-end; padding-bottom: 6vh; }
+.teaser-text { margin: 0; padding: 6px 22px; background: rgba(20, 26, 54, .8); border: 4px solid var(--ink);font: clamp(32px, 6vh, 60px) var(--title); color: var(--yellow); -webkit-text-stroke: 2px var(--ink); text-shadow: 5px 5px 0 var(--ink); }
+@keyframes type-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.report .secret-exit { color: var(--teal); }
+.screen .backdrop { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(.55); }

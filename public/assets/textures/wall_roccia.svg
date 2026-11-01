@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Texture ripetibile: muro di blocchi di pietra grigia">
+  <defs>
+    <g id="rBlk" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 6 C40 3 90 5 122 7 C125 24 124 42 122 58 C88 61 40 60 6 58 C4 40 3 22 6 6 Z" fill="#9C968A" stroke-width="5"/>
+      <path d="M14 14 L30 13 L24 20 Z" fill="#F4ECD8" stroke-width="2"/>
+      <path d="M92 54 l10 -14 M102 55 l10 -14 M112 52 l8 -11 M84 55 l6 -9" fill="none" stroke-width="2"/>
+    </g>
+    <pattern id="rPat" width="256" height="128" patternUnits="userSpaceOnUse">
+      <rect width="256" height="128" fill="#7A5134"/>
+      <use href="#rBlk"/>
+      <use href="#rBlk" transform="translate(128 0)"/>
+      <use href="#rBlk" transform="translate(-64 64)"/>
+      <use href="#rBlk" transform="translate(64 64)"/>
+      <use href="#rBlk" transform="translate(192 64)"/>
+      <path d="M40 18 L52 30 L48 42 M170 40 L184 34 L196 44 M100 86 L112 96 L106 110 M222 80 L232 94" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#rPat)"/>
+</svg>

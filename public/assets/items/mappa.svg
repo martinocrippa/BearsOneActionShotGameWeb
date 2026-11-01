@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Mappa del bosco piegata con una X e un sentiero">
+  <g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(0 6)">    <path d="M40 96 L92 82 L144 98 L214 84 L224 210 L156 226 L104 210 L46 222 Z" fill="#F4ECD8" stroke-width="5"/>
+    <path d="M92 82 L104 210 M144 98 L156 226" fill="none" stroke-width="3"/>
+    <path d="M92 82 L144 98 L156 226 L104 210 Z" fill="#E8DCC0" stroke="none"/>
+    <path d="M40 96 L92 82 L144 98 L214 84 L224 210 L156 226 L104 210 L46 222 Z" fill="none" stroke-width="5"/>
+    <path d="M92 82 L104 210 M144 98 L156 226" fill="none" stroke-width="3"/>
+    <g fill="#2F8A3A" stroke-width="2.5"><path d="M64 140 L76 116 L88 140 Z"/><path d="M76 160 L88 136 L100 160 Z"/><path d="M178 120 L190 98 L202 120 Z"/><path d="M190 140 L202 118 L214 140 Z"/></g>
+    <path d="M118 120 C130 116 138 130 132 140 C126 150 140 156 144 148" fill="#7FD0F0" stroke-width="3" opacity="0"/>
+    <path d="M60 196 C84 186 92 168 118 170 C144 172 140 140 164 146 C182 150 186 168 196 176" fill="none" stroke="#E3262B" stroke-width="4" stroke-dasharray="7 7"/>
+    <path d="M190 170 L206 186 M206 170 L190 186" fill="none" stroke="#E3262B" stroke-width="7"/>
+    <path d="M190 170 L206 186 M206 170 L190 186" fill="none" stroke-width="2" opacity=".0"/>
+    <path d="M118 126 C122 118 134 116 138 124 C142 132 132 138 126 134 C120 132 116 130 118 126 Z" fill="#7FD0F0" stroke-width="3"/>
+    <path d="M160 216 l10 -14 M200 214 l10 -14 M210 196 l8 -11" fill="none" stroke-width="2"/></g>
+  </g>
+</svg>

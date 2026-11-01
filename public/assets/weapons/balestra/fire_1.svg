@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 512" width="1024" height="512" style="display: block" role="img" aria-label="Balestra di zucchero che scocca la freccia, scintille">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M512 186 L512 60 M488 180 L452 120 M536 180 L572 120" fill="none" stroke-width="4"/>
+  <g transform="translate(512 96) scale(0.42)"><path d="M-12 120 L-6 -40 L6 -40 L12 120 Z" fill="#FFFFFF" stroke-width="8"/><path d="M-11 100 L11 84 M-10 70 L10 54 M-9 40 L9 24 M-8 10 L8 -6" stroke="#E3262B" stroke-width="10"/><path d="M-6 -40 C-10 -58 10 -58 6 -40 Z" fill="#E3262B" stroke-width="8"/></g>
+  <path d="M452.0 144.0 L458.9 160.5 L476.7 162.0 L463.1 173.6 L467.3 191.0 L452.0 181.7 L436.7 191.0 L440.9 173.6 L427.3 162.0 L445.1 160.5 Z" fill="#FFD400" stroke-width="3.5"/><path d="M578.0 138.0 L583.8 152.0 L598.9 153.2 L587.4 163.1 L590.9 177.8 L578.0 169.9 L565.1 177.8 L568.6 163.1 L557.1 153.2 L572.2 152.0 Z" fill="#FFD400" stroke-width="3.5"/><path d="M512.0 196.0 L516.8 207.4 L529.1 208.4 L519.7 216.5 L522.6 228.6 L512.0 222.1 L501.4 228.6 L504.3 216.5 L494.9 208.4 L507.2 207.4 Z" fill="#FFFFFF" stroke-width="3.5"/><path d="M420.0 212.0 L423.7 220.9 L433.3 221.7 L426.0 227.9 L428.2 237.3 L420.0 232.3 L411.8 237.3 L414.0 227.9 L406.7 221.7 L416.3 220.9 Z" fill="#FFD400" stroke-width="3.5"/><path d="M612.0 210.0 L615.7 218.9 L625.3 219.7 L618.0 225.9 L620.2 235.3 L612.0 230.3 L603.8 235.3 L606.0 225.9 L598.7 219.7 L608.3 218.9 Z" fill="#FF8FB3" stroke-width="3.5"/>
+<g transform="translate(0 8)">  <path d="M296 318 C350 236 674 236 728 318" fill="none" stroke="#111" stroke-width="32"/>
+  <path d="M296 318 C350 236 674 236 728 318" fill="none" stroke="#FFFFFF" stroke-width="22"/>
+  <path d="M296 318 C350 236 674 236 728 318" fill="none" stroke="#E3262B" stroke-width="22" stroke-dasharray="16 18" stroke-linecap="butt"/>
+  <path d="M330 280 C390 240 470 232 512 232" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+  <circle cx="296" cy="318" r="13" fill="#FF8FB3" stroke-width="4"/><circle cx="728" cy="318" r="13" fill="#FF8FB3" stroke-width="4"/>
+  <path d="M296 318 C400 304 620 304 728 318" fill="none" stroke="#111" stroke-width="5"/>
+</g>  <g transform="translate(0 8)">
+  <path d="M404 512 L474 300 L550 300 L620 512 Z" fill="#FF2D8A" stroke-width="5"/>
+  <path d="M412 476 L612 476 L618 494 L406 494 Z" fill="#FFD400" stroke-width="3"/>
+  <path d="M478 330 L456 420 M546 330 L568 420" fill="none" stroke-width="3"/>
+  <path d="M574 352 l8 -11 M582 382 l8 -11 M590 412 l8 -11 M600 446 l8 -11" fill="none" stroke-width="2"/>
+  <path d="M482 300 L494 196 L530 196 L542 300 Z" fill="#F4ECD8" stroke-width="5"/>
+  <path d="M500 296 L506 204 M524 296 L518 204" fill="none" stroke-width="2.5"/>
+  <path d="M470 292 L554 292 L560 312 L464 312 Z" fill="#FFD400" stroke-width="4"/>
+  <circle cx="512" cy="200" r="9" fill="#FFD400" stroke-width="4"/>
+  </g>
+<g transform="translate(0 8)">  <path class="fur" d="M292 512 C284 456 322 404 384 392 C416 386 438 404 436 432 C434 462 416 488 402 512 Z" fill="#9A6239" stroke-width="5"/>
+  <path class="fur-light" d="M310 512 C314 476 336 452 366 446 C358 474 350 494 348 512 Z" fill="#E2B88A" stroke-width="3"/>
+  <path d="M410 400 C426 392 444 400 442 416 M412 428 C430 422 446 432 442 448 M410 456 C426 452 440 462 436 476" fill="none" stroke-width="3"/>
+  <path class="fur" d="M732 512 C740 456 702 404 640 392 C608 386 586 404 588 432 C590 462 608 488 622 512 Z" fill="#9A6239" stroke-width="5"/>
+  <path class="fur-light" d="M714 512 C710 476 688 452 658 446 C666 474 674 494 676 512 Z" fill="#E2B88A" stroke-width="3"/>
+  <path d="M614 400 C598 392 580 400 582 416 M612 428 C594 422 578 432 582 448 M614 456 C598 452 584 462 588 476" fill="none" stroke-width="3"/>
+  <path d="M698 508 l12 -17 M710 508 l10 -14 M720 500 l8 -11" fill="none" stroke-width="2"/>
+</g></g>
+</svg>

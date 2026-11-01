@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 512" width="1024" height="512" style="display: block" role="img" aria-label="Fionda di caramelle a riposo">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+  <g transform="translate(770 470) rotate(-14) scale(-.72 .72)">
+    <path class="fur" d="M-70 60 C-80 140 -86 220 -90 300 L90 300 C86 220 80 140 70 60 Z" fill="#9A6239" stroke-width="5"/>
+    <path d="M-82 -96 L-78 -118 L-66 -100 Z M-34 -126 L-28 -148 L-18 -128 Z M18 -128 L28 -148 L34 -126 Z M66 -100 L78 -118 L82 -96 Z" fill="#F4ECD8" stroke-width="3"/>
+    <path class="fur" d="M-66 -52 C-94 -52 -96 -100 -66 -104 C-40 -104 -40 -56 -66 -52 Z M-24 -78 C-54 -80 -52 -134 -22 -134 C6 -132 4 -78 -24 -78 Z M24 -78 C-4 -78 -6 -132 22 -134 C52 -134 54 -80 24 -78 Z M66 -52 C40 -56 40 -104 66 -104 C96 -100 94 -52 66 -52 Z" fill="#9A6239" stroke-width="5"/>
+    <path class="fur" d="M-92 10 C-96 -50 -60 -96 0 -98 C60 -96 96 -50 92 10 C88 70 50 100 0 102 C-50 100 -88 70 -92 10 Z" fill="#9A6239" stroke-width="5"/>
+    <path class="fur-light" d="M-50 20 C-56 -20 -20 -34 0 -24 C20 -34 56 -20 50 20 C46 50 20 62 0 60 C-20 62 -46 50 -50 20 Z" fill="#E2B88A" stroke-width="3"/>
+    <path class="fur-light" d="M-62 -84 C-76 -84 -78 -58 -62 -56 C-48 -58 -48 -84 -62 -84 Z M-22 -110 C-38 -110 -40 -82 -22 -80 C-6 -82 -6 -110 -22 -110 Z M22 -110 C6 -110 6 -82 22 -80 C40 -82 38 -110 22 -110 Z M62 -84 C48 -84 48 -58 62 -56 C78 -58 76 -84 62 -84 Z" fill="#E2B88A" stroke-width="3"/>
+  </g>
+  <path d="M446 248 C470 290 490 300 498 302" fill="none" stroke-width="12"/><path d="M446 248 C470 290 490 300 498 302" fill="none" stroke="#FF2D8A" stroke-width="6"/>
+  <path d="M488 512 L494 386 L436 254 C432 244 446 234 456 240 L512 340 L568 240 C578 234 592 244 588 254 L530 386 L536 512 Z" fill="#C8A06A" stroke-width="5"/>
+  <path d="M520 360 l10 -14 M526 400 l8 -11 M560 280 l8 -11 M570 262 l6 -9" fill="none" stroke-width="2"/>
+  <path d="M454 262 C462 280 470 296 478 310 M548 262 C540 280 532 296 526 312" fill="none" stroke-width="3"/>
+  <path d="M492 404 L532 404 L533 424 L492 424 Z" fill="#6B4226" stroke-width="4"/>
+  <path d="M578 248 C554 290 534 300 526 302" fill="none" stroke-width="12"/><path d="M578 248 C554 290 534 300 526 302" fill="none" stroke="#FF2D8A" stroke-width="6"/>
+  <path d="M492 296 C498 314 526 314 532 296 C524 288 500 288 492 296 Z" fill="#6B4226" stroke-width="4"/>
+  <g transform="translate(512 290)">
+    <path d="M-14 0 L-30 -12 L-28 12 Z M14 0 L30 -12 L28 12 Z" fill="#FFD400" stroke-width="4"/>
+    <ellipse cx="0" cy="0" rx="16" ry="12" fill="#E3262B" stroke-width="5"/>
+    <path d="M-6 -10 L1 10 M6 -10 L12 7" fill="none" stroke="#F4ECD8" stroke-width="3"/>
+  </g>
+  <g transform="translate(512 470)">
+    <path class="fur" d="M-56 30 L-64 200 L64 200 L56 30 Z" fill="#9A6239" stroke-width="5"/>
+    <path class="fur" d="M-70 -10 C-74 -60 -40 -80 0 -80 C40 -80 74 -60 70 -10 C66 30 36 50 0 50 C-36 50 -66 30 -70 -10 Z" fill="#9A6239" stroke-width="5"/>
+    <path d="M-50 -60 C-40 -74 -24 -74 -16 -62 M-16 -62 C-8 -76 8 -76 16 -62 M16 -62 C24 -74 40 -74 50 -60" fill="none" stroke-width="3"/>
+    <path d="M34 34 l12 -17 M46 24 l12 -17 M56 10 l10 -14" fill="none" stroke-width="2"/>
+  </g>
+</g>
+</svg>

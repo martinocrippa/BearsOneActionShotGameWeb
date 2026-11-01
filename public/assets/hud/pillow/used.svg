@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 96 96" width="96" height="96" style="display: block" role="img" aria-label="Cuscino usato, vita persa">
+<defs><clipPath id="puC"><path d="M10 46 C26 40 40 50 48 54 C56 48 70 40 86 46 C90 56 90 62 86 72 C68 80 28 80 10 72 C6 62 6 54 10 46 Z"/></clipPath></defs>
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M10 46 C26 40 40 50 48 54 C56 48 70 40 86 46 C90 56 90 62 86 72 C68 80 28 80 10 72 C6 62 6 54 10 46 Z" fill="#F4ECD8" stroke-width="5"/>
+<g clip-path="url(#puC)" fill="none" stroke-width="2"><path d="M-4 90 l30 -43 M2 90 l30 -43 M8 90 l30 -43 M14 90 l30 -43 M20 90 l30 -43 M26 90 l30 -43 M32 90 l30 -43 M38 90 l30 -43 M44 90 l30 -43 M50 90 l30 -43 M56 90 l30 -43 M62 90 l30 -43 M68 90 l30 -43 M74 90 l30 -43 M80 90 l30 -43"/></g>
+<path d="M40 52 C44 58 52 58 56 52" fill="none" stroke-width="3"/>
+<path d="M10 46 L3 40 M86 46 L93 40 M10 72 L3 78 M86 72 L93 78" fill="none" stroke-width="4"/>
+<g transform="translate(60 10)"><path d="M0 0 H16 L0 18 H16" fill="none" stroke-width="8"/><path d="M0 0 H16 L0 18 H16" fill="none" stroke="#7D5CFF" stroke-width="4"/></g>
+</g>
+</svg>

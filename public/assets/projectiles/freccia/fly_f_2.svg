@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Freccia di zucchero candito con ventosa in volo, frame 2">
+<g transform="translate(132 128) rotate(-18)" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-132 -14 L-102 -14 M-128 14 L-100 12" fill="none" stroke-width="3.5"/>
+    <path d="M-92 -8 L-110 -30 L-80 -30 L-64 -8 Z M-92 8 L-110 30 L-80 30 L-64 8 Z" fill="#FF8FB3" stroke-width="4.5"/>
+    <path d="M-100 -26 L-86 -10 M-100 26 L-86 10" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+    <defs><clipPath id="fc20"><path d="M-86 -12 L66 -12 L66 12 L-86 12 Z"/></clipPath></defs>
+    <path d="M-86 -12 L66 -12 L66 12 L-86 12 C-90 4 -90 -4 -86 -12 Z" fill="#FFFFFF" stroke="none"/>
+    <g clip-path="url(#fc20)" fill="#E3262B" stroke="none"><path d="M-70 -12 L-58 -12 L-70 12 L-82 12 Z"/><path d="M-50 -12 L-38 -12 L-50 12 L-62 12 Z"/><path d="M-30 -12 L-18 -12 L-30 12 L-42 12 Z"/><path d="M-10 -12 L2 -12 L-10 12 L-22 12 Z"/><path d="M10 -12 L22 -12 L10 12 L-2 12 Z"/><path d="M30 -12 L42 -12 L30 12 L18 12 Z"/><path d="M50 -12 L62 -12 L50 12 L38 12 Z"/></g>
+    <path d="M-86 -12 L66 -12 L66 12 L-86 12 C-90 4 -90 -4 -86 -12 Z" fill="none" stroke-width="5"/>
+    <path d="M-60 -6 L40 -6" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+    <path d="M-70 12 l5 -7 M-57.4 12 l5 -7 M-44.8 12 l5 -7 M-32.2 12 l5 -7 M-19.6 12 l5 -7 M-7 12 l5 -7 M5.6 12 l5 -7 M18.2 12 l5 -7 M30.8 12 l5 -7 M43.4 12 l5 -7 M56 12 l5 -7 " fill="none" stroke-width="2"/>
+    <path d="M66 -22 C76 -24 82 -20 84 -12 L84 12 C82 20 76 24 66 22 C70 10 70 -10 66 -22 Z" fill="#E3262B" stroke-width="4.5"/>
+    <path d="M76 -10 l4 -6 M78 8 l5 -6" fill="none" stroke-width="2"/>
+  </g>
+</svg>

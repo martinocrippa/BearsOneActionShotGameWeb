@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Puzzola jelly f frame 1, chiusa in un cubo di gelatina verde">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<path d="M282 430 C340 420 356 320 330 250 C316 214 288 214 284 236 C280 256 300 268 306 292 C316 330 300 390 262 412 Z" fill="#2A2A30" stroke-width="5"/><path d="M300 240 C320 270 326 330 308 380" fill="none" stroke="#F4ECD8" stroke-width="9"/>
+<path d="M232 420 L230 472 L248 472 L250 420 Z M218 488 C216 478 222 470 236 470 L250 470 C254 478 254 484 252 488 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M262 420 L264 472 L282 472 L280 420 Z M294 488 C296 478 290 470 276 470 L262 470 C258 478 258 484 260 488 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M226 284 C214 330 216 400 232 428 L280 428 C296 400 298 330 286 284 C274 274 238 274 226 284 Z" fill="#2A2A30" stroke-width="5"/><path d="M236 282 C230 300 230 320 234 336 M276 282 C282 300 282 320 278 336" fill="none" stroke="#F4ECD8" stroke-width="4"/>
+<g transform="rotate(30 234 300)"><path d="M228 296 L208 360 L220 366 L240 308 Z M204 358 C198 370 208 380 218 376 C222 372 222 364 218 360 Z" fill="#2A2A30" stroke-width="5"/></g>
+<g transform="rotate(-30 278 300)"><path d="M284 296 L304 360 L292 366 L272 308 Z M308 358 C314 370 304 380 294 376 C290 372 290 364 294 360 Z" fill="#2A2A30" stroke-width="5"/></g>
+<g transform="translate(256 196)">
+<path d="M-36 14 C-46 2 -40 -12 -26 -8 C-20 -4 -20 4 -24 8 Z M36 14 C46 2 40 -12 26 -8 C20 -4 20 4 24 8 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M-32 6 C-36 0 -32 -6 -26 -4 M32 6 C36 0 32 -6 26 -4" fill="none" stroke="#F4ECD8" stroke-width="2.5"/>
+<path d="M-44 48 C-48 20 -30 0 0 0 C30 0 48 20 44 48 C40 70 26 86 0 94 C-26 86 -40 70 -44 48 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M-7 0 C-9 20 -6 40 0 54 C6 40 9 20 7 0 Z" fill="#F4ECD8" stroke-width="3"/>
+<path d="M-44 52 L-54 58 L-44 62 L-50 70 L-40 70 M44 52 L54 58 L44 62 L50 70 L40 70" fill="none" stroke="#F4ECD8" stroke-width="3"/>
+<path d="M-16 60 C-10 52 10 52 16 60" fill="none" stroke="#F4ECD8" stroke-width="2.5"/>
+<path d="M-8 62 C-4 56 4 56 8 62 C4 68 -4 68 -8 62 Z" fill="#FF8FB3" stroke-width="3"/>
+<path d="M18 26 C25 26 30 31 30 38 C30 45 25 50 18 50 C11 50 6 45 6 38 C6 31 11 26 20 26" fill="#F4ECD8" stroke-width="3"/><circle cx="18" cy="38" r="3.4" fill="#111" stroke="none"/>
+<path d="M-18 26 C-11 26 -6 31 -6 38 C-6 45 -11 50 -18 50 C-25 50 -30 45 -30 38 C-30 31 -25 26 -16 26" fill="#F4ECD8" stroke-width="3"/><circle cx="-18" cy="38" r="3.4" fill="#111" stroke="none"/>
+<path d="M6 16 C14 8 26 8 34 14 M-6 16 C-14 8 -26 8 -34 14" fill="none" stroke="#F4ECD8" stroke-width="4.5"/>
+<ellipse cx="2" cy="78" rx="7" ry="9" fill="#111" stroke="#F4ECD8" stroke-width="3"/>
+</g>
+<path d="M194 168 C230 164 330 164 366 168 C374 170 378 176 378 184 C380 280 380 380 378 472 C378 482 372 488 362 488 L190 488 C180 488 174 482 174 472 C172 380 172 280 174 184 C174 176 182 168 194 168 Z" fill="#5AB030" fill-opacity="0.6" stroke-width="5"/>
+<path d="M194 200 L194 268 M210 192 L210 226 M194 292 L194 310" fill="none" stroke="#F4ECD8" stroke-width="8"/>
+<path d="M352 456 l10 -14 M340 470 l12 -17 M362 470 l8 -11" fill="none" stroke-width="2"/>
+</g>
+</svg>

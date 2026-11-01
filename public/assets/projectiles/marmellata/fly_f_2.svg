@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Grumo di marmellata in volo, frame 2">
+  <g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M70 124 C75 118 84 121 82 129 C80 135 70 134 70 124 Z M52 116 C56 113 61 116 59 121 C57 124 50 122 52 116 Z M62 142 C66 138 72 142 69 147 C66 150 60 147 62 142 Z" fill="#FF5A1F" stroke-width="3"/>
+    <path d="M94 130 C96 112 112 100 132 104 C146 106 152 98 162 106 C172 116 166 128 160 136 C156 150 140 160 122 156 C106 152 92 146 94 130 Z" fill="#FF5A1F" stroke-width="5"/>
+    <path d="M110 120 C120 112 136 114 144 120" fill="none" stroke-width="3"/>
+    <path d="M118 134 C122 128 130 130 128 137 C126 142 116 141 118 134 Z M142 132 C145 129 150 131 148 136 C146 139 140 137 142 132 Z" fill="#F2A516" stroke-width="3"/>
+    <path d="M134 154 l8 -11 M144 150 l7 -10 M152 142 l5 -7" fill="none" stroke-width="2"/>
+  </g>
+</svg>

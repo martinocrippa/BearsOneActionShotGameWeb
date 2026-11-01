@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Lucidatrice arancio del bidello">
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M266 150 L282 380" fill="none" stroke-width="16"/><path d="M266 150 L282 380" fill="none" stroke="#9C968A" stroke-width="8"/>
+<path d="M210 140 H322 L326 162 H206 Z" fill="#2A2A30" stroke-width="6"/>
+<path d="M214 148 C200 150 196 166 206 172 M318 148 C332 150 336 166 326 172" fill="none" stroke-width="6"/>
+<path d="M296 260 C340 250 352 280 330 300 L292 306 Z" fill="#FF7A12" stroke-width="5"/>
+<path d="M300 290 C330 300 360 330 380 380 C400 430 380 470 340 478" fill="none" stroke-width="9"/>
+<path d="M300 290 C330 300 360 330 380 380 C400 430 380 470 340 478" fill="none" stroke="#2A2A30" stroke-width="4"/>
+<path d="M150 400 C150 360 210 352 280 352 C350 352 400 362 400 400 L396 450 H154 Z" fill="#FF7A12" stroke-width="6"/>
+<path d="M170 380 C220 370 330 370 380 382" fill="none" stroke="#FFFFFF" stroke-width="6"/>
+<path d="M140 450 H410 L404 476 C330 492 220 492 146 476 Z" fill="#2A2A30" stroke-width="6"/>
+<path d="M160 470 C240 482 320 482 392 470" fill="none" stroke="#9C968A" stroke-width="3"/>
+<circle cx="270" cy="410" r="14" fill="#FFD400" stroke-width="4"/>
+<path d="M360 440 l8 -11 M374 440 l8 -11 M388 440 l8 -11 M380 410 l8 -11" fill="none" stroke-width="2"/>
+<path d="M120 488 C180 494 340 494 420 488" fill="none" stroke-width="4"/>
+<path d="M110 470 l-14 -4 M108 486 l-16 2 M424 470 l14 -4" fill="none" stroke-width="3"/>
+</g>
+</svg>

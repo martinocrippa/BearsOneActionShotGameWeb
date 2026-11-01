@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Pistola sparaconfetti a terra con qualche confetto">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M60 240 l8 -9 M72 240 l8 -9 M84 240 l8 -9 M96 240 l8 -9 M108 240 l8 -9 M120 240 l8 -9 M132 240 l8 -9 M144 240 l8 -9 M156 240 l8 -9 M168 240 l8 -9 M180 240 l8 -9 M192 240 l8 -9" fill="none" stroke-width="2"/>
+  <path d="M50 150 L186 150 C196 150 200 158 200 166 L200 174 C200 180 196 184 190 184 L126 184 L118 220 C116 228 108 232 100 230 L86 226 C78 224 76 216 78 208 L86 184 L60 184 C52 184 46 176 46 168 C46 158 50 150 56 150 Z" fill="#FFD400" stroke-width="5"/>
+  <path d="M140 150 L154 150 L154 184 L140 184 Z" fill="#FF2D8A" stroke-width="3"/>
+  <path d="M160 140 L176 140 L176 150 L160 150 Z" fill="#1F5FBF" stroke-width="3.5"/>
+  <path d="M200 156 L214 156 L214 178 L200 178 Z" fill="#E3262B" stroke-width="4"/>
+  <path d="M214 162 L218 162 L218 172 L214 172 Z" fill="#111" stroke-width="2"/>
+  <path d="M112 184 C116 196 112 204 104 206 L100 198 C106 194 106 190 104 184 Z" fill="#E3262B" stroke-width="3"/>
+  <path d="M66 162 L120 162 M66 172 L120 172" fill="none" stroke-width="3"/>
+  <path d="M172 182 l8 -11 M184 182 l8 -11 M104 226 l8 -11" fill="none" stroke-width="2"/>
+  <g stroke-width="2.5">
+    <ellipse cx="34" cy="226" rx="8" ry="5" fill="#FF2D8A" transform="rotate(-20 34 226)"/>
+    <ellipse cx="216" cy="224" rx="8" ry="5" fill="#28C2B4" transform="rotate(30 216 224)"/>
+    <ellipse cx="232" cy="208" rx="7" ry="4" fill="#FFD400" transform="rotate(-50 232 208)"/>
+    <ellipse cx="148" cy="226" rx="7" ry="4" fill="#1F5FBF" transform="rotate(10 148 226)"/>
+  </g>
+</g>
+</svg>

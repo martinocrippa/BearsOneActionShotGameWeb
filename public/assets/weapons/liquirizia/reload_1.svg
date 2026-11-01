@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 512" width="1024" height="512" style="display: block" role="img" aria-label="Spara-liquirizie aperto: canne basculate, la zampa infila due rondelle">
+
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M392 512 L410 440 L614 440 L632 512 Z" fill="#C8A06A" stroke-width="5"/>
+  <path d="M440 452 C442 470 438 490 434 506 M590 452 C588 474 592 494 596 506" fill="none" stroke="#6B4226" stroke-width="3"/>
+  <path d="M404 470 L620 470 L625 488 L399 488 Z" fill="#2A2A30" stroke-width="3"/>
+  <path d="M604 456 l8 -11 M612 500 l8 -11 M620 510 l8 -11" fill="none" stroke-width="2"/>
+  <circle cx="512" cy="452" r="7" fill="#9C968A" stroke-width="3"/>
+  <path d="M436 470 L452 380 L508 380 L512 470 Z" fill="#2A2A30" stroke-width="5"/>
+  <path d="M512 470 L516 380 L572 380 L588 470 Z" fill="#2A2A30" stroke-width="5"/>
+  <path d="M460 396 L454 456 M526 396 L524 456" fill="none" stroke="#9C968A" stroke-width="4"/>
+  <ellipse cx="480" cy="380" rx="30" ry="15" fill="#9C968A" stroke-width="5"/>
+  <ellipse cx="544" cy="380" rx="30" ry="15" fill="#9C968A" stroke-width="5"/>
+  <ellipse cx="480" cy="381" rx="19" ry="9" fill="#111" stroke="none"/>
+  <ellipse cx="544" cy="381" rx="19" ry="9" fill="#111" stroke="none"/>
+<g transform="translate(470 346) scale(0.909)">
+    <circle r="22" fill="#2A2A30" stroke-width="4.4"/>
+    <path d="M0 -14 C9 -14 14 -6 14 2 C14 10 6 15 -2 14 C-9 13 -12 6 -10 0 C-8 -6 -2 -8 3 -6" fill="none" stroke="#F4ECD8" stroke-width="2.6"/>
+    <circle r="5" fill="#FF2D8A" stroke-width="2.8"/></g>
+<g transform="translate(508 334) scale(0.909)">
+    <circle r="22" fill="#2A2A30" stroke-width="4.4"/>
+    <path d="M0 -14 C9 -14 14 -6 14 2 C14 10 6 15 -2 14 C-9 13 -12 6 -10 0 C-8 -6 -2 -8 3 -6" fill="none" stroke="#F4ECD8" stroke-width="2.6"/>
+    <circle r="5" fill="#FF2D8A" stroke-width="2.8"/></g>
+  <path class="fur" d="M276 512 C280 500 288 492 300 486 L372 512 Z" fill="#9A6239" stroke-width="5"/>
+<g transform="rotate(24 330 512)">
+  <path class="fur" d="M292 512 C284 456 322 404 384 392 C416 386 438 404 436 432 C434 462 416 488 402 512 Z" fill="#9A6239" stroke-width="5"/>
+  <path class="fur-light" d="M310 512 C314 476 336 452 366 446 C358 474 350 494 348 512 Z" fill="#E2B88A" stroke-width="3"/>
+  <path d="M410 400 C426 392 444 400 442 416 M412 428 C430 422 446 432 442 448 M410 456 C426 452 440 462 436 476" fill="none" stroke-width="3"/>
+</g>
+<g transform="translate(0 10)">
+  <path class="fur" d="M732 512 C740 456 702 404 640 392 C608 386 586 404 588 432 C590 462 608 488 622 512 Z" fill="#9A6239" stroke-width="5"/>
+  <path class="fur-light" d="M714 512 C710 476 688 452 658 446 C666 474 674 494 676 512 Z" fill="#E2B88A" stroke-width="3"/>
+  <path d="M614 400 C598 392 580 400 582 416 M612 428 C594 422 578 432 582 448 M614 456 C598 452 584 462 588 476" fill="none" stroke-width="3"/>
+  <path d="M698 508 l12 -17 M710 508 l10 -14 M720 500 l8 -11" fill="none" stroke-width="2"/>
+</g>
+  <path d="M420 300 l-14 -10 M446 290 l-6 -16 M560 330 l14 -8" fill="none" stroke-width="3"/>
+</g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Scatola di caramelle incartate">
+  <defs>
+    <g id="caCandy" stroke="#111" stroke-linejoin="round"><path d="M-14 0 L-26 -10 L-26 10 Z M14 0 L26 -10 L26 10 Z" fill="#FFD400" stroke-width="3"/><ellipse rx="15" ry="11" fill="#E3262B" stroke-width="3.5"/><path d="M-5 -10 L3 10" stroke="#F4ECD8" stroke-width="3"/></g>
+  </defs>
+  <g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M48 140 L208 140 L200 232 L56 232 Z" fill="#1F5FBF" stroke-width="5"/>
+    <path d="M48 140 L28 104 L188 104 L208 140" fill="#1F5FBF" stroke-width="5"/>
+    <use href="#caCandy" transform="translate(84 128) rotate(-20)"/>
+    <use href="#caCandy" transform="translate(128 118) rotate(10)"/>
+    <use href="#caCandy" transform="translate(170 130) rotate(-8)"/>
+    <use href="#caCandy" transform="translate(106 104) rotate(25)"/>
+    <use href="#caCandy" transform="translate(150 98) rotate(-30)"/>
+    <path d="M48 140 L208 140" fill="none" stroke-width="5"/>
+    <path d="M90 166 C110 160 146 160 166 166 L162 206 C144 212 112 212 94 206 Z" fill="#F4ECD8" stroke-width="3"/>
+    <use href="#caCandy" transform="translate(128 186) scale(.8)"/>
+    <path d="M184 230 l10 -14 M194 222 l8 -11 M198 206 l6 -9 M200 190 l6 -9 M202 174 l5 -7" fill="none" stroke-width="2"/>
+  </g>
+</svg>

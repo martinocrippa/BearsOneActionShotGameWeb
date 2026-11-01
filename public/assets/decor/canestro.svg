@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 1024" width="512" height="1024" style="display: block" role="img" aria-label="Canestro da basket">
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M150 1000 H262 L252 970 H160 Z" fill="#2A2A30" stroke-width="6"/>
+<path d="M206 970 L206 260 C206 230 226 214 256 214 L300 214" fill="none" stroke-width="22"/>
+<path d="M206 970 L206 260 C206 230 226 214 256 214 L300 214" fill="none" stroke="#9C968A" stroke-width="12"/>
+<path d="M290 120 H470 V300 H290 Z" fill="#F4F4EE" stroke-width="7"/>
+<path d="M346 196 H414 V256 H346 Z" fill="none" stroke="#FF7A12" stroke-width="7"/>
+<path d="M300 130 H460 V290 H300 Z" fill="none" stroke="#FF7A12" stroke-width="4"/>
+<path d="M330 262 C330 252 430 252 430 262 C430 272 330 272 330 262 Z" fill="none" stroke-width="10"/>
+<path d="M330 262 C330 252 430 252 430 262 C430 272 330 272 330 262 Z" fill="none" stroke="#FF7A12" stroke-width="5"/>
+<path d="M334 268 L346 340 L362 270 L374 344 L388 272 L400 344 L414 270 L424 340 L428 266 M346 340 C370 352 400 352 424 340" fill="none" stroke="#F4F4EE" stroke-width="4"/>
+<path d="M334 268 L346 340 L362 270 L374 344 L388 272 L400 344 L414 270 L424 340 L428 266 M346 340 C370 352 400 352 424 340" fill="none" stroke-width="1.5"/>
+<circle cx="300" cy="944" r="40" fill="#FF7A12" stroke-width="6"/>
+<path d="M262 944 H338 M300 906 V982 M274 916 C290 934 290 956 274 972 M326 916 C310 934 310 956 326 972" fill="none" stroke-width="3"/>
+<path d="M214 400 l8 -11 M214 460 l8 -11 M214 520 l8 -11 M214 580 l8 -11 M214 640 l8 -11 M440 280 l8 -11 M452 280 l8 -11" fill="none" stroke-width="2"/>
+<path d="M120 1000 H360" stroke-width="5"/>
+</g>
+</svg>

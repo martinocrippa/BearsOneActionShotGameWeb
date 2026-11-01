@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Puzzola walk s frame 3">
+<defs><g id="kE" stroke-linecap="round" stroke-linejoin="round"><path d="M-17 2 C-11 -10 9 -12 18 -2 C11 8 -7 10 -17 2 Z" fill="#F4ECD8" stroke="#111" stroke-width="4.2"/><circle cx="7" cy="0" r="5" fill="#111"/><circle cx="5" cy="-2" r="1.4" fill="#FFFFFF"/><path d="M-18 2 C-11 -13 11 -15 20 -2 C10 0 -6 1 -18 2 Z" fill="#2A2A30" stroke="#111" stroke-width="4.2"/><path d="M-17 2 C-6 1 10 0 19 -2" fill="none" stroke="#F4ECD8" stroke-width="3"/></g></defs>
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<g transform="rotate(-5 244 412)"><path d="M240 420 C180 410 166 310 190 250 C204 216 234 214 238 238 C242 258 222 268 214 292 C204 330 214 380 248 404 Z" fill="#2A2A30" stroke-width="5"/><path d="M196 252 C182 290 184 340 204 380" fill="none" stroke="#F4ECD8" stroke-width="9"/></g>
+<g transform="translate(0 3) rotate(-18 252 420)"><path d="M244 420 L240 470 L258 470 L260 420 Z M234 488 C232 478 238 470 250 470 L264 470 C272 474 276 480 276 488 Z" fill="#2A2A30" stroke-width="5"/></g>
+<g transform="translate(0 -10) rotate(18 271 420)"><path d="M262 420 L266 470 L284 470 L280 420 Z M258 488 C256 478 262 470 274 470 L290 470 C298 474 302 480 302 488 Z" fill="#2A2A30" stroke-width="5"/></g>
+<path d="M240 286 C232 330 236 400 246 426 L282 426 C292 400 290 330 282 288 C272 276 248 276 240 286 Z" fill="#2A2A30" stroke-width="5"/><path d="M244 292 C238 330 240 380 248 418" fill="none" stroke="#F4ECD8" stroke-width="6"/>
+<g transform="rotate(-15 270 300)"><path d="M262 300 C264 330 272 352 286 368 L296 360 C284 344 278 322 278 298 Z M288 364 C292 376 304 378 308 368 C306 360 298 356 292 358 Z" fill="#2A2A30" stroke-width="5"/><path d="M302 370 l4 5 M298 374 l2 6" fill="none" stroke="#F4ECD8" stroke-width="2"/></g>
+<g transform="translate(258 196)">
+<path d="M-20 8 C-30 -6 -20 -16 -8 -10 C-2 -6 -4 2 -10 6 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M-17 2 C-20 -4 -16 -9 -10 -8" fill="none" stroke="#F4ECD8" stroke-width="2.5"/>
+<path d="M-42 44 C-42 18 -24 0 0 0 C24 0 38 14 44 28 C56 34 68 42 74 50 C78 58 72 66 64 68 C50 72 38 76 30 84 C18 94 0 98 -16 92 C-34 84 -42 64 -42 44 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M46 32 C34 14 14 2 -10 2 C-28 4 -38 16 -42 32 L-36 34 C-30 22 -16 14 2 14 C18 14 32 22 42 36 Z" fill="#F4ECD8" stroke-width="3"/>
+<path d="M-42 58 L-50 64 L-40 68 L-46 76 L-36 76" fill="none" stroke="#F4ECD8" stroke-width="3"/>
+<path d="M66 48 C72 44 80 48 80 54 C78 60 70 60 66 56 Z" fill="#FF8FB3" stroke-width="3"/>
+<use href="#kE" transform="translate(22 32) scale(.75)"/>
+<path d="M8 20 C16 14 28 14 36 20" fill="none" stroke="#F4ECD8" stroke-width="4.5"/>
+<path d="M40 72 C50 76 60 74 68 68" fill="none" stroke="#F4ECD8" stroke-width="3.5"/><path d="M40 72 C36 70 35 66 38 63" fill="none" stroke="#F4ECD8" stroke-width="2.5"/>
+<path d="M52 75 L52 81 L58 80 L58 74 Z" fill="#F4ECD8" stroke-width="2"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Sedia di scuola rossa">
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M176 488 L184 340 M336 488 L328 340 M206 468 L210 360 M306 468 L302 360" fill="none" stroke-width="14"/>
+<path d="M176 488 L184 340 M336 488 L328 340 M206 468 L210 360 M306 468 L302 360" fill="none" stroke="#9C968A" stroke-width="7"/>
+<path d="M184 340 L184 196 M328 340 L328 196" fill="none" stroke-width="14"/>
+<path d="M184 340 L184 196 M328 340 L328 196" fill="none" stroke="#9C968A" stroke-width="7"/>
+<path d="M170 180 C220 168 292 168 342 180 L338 250 C290 240 222 240 174 250 Z" fill="#E0503C" stroke-width="6"/>
+<path d="M200 212 H312" fill="none" stroke-width="3"/>
+<path d="M150 322 C210 310 302 310 362 322 L356 352 C300 344 212 344 156 352 Z" fill="#E0503C" stroke-width="6"/>
+<circle cx="256" cy="206" r="6" fill="#111" stroke="none"/>
+<path d="M318 236 l8 -11 M330 236 l8 -11 M340 346 l8 -11 M350 346 l8 -11" fill="none" stroke-width="2"/>
+<path d="M160 488 H352" stroke-width="5"/>
+</g>
+</svg>

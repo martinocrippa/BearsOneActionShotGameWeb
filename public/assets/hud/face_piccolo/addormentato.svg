@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Faccia HUD Piccolo addormentato">
+<defs>
+<clipPath id="ch"><path d="M95 74 C118 46 172 44 194 72 C204 86 216 94 240 99 C262 103 272 118 263 133 C252 150 232 162 212 166 C200 178 184 184 163 184 C146 194 126 196 112 190 C88 176 70 158 69 130 C68 104 79 86 95 74 Z"/></clipPath>
+<g id="gl" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round"><path d="M146 92 L110 82" stroke-width="6"/><path d="M148 80 C162 76 186 76 198 80 C201 92 201 106 197 116 C184 120 162 120 149 116 C145 104 145 90 148 80 Z" stroke-width="13"/><path d="M148 80 C162 76 186 76 198 80 C201 92 201 106 197 116 C184 120 162 120 149 116 C145 104 145 90 148 80 Z" stroke="#22B14C" stroke-width="7"/><path d="M199 92 L207 92" stroke-width="7"/><path d="M207 82 C214 79 223 80 228 84 L226 112 C220 116 211 116 207 112 Z" stroke-width="11"/><path d="M207 82 C214 79 223 80 228 84 L226 112 C220 116 211 116 207 112 Z" stroke="#22B14C" stroke-width="6"/></g>
+</defs>
+<g transform="scale(.9846) translate(-40 24)" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<path class="fur" d="M88 82 C68 62 76 30 102 34 C120 37 126 54 118 66 Z" fill="#9A6239" stroke-width="3.5"/>
+<path d="M95 70 C89 58 95 47 104 46" fill="none" stroke-width="2.5"/>
+<path class="fur" d="M95 74 C118 46 172 44 194 72 C204 86 216 94 240 99 C262 103 272 118 263 133 C252 150 232 162 212 166 C200 178 184 184 163 184 C146 194 126 196 112 190 C88 176 70 158 69 130 C68 104 79 86 95 74 Z" fill="#9A6239" stroke-width="4"/>
+<g clip-path="url(#ch)" fill="none" stroke-width="2"><path d="M128 200 l12 -17 M135 200 l12 -17 M142 199 l12 -17 M149 198 l12 -17 M156 196 l12 -17 M163 194 l12 -17 M170 192 l12 -17 M177 190 l12 -17 M184 186 l12 -17"/></g>
+<path d="M98 70 L84 18 L112 50 L110 2 L134 46 L148 -6 L154 44 L178 8 L170 58 L190 40 L180 70 Z" fill="#6E4122" stroke-width="3.5"/>
+<path d="M112 50 L106 30 M134 46 L132 26 M154 44 L158 24 M170 58 L176 44" fill="none" stroke-width="2"/>
+<path class="fur" d="M150 58 C150 34 174 24 188 40 C196 50 192 62 184 70 Z" fill="#9A6239" stroke-width="3.5"/>
+<path class="fur-light" d="M198 108 C222 98 254 102 262 124 C262 142 242 158 212 162 C196 150 190 122 198 108 Z" fill="#E2B88A" stroke-width="3"/>
+<path d="M72 138 L60 146 L74 150 L62 162 L78 164 L70 174" fill="none" stroke-width="3"/>
+<ellipse cx="258" cy="117" rx="15" ry="11" fill="#111" stroke="none"/><ellipse cx="253" cy="112" rx="4.5" ry="2.6" fill="#F4ECD8" stroke="none"/>
+<g fill="none">
+<path d="M160 98 C170 106 184 106 194 98" stroke-width="4"/>
+<use href="#gl"/>
+<path d="M152 72 C166 68 184 68 200 72" stroke-width="5"/>
+<path d="M186 160 C192 168 204 168 210 160 C202 162 192 162 186 160 Z" fill="#111" stroke-width="3"/>
+<path d="M156 30 C130 18 96 22 72 44 L82 56 C98 42 122 36 146 40 Z" fill="#7D5CFF" stroke-width="4"/>
+<path d="M84 94 C96 64 122 40 156 30 C178 26 200 40 210 74 C176 70 120 80 84 94 Z" fill="#7D5CFF" stroke-width="4"/>
+<path d="M188 64 l8 -11 M196 70 l8 -11 M178 60 l8 -11" stroke-width="2"/>
+<circle cx="74" cy="52" r="13" fill="#F4ECD8" stroke-width="3.5"/>
+<path d="M84 94 C120 80 176 70 210 74" stroke-width="16"/><path d="M84 94 C120 80 176 70 210 74" stroke="#F4ECD8" stroke-width="10"/>
+<path d="M130 34 L134 4 L146 30 Z M160 30 L172 0 L176 34 Z" fill="#6E4122" stroke-width="3.5"/>
+<circle cx="282" cy="128" r="13" fill="#FFFFFF" stroke-width="3"/><path d="M274 122 C276 118 280 116 284 116" stroke-width="2"/>
+<g transform="translate(222 18)"><path d="M0 0 H14 L0 16 H14" stroke-width="7"/><path d="M0 0 H14 L0 16 H14" stroke="#7D5CFF" stroke-width="3.5"/></g>
+<g transform="translate(244 -2) scale(.8)"><path d="M0 0 H14 L0 16 H14" stroke-width="8"/><path d="M0 0 H14 L0 16 H14" stroke="#7D5CFF" stroke-width="4"/></g>
+<g transform="translate(262 -18) scale(.6)"><path d="M0 0 H14 L0 16 H14" stroke-width="10"/><path d="M0 0 H14 L0 16 H14" stroke="#7D5CFF" stroke-width="5"/></g>
+</g>
+</g>
+</svg>

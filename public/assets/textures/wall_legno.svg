@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Texture ripetibile: interno della tana, legno e radici">
+  <rect width="512" height="512" fill="#C8A06A"/>
+  <g fill="none" stroke="#111" stroke-linecap="round">
+    <path d="M0 0 H512 M0 128 H512 M0 256 H512 M0 384 H512 M0 512 H512" stroke-width="6"/>
+    <path d="M0 50 C130 44 300 56 512 50 M0 90 C150 86 320 94 512 90 M0 180 C120 174 280 186 512 180 M0 220 C140 216 300 224 512 220 M0 310 C130 304 300 316 512 310 M0 350 C150 346 310 354 512 350 M0 440 C120 434 290 446 512 440 M0 480 C140 476 300 484 512 480" stroke-width="2.5"/>
+    <path d="M30 120 l8 -11 M200 120 l8 -11 M420 120 l8 -11 M100 248 l8 -11 M330 248 l8 -11 M60 376 l8 -11 M260 376 l8 -11 M470 376 l8 -11 M150 504 l8 -11 M380 504 l8 -11" stroke-width="2"/>
+  </g>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 150 C80 120 140 200 230 170 C320 140 360 230 440 190 C470 176 490 160 512 150" stroke="#111" stroke-width="26"/>
+    <path d="M0 150 C80 120 140 200 230 170 C320 140 360 230 440 190 C470 176 490 160 512 150" stroke="#6B4226" stroke-width="16"/>
+    <path d="M300 0 C280 90 340 160 310 260 C290 340 330 420 300 512" stroke="#111" stroke-width="22"/>
+    <path d="M300 0 C280 90 340 160 310 260 C290 340 330 420 300 512" stroke="#6B4226" stroke-width="13"/>
+    <path d="M230 170 C210 220 160 240 130 300 C116 330 90 340 70 360" stroke="#111" stroke-width="14"/>
+    <path d="M230 170 C210 220 160 240 130 300 C116 330 90 340 70 360" stroke="#6B4226" stroke-width="7"/>
+    <path d="M310 260 C350 280 380 330 430 340 C450 344 466 360 470 380" stroke="#111" stroke-width="12"/>
+    <path d="M310 260 C350 280 380 330 430 340 C450 344 466 360 470 380" stroke="#6B4226" stroke-width="5"/>
+    <path d="M130 300 C120 320 128 340 116 352 M430 340 C440 356 436 370 446 380" stroke="#111" stroke-width="4"/>
+  </g>
+</svg>

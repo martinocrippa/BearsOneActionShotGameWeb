@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 1024" width="512" height="1024" style="display: block" role="img" aria-label="Porta della scuola chiusa col simbolo campanella">
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round"><rect width="512" height="1024" fill="#EFE8DA"/>
+<path d="M0 0 H512 V1024 H0 Z" fill="none" stroke-width="6"/>
+<path d="M0 222 H512 V250 H0 Z" fill="#F0A81E" stroke-width="5"/>
+<path d="M30 30 H482 C492 30 498 36 498 46 V194 C498 204 492 210 482 210 H30 C20 210 14 204 14 194 V46 C14 36 20 30 30 30 Z" fill="#F0A81E" stroke-width="6"/>
+<path d="M48 54 H464 M48 186 H464" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+<circle cx="256" cy="120" r="70" fill="#2A2A30" stroke-width="5"/>
+<circle cx="256" cy="120" r="58" fill="none" stroke="#F4F4EE" stroke-width="2.5" stroke-dasharray="6 6"/>
+<path d="M0 270 H40 V1024 H0 Z M472 270 H512 V1024 H472 Z" fill="#D6CDBA" stroke-width="5"/>
+</g><g stroke="#111" stroke-linejoin="round" stroke-linecap="round"><g transform="translate(256 124) scale(.62) translate(-128 -138)"><path d="M128 70 C92 70 80 100 80 130 L76 168 C70 176 64 180 64 190 H192 C192 180 186 176 180 168 L176 130 C176 100 164 70 128 70 Z" fill="#F0A81E" stroke-width="5"/>
+<path d="M90 120 C92 96 104 84 120 82" fill="none" stroke="#FFFFFF" stroke-width="6"/>
+<circle cx="128" cy="206" r="14" fill="#C8A06A" stroke-width="4"/>
+<path d="M116 70 C116 50 140 50 140 70" fill="none" stroke-width="7"/>
+<path d="M150 184 l8 -11 M164 184 l8 -11 M170 160 l6 -9" fill="none" stroke-width="2"/></g></g><g stroke="#111" stroke-linejoin="round" stroke-linecap="round"><path d="M40 270 H472 V1024 H40 Z" fill="#F4F4EE" stroke-width="6"/>
+<path d="M256 270 V1024" fill="none" stroke-width="5"/>
+<path d="M40 620 H472 V656 H40 Z" fill="#F0A81E" stroke-width="5"/>
+<circle cx="148" cy="420" r="62" fill="#8FB8D8" stroke-width="8"/><circle cx="364" cy="420" r="62" fill="#8FB8D8" stroke-width="8"/>
+<circle cx="148" cy="420" r="72" fill="none" stroke="#9C968A" stroke-width="6"/><circle cx="364" cy="420" r="72" fill="none" stroke="#9C968A" stroke-width="6"/>
+<path d="M118 396 C126 380 140 372 156 370 M334 396 C342 380 356 372 372 370" fill="none" stroke="#FFFFFF" stroke-width="7"/>
+<path d="M200 760 H312" fill="none" stroke-width="16"/><path d="M200 760 H312" fill="none" stroke="#9C968A" stroke-width="8"/>
+<path d="M60 960 H452 V1004 H60 Z" fill="#9C968A" stroke-width="4"/>
+<path d="M440 300 l8 -11 M440 340 l8 -11 M440 700 l8 -11 M440 740 l8 -11 M440 900 l8 -11 M226 900 l8 -11 M226 940 l8 -11" fill="none" stroke-width="2"/></g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Freccia di zucchero candito attaccata con la ventosa, stelline">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+  </g>
+  <g transform="translate(-26 0)"><g transform="translate(150 132) rotate(-14)" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    
+    <path d="M-92 -8 L-110 -30 L-80 -30 L-64 -8 Z M-92 8 L-110 30 L-80 30 L-64 8 Z" fill="#FF8FB3" stroke-width="4.5"/>
+    <path d="M-100 -26 L-86 -10 M-100 26 L-86 10" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+    <defs><clipPath id="fc31"><path d="M-86 -12 L66 -12 L66 12 L-86 12 Z"/></clipPath></defs>
+    <path d="M-86 -12 L66 -12 L66 12 L-86 12 C-90 4 -90 -4 -86 -12 Z" fill="#FFFFFF" stroke="none"/>
+    <g clip-path="url(#fc31)" fill="#E3262B" stroke="none"><path d="M-70 -12 L-58 -12 L-70 12 L-82 12 Z"/><path d="M-50 -12 L-38 -12 L-50 12 L-62 12 Z"/><path d="M-30 -12 L-18 -12 L-30 12 L-42 12 Z"/><path d="M-10 -12 L2 -12 L-10 12 L-22 12 Z"/><path d="M10 -12 L22 -12 L10 12 L-2 12 Z"/><path d="M30 -12 L42 -12 L30 12 L18 12 Z"/><path d="M50 -12 L62 -12 L50 12 L38 12 Z"/></g>
+    <path d="M-86 -12 L66 -12 L66 12 L-86 12 C-90 4 -90 -4 -86 -12 Z" fill="none" stroke-width="5"/>
+    <path d="M-60 -6 L40 -6" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+    <path d="M-70 12 l5 -7 M-57.4 12 l5 -7 M-44.8 12 l5 -7 M-32.2 12 l5 -7 M-19.6 12 l5 -7 M-7 12 l5 -7 M5.6 12 l5 -7 M18.2 12 l5 -7 M30.8 12 l5 -7 M43.4 12 l5 -7 M56 12 l5 -7 " fill="none" stroke-width="2"/>
+    <path d="M70 -28 C80 -28 86 -22 86 -14 L86 14 C86 22 80 28 70 28 C74 12 74 -12 70 -28 Z" fill="#E3262B" stroke-width="4.5"/>
+    <path d="M76 -10 l4 -6 M78 8 l5 -6" fill="none" stroke-width="2"/>
+  </g></g>
+  <g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 96 C24 104 24 112 30 120 M18 88 C8 102 8 118 18 132 M42 160 C36 168 38 176 44 182" fill="none" stroke-width="3.5"/>
+    <g fill="#FFD400" stroke-width="3.5"><polygon points="200,56 203.7,64.9 213.3,65.7 206,71.9 208.2,81.3 200,76.3 191.8,81.3 194,71.9 186.7,65.7 196.3,64.9"/><polygon points="226,110 228.6,116.4 235.5,116.9 230.3,121.4 231.9,128.1 226,124.5 220.1,128.1 221.7,121.4 216.5,116.9 223.4,116.4"/><polygon points="186,178 189.2,185.6 197.4,186.3 191.1,191.7 193.1,199.7 186,195.4 178.9,199.7 180.9,191.7 174.6,186.3 182.8,185.6"/><polygon points="150,43 152.4,48.7 158.6,49.2 153.9,53.3 155.3,59.3 150,56 144.7,59.3 146.1,53.3 141.4,49.2 147.6,48.7"/></g>
+  </g>
+</svg>

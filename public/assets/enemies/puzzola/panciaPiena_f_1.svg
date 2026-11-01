@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Puzzola full f frame 1, sdraiata con la pancia piena che fa burp">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<path d="M376 470 C424 478 462 456 470 428 C474 414 458 408 450 420 C442 440 420 454 384 452 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M454 424 C446 444 422 458 394 462" fill="none" stroke="#F4ECD8" stroke-width="7"/>
+<path d="M340 430 L360 372 L374 378 L356 436 Z M352 368 C348 354 364 346 376 354 C382 362 376 374 364 376 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M362 440 L394 388 L406 396 L376 448 Z M392 382 C392 368 408 364 418 372 C422 382 414 392 402 392 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M358 356 l-2 -6 M366 352 l0 -6 M404 368 l2 -6 M412 370 l4 -5" fill="none" stroke="#F4ECD8" stroke-width="2"/>
+<path d="M214 430 L196 380 L208 374 L228 424 Z M190 378 C184 366 196 358 206 362 C212 368 210 376 204 380 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M232 418 L230 366 L244 364 L246 418 Z M226 364 C222 350 238 344 246 352 C250 360 246 368 238 368 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M172 446 C172 420 222 404 280 404 C338 404 388 420 388 446 C388 472 338 488 280 488 C222 488 172 472 172 446 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M280 320 C320 320 352 352 352 392 C352 432 320 464 280 464 C240 464 208 432 208 392 C208 352 240 320 282 320 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M226 356 C254 338 306 338 334 356" fill="none" stroke="#F4ECD8" stroke-width="5"/>
+<path d="M310 454 l10 -14 M322 446 l10 -14 M332 436 l8 -11" fill="none" stroke="#F4ECD8" stroke-width="2.5"/>
+<path d="M260 392 C268 386 276 386 282 392" fill="none" stroke="#F4ECD8" stroke-width="3"/>
+<g transform="translate(118 434) rotate(-90)">
+<path d="M-36 14 C-46 2 -40 -12 -26 -8 C-20 -4 -20 4 -24 8 Z M36 14 C46 2 40 -12 26 -8 C20 -4 20 4 24 8 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M-32 6 C-36 0 -32 -6 -26 -4 M32 6 C36 0 32 -6 26 -4" fill="none" stroke="#F4ECD8" stroke-width="2.5"/>
+<path d="M-44 48 C-48 20 -30 0 0 0 C30 0 48 20 44 48 C40 70 26 86 0 94 C-26 86 -40 70 -44 48 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M-7 0 C-9 20 -6 40 0 54 C6 40 9 20 7 0 Z" fill="#F4ECD8" stroke-width="3"/>
+<path d="M-44 52 L-54 58 L-44 62 L-50 70 L-40 70 M44 52 L54 58 L44 62 L50 70 L40 70" fill="none" stroke="#F4ECD8" stroke-width="3"/>
+<path d="M-16 60 C-10 52 10 52 16 60" fill="none" stroke="#F4ECD8" stroke-width="2.5"/>
+<path d="M-8 62 C-4 56 4 56 8 62 C4 68 -4 68 -8 62 Z" fill="#FF8FB3" stroke-width="3"/>
+<path d="M6 40 C10 30 26 30 30 40 M-6 40 C-10 30 -26 30 -30 40" fill="none" stroke="#F4ECD8" stroke-width="4"/>
+<path d="M6 20 C14 16 26 16 34 20 M-6 20 C-14 16 -26 16 -34 20" fill="none" stroke="#F4ECD8" stroke-width="4"/>
+<path d="M-14 72 C-4 84 10 82 18 70" fill="none" stroke="#F4ECD8" stroke-width="3.5"/>
+<path d="M2 80 L2 86 L8 86 L8 79 Z" fill="#F4ECD8" stroke-width="2"/>
+</g>
+<circle cx="200" cy="384" r="5" fill="#F4ECD8" stroke-width="2.5"/><circle cx="208" cy="368" r="3.5" fill="#F4ECD8" stroke-width="2"/>
+<path d="M120 330 C114 306 140 294 156 306 C166 286 202 288 206 308 C230 306 238 334 220 342 C218 360 190 364 180 352 C164 362 136 358 132 346 C114 346 110 334 120 330 Z" fill="#F4ECD8" stroke-width="4"/>
+<g fill="none" stroke-width="4">
+<path d="M136 314 L136 340 M136 314 L146 314 C154 314 154 326 146 327 L136 327 M146 327 C156 327 156 340 146 340 L136 340"/>
+<path d="M160 314 L160 334 C160 342 176 342 176 334 L176 314"/>
+<path d="M184 340 L184 314 L194 314 C202 314 202 327 194 327 L184 327 M192 327 L202 340"/>
+<path d="M208 340 L208 314 L218 314 C226 314 226 327 218 327 L208 327"/>
+</g>
+</g>
+</svg>

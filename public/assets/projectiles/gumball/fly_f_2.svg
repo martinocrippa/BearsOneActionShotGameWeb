@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Gumball arcobaleno in volo, frame 2">
+  <g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="128" cy="128" r="60" fill="#FF2D8A" stroke-width="5"/>
+    <clipPath id="gb16"><circle cx="128" cy="128" r="58"/></clipPath>
+    <g clip-path="url(#gb16)">
+    <path d="M128 128 L214.5 152.8 A90 90 0 0 1 131.1 217.9 Z" fill="#FF2D8A" stroke-width="3"/>
+    <path d="M128 128 L131.1 217.9 A90 90 0 0 1 43.4 158.8 Z" fill="#FFD400" stroke-width="3"/>
+    <path d="M128 128 L43.4 158.8 A90 90 0 0 1 72.6 57.1 Z" fill="#28C2B4" stroke-width="3"/>
+    <path d="M128 128 L72.6 57.1 A90 90 0 0 1 178.3 53.4 Z" fill="#7D5CFF" stroke-width="3"/>
+    <path d="M128 128 L178.3 53.4 A90 90 0 0 1 214.5 152.8 Z" fill="#FF5A1F" stroke-width="3"/>
+    <path d="M80 176 l9 -13 M92 186 l10 -14 M106 192 l10 -14 M150 190 l10 -14 M164 182 l10 -14 M176 168 l9 -13 M184 150 l8 -11" fill="none" stroke-width="2.5"/>
+    </g>
+    <circle cx="128" cy="128" r="60" fill="none" stroke-width="5"/>
+    <path d="M96 96 C104 84 118 78 130 78" fill="none" stroke="#FFFFFF" stroke-width="7"/>
+    <circle cx="92" cy="110" r="4" fill="#FFFFFF" stroke="none"/>
+    <path d="M40 150 l-16 6 M44 170 l-14 10 M50 128 l-18 0" fill="none" stroke-width="4"/>
+
+  </g>
+</svg>

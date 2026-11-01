@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Due bastoncini di zucchero filato rosa">
+  <g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M96 232 L104 120" fill="none" stroke-width="10"/><path d="M96 232 L104 120" fill="none" stroke="#F4ECD8" stroke-width="5"/>
+    <path d="M160 232 L150 108" fill="none" stroke-width="10"/><path d="M160 232 L150 108" fill="none" stroke="#F4ECD8" stroke-width="5"/>
+    <g transform="translate(102 106) scale(1.05)"><path d="M-40 10 C-58 4 -56 -24 -36 -26 C-36 -48 -10 -56 2 -42 C14 -60 44 -50 40 -26 C60 -20 58 10 38 12 C30 34 4 36 -2 22 C-14 36 -42 30 -40 10 Z" fill="#FF8FB3" stroke-width="3.8"/>
+      <path d="M-30 -10 C-22 -20 -10 -18 -6 -8 M8 -28 C18 -34 28 -28 26 -18 M-6 8 C2 16 16 14 20 4" fill="none" stroke="#FF2D8A" stroke-width="2.9"/>
+      <path d="M22 18 l8 -11 M30 14 l8 -11 M36 0 l6 -9" fill="none" stroke-width="1.9"/></g><g transform="translate(154 90) scale(1.15)"><path d="M-40 10 C-58 4 -56 -24 -36 -26 C-36 -48 -10 -56 2 -42 C14 -60 44 -50 40 -26 C60 -20 58 10 38 12 C30 34 4 36 -2 22 C-14 36 -42 30 -40 10 Z" fill="#FFB3CC" stroke-width="3.5"/>
+      <path d="M-30 -10 C-22 -20 -10 -18 -6 -8 M8 -28 C18 -34 28 -28 26 -18 M-6 8 C2 16 16 14 20 4" fill="none" stroke="#FF2D8A" stroke-width="2.6"/>
+      <path d="M22 18 l8 -11 M30 14 l8 -11 M36 0 l6 -9" fill="none" stroke-width="1.7"/></g>
+    <path d="M92 230 L100 230 M156 230 L164 230" fill="none" stroke-width="3"/>
+  </g>
+</svg>

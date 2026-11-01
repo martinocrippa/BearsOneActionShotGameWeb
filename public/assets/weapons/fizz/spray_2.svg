@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 512" width="1024" height="512" style="display: block" role="img" aria-label="Estintore FIZZ che spruzza cola con schiuma e bollicine, frame 2">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M558 248 C530 196 476 150 440 60 C470 26 570 22 612 54 C600 130 594 196 584 244 Z" fill="#6B4226" stroke-width="5"/>
+  <path d="M560 230 C548 190 520 150 496 100" fill="none" stroke="#9A6239" stroke-width="6"/>
+  <circle cx="456" cy="54" r="30" fill="#F4ECD8" stroke-width="5"/>
+  <circle cx="500" cy="38" r="28" fill="#F4ECD8" stroke-width="5"/>
+  <circle cx="548" cy="40" r="32" fill="#F4ECD8" stroke-width="5"/>
+  <circle cx="600" cy="62" r="24" fill="#F4ECD8" stroke-width="5"/>
+  <circle cx="430" cy="80" r="18" fill="#F4ECD8" stroke-width="5"/>
+  <circle cx="456" cy="54" r="25" fill="#F4ECD8" stroke="none"/>
+  <circle cx="500" cy="38" r="23" fill="#F4ECD8" stroke="none"/>
+  <circle cx="548" cy="40" r="27" fill="#F4ECD8" stroke="none"/>
+  <circle cx="600" cy="62" r="19" fill="#F4ECD8" stroke="none"/>
+  <circle cx="430" cy="80" r="13" fill="#F4ECD8" stroke="none"/>
+  <path d="M480 60 C490 50 500 48 510 50 M540 46 C550 42 560 44 566 50" fill="none" stroke-width="3"/>
+  <circle cx="432" cy="122" r="10" fill="#F4ECD8" fill-opacity="0.55" stroke-width="3"/><path d="M428 119 l3 -3" stroke="#FFFFFF" stroke-width="2.5"/>
+  <circle cx="626" cy="102" r="12" fill="#F4ECD8" fill-opacity="0.55" stroke-width="3"/><path d="M621 98 l4 -4" stroke="#FFFFFF" stroke-width="2.5"/>
+  <circle cx="412" cy="182" r="7" fill="#F4ECD8" fill-opacity="0.55" stroke-width="3"/><path d="M409 180 l2 -2" stroke="#FFFFFF" stroke-width="2.5"/>
+  <circle cx="646" cy="172" r="8" fill="#F4ECD8" fill-opacity="0.55" stroke-width="3"/><path d="M643 170 l2 -2" stroke="#FFFFFF" stroke-width="2.5"/>
+  <circle cx="632" cy="22" r="6" fill="#F4ECD8" fill-opacity="0.55" stroke-width="3"/><path d="M630 20 l2 -2" stroke="#FFFFFF" stroke-width="2.5"/>
+  <circle cx="366" cy="72" r="6" fill="#F4ECD8" fill-opacity="0.55" stroke-width="3"/><path d="M364 70 l2 -2" stroke="#FFFFFF" stroke-width="2.5"/>
+  <circle cx="532" cy="112" r="7" fill="#F4ECD8" fill-opacity="0.55" stroke-width="3"/><path d="M529 110 l2 -2" stroke="#FFFFFF" stroke-width="2.5"/>
+  <circle cx="536" cy="172" r="6" fill="#F4ECD8" fill-opacity="0.55" stroke-width="3"/><path d="M534 170 l2 -2" stroke="#FFFFFF" stroke-width="2.5"/>
+  <path d="M620 250 L650 236 M626 276 L660 270 M536 270 L506 262" fill="none" stroke-width="4"/>
+  <g transform="translate(0 7)">
+  <path d="M334 512 L334 300 C334 262 362 244 412 244 C462 244 490 262 490 300 L490 512 Z" fill="#E3262B" stroke-width="5"/>
+  <path d="M352 500 L352 300 C352 284 360 274 372 268" fill="none" stroke="#F4ECD8" stroke-width="7"/>
+  <path d="M470 330 l8 -11 M470 360 l8 -11 M470 390 l8 -11 M470 420 l8 -11 M470 450 l8 -11 M470 480 l8 -11" fill="none" stroke-width="2"/>
+  <path d="M334 330 C380 340 444 340 490 330 L490 398 C444 408 380 408 334 398 Z" fill="#F4ECD8" stroke-width="4"/>
+  <g transform="rotate(-4 412 368)"><text x="412" y="388" text-anchor="middle" font-family="Bangers, sans-serif" font-size="54" letter-spacing="2" fill="#6B4226" stroke="#111" stroke-width="3" paint-order="stroke">FIZZ!</text></g>
+  <circle cx="356" cy="346" r="5" fill="#FFFFFF" stroke-width="2"/><circle cx="472" cy="388" r="4" fill="#FFFFFF" stroke-width="2"/>
+  <path d="M392 246 L394 216 L430 216 L432 246 Z" fill="#9C968A" stroke-width="5"/>
+  <path d="M380 216 L444 216 L444 202 L380 202 Z" fill="#9C968A" stroke-width="4"/>
+  <path d="M386 200 L346 178 C340 174 344 166 352 168 L404 190" fill="#111" stroke-width="4"/>
+  <circle cx="412" cy="226" r="6" fill="#FFD400" stroke-width="3"/>
+  </g>
+  <g transform="translate(0 7)"><path d="M444 212 C520 200 560 250 590 300 C620 350 640 380 628 420" fill="none" stroke="#111" stroke-width="20"/>
+  <path d="M444 212 C520 200 560 250 590 300 C620 350 640 380 628 420" fill="none" stroke="#2A2A30" stroke-width="11"/>
+  <path d="M452 206 C520 196 556 240 580 280" fill="none" stroke="#9C968A" stroke-width="3"/></g>
+  <g transform="translate(0 7)">
+  <path d="M600 410 L572 300 L606 292 L640 400 Z" fill="#2A2A30" stroke-width="5"/>
+  <path d="M574 300 L560 252 L584 246 L604 294 Z" fill="#9C968A" stroke-width="5"/>
+  <path d="M556 252 C556 240 584 234 590 246" fill="#111" stroke-width="4"/>
+  <path d="M586 320 l8 -11 M594 350 l8 -11" fill="none" stroke="#F4ECD8" stroke-width="2"/>
+  </g>
+<g transform="translate(0 7)">  <path class="fur" d="M292 512 C284 456 322 404 384 392 C416 386 438 404 436 432 C434 462 416 488 402 512 Z" fill="#9A6239" stroke-width="5"/>
+  <path class="fur-light" d="M310 512 C314 476 336 452 366 446 C358 474 350 494 348 512 Z" fill="#E2B88A" stroke-width="3"/>
+  <path d="M410 400 C426 392 444 400 442 416 M412 428 C430 422 446 432 442 448 M410 456 C426 452 440 462 436 476" fill="none" stroke-width="3"/>
+  <path class="fur" d="M732 512 C740 456 702 404 640 392 C608 386 586 404 588 432 C590 462 608 488 622 512 Z" fill="#9A6239" stroke-width="5"/>
+  <path class="fur-light" d="M714 512 C710 476 688 452 658 446 C666 474 674 494 676 512 Z" fill="#E2B88A" stroke-width="3"/>
+  <path d="M614 400 C598 392 580 400 582 416 M612 428 C594 422 578 432 582 448 M614 456 C598 452 584 462 588 476" fill="none" stroke-width="3"/>
+  <path d="M698 508 l12 -17 M710 508 l10 -14 M720 500 l8 -11" fill="none" stroke-width="2"/>
+</g></g>
+</svg>

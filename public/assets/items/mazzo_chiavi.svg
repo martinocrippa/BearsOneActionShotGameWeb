@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Mazzo di chiavi del bidello">
+<defs><path id="kS" d="M0 -14 L4 -4 L14 0 L4 4 L0 14 L-4 4 L-14 0 L-4 -4 Z" fill="#FFD400" stroke="#111" stroke-width="2.5" stroke-linejoin="round"/></defs><g stroke="#111" stroke-linejoin="round" stroke-linecap="round"><circle cx="86" cy="96" r="34" fill="none" stroke-width="12"/><circle cx="86" cy="96" r="34" fill="none" stroke="#9C968A" stroke-width="6"/>
+<path d="M100 120 L170 196 L184 182 M150 174 L162 162 M160 186 L170 176" fill="none" stroke-width="14"/>
+<path d="M100 120 L170 196 L184 182 M150 174 L162 162 M160 186 L170 176" fill="none" stroke="#C9CCD0" stroke-width="7"/>
+<path d="M82 130 L70 214 L88 216 M74 186 L88 188 M72 200 L84 202" fill="none" stroke-width="14"/>
+<path d="M82 130 L70 214 L88 216 M74 186 L88 188 M72 200 L84 202" fill="none" stroke="#F0A81E" stroke-width="7"/>
+<path d="M112 110 L200 120 L204 136 M180 118 L182 132" fill="none" stroke-width="14"/>
+<path d="M112 110 L200 120 L204 136 M180 118 L182 132" fill="none" stroke="#9C968A" stroke-width="7"/>
+<path d="M60 70 C40 40 60 20 84 30 L74 62" fill="#E0503C" stroke-width="4"/>
+<path d="M60 84 C66 72 76 66 88 64" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+<path d="M50 232 H206" stroke-width="4"/>
+<use href="#kS" transform="translate(212 64) scale(.9)"/><use href="#kS" transform="translate(220 200) scale(.6)"/>
+</g>
+</svg>

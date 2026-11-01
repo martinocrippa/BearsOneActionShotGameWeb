@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Stivali di gomma gialli">
+  <g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(-14 -6) rotate(-4 120 232)"><g transform="translate(150 0) scale(1 1)">
+      <path d="M-26 80 L22 80 L24 186 C40 188 60 194 64 208 C66 220 60 232 48 232 L-26 232 C-32 232 -34 228 -34 222 Z" fill="#FFD400" stroke-width="5"/>
+      <path d="M-34 216 L64 216" fill="none" stroke-width="3.5"/><path d="M-34 222 L-34 232 L48 232 C58 232 64 226 64 216 L-34 216 Z" fill="#2A2A30" stroke-width="4"/>
+      <path d="M-30 80 L26 80 L26 96 L-30 96 Z" fill="#FF5A1F" stroke-width="4"/>
+      <path d="M-18 106 C-20 140 -20 170 -16 196" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+      <path d="M12 200 l9 -13 M22 200 l9 -13 M8 150 l7 -10 M10 130 l7 -10" fill="none" stroke-width="2"/></g></g><g transform="translate(96 0) scale(1 1)">
+      <path d="M-26 80 L22 80 L24 186 C40 188 60 194 64 208 C66 220 60 232 48 232 L-26 232 C-32 232 -34 228 -34 222 Z" fill="#FFD400" stroke-width="5"/>
+      <path d="M-34 216 L64 216" fill="none" stroke-width="3.5"/><path d="M-34 222 L-34 232 L48 232 C58 232 64 226 64 216 L-34 216 Z" fill="#2A2A30" stroke-width="4"/>
+      <path d="M-30 80 L26 80 L26 96 L-30 96 Z" fill="#FF5A1F" stroke-width="4"/>
+      <path d="M-18 106 C-20 140 -20 170 -16 196" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+      <path d="M12 200 l9 -13 M22 200 l9 -13 M8 150 l7 -10 M10 130 l7 -10" fill="none" stroke-width="2"/></g>
+  </g>
+</svg>

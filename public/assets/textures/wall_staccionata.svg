@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Texture ripetibile in tutte le direzioni: staccionata di assi verticali con traverse">
+  <defs>
+    <g id="fPlank" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6" y="0" width="52" height="512" fill="#C8A06A" stroke="none"/>
+      <path d="M6 0 L6 512 M58 0 L58 512" fill="none" stroke-width="5"/>
+      <path d="M24 30 C22 120 26 220 23 300 M40 340 C42 400 38 450 41 490 M20 360 C22 410 18 450 21 480" fill="none" stroke-width="2.5"/>
+      <path d="M46 70 l8 -11 M46 140 l8 -11 M46 270 l8 -11 M46 330 l8 -11 M46 470 l8 -11" fill="none" stroke-width="2"/>
+    </g>
+  </defs>
+  <rect width="512" height="512" fill="#6B4226"/>
+  <use href="#fPlank"/><use href="#fPlank" transform="translate(64 0)"/><use href="#fPlank" transform="translate(128 0)"/><use href="#fPlank" transform="translate(192 0)"/>
+  <use href="#fPlank" transform="translate(256 0)"/><use href="#fPlank" transform="translate(320 0)"/><use href="#fPlank" transform="translate(384 0)"/><use href="#fPlank" transform="translate(448 0)"/>
+  <g stroke="#111" stroke-linejoin="round">
+    <path d="M0 176 L512 176 L512 216 L0 216 Z M0 392 L512 392 L512 432 L0 432 Z" fill="#6B4226" stroke-width="5"/>
+    <path d="M0 196 C120 192 260 200 512 196 M0 412 C140 408 300 416 512 412" fill="none" stroke-width="2.5"/>
+    <g fill="#111"><circle cx="32" cy="196" r="4"/><circle cx="160" cy="196" r="4"/><circle cx="288" cy="196" r="4"/><circle cx="416" cy="196" r="4"/><circle cx="96" cy="412" r="4"/><circle cx="224" cy="412" r="4"/><circle cx="352" cy="412" r="4"/><circle cx="480" cy="412" r="4"/></g>
+  </g>
+</svg>

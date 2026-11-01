@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Puzzola walk bq frame 1">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<g transform="rotate(-18 280 302)"><path d="M284 298 L300 356 L290 362 L276 310 Z M302 354 C306 366 298 374 290 370 C286 366 286 360 290 356 Z" fill="#2A2A30" stroke-width="5"/></g>
+<g transform="translate(0 -14)"><path d="M230 420 L228 470 L248 470 L250 420 Z M220 488 C218 478 222 470 234 470 L252 470 C258 474 262 480 262 488 Z" fill="#2A2A30" stroke-width="5"/></g>
+<path d="M262 420 L264 470 L282 470 L280 420 Z M260 488 C260 480 266 472 276 472 L290 472 C296 476 300 482 300 488 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M226 286 C214 330 216 400 232 428 L280 428 C296 400 298 330 286 284 C274 274 238 274 226 286 Z" fill="#2A2A30" stroke-width="5"/><path d="M240 290 C234 330 236 380 244 420 M272 290 C278 330 276 380 268 420" fill="none" stroke="#F4ECD8" stroke-width="6"/>
+<path d="M228 296 L208 360 L220 366 L240 308 Z M204 358 C198 370 208 380 218 376 C222 372 222 364 218 360 Z" fill="#2A2A30" stroke-width="5"/>
+<g transform="rotate(5 254 420)"><path d="M262 424 C300 420 320 340 300 270 C290 236 262 232 256 254 C250 274 270 284 274 306 C280 346 268 392 244 414 Z" fill="#2A2A30" stroke-width="5"/><path d="M290 270 C306 310 304 360 280 402" fill="none" stroke="#F4ECD8" stroke-width="9"/></g>
+<g transform="translate(254 196)">
+<path d="M14 8 C12 -6 26 -14 36 -6 C40 0 38 8 30 12 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M-46 44 C-48 18 -28 0 0 0 C26 0 44 16 46 34 C56 38 62 46 60 54 C56 60 48 62 42 60 C36 78 22 92 0 94 C-24 94 -44 74 -46 44 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M-38 14 C-48 2 -40 -12 -26 -8 C-20 -4 -20 4 -24 10 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M2 0 C-6 24 -10 56 -8 94 L6 94 C6 58 10 26 16 2 Z" fill="#F4ECD8" stroke-width="3"/>
+<path d="M54 48 C58 44 64 46 64 52 C62 56 56 56 54 52 Z" fill="#FF8FB3" stroke-width="2.5"/>
+<path d="M-46 58 L-54 64 L-44 68 L-50 76 L-40 76" fill="none" stroke="#F4ECD8" stroke-width="3"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Donnola ferma b frame 1">
+<defs>
+<clipPath id="dCH"><path d="M96 74 C112 52 158 46 190 60 C210 68 236 78 256 88 C270 96 270 112 258 118 C236 128 212 132 192 134 C176 150 148 158 122 152 C96 146 80 128 80 108 C80 94 86 82 96 74 Z"/></clipPath>
+<g id="dEye" stroke="#111" stroke-linecap="round" stroke-linejoin="round"><path d="M-17 2 C-11 -10 9 -12 18 -2 C11 8 -7 10 -17 2 Z" fill="#F4ECD8" stroke-width="4.5"/><circle cx="7" cy="0" r="5" fill="#111" stroke="none"/><circle cx="5" cy="-2" r="1.4" fill="#FFFFFF" stroke="none"/><path d="M-18 2 C-11 -13 11 -15 20 -2 C10 0 -6 1 -18 2 Z" fill="#8B5A36" stroke-width="4.5"/></g>
+<path id="dStar" d="M0 -11 L3 -3 L11 -3 L5 2 L7 10 L0 5 L-7 10 L-5 2 L-11 -3 L-3 -3 Z" fill="#FFD400" stroke="#111" stroke-width="2.5" stroke-linejoin="round"/>
+</defs>
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(0 0)"><g transform="translate(296 350) rotate(13.5)"><path d="M0 0 L0 -99" fill="none" stroke-width="12"/><path d="M0 0 L0 -99" fill="none" stroke="#9C968A" stroke-width="6"/><g transform="translate(0 -111)"><path d="M-26 0 C-26 24 26 24 26 0 Z" fill="#9C968A" stroke-width="5"/><path d="M-24 2 C-10 8 10 8 24 2" fill="none" stroke-width="2"/></g></g></g><g transform="translate(0 0)"><path d="M234 428 L232 476 L250 476 L250 428 Z" fill="#8B5A36" stroke-width="5"/><path d="M222 488 C220 480 226 474 238 474 L252 474 C256 480 256 486 254 488 Z" fill="#8B5A36" stroke-width="5"/></g><g transform="translate(0 0)"><path d="M262 428 L262 476 L280 476 L278 428 Z" fill="#8B5A36" stroke-width="5"/><path d="M290 488 C292 480 286 474 274 474 L260 474 C256 480 256 486 258 488 Z" fill="#8B5A36" stroke-width="5"/></g><g transform="translate(0 0)"><path d="M236 284 C228 320 226 380 230 440 L282 440 C286 380 284 320 276 284 Z" fill="#8B5A36" stroke-width="5"/>
+<path d="M240 300 L272 336 M272 300 L240 336" fill="none" stroke="#F4ECD8" stroke-width="7"/>
+<path d="M240 300 L272 336 M272 300 L240 336" fill="none" stroke-width="2"/>
+<path d="M256 340 L240 330 L240 350 Z M256 340 L272 330 L272 350 Z" fill="#F4ECD8" stroke-width="3"/><circle cx="256" cy="340" r="5" fill="#F4ECD8" stroke-width="3"/>
+<path d="M272 432 l8 -11 M276 420 l6 -9" fill="none" stroke-width="2"/><g transform="rotate(0 240 304)"><path d="M236 300 L218 360 L228 364 L244 310 Z M216 358 C210 368 218 376 226 372 C230 368 230 362 228 360 Z" fill="#8B5A36" stroke-width="5"/></g><g transform="rotate(0 272 304)"><path d="M276 300 L294 360 L284 364 L268 310 Z M296 358 C302 368 294 376 286 372 C282 368 282 362 284 360 Z" fill="#8B5A36" stroke-width="5"/></g><g transform="rotate(0 252 428)"><path d="M256 430 C254 452 236 466 216 460 C206 456 210 446 220 450 C234 454 248 444 250 424 Z" fill="#8B5A36" stroke-width="5"/><path d="M216 460 C206 456 210 446 220 450 C216 452 216 456 216 460 Z" fill="#6B4226" stroke-width="3"/></g><g transform="translate(256 208)"><path d="M-30 14 C-40 4 -36 -8 -24 -6 C-18 -2 -18 6 -22 10 Z M30 14 C40 4 36 -8 24 -6 C18 -2 18 6 22 10 Z" fill="#8B5A36" stroke-width="5"/>
+<path d="M-36 44 C-38 16 -22 0 0 0 C22 0 38 16 36 44 C34 62 20 78 0 80 C-20 78 -34 62 -36 44 Z" fill="#8B5A36" stroke-width="5"/>
+<path d="M12 74 l9 -12 M20 68 l8 -11 M26 60 l6 -8" fill="none" stroke-width="2"/>
+<path d="M-36 44 L-44 48 L-36 52 L-42 58 M36 44 L44 48 L36 52 L42 58" fill="none" stroke-width="3"/>
+<g transform="rotate(10 0 0)"><path d="M-30 8 C-36 -8 -26 -24 -12 -22 C-10 -36 12 -38 16 -24 C30 -26 38 -10 30 4 C10 -2 -14 0 -30 8 Z" fill="#F4ECD8" stroke-width="5"/>
+<path d="M-30 8 C-12 0 12 -2 30 4 L30 12 C12 6 -12 8 -30 16 Z" fill="#F4ECD8" stroke-width="5"/></g></g></g>
+</g>
+</svg>

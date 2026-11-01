@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 1024" width="512" height="1024" style="display: block" role="img" aria-label="Lampione">
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M248 1000 L250 160 C250 110 280 80 330 80 L370 80" fill="none" stroke-width="22"/>
+<path d="M248 1000 L250 160 C250 110 280 80 330 80 L370 80" fill="none" stroke="#14161A" stroke-width="14"/>
+<path d="M242 180 L242 960" fill="none" stroke="#9C968A" stroke-width="3"/>
+<path d="M330 62 L420 58 C436 58 444 70 440 84 L432 104 L318 106 L314 82 C314 70 320 62 330 62 Z" fill="#14161A" stroke-width="5"/>
+<path d="M326 106 C340 128 410 128 424 104 Z" fill="#FFF3A0" stroke-width="4"/>
+<path d="M350 112 C360 118 380 120 396 116" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+<path d="M340 150 L330 176 M374 152 L374 182 M408 150 L418 176" fill="none" stroke="#FFD400" stroke-width="7"/>
+<path d="M340 150 L330 176 M374 152 L374 182 M408 150 L418 176" fill="none" stroke-width="2"/>
+<path d="M216 1000 L284 1000 L276 940 L224 940 Z" fill="#14161A" stroke-width="5"/>
+<path d="M228 960 l8 -10 M240 980 l8 -10" fill="none" stroke="#9C968A" stroke-width="2"/>
+</g>
+</svg>

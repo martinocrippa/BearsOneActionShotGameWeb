@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 512" width="1024" height="512" style="display: block" role="img" aria-label="Spara-gelatina in prima persona, fermo, con serbatoio verde">
+<defs><clipPath id="wgT"><rect x="462" y="362" width="100" height="94" rx="18"/></clipPath></defs>
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M392 512 L436 330 L588 330 L632 512 Z" fill="#1F5FBF" stroke-width="5"/>
+  <path d="M404 470 L620 470 L626 492 L398 492 Z" fill="#FFD400" stroke-width="3"/>
+  <path d="M440 360 L430 420 M584 360 L594 420" fill="none" stroke-width="3"/>
+  <path d="M590 380 l8 -11 M598 410 l8 -11 M606 440 l8 -11 M614 506 l8 -11" fill="none" stroke-width="2"/>
+  <g clip-path="url(#wgT)" stroke="none"><rect x="462" y="374" width="100" height="90" fill="#5AB030" fill-opacity="0.6"/></g>
+  <path d="M466 376 C490 370 534 382 558 374" fill="none" stroke-width="2.5"/>
+  <circle cx="488" cy="420" r="6" fill="#F4ECD8" stroke-width="2.5"/><circle cx="530" cy="400" r="4" fill="#F4ECD8" stroke-width="2"/><circle cx="512" cy="438" r="3" fill="#F4ECD8" stroke-width="2"/>
+  <path d="M474 392 L474 440" fill="none" stroke="#F4ECD8" stroke-width="5"/>
+  <rect x="462" y="362" width="100" height="94" rx="18" fill="none" stroke-width="5"/>
+  <path d="M468 352 L556 352 L558 366 L466 366 Z" fill="#FFD400" stroke-width="4"/>
+  <path d="M424 322 C428 290 596 290 600 322 C596 352 428 352 424 322 Z" fill="#FFD400" stroke-width="5"/>
+  <path d="M450 322 C454 304 570 304 574 322 C570 340 454 340 450 322 Z" fill="#111" stroke="none"/>
+  <path d="M478 316 C486 310 500 310 508 312" fill="none" stroke="#5AB030" stroke-width="4"/>
+  <path class="fur" d="M292 512 C284 456 322 404 384 392 C416 386 438 404 436 432 C434 462 416 488 402 512 Z" fill="#9A6239" stroke-width="5"/>
+  <path class="fur-light" d="M310 512 C314 476 336 452 366 446 C358 474 350 494 348 512 Z" fill="#E2B88A" stroke-width="3"/>
+  <path d="M410 400 C426 392 444 400 442 416 M412 428 C430 422 446 432 442 448 M410 456 C426 452 440 462 436 476" fill="none" stroke-width="3"/>
+  <path class="fur" d="M732 512 C740 456 702 404 640 392 C608 386 586 404 588 432 C590 462 608 488 622 512 Z" fill="#9A6239" stroke-width="5"/>
+  <path class="fur-light" d="M714 512 C710 476 688 452 658 446 C666 474 674 494 676 512 Z" fill="#E2B88A" stroke-width="3"/>
+  <path d="M614 400 C598 392 580 400 582 416 M612 428 C594 422 578 432 582 448 M614 456 C598 452 584 462 588 476" fill="none" stroke-width="3"/>
+  <path d="M698 508 l12 -17 M710 508 l10 -14 M720 500 l8 -11" fill="none" stroke-width="2"/>
+</g>
+</svg>

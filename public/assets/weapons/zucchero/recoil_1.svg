@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 512" width="1024" height="512" style="display: block" role="img" aria-label="Lancia-zucchero-filato in rinculo, filamenti rosa">
+<defs><clipPath id="zcB"><path d="M380 512 L424 334 L600 334 L644 512 Z"/></clipPath></defs>
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(0 30) rotate(-3 512 512)">
+  <path d="M470 316 C460 280 486 262 470 230 C462 214 474 198 466 184 M512 314 C522 280 500 258 518 226 C526 208 512 194 520 176 M552 318 C566 286 548 266 566 238" fill="none" stroke="#FF8FB3" stroke-width="5"/>
+  <path d="M490 312 C496 290 488 276 498 258 M534 314 C528 296 540 282 532 266" fill="none" stroke="#FF2D8A" stroke-width="3"/>
+  <circle cx="468" cy="182" r="7" fill="#FF8FB3" stroke-width="3"/><circle cx="520" cy="172" r="6" fill="#FF8FB3" stroke-width="3"/><circle cx="568" cy="234" r="5" fill="#FF8FB3" stroke-width="3"/>
+  <path d="M380 512 L424 334 L600 334 L644 512 Z" fill="#FFFFFF" stroke-width="5"/>
+  <g clip-path="url(#zcB)" stroke="none" fill="#FF2D8A"><path d="M360 380 L420 320 L452 320 L380 400 Z M380 460 L520 320 L552 320 L396 486 Z M410 530 L600 320 L632 320 L446 530 Z M500 530 L660 360 L660 400 L536 530 Z M590 530 L660 450 L660 490 L626 530 Z"/></g>
+  <path d="M380 512 L424 334 L600 334 L644 512 Z" fill="none" stroke-width="5"/>
+  <path d="M398 474 L626 474 L632 494 L392 494 Z" fill="#FFD400" stroke-width="3"/>
+  <circle cx="512" cy="436" r="16" fill="#FFD400" stroke-width="4"/><path d="M512 426 L512 440" fill="none" stroke-width="4"/>
+  <path d="M602 380 l8 -11 M610 410 l8 -11 M618 440 l8 -11" fill="none" stroke-width="2"/>
+  <path d="M404 330 C408 300 616 300 620 330 C616 362 408 362 404 330 Z" fill="#FF2D8A" stroke-width="5"/>
+  <path d="M428 330 C432 312 592 312 596 330 C592 348 432 348 428 330 Z" fill="#7D5CFF" stroke-width="3"/>
+  <path d="M410 340 C450 358 574 358 614 340" fill="none" stroke="#FFD400" stroke-width="5"/>
+  <path class="fur" d="M292 512 C284 456 322 404 384 392 C416 386 438 404 436 432 C434 462 416 488 402 512 Z" fill="#9A6239" stroke-width="5"/>
+  <path class="fur-light" d="M310 512 C314 476 336 452 366 446 C358 474 350 494 348 512 Z" fill="#E2B88A" stroke-width="3"/>
+  <path d="M410 400 C426 392 444 400 442 416 M412 428 C430 422 446 432 442 448 M410 456 C426 452 440 462 436 476" fill="none" stroke-width="3"/>
+  <path class="fur" d="M732 512 C740 456 702 404 640 392 C608 386 586 404 588 432 C590 462 608 488 622 512 Z" fill="#9A6239" stroke-width="5"/>
+  <path class="fur-light" d="M714 512 C710 476 688 452 658 446 C666 474 674 494 676 512 Z" fill="#E2B88A" stroke-width="3"/>
+  <path d="M614 400 C598 392 580 400 582 416 M612 428 C594 422 578 432 582 448 M614 456 C598 452 584 462 588 476" fill="none" stroke-width="3"/>
+  <path d="M698 508 l12 -17 M710 508 l10 -14 M720 500 l8 -11" fill="none" stroke-width="2"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 1024" width="1024" height="1024" style="display: block" role="img" aria-label="Maiale boss walk bq frame 1">
+<defs>
+<g id="mxEye" stroke="#111" stroke-linecap="round" stroke-linejoin="round"><path d="M-17 2 C-11 -10 9 -12 18 -2 C11 8 -7 10 -17 2 Z" fill="#F4ECD8" stroke-width="4.3"/><circle cx="7" cy="0" r="5" fill="#111" stroke="none"/><circle cx="5" cy="-2" r="1.4" fill="#FFFFFF" stroke="none"/><path d="M-18 2 C-11 -13 11 -15 20 -2 C10 0 -6 1 -18 2 Z" fill="#F6A5B8" stroke-width="4.3"/></g>
+<path id="mxStar" d="M0 -11 L3 -3 L11 -3 L5 2 L7 10 L0 5 L-7 10 L-5 2 L-11 -3 L-3 -3 Z" fill="#FFD400" stroke="#111" stroke-width="2.5" stroke-linejoin="round"/>
+</defs>
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(512 836) scale(1.025 0.975) translate(-512 -836) translate(0 0)">
+<path d="M650 470 L676 590 L644 598 L628 486 Z M680 584 C688 612 670 630 648 624 C634 618 632 600 638 590 Z" fill="#F6A5B8" stroke-width="10"/>
+</g>
+<g transform="translate(0 -8) rotate(-8 572 830)">
+<path d="M540 828 L544 898 L600 898 L604 830 Z" fill="#F6A5B8" stroke-width="10"/>
+<path d="M544 880 L546 940 L602 940 L600 880 Z" fill="#1F5FBF" stroke-width="10"/>
+<path d="M538 972 C536 950 546 936 566 936 L612 936 C632 942 640 958 640 972 Z" fill="#111" stroke-width="10"/>
+</g>
+<g transform="translate(0 -8) rotate(8 442 830)">
+<path d="M410 828 L410 900 L470 900 L476 830 Z" fill="#F6A5B8" stroke-width="10"/>
+<path d="M410 880 L410 944 L472 944 L470 880 Z" fill="#1F5FBF" stroke-width="10"/>
+<path d="M394 976 C390 954 400 940 420 940 L474 940 C494 946 502 962 502 976 Z" fill="#111" stroke-width="10"/>
+</g>
+<g transform="translate(512 836) scale(1.025 0.975) translate(-512 -836) translate(0 0)">
+<path d="M370 744 L660 744 L666 832 L536 836 L516 806 L496 836 L364 832 Z" fill="#F4ECD8" stroke-width="10"/>
+<path d="M360 420 C400 394 624 394 664 420 L696 570 C712 650 690 726 646 754 L378 754 C334 726 312 650 328 570 Z" fill="#1F5FBF" stroke-width="10"/>
+<path d="M460 404 C490 420 540 420 570 404" fill="none" stroke="#F4ECD8" stroke-width="10"/>
+<path d="M606 746 l20 -28 M628 738 l18 -26 M648 722 l16 -23 M664 700 l12 -17 M612 830 l14 -20" fill="none" stroke-width="4"/>
+<path d="M490 772 C462 764 458 736 478 732 C494 730 494 748 482 750" fill="none" stroke-width="16"/><path d="M490 772 C462 764 458 736 478 732 C494 730 494 748 482 750" fill="none" stroke="#F6A5B8" stroke-width="7"/>
+<path d="M600 220 L640 160 L630 236 Z" fill="#F6A5B8" stroke-width="10"/>
+<path d="M400 260 C396 200 450 170 520 170 C590 170 640 200 640 250 C660 256 676 270 674 290 C670 306 656 312 642 310 C630 360 590 396 520 400 C450 402 404 360 400 300 Z" fill="#F6A5B8" stroke-width="10"/>
+<path d="M420 240 L392 158 L470 198 Z" fill="#F6A5B8" stroke-width="10"/>
+<path d="M650 270 C664 270 676 282 674 296 C670 306 658 310 648 304 Z" fill="#FF8FB3" stroke-width="6"/>
+<path d="M540 396 l18 -26 M560 390 l16 -23 M580 382 l14 -20 M600 370 l12 -17" fill="none" stroke-width="4"/>
+<path d="M300 400 L560 420 L556 470 L298 450 Z" fill="#FFD400" stroke-width="10"/>
+<path d="M360 404 L382 406 L380 456 L358 454 Z M480 413 L502 415 L500 465 L478 463 Z" fill="#E3262B" stroke-width="6"/>
+<ellipse cx="300" cy="425" rx="20" ry="28" fill="#FFD400" stroke-width="8"/><ellipse cx="300" cy="425" rx="10" ry="16" fill="#E3262B" stroke-width="5"/>
+<path d="M350 440 L322 506 L354 520 L376 460 Z M330 500 C318 516 330 534 348 530 C360 526 362 512 354 504 Z" fill="#F6A5B8" stroke-width="10"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Volpe spara con la mitragliatrice a broccoli, vista tre quarti davanti">
+<defs>
+<clipPath id="voCH"><path d="M90 80 C110 54 160 50 186 74 C206 92 236 108 274 126 C281 130 279 140 270 142 C242 150 214 160 190 168 C170 186 130 192 104 182 C80 172 70 140 74 114 C76 100 82 88 90 80 Z"/></clipPath>
+<g id="voEye" stroke="#111" stroke-linecap="round" stroke-linejoin="round"><path d="M-18 3 C-10 -5 8 -7 19 -2 C12 4 -6 6 -18 3 Z" fill="#F4ECD8" stroke-width="4.2"/><circle cx="6" cy="0" r="4.6" fill="#FFD400" stroke="none"/><ellipse cx="6" cy="0" rx="1.5" ry="4" fill="#111" stroke="none"/><path d="M-19 3 C-10 -12 10 -14 21 -2 C10 -2 -6 -1 -19 3 Z" fill="#F28A16" stroke-width="4.2"/><path d="M-18 3 L-26 -2" fill="none" stroke-width="4.2"/></g>
+<g id="voEyeP" stroke="#111" stroke-linecap="round" stroke-linejoin="round"><path d="M-18 3 C-10 -5 8 -7 19 -2 C12 4 -6 6 -18 3 Z" fill="#F4ECD8" stroke-width="2.6"/><circle cx="6" cy="0" r="4.6" fill="#FFD400" stroke="none"/><ellipse cx="6" cy="0" rx="1.5" ry="4" fill="#111" stroke="none"/><path d="M-19 3 C-10 -12 10 -14 21 -2 C10 -2 -6 -1 -19 3 Z" fill="#F28A16" stroke-width="2.6"/><path d="M-18 3 L-26 -2" fill="none" stroke-width="2.6"/></g>
+<g id="voBro" stroke="#111" stroke-linecap="round" stroke-linejoin="round"><path d="M-4 4 L-3 16 L3 16 L4 4 Z" fill="#8CC85A" stroke-width="3"/><circle cx="-6" cy="1" r="6.5" fill="#22B14C" stroke-width="3"/><circle cx="6" cy="1" r="6.5" fill="#22B14C" stroke-width="3"/><circle cx="0" cy="-6" r="7" fill="#22B14C" stroke-width="3"/></g>
+<path id="voStar" d="M0 -11 L3 -3 L11 -3 L5 2 L7 10 L0 5 L-7 10 L-5 2 L-11 -3 L-3 -3 Z" fill="#FFD400" stroke="#111" stroke-width="2.5" stroke-linejoin="round"/>
+</defs>
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(0 -1) rotate(-1.5 256 470)">
+<path d="M230 424 C162 428 134 356 156 292 C166 262 196 258 204 282 C208 302 190 314 188 336 C186 368 202 398 244 410 Z" fill="#F28A16" stroke-width="5"/>
+<path d="M156 294 C164 268 192 264 202 280 C190 284 172 288 162 302 Z" fill="#F4ECD8" stroke-width="3"/>
+<path d="M184 384 l8 -11 M190 398 l8 -11 M176 366 l8 -11" fill="none" stroke-width="2"/>
+</g>
+<g transform="translate(0 -1) rotate(-1.5 256 470)">
+<path d="M228 298 L214 360 L226 366 L240 310 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M210 358 C204 370 212 380 222 376 C226 372 226 364 222 360 Z" fill="#F28A16" stroke-width="5"/>
+</g>
+<path d="M236 400 L234 470 L254 470 L256 400 Z" fill="#F28A16" stroke-width="5"/>
+<path d="M226 488 C224 476 230 466 242 466 L258 466 C264 470 268 478 268 488 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M230 482 H266" stroke="#F4ECD8" stroke-width="3"/>
+<path d="M262 400 L266 470 L288 470 L282 400 Z" fill="#F28A16" stroke-width="5"/>
+<path d="M258 488 C256 476 262 466 274 466 L292 466 C302 470 308 478 308 488 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M262 482 H306" stroke="#F4ECD8" stroke-width="3"/>
+<g transform="translate(0 -1) rotate(-1.5 256 470)">
+<path d="M226 290 C240 280 278 280 292 292 L298 406 L220 406 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M246 286 L262 312 L274 288 Z" fill="#F4ECD8" stroke-width="3"/>
+<path d="M262 314 L266 402" stroke="#F4ECD8" stroke-width="3" stroke-dasharray="3 4"/>
+<g fill="#9C968A" stroke-width="2"><circle cx="236" cy="300" r="3.5"/><circle cx="284" cy="302" r="3.5"/><circle cx="230" cy="332" r="3.5"/></g>
+<path d="M224 398 H294" stroke="#F4ECD8" stroke-width="2.5"/>
+</g>
+<g transform="translate(0 -1) rotate(-1.5 256 470) rotate(-6 286 300)">
+<path d="M276 366 C266 384 258 404 256 428" fill="none" stroke-width="12"/><path d="M276 366 C266 384 258 404 256 428" fill="none" stroke="#C8A06A" stroke-width="7"/>
+<use href="#voBro" transform="translate(268 384) scale(.65)"/><use href="#voBro" transform="translate(261 404) scale(.65)"/><use href="#voBro" transform="translate(257 424) scale(.65)"/>
+<path d="M286 296 L300 346 L288 354 L276 310 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M276 360 L330 372 L332 394 L274 384 Z" fill="#9C968A" stroke-width="5"/>
+<path d="M296 364 L296 388" stroke="#1F5FBF" stroke-width="8"/>
+<path d="M332 376 L370 386 M332 384 L370 394 M332 392 L368 402" fill="none" stroke-width="8"/>
+<path d="M332 376 L370 386 M332 384 L370 394 M332 392 L368 402" fill="none" stroke="#9C968A" stroke-width="3.5"/>
+<path d="M364 380 L374 383 L372 408 L362 405 Z" fill="#1F5FBF" stroke-width="4"/>
+<path d="M300 364 L302 350 L316 352" fill="none" stroke-width="5"/><circle cx="316" cy="352" r="4" fill="#FFD400" stroke-width="2"/>
+<path d="M284 372 C278 384 286 394 296 390 C300 386 300 378 296 374 Z" fill="#F28A16" stroke-width="5"/>
+</g>
+<g transform="translate(0 -1) rotate(-1.5 256 470)">
+<g transform="translate(156 169) scale(.625)">
+<path d="M92 84 L76 14 L132 60 Z" fill="#F28A16" stroke-width="8"/><path d="M94 70 L86 34 L116 60 Z" fill="#2A2A30" stroke="none"/>
+<path d="M90 80 C110 54 160 50 186 74 C206 92 236 108 274 126 C281 130 279 140 270 142 C242 150 214 160 190 168 C170 186 130 192 104 182 C80 172 70 140 74 114 C76 100 82 88 90 80 Z" fill="#F28A16" stroke-width="8"/>
+<g clip-path="url(#voCH)" fill="none" stroke-width="3.2"><path d="M130 196 l12 -17 M140 196 l12 -17 M150 194 l12 -17 M160 190 l12 -17"/></g>
+<path d="M150 62 L168 -2 L194 74 Z" fill="#F28A16" stroke-width="8"/><path d="M162 56 L170 22 L182 62 Z" fill="#2A2A30" stroke="none"/>
+<path d="M80 140 L66 150 L82 154 L70 166 L88 168 L80 180 L100 178 C130 188 160 184 186 168 C160 166 130 160 110 150 Z" fill="#F4ECD8" stroke-width="4.8"/>
+<ellipse cx="270" cy="133" rx="8" ry="6" fill="#111" stroke="none"/>
+<use href="#voEye" transform="translate(172 100) scale(1.1)"/>
+<path d="M140 70 L198 92" fill="none" stroke-width="9"/>
+<path d="M188 172 C206 160 228 154 250 150" fill="none" stroke-width="6.4"/>
+<path d="M200 164 L202 174 L210 172 L209 162 Z M210 162 L211 172 L219 170 L218 159 Z" fill="#F4ECD8" stroke-width="3.6"/>
+</g>
+</g>
+<g transform="rotate(-6 286 300)"><g transform="translate(388 396)">
+<path d="M-6 -36 L8 -14 L34 -26 L22 -4 L46 8 L18 12 L26 38 L4 20 L-8 40 L-10 14 L-26 20 L-14 2 Z" fill="#8CC85A" stroke-width="4"/>
+<path d="M0 -18 L8 -6 L22 -8 L12 2 L20 14 L4 10 L0 24 L-4 10 L-12 6 L-4 -2 Z" fill="#FFD400" stroke-width="3"/>
+</g>
+<path d="M340 372 C350 378 352 392 346 404 M330 370 C320 380 322 396 332 406" fill="none" stroke-width="2.5"/></g>
+</g>
+</svg>

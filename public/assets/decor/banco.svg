@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Banco di scuola giallo">
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M120 488 L128 330 M392 488 L384 330 M164 470 L170 340 M348 470 L342 340" fill="none" stroke-width="14"/>
+<path d="M120 488 L128 330 M392 488 L384 330 M164 470 L170 340 M348 470 L342 340" fill="none" stroke="#9C968A" stroke-width="7"/>
+<path d="M140 400 H372" fill="none" stroke-width="12"/><path d="M140 400 H372" fill="none" stroke="#9C968A" stroke-width="5"/>
+<path d="M132 318 H380 L384 352 H128 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M150 336 H362" fill="none" stroke="#9C968A" stroke-width="3"/>
+<path d="M78 268 L434 268 L452 302 L60 302 Z" fill="#F0A81E" stroke-width="6"/>
+<path d="M60 302 H452 V318 H60 Z" fill="#C8A06A" stroke-width="5"/>
+<path d="M96 282 C160 278 260 286 330 280" fill="none" stroke-width="2.5"/>
+<path d="M300 276 L360 284 M310 272 l6 4" fill="none" stroke="#E0503C" stroke-width="5"/>
+<path d="M392 276 C396 280 404 282 410 278" fill="none" stroke="#3B8DE0" stroke-width="3"/>
+<path d="M400 316 l8 -11 M420 316 l8 -11 M440 316 l8 -11 M370 478 l8 -11 M384 478 l8 -11" fill="none" stroke-width="2"/>
+<path d="M100 488 H412" stroke-width="5"/>
+</g>
+</svg>

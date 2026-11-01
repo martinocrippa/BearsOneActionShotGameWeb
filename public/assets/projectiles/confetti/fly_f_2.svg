@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Grappolo di confetti in volo, frame 2 più sparpagliato">
+  <g stroke="#111" stroke-width="4" stroke-linejoin="round">
+    <ellipse cx="128" cy="128" rx="13" ry="9" fill="#FF2D8A" transform="rotate(25 128 128)"/>
+    <ellipse cx="98" cy="106" rx="13" ry="9" fill="#FFD400" transform="rotate(-30 98 106)"/>
+    <ellipse cx="160" cy="104" rx="13" ry="9" fill="#28C2B4" transform="rotate(20 160 104)"/>
+    <ellipse cx="104" cy="154" rx="13" ry="9" fill="#1F5FBF" transform="rotate(-50 104 154)"/>
+    <ellipse cx="156" cy="156" rx="13" ry="9" fill="#FF5A1F" transform="rotate(70 156 156)"/>
+    <ellipse cx="130" cy="86" rx="13" ry="9" fill="#F4ECD8" transform="rotate(10 130 86)"/>
+    <ellipse cx="76" cy="134" rx="11" ry="8" fill="#28C2B4" transform="rotate(40 76 134)"/>
+    <ellipse cx="180" cy="132" rx="11" ry="8" fill="#FFD400" transform="rotate(-30 180 132)"/>
+    <ellipse cx="128" cy="176" rx="11" ry="8" fill="#FF2D8A" transform="rotate(20 128 176)"/>
+  </g>
+  <path d="M136 138 l5 -7 M162 162 l5 -7 M110 160 l5 -7" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"/>
+</svg>

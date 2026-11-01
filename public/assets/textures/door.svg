@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 768" width="512" height="768" style="display: block" role="img" aria-label="Porta-tronco chiusa con serratura a ghianda">
+  <defs>
+    <g id="dLog" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 0 L64 0 L64 620 L2 620 Z" fill="#C8A06A" stroke-width="5"/>
+      <path d="M22 30 C18 160 26 320 20 590 M44 60 C48 220 40 380 46 600" fill="none" stroke-width="2.5"/>
+      <path d="M50 120 l8 -11 M50 260 l8 -11 M50 420 l8 -11 M50 560 l8 -11" fill="none" stroke-width="2"/>
+    </g>
+  </defs>
+  <rect width="512" height="768" fill="#6B4226"/>
+  <g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M0 0 H512 V768 H0 Z" fill="none" stroke-width="6"/>
+    <path d="M60 0 C40 260 64 520 60 768 M452 0 C472 260 448 520 452 768" fill="none" stroke-width="5"/>
+    <path d="M24 100 C20 300 28 500 22 700 M488 100 C492 300 484 500 490 700" fill="none" stroke-width="2.5"/>
+  </g>
+  <g transform="translate(64 148)">
+    <use href="#dLog"/><use href="#dLog" transform="translate(64 0)"/><use href="#dLog" transform="translate(128 0)"/>
+    <use href="#dLog" transform="translate(192 0)"/><use href="#dLog" transform="translate(256 0)"/><use href="#dLog" transform="translate(320 0)"/>
+  </g>
+  <path d="M256 148 V768" stroke="#111" stroke-width="9"/>
+  <g stroke="#111" stroke-linejoin="round">
+    <path d="M64 330 H448 V360 H64 Z M64 560 H448 V590 H64 Z" fill="#6B4226" stroke-width="5"/>
+    <g fill="#111"><circle cx="96" cy="345" r="5"/><circle cx="224" cy="345" r="5"/><circle cx="288" cy="345" r="5"/><circle cx="416" cy="345" r="5"/><circle cx="96" cy="575" r="5"/><circle cx="224" cy="575" r="5"/><circle cx="288" cy="575" r="5"/><circle cx="416" cy="575" r="5"/></g>
+  </g>
+  <g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M40 40 H472 C480 40 486 46 486 54 V130 C486 138 480 144 472 144 H40 C32 144 26 138 26 130 V54 C26 46 32 40 40 40 Z" fill="#6B4226" stroke-width="6"/>
+    <ellipse cx="40" cy="92" rx="16" ry="50" fill="#C8A06A" stroke-width="5"/><ellipse cx="40" cy="92" rx="7" ry="24" fill="none" stroke-width="2.5"/>
+    <path d="M80 70 C200 64 320 76 450 70 M80 116 C200 110 320 120 450 116" fill="none" stroke-width="2.5"/>
+    <circle cx="256" cy="92" r="58" fill="#D4A017" stroke-width="6"/>
+    <circle cx="256" cy="92" r="46" fill="none" stroke-width="2.5" stroke-dasharray="6 6"/>
+    <path d="M232 82 C232 66 280 66 280 82 Z" fill="#111" stroke-width="3"/>
+    <path d="M236 82 C236 106 248 120 256 126 C264 120 276 106 276 82 Z" fill="#111" stroke-width="3"/>
+    <path d="M256 66 L258 56" fill="none" stroke-width="5"/>
+    <path d="M286 130 l10 -14 M298 124 l8 -11" fill="none" stroke-width="2"/>
+  </g>
+</svg>

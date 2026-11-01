@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Tetto della chiesa in lamiera grigia a doghe, ripetibile">
+<rect width="512" height="512" fill="#9C968A"/>
+<rect x="4" width="8" height="512" fill="#B4AFA4"/>
+<rect x="64" width="64" height="512" fill="#948E82"/>
+<rect x="68" width="8" height="512" fill="#B4AFA4"/>
+<rect x="132" width="8" height="512" fill="#B4AFA4"/>
+<rect x="192" width="64" height="512" fill="#948E82"/>
+<rect x="196" width="8" height="512" fill="#B4AFA4"/>
+<rect x="260" width="8" height="512" fill="#B4AFA4"/>
+<rect x="320" width="64" height="512" fill="#948E82"/>
+<rect x="324" width="8" height="512" fill="#B4AFA4"/>
+<rect x="388" width="8" height="512" fill="#B4AFA4"/>
+<rect x="448" width="64" height="512" fill="#948E82"/>
+<rect x="452" width="8" height="512" fill="#B4AFA4"/>
+<path d="M0 0 V512" stroke="#111" stroke-width="3"/><path d="M3 0 V512" stroke="#6E6A62" stroke-width="2"/>
+<path d="M64 0 V512" stroke="#111" stroke-width="3"/><path d="M67 0 V512" stroke="#6E6A62" stroke-width="2"/>
+<path d="M128 0 V512" stroke="#111" stroke-width="3"/><path d="M131 0 V512" stroke="#6E6A62" stroke-width="2"/>
+<path d="M192 0 V512" stroke="#111" stroke-width="3"/><path d="M195 0 V512" stroke="#6E6A62" stroke-width="2"/>
+<path d="M256 0 V512" stroke="#111" stroke-width="3"/><path d="M259 0 V512" stroke="#6E6A62" stroke-width="2"/>
+<path d="M320 0 V512" stroke="#111" stroke-width="3"/><path d="M323 0 V512" stroke="#6E6A62" stroke-width="2"/>
+<path d="M384 0 V512" stroke="#111" stroke-width="3"/><path d="M387 0 V512" stroke="#6E6A62" stroke-width="2"/>
+<path d="M448 0 V512" stroke="#111" stroke-width="3"/><path d="M451 0 V512" stroke="#6E6A62" stroke-width="2"/>
+<path d="M40 120 l5.1 -7.4 M46 120 l5.1 -7.4 M40 380 l5.1 -7.4 M46 380 l5.1 -7.4 M104 120 l5.1 -7.4 M110 120 l5.1 -7.4 M104 380 l5.1 -7.4 M110 380 l5.1 -7.4 M168 120 l5.1 -7.4 M174 120 l5.1 -7.4 M168 380 l5.1 -7.4 M174 380 l5.1 -7.4 M232 120 l5.1 -7.4 M238 120 l5.1 -7.4 M232 380 l5.1 -7.4 M238 380 l5.1 -7.4 M296 120 l5.1 -7.4 M302 120 l5.1 -7.4 M296 380 l5.1 -7.4 M302 380 l5.1 -7.4 M360 120 l5.1 -7.4 M366 120 l5.1 -7.4 M360 380 l5.1 -7.4 M366 380 l5.1 -7.4 M424 120 l5.1 -7.4 M430 120 l5.1 -7.4 M424 380 l5.1 -7.4 M430 380 l5.1 -7.4 M488 120 l5.1 -7.4 M494 120 l5.1 -7.4 M488 380 l5.1 -7.4 M494 380 l5.1 -7.4 " stroke="#111" stroke-width="2" stroke-linecap="round" fill="none"/>
+<path d="M18 60 v14 M18 300 v14 M82 60 v14 M82 300 v14 M146 60 v14 M146 300 v14 M210 60 v14 M210 300 v14 M274 60 v14 M274 300 v14 M338 60 v14 M338 300 v14 M402 60 v14 M402 300 v14 M466 60 v14 M466 300 v14 " stroke="#D8D4CB" stroke-width="2" stroke-linecap="round"/>
+</svg>

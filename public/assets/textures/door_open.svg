@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 768" width="512" height="768" style="display: block" role="img" aria-label="Porta-tronco aperta con la ghianda d'oro nella serratura">
+  <defs>
+    <path id="oStar" d="M0 -14 L4 -4 L14 0 L4 4 L0 14 L-4 4 L-14 0 L-4 -4 Z" fill="#FFD400" stroke="#111" stroke-width="2.5" stroke-linejoin="round"/>
+  </defs>
+  <rect width="512" height="768" fill="#6B4226"/>
+  <g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M0 0 H512 V768 H0 Z" fill="none" stroke-width="6"/>
+    <path d="M60 0 C40 260 64 520 60 768 M452 0 C472 260 448 520 452 768" fill="none" stroke-width="5"/>
+    <path d="M24 100 C20 300 28 500 22 700 M488 100 C492 300 484 500 490 700" fill="none" stroke-width="2.5"/>
+    <path d="M64 148 H448 V768 H64 Z" fill="#111" stroke-width="5"/>
+    <path d="M200 760 C230 700 282 700 312 760" fill="none" stroke="#7A5134" stroke-width="6"/>
+    <path d="M64 148 L150 176 L150 740 L64 768 Z" fill="#C8A06A" stroke-width="5"/>
+    <path d="M92 190 C88 360 94 540 90 730 M120 196 C124 360 116 540 122 720" fill="none" stroke-width="2.5"/>
+    <path d="M64 330 L150 346 L150 374 L64 360 Z M64 560 L150 566 L150 594 L64 590 Z" fill="#6B4226" stroke-width="4"/>
+    <path d="M136 220 l8 -11 M136 420 l8 -11 M136 640 l8 -11" fill="none" stroke-width="2"/>
+    <path d="M448 148 L362 176 L362 740 L448 768 Z" fill="#C8A06A" stroke-width="5"/>
+    <path d="M420 190 C424 360 418 540 422 730 M392 196 C388 360 396 540 390 720" fill="none" stroke-width="2.5"/>
+    <path d="M448 330 L362 346 L362 374 L448 360 Z M448 560 L362 566 L362 594 L448 590 Z" fill="#6B4226" stroke-width="4"/>
+    <path d="M430 230 l8 -11 M430 450 l8 -11 M430 660 l8 -11" fill="none" stroke-width="2"/>
+  </g>
+  <g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M40 40 H472 C480 40 486 46 486 54 V130 C486 138 480 144 472 144 H40 C32 144 26 138 26 130 V54 C26 46 32 40 40 40 Z" fill="#6B4226" stroke-width="6"/>
+    <ellipse cx="40" cy="92" rx="16" ry="50" fill="#C8A06A" stroke-width="5"/><ellipse cx="40" cy="92" rx="7" ry="24" fill="none" stroke-width="2.5"/>
+    <path d="M80 70 C200 64 320 76 450 70 M80 116 C200 110 320 120 450 116" fill="none" stroke-width="2.5"/>
+    <path d="M256 20 L256 6 M318 34 L330 24 M194 34 L182 24 M338 92 L354 92 M174 92 L158 92" fill="none" stroke="#FFD400" stroke-width="7"/>
+    <path d="M256 20 L256 6 M318 34 L330 24 M194 34 L182 24 M338 92 L354 92 M174 92 L158 92" fill="none" stroke-width="2"/>
+    <circle cx="256" cy="92" r="58" fill="#D4A017" stroke-width="6"/>
+    <circle cx="256" cy="92" r="46" fill="none" stroke-width="2.5" stroke-dasharray="6 6"/>
+    <path d="M232 82 C232 66 280 66 280 82 Z" fill="#7A5134" stroke-width="3"/>
+    <path d="M238 76 L246 70 M252 74 L260 68 M266 76 L272 71" fill="none" stroke-width="2"/>
+    <path d="M236 82 C236 106 248 120 256 126 C264 120 276 106 276 82 Z" fill="#FFD400" stroke-width="3"/>
+    <path d="M244 92 C244 100 248 106 252 110" fill="none" stroke="#F4ECD8" stroke-width="3"/>
+    <path d="M256 66 L258 56" fill="none" stroke-width="5"/>
+  </g>
+  <use href="#oStar" transform="translate(196 52)"/><use href="#oStar" transform="translate(320 136) scale(.8)"/><use href="#oStar" transform="translate(330 46) scale(.6)"/><use href="#oStar" transform="translate(180 140) scale(.7)"/>
+</svg>

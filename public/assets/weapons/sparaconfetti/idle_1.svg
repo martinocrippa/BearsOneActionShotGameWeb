@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 512" width="1024" height="512" style="display: block" role="img" aria-label="Sparaconfetti in prima persona, fermo, tenuto da una zampa">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+  <g transform="translate(560 352)">
+    <path d="M-56 150 L-34 12 C-30 2 30 2 34 12 L56 150 Z" fill="#FFD400" stroke-width="5"/>
+    <path d="M-45 82 L45 82 L48 100 L-48 100 Z" fill="#FF2D8A" stroke-width="3"/>
+    <path d="M-26 40 L-30 70 M26 40 L30 70" fill="none" stroke-width="3"/>
+    <circle cx="-32" cy="126" r="5" fill="#F4ECD8" stroke-width="3"/><circle cx="32" cy="126" r="5" fill="#F4ECD8" stroke-width="3"/>
+    <path d="M30 140 l10 -14 M38 118 l8 -11 M34 62 l6 -9" fill="none" stroke-width="2"/>
+    <path d="M-12 -16 L12 -16 L12 2 L-12 2 Z" fill="#1F5FBF" stroke-width="4"/>
+    <path d="M-38 12 C-36 2 36 2 38 12 C36 22 -36 22 -38 12 Z" fill="#E3262B" stroke-width="5"/>
+    <path d="M-22 12 C-20 6 20 6 22 12 C20 18 -20 18 -22 12 Z" fill="#111" stroke="none"/>
+    <path class="fur" d="M64 300 C74 240 64 190 34 160 C14 140 -40 140 -50 170 C-58 196 -40 220 -20 230 L-30 300 Z" fill="#9A6239" stroke-width="5"/>
+    <path class="fur-light" d="M44 296 C48 250 38 214 18 196 C34 230 34 266 28 296 Z" fill="#E2B88A" stroke-width="3"/>
+    <path d="M-46 168 C-30 160 -14 166 -14 180 M-44 196 C-28 190 -12 198 -14 212" fill="none" stroke-width="3"/>
+    <path d="M52 250 l10 -14 M56 274 l10 -14" fill="none" stroke-width="2"/>
+  </g>
+</g>
+</svg>

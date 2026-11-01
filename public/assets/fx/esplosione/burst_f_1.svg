@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Esplosione di dolciumi BFG, frame 1: lampo stellato">
+  <g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M403 300.2 L316.9 341.9 L381 412.9 L290.6 381.4 L285.8 477 L244.1 390.9 L173.1 455 L204.6 364.6 L109 359.8 L195.1 318.1 L131 247.1 L221.4 278.6 L226.2 183 L267.9 269.1 L338.9 205 L307.4 295.4 Z" fill="#FFD400" stroke-width="5"/>
+    <path d="M346.2 348.3 L292.5 354.6 L306.8 406.7 L264.4 373.2 L237.7 420.2 L231.4 366.5 L179.3 380.8 L212.8 338.4 L165.8 311.7 L219.5 305.4 L205.2 253.3 L247.6 286.8 L274.3 239.8 L280.6 293.5 L332.7 279.2 L299.2 321.6 Z" fill="#FFFFFF" stroke-width="4"/>
+    <circle cx="256" cy="330" r="26" fill="#FF2D8A" stroke-width="4"/>
+    <path d="M256 160 l0 -26 M406 220 l18 -18 M106 220 l-18 -18 M434 330 l26 0 M78 330 l-26 0" fill="none" stroke-width="5"/>
+    <rect x="313.8" y="418.1" width="12" height="7" fill="#1F5FBF" stroke-width="2" transform="rotate(-8 319.8 421.6)"/>
+    <circle cx="169.5" cy="339.7" r="12" fill="#FF8FB3" stroke-width="3.5"/>
+    <path d="M163.5 336.7 C164.7 332.5 168.3 331.3 170.7 331.3" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+    <g transform="translate(145.9 322.7) rotate(-80) scale(0.8)">
+      <path d="M-14 0 L-28 -12 L-26 12 Z M14 0 L28 -12 L26 12 Z" fill="#FFD400" stroke-width="3"/>
+      <ellipse cx="0" cy="0" rx="16" ry="12" fill="#FFD400" stroke-width="4"/>
+      <path d="M-6 -9 C-2 -3 -2 3 -6 9 M4 -10 C8 -3 8 3 4 10" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+    </g>
+    <rect x="394.1" y="337.4" width="12" height="7" fill="#7D5CFF" stroke-width="2" transform="rotate(-63 400.1 340.9)"/>
+    <ellipse cx="335.8" cy="417.3" rx="11" ry="7" fill="#FFD400" stroke-width="3" transform="rotate(-70 335.8 417.3)"/>
+    <rect x="112" y="375.6" width="12" height="7" fill="#FF8FB3" stroke-width="2" transform="rotate(24 118 379.1)"/>
+    <circle cx="201.7" cy="288.9" r="10.5" fill="#28C2B4" stroke-width="3.5"/>
+    <path d="M196.5 286.2 C197.5 282.6 200.7 281.5 202.8 281.5" fill="none" stroke="#FFFFFF" stroke-width="2.6"/>
+    <g transform="translate(365.1 412.6) rotate(-75) scale(0.8)">
+      <path d="M-14 0 L-28 -12 L-26 12 Z M14 0 L28 -12 L26 12 Z" fill="#28C2B4" stroke-width="3"/>
+      <ellipse cx="0" cy="0" rx="16" ry="12" fill="#28C2B4" stroke-width="4"/>
+      <path d="M-6 -9 C-2 -3 -2 3 -6 9 M4 -10 C8 -3 8 3 4 10" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+    </g>
+    <rect x="326.2" y="421.6" width="12" height="7" fill="#FF2D8A" stroke-width="2" transform="rotate(-75 332.2 425.1)"/>
+    <ellipse cx="146.8" cy="358.2" rx="11" ry="7" fill="#28C2B4" stroke-width="3" transform="rotate(22 146.8 358.2)"/>
+    <rect x="165.4" y="333.4" width="12" height="7" fill="#FF2D8A" stroke-width="2" transform="rotate(40 171.4 336.9)"/>
+    <circle cx="315.1" cy="273.7" r="9" fill="#FF8FB3" stroke-width="3.5"/>
+    <path d="M310.6 271.4 C311.5 268.2 314.2 267.3 316 267.3" fill="none" stroke="#FFFFFF" stroke-width="2.3"/>
+    <g transform="translate(394.8 306.5) rotate(68) scale(0.8)">
+      <path d="M-14 0 L-28 -12 L-26 12 Z M14 0 L28 -12 L26 12 Z" fill="#FF8FB3" stroke-width="3"/>
+      <ellipse cx="0" cy="0" rx="16" ry="12" fill="#FF8FB3" stroke-width="4"/>
+      <path d="M-6 -9 C-2 -3 -2 3 -6 9 M4 -10 C8 -3 8 3 4 10" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+    </g>
+    <rect x="325.5" y="322" width="12" height="7" fill="#FF5A1F" stroke-width="2" transform="rotate(41 331.5 325.5)"/>
+
+  </g>
+</svg>

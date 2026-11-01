@@ -1,0 +1,8237 @@
+[
+ {
+  "key": "bonus/birds/anatra_oro/fly_s_1",
+  "path": "bonus/birds/anatra_oro/fly_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/anatra_oro/fly_s_2",
+  "path": "bonus/birds/anatra_oro/fly_s_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/anatra_oro/full_s_1",
+  "path": "bonus/birds/anatra_oro/full_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/anatra_oro/puff_s_1",
+  "path": "bonus/birds/anatra_oro/puff_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/anatra_oro/rainbow_s_1",
+  "path": "bonus/birds/anatra_oro/rainbow_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/anatra/fly_s_1",
+  "path": "bonus/birds/anatra/fly_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/anatra/fly_s_2",
+  "path": "bonus/birds/anatra/fly_s_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/anatra/full_s_1",
+  "path": "bonus/birds/anatra/full_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/anatra/puff_s_1",
+  "path": "bonus/birds/anatra/puff_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/anatra/rainbow_s_1",
+  "path": "bonus/birds/anatra/rainbow_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/gufo_oro/fly_s_1",
+  "path": "bonus/birds/gufo_oro/fly_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/gufo_oro/fly_s_2",
+  "path": "bonus/birds/gufo_oro/fly_s_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/gufo_oro/full_s_1",
+  "path": "bonus/birds/gufo_oro/full_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/gufo_oro/peek_f_1",
+  "path": "bonus/birds/gufo_oro/peek_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/gufo_oro/perch_f_1",
+  "path": "bonus/birds/gufo_oro/perch_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/gufo_oro/puff_s_1",
+  "path": "bonus/birds/gufo_oro/puff_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/gufo_oro/rainbow_s_1",
+  "path": "bonus/birds/gufo_oro/rainbow_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/gufo/fly_s_1",
+  "path": "bonus/birds/gufo/fly_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/gufo/fly_s_2",
+  "path": "bonus/birds/gufo/fly_s_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/gufo/full_s_1",
+  "path": "bonus/birds/gufo/full_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/gufo/peek_f_1",
+  "path": "bonus/birds/gufo/peek_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/gufo/perch_f_1",
+  "path": "bonus/birds/gufo/perch_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/gufo/puff_s_1",
+  "path": "bonus/birds/gufo/puff_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/gufo/rainbow_s_1",
+  "path": "bonus/birds/gufo/rainbow_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/uccellino_oro/fly_s_1",
+  "path": "bonus/birds/uccellino_oro/fly_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/uccellino_oro/fly_s_2",
+  "path": "bonus/birds/uccellino_oro/fly_s_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/uccellino_oro/full_s_1",
+  "path": "bonus/birds/uccellino_oro/full_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/uccellino_oro/puff_s_1",
+  "path": "bonus/birds/uccellino_oro/puff_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/uccellino_oro/rainbow_s_1",
+  "path": "bonus/birds/uccellino_oro/rainbow_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/uccellino/fly_s_1",
+  "path": "bonus/birds/uccellino/fly_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/uccellino/fly_s_2",
+  "path": "bonus/birds/uccellino/fly_s_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/uccellino/full_s_1",
+  "path": "bonus/birds/uccellino/full_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/uccellino/puff_s_1",
+  "path": "bonus/birds/uccellino/puff_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/birds/uccellino/rainbow_s_1",
+  "path": "bonus/birds/uccellino/rainbow_s_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/dawn/front",
+  "path": "bonus/dawn/front.svg",
+  "w": 3200,
+  "h": 1080,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/dawn/panorama",
+  "path": "bonus/dawn/panorama.svg",
+  "w": 3200,
+  "h": 1080,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/night/front",
+  "path": "bonus/night/front.svg",
+  "w": 3200,
+  "h": 1080,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/night/panorama",
+  "path": "bonus/night/panorama.svg",
+  "w": 3200,
+  "h": 1080,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/noon/front",
+  "path": "bonus/noon/front.svg",
+  "w": 3200,
+  "h": 1080,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/noon/panorama",
+  "path": "bonus/noon/panorama.svg",
+  "w": 3200,
+  "h": 1080,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "bonus/rifle/idle_f_1",
+  "path": "bonus/rifle/idle_f_1.svg",
+  "w": 1024,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/grande/goodnight_f_1",
+  "path": "characters/grande/goodnight_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/grande/goodnight_f_2",
+  "path": "characters/grande/goodnight_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/grande/goodnight_f_3",
+  "path": "characters/grande/goodnight_f_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/grande/shoot_f_1",
+  "path": "characters/grande/shoot_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/grande/shoot_f_2",
+  "path": "characters/grande/shoot_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/grande/walk_f_1",
+  "path": "characters/grande/walk_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/grande/walk_f_2",
+  "path": "characters/grande/walk_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/grande/walk_f_3",
+  "path": "characters/grande/walk_f_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/grande/walk_f_4",
+  "path": "characters/grande/walk_f_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/orsa/goodnight_f_1",
+  "path": "characters/orsa/goodnight_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/orsa/goodnight_f_2",
+  "path": "characters/orsa/goodnight_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/orsa/goodnight_f_3",
+  "path": "characters/orsa/goodnight_f_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/orsa/shoot_f_1",
+  "path": "characters/orsa/shoot_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/orsa/shoot_f_2",
+  "path": "characters/orsa/shoot_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/orsa/walk_f_1",
+  "path": "characters/orsa/walk_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/orsa/walk_f_2",
+  "path": "characters/orsa/walk_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/orsa/walk_f_3",
+  "path": "characters/orsa/walk_f_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/orsa/walk_f_4",
+  "path": "characters/orsa/walk_f_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/piccolo/goodnight_f_1",
+  "path": "characters/piccolo/goodnight_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/piccolo/goodnight_f_2",
+  "path": "characters/piccolo/goodnight_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/piccolo/goodnight_f_3",
+  "path": "characters/piccolo/goodnight_f_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/piccolo/shoot_f_1",
+  "path": "characters/piccolo/shoot_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/piccolo/shoot_f_2",
+  "path": "characters/piccolo/shoot_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/piccolo/walk_f_1",
+  "path": "characters/piccolo/walk_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/piccolo/walk_f_2",
+  "path": "characters/piccolo/walk_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/piccolo/walk_f_3",
+  "path": "characters/piccolo/walk_f_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "characters/piccolo/walk_f_4",
+  "path": "characters/piccolo/walk_f_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/abete",
+  "path": "decor/abete.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/abete_neve",
+  "path": "decor/abete_neve.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1000
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/albero_autunno",
+  "path": "decor/albero_autunno.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1000
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/arco",
+  "path": "decor/arco.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   1000
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/armadietti",
+  "path": "decor/armadietti.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/asino",
+  "path": "decor/asino.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/auto",
+  "path": "decor/auto.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/balla",
+  "path": "decor/balla.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/banco",
+  "path": "decor/banco.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/bandierina",
+  "path": "decor/bandierina.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/barca",
+  "path": "decor/barca.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/betulla",
+  "path": "decor/betulla.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/campanile",
+  "path": "decor/campanile.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1000
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/canestro",
+  "path": "decor/canestro.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1000
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/canne",
+  "path": "decor/canne.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/cartello",
+  "path": "decor/cartello.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/cassa_palloni",
+  "path": "decor/cassa_palloni.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/castagno",
+  "path": "decor/castagno.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1000
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/ceppo",
+  "path": "decor/ceppo.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/cespuglio",
+  "path": "decor/cespuglio.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/cespuglioSegreto",
+  "path": "decor/cespuglioSegreto.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/cestino",
+  "path": "decor/cestino.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/cesto_castagne",
+  "path": "decor/cesto_castagne.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/ciminiera",
+  "path": "decor/ciminiera.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1000
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/coni",
+  "path": "decor/coni.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/faro",
+  "path": "decor/faro.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1000
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/fontana",
+  "path": "decor/fontana.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/funghi",
+  "path": "decor/funghi.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/gamba_banco",
+  "path": "decor/gamba_banco.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1000
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/gatto_neve",
+  "path": "decor/gatto_neve.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/gomma",
+  "path": "decor/gomma.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/lampione",
+  "path": "decor/lampione.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1000
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/lampione_ferro",
+  "path": "decor/lampione_ferro.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1000
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/lucidatrice",
+  "path": "decor/lucidatrice.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/maesta",
+  "path": "decor/maesta.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/matita",
+  "path": "decor/matita.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/merendina",
+  "path": "decor/merendina.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/paletto",
+  "path": "decor/paletto.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/panchina",
+  "path": "decor/panchina.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/panchina_coperta",
+  "path": "decor/panchina_coperta.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/pennarelli",
+  "path": "decor/pennarelli.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1000
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/pilone",
+  "path": "decor/pilone.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1000
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/pioppo",
+  "path": "decor/pioppo.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1000
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/porta_calcio",
+  "path": "decor/porta_calcio.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/pozzo",
+  "path": "decor/pozzo.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/pozzo_pietra",
+  "path": "decor/pozzo_pietra.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/pupazzo",
+  "path": "decor/pupazzo.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/ricci",
+  "path": "decor/ricci.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/sasso",
+  "path": "decor/sasso.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/scotch",
+  "path": "decor/scotch.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/sedia",
+  "path": "decor/sedia.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/seggiolino",
+  "path": "decor/seggiolino.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/spaventapasseri",
+  "path": "decor/spaventapasseri.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/tabellone",
+  "path": "decor/tabellone.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1000
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/tartarughe",
+  "path": "decor/tartarughe.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/temperino",
+  "path": "decor/temperino.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/torcia",
+  "path": "decor/torcia.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/trattore",
+  "path": "decor/trattore.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/trattorino",
+  "path": "decor/trattorino.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/zaino",
+  "path": "decor/zaino.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1000
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/biglietto/closed",
+  "path": "doors/biglietto/closed.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/biglietto/open",
+  "path": "doors/biglietto/open.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/campanella/closed",
+  "path": "doors/campanella/closed.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/campanella/open",
+  "path": "doors/campanella/open.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/cartellino/closed",
+  "path": "doors/cartellino/closed.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/cartellino/open",
+  "path": "doors/cartellino/open.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/castagna_oro/closed",
+  "path": "doors/castagna_oro/closed.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/castagna_oro/open",
+  "path": "doors/castagna_oro/open.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/chiave_ferro/closed",
+  "path": "doors/chiave_ferro/closed.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/chiave_ferro/open",
+  "path": "doors/chiave_ferro/open.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/fischietto/closed",
+  "path": "doors/fischietto/closed.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/fischietto/open",
+  "path": "doors/fischietto/open.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/gessetto_blu/closed",
+  "path": "doors/gessetto_blu/closed.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/gessetto_blu/open",
+  "path": "doors/gessetto_blu/open.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/gessetto_rosso/closed",
+  "path": "doors/gessetto_rosso/closed.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/gessetto_rosso/open",
+  "path": "doors/gessetto_rosso/open.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/lanterna/closed",
+  "path": "doors/lanterna/closed.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/lanterna/open",
+  "path": "doors/lanterna/open.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/mazzo_chiavi/closed",
+  "path": "doors/mazzo_chiavi/closed.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/mazzo_chiavi/open",
+  "path": "doors/mazzo_chiavi/open.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/pallone/closed",
+  "path": "doors/pallone/closed.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/pallone/open",
+  "path": "doors/pallone/open.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/piuma_blu/closed",
+  "path": "doors/piuma_blu/closed.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/piuma_blu/open",
+  "path": "doors/piuma_blu/open.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/piuma_rossa/closed",
+  "path": "doors/piuma_rossa/closed.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/piuma_rossa/open",
+  "path": "doors/piuma_rossa/open.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/plain/closed",
+  "path": "doors/plain/closed.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/plain/open",
+  "path": "doors/plain/open.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/skipass/closed",
+  "path": "doors/skipass/closed.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/skipass/open",
+  "path": "doors/skipass/open.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/attack_f_1",
+  "path": "enemies/cinghialotto/attack_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/attack_f_2",
+  "path": "enemies/cinghialotto/attack_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/attack_fq_1",
+  "path": "enemies/cinghialotto/attack_fq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/attack_fq_2",
+  "path": "enemies/cinghialotto/attack_fq_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/gelatina_f_1",
+  "path": "enemies/cinghialotto/gelatina_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/guance_f_1",
+  "path": "enemies/cinghialotto/guance_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/idle_b_1",
+  "path": "enemies/cinghialotto/idle_b_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/idle_bq_1",
+  "path": "enemies/cinghialotto/idle_bq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/idle_f_1",
+  "path": "enemies/cinghialotto/idle_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/idle_fq_1",
+  "path": "enemies/cinghialotto/idle_fq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/idle_s_1",
+  "path": "enemies/cinghialotto/idle_s_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/legato_f_1",
+  "path": "enemies/cinghialotto/legato_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/pain_f_1",
+  "path": "enemies/cinghialotto/pain_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/panciaPiena_f_1",
+  "path": "enemies/cinghialotto/panciaPiena_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/stordito_f_1",
+  "path": "enemies/cinghialotto/stordito_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/stordito_f_2",
+  "path": "enemies/cinghialotto/stordito_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/walk_b_1",
+  "path": "enemies/cinghialotto/walk_b_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/walk_b_2",
+  "path": "enemies/cinghialotto/walk_b_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/walk_b_3",
+  "path": "enemies/cinghialotto/walk_b_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/walk_b_4",
+  "path": "enemies/cinghialotto/walk_b_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/walk_bq_1",
+  "path": "enemies/cinghialotto/walk_bq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/walk_bq_2",
+  "path": "enemies/cinghialotto/walk_bq_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/walk_bq_3",
+  "path": "enemies/cinghialotto/walk_bq_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/walk_bq_4",
+  "path": "enemies/cinghialotto/walk_bq_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/walk_f_1",
+  "path": "enemies/cinghialotto/walk_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/walk_f_2",
+  "path": "enemies/cinghialotto/walk_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/walk_f_3",
+  "path": "enemies/cinghialotto/walk_f_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/walk_f_4",
+  "path": "enemies/cinghialotto/walk_f_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/walk_fq_1",
+  "path": "enemies/cinghialotto/walk_fq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/walk_fq_2",
+  "path": "enemies/cinghialotto/walk_fq_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/walk_fq_3",
+  "path": "enemies/cinghialotto/walk_fq_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/walk_fq_4",
+  "path": "enemies/cinghialotto/walk_fq_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/walk_s_1",
+  "path": "enemies/cinghialotto/walk_s_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/walk_s_2",
+  "path": "enemies/cinghialotto/walk_s_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/walk_s_3",
+  "path": "enemies/cinghialotto/walk_s_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/cinghialotto/walk_s_4",
+  "path": "enemies/cinghialotto/walk_s_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/attack_f_1",
+  "path": "enemies/donnola/attack_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/attack_f_2",
+  "path": "enemies/donnola/attack_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/attack_fq_1",
+  "path": "enemies/donnola/attack_fq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/attack_fq_2",
+  "path": "enemies/donnola/attack_fq_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/gelatina_f_1",
+  "path": "enemies/donnola/gelatina_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/guance_f_1",
+  "path": "enemies/donnola/guance_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/idle_b_1",
+  "path": "enemies/donnola/idle_b_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/idle_bq_1",
+  "path": "enemies/donnola/idle_bq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/idle_f_1",
+  "path": "enemies/donnola/idle_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/idle_fq_1",
+  "path": "enemies/donnola/idle_fq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/idle_s_1",
+  "path": "enemies/donnola/idle_s_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/legato_f_1",
+  "path": "enemies/donnola/legato_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/pain_f_1",
+  "path": "enemies/donnola/pain_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/panciaPiena_f_1",
+  "path": "enemies/donnola/panciaPiena_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/stordito_f_1",
+  "path": "enemies/donnola/stordito_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/stordito_f_2",
+  "path": "enemies/donnola/stordito_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/walk_b_1",
+  "path": "enemies/donnola/walk_b_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/walk_b_2",
+  "path": "enemies/donnola/walk_b_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/walk_b_3",
+  "path": "enemies/donnola/walk_b_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/walk_b_4",
+  "path": "enemies/donnola/walk_b_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/walk_bq_1",
+  "path": "enemies/donnola/walk_bq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/walk_bq_2",
+  "path": "enemies/donnola/walk_bq_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/walk_bq_3",
+  "path": "enemies/donnola/walk_bq_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/walk_bq_4",
+  "path": "enemies/donnola/walk_bq_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/walk_f_1",
+  "path": "enemies/donnola/walk_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/walk_f_2",
+  "path": "enemies/donnola/walk_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/walk_f_3",
+  "path": "enemies/donnola/walk_f_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/walk_f_4",
+  "path": "enemies/donnola/walk_f_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/walk_fq_1",
+  "path": "enemies/donnola/walk_fq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/walk_fq_2",
+  "path": "enemies/donnola/walk_fq_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/walk_fq_3",
+  "path": "enemies/donnola/walk_fq_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/walk_fq_4",
+  "path": "enemies/donnola/walk_fq_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/walk_s_1",
+  "path": "enemies/donnola/walk_s_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/walk_s_2",
+  "path": "enemies/donnola/walk_s_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/walk_s_3",
+  "path": "enemies/donnola/walk_s_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/donnola/walk_s_4",
+  "path": "enemies/donnola/walk_s_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/attack_f_1",
+  "path": "enemies/gallo/attack_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/attack_f_2",
+  "path": "enemies/gallo/attack_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/attack_fq_1",
+  "path": "enemies/gallo/attack_fq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/attack_fq_2",
+  "path": "enemies/gallo/attack_fq_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/gelatina_f_1",
+  "path": "enemies/gallo/gelatina_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/guance_f_1",
+  "path": "enemies/gallo/guance_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/idle_b_1",
+  "path": "enemies/gallo/idle_b_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/idle_bq_1",
+  "path": "enemies/gallo/idle_bq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/idle_f_1",
+  "path": "enemies/gallo/idle_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/idle_fq_1",
+  "path": "enemies/gallo/idle_fq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/idle_s_1",
+  "path": "enemies/gallo/idle_s_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/legato_f_1",
+  "path": "enemies/gallo/legato_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/pain_f_1",
+  "path": "enemies/gallo/pain_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/panciaPiena_f_1",
+  "path": "enemies/gallo/panciaPiena_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/stordito_f_1",
+  "path": "enemies/gallo/stordito_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/stordito_f_2",
+  "path": "enemies/gallo/stordito_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/walk_b_1",
+  "path": "enemies/gallo/walk_b_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/walk_b_2",
+  "path": "enemies/gallo/walk_b_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/walk_b_3",
+  "path": "enemies/gallo/walk_b_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/walk_b_4",
+  "path": "enemies/gallo/walk_b_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/walk_bq_1",
+  "path": "enemies/gallo/walk_bq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/walk_bq_2",
+  "path": "enemies/gallo/walk_bq_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/walk_bq_3",
+  "path": "enemies/gallo/walk_bq_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/walk_bq_4",
+  "path": "enemies/gallo/walk_bq_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/walk_f_1",
+  "path": "enemies/gallo/walk_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/walk_f_2",
+  "path": "enemies/gallo/walk_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/walk_f_3",
+  "path": "enemies/gallo/walk_f_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/walk_f_4",
+  "path": "enemies/gallo/walk_f_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/walk_fq_1",
+  "path": "enemies/gallo/walk_fq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/walk_fq_2",
+  "path": "enemies/gallo/walk_fq_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/walk_fq_3",
+  "path": "enemies/gallo/walk_fq_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/walk_fq_4",
+  "path": "enemies/gallo/walk_fq_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/walk_s_1",
+  "path": "enemies/gallo/walk_s_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/walk_s_2",
+  "path": "enemies/gallo/walk_s_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/walk_s_3",
+  "path": "enemies/gallo/walk_s_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/gallo/walk_s_4",
+  "path": "enemies/gallo/walk_s_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/attack_f_1",
+  "path": "enemies/maiale/attack_f_1.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/attack_f_2",
+  "path": "enemies/maiale/attack_f_2.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/attack_fq_1",
+  "path": "enemies/maiale/attack_fq_1.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/attack_fq_2",
+  "path": "enemies/maiale/attack_fq_2.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/defeat_f_1",
+  "path": "enemies/maiale/defeat_f_1.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/defeat_f_2",
+  "path": "enemies/maiale/defeat_f_2.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/defeat_f_3",
+  "path": "enemies/maiale/defeat_f_3.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/idle_b_1",
+  "path": "enemies/maiale/idle_b_1.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/idle_bq_1",
+  "path": "enemies/maiale/idle_bq_1.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/idle_f_1",
+  "path": "enemies/maiale/idle_f_1.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/idle_fq_1",
+  "path": "enemies/maiale/idle_fq_1.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/idle_s_1",
+  "path": "enemies/maiale/idle_s_1.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/pain_f_1",
+  "path": "enemies/maiale/pain_f_1.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/walk_b_1",
+  "path": "enemies/maiale/walk_b_1.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/walk_b_2",
+  "path": "enemies/maiale/walk_b_2.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/walk_b_3",
+  "path": "enemies/maiale/walk_b_3.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/walk_b_4",
+  "path": "enemies/maiale/walk_b_4.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/walk_bq_1",
+  "path": "enemies/maiale/walk_bq_1.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/walk_bq_2",
+  "path": "enemies/maiale/walk_bq_2.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/walk_bq_3",
+  "path": "enemies/maiale/walk_bq_3.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/walk_bq_4",
+  "path": "enemies/maiale/walk_bq_4.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/walk_f_1",
+  "path": "enemies/maiale/walk_f_1.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/walk_f_2",
+  "path": "enemies/maiale/walk_f_2.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/walk_f_3",
+  "path": "enemies/maiale/walk_f_3.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/walk_f_4",
+  "path": "enemies/maiale/walk_f_4.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/walk_fq_1",
+  "path": "enemies/maiale/walk_fq_1.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/walk_fq_2",
+  "path": "enemies/maiale/walk_fq_2.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/walk_fq_3",
+  "path": "enemies/maiale/walk_fq_3.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/walk_fq_4",
+  "path": "enemies/maiale/walk_fq_4.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/walk_s_1",
+  "path": "enemies/maiale/walk_s_1.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/walk_s_2",
+  "path": "enemies/maiale/walk_s_2.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/walk_s_3",
+  "path": "enemies/maiale/walk_s_3.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/maiale/walk_s_4",
+  "path": "enemies/maiale/walk_s_4.svg",
+  "w": 1024,
+  "h": 1024,
+  "anchor": [
+   512,
+   976
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/oca/attack_f_1",
+  "path": "enemies/oca/attack_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/oca/attack_f_2",
+  "path": "enemies/oca/attack_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/oca/attack_fq_1",
+  "path": "enemies/oca/attack_fq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/oca/attack_fq_2",
+  "path": "enemies/oca/attack_fq_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/oca/fly_b_1",
+  "path": "enemies/oca/fly_b_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/oca/fly_b_2",
+  "path": "enemies/oca/fly_b_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/oca/fly_bq_1",
+  "path": "enemies/oca/fly_bq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/oca/fly_bq_2",
+  "path": "enemies/oca/fly_bq_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/oca/fly_f_1",
+  "path": "enemies/oca/fly_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/oca/fly_f_2",
+  "path": "enemies/oca/fly_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/oca/fly_fq_1",
+  "path": "enemies/oca/fly_fq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/oca/fly_fq_2",
+  "path": "enemies/oca/fly_fq_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/oca/fly_s_1",
+  "path": "enemies/oca/fly_s_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/oca/fly_s_2",
+  "path": "enemies/oca/fly_s_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/oca/gelatina_f_1",
+  "path": "enemies/oca/gelatina_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/oca/guance_f_1",
+  "path": "enemies/oca/guance_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/oca/legato_f_1",
+  "path": "enemies/oca/legato_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/oca/pain_f_1",
+  "path": "enemies/oca/pain_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/oca/panciaPiena_f_1",
+  "path": "enemies/oca/panciaPiena_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/oca/stordito_f_1",
+  "path": "enemies/oca/stordito_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/oca/stordito_f_2",
+  "path": "enemies/oca/stordito_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/papero/attack_f_1",
+  "path": "enemies/papero/attack_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/papero/fly_f_1",
+  "path": "enemies/papero/fly_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/papero/fly_f_2",
+  "path": "enemies/papero/fly_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/papero/fly_s_1",
+  "path": "enemies/papero/fly_s_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/papero/fly_s_2",
+  "path": "enemies/papero/fly_s_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/papero/gelatina_f_1",
+  "path": "enemies/papero/gelatina_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/papero/guance_f_1",
+  "path": "enemies/papero/guance_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/papero/legato_f_1",
+  "path": "enemies/papero/legato_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/papero/pain_f_1",
+  "path": "enemies/papero/pain_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/papero/panciaPiena_f_1",
+  "path": "enemies/papero/panciaPiena_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/papero/stordito_f_1",
+  "path": "enemies/papero/stordito_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/papero/stordito_f_2",
+  "path": "enemies/papero/stordito_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/attack_f_1",
+  "path": "enemies/puzzola/attack_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/attack_f_2",
+  "path": "enemies/puzzola/attack_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/attack_fq_1",
+  "path": "enemies/puzzola/attack_fq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/attack_fq_2",
+  "path": "enemies/puzzola/attack_fq_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/gelatina_f_1",
+  "path": "enemies/puzzola/gelatina_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/guance_f_1",
+  "path": "enemies/puzzola/guance_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/idle_b_1",
+  "path": "enemies/puzzola/idle_b_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/idle_bq_1",
+  "path": "enemies/puzzola/idle_bq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/idle_f_1",
+  "path": "enemies/puzzola/idle_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/idle_fq_1",
+  "path": "enemies/puzzola/idle_fq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/idle_s_1",
+  "path": "enemies/puzzola/idle_s_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/legato_f_1",
+  "path": "enemies/puzzola/legato_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/pain_f_1",
+  "path": "enemies/puzzola/pain_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/panciaPiena_f_1",
+  "path": "enemies/puzzola/panciaPiena_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/stordito_f_1",
+  "path": "enemies/puzzola/stordito_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/stordito_f_2",
+  "path": "enemies/puzzola/stordito_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/walk_b_1",
+  "path": "enemies/puzzola/walk_b_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/walk_b_2",
+  "path": "enemies/puzzola/walk_b_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/walk_b_3",
+  "path": "enemies/puzzola/walk_b_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/walk_b_4",
+  "path": "enemies/puzzola/walk_b_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/walk_bq_1",
+  "path": "enemies/puzzola/walk_bq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/walk_bq_2",
+  "path": "enemies/puzzola/walk_bq_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/walk_bq_3",
+  "path": "enemies/puzzola/walk_bq_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/walk_bq_4",
+  "path": "enemies/puzzola/walk_bq_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/walk_f_1",
+  "path": "enemies/puzzola/walk_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/walk_f_2",
+  "path": "enemies/puzzola/walk_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/walk_f_3",
+  "path": "enemies/puzzola/walk_f_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/walk_f_4",
+  "path": "enemies/puzzola/walk_f_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/walk_fq_1",
+  "path": "enemies/puzzola/walk_fq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/walk_fq_2",
+  "path": "enemies/puzzola/walk_fq_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/walk_fq_3",
+  "path": "enemies/puzzola/walk_fq_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/walk_fq_4",
+  "path": "enemies/puzzola/walk_fq_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/walk_s_1",
+  "path": "enemies/puzzola/walk_s_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/walk_s_2",
+  "path": "enemies/puzzola/walk_s_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/walk_s_3",
+  "path": "enemies/puzzola/walk_s_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/puzzola/walk_s_4",
+  "path": "enemies/puzzola/walk_s_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/attack_f_1",
+  "path": "enemies/scoiattolo/attack_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/attack_f_2",
+  "path": "enemies/scoiattolo/attack_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/attack_fq_1",
+  "path": "enemies/scoiattolo/attack_fq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/attack_fq_2",
+  "path": "enemies/scoiattolo/attack_fq_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/gelatina_f_1",
+  "path": "enemies/scoiattolo/gelatina_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/guance_f_1",
+  "path": "enemies/scoiattolo/guance_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/idle_b_1",
+  "path": "enemies/scoiattolo/idle_b_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/idle_bq_1",
+  "path": "enemies/scoiattolo/idle_bq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/idle_f_1",
+  "path": "enemies/scoiattolo/idle_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/idle_fq_1",
+  "path": "enemies/scoiattolo/idle_fq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/idle_s_1",
+  "path": "enemies/scoiattolo/idle_s_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/legato_f_1",
+  "path": "enemies/scoiattolo/legato_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/pain_f_1",
+  "path": "enemies/scoiattolo/pain_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/panciaPiena_f_1",
+  "path": "enemies/scoiattolo/panciaPiena_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/stordito_f_1",
+  "path": "enemies/scoiattolo/stordito_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/stordito_f_2",
+  "path": "enemies/scoiattolo/stordito_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/walk_b_1",
+  "path": "enemies/scoiattolo/walk_b_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/walk_b_2",
+  "path": "enemies/scoiattolo/walk_b_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/walk_b_3",
+  "path": "enemies/scoiattolo/walk_b_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/walk_b_4",
+  "path": "enemies/scoiattolo/walk_b_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/walk_bq_1",
+  "path": "enemies/scoiattolo/walk_bq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/walk_bq_2",
+  "path": "enemies/scoiattolo/walk_bq_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/walk_bq_3",
+  "path": "enemies/scoiattolo/walk_bq_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/walk_bq_4",
+  "path": "enemies/scoiattolo/walk_bq_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/walk_f_1",
+  "path": "enemies/scoiattolo/walk_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/walk_f_2",
+  "path": "enemies/scoiattolo/walk_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/walk_f_3",
+  "path": "enemies/scoiattolo/walk_f_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/walk_f_4",
+  "path": "enemies/scoiattolo/walk_f_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/walk_fq_1",
+  "path": "enemies/scoiattolo/walk_fq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/walk_fq_2",
+  "path": "enemies/scoiattolo/walk_fq_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/walk_fq_3",
+  "path": "enemies/scoiattolo/walk_fq_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/walk_fq_4",
+  "path": "enemies/scoiattolo/walk_fq_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/walk_s_1",
+  "path": "enemies/scoiattolo/walk_s_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/walk_s_2",
+  "path": "enemies/scoiattolo/walk_s_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/walk_s_3",
+  "path": "enemies/scoiattolo/walk_s_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/scoiattolo/walk_s_4",
+  "path": "enemies/scoiattolo/walk_s_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/attack_f_1",
+  "path": "enemies/volpe/attack_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/attack_f_2",
+  "path": "enemies/volpe/attack_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/attack_fq_1",
+  "path": "enemies/volpe/attack_fq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/attack_fq_2",
+  "path": "enemies/volpe/attack_fq_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/gelatina_f_1",
+  "path": "enemies/volpe/gelatina_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/guance_f_1",
+  "path": "enemies/volpe/guance_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/idle_b_1",
+  "path": "enemies/volpe/idle_b_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/idle_bq_1",
+  "path": "enemies/volpe/idle_bq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/idle_f_1",
+  "path": "enemies/volpe/idle_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/idle_fq_1",
+  "path": "enemies/volpe/idle_fq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/idle_s_1",
+  "path": "enemies/volpe/idle_s_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/legato_f_1",
+  "path": "enemies/volpe/legato_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/pain_f_1",
+  "path": "enemies/volpe/pain_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/panciaPiena_f_1",
+  "path": "enemies/volpe/panciaPiena_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/stordito_f_1",
+  "path": "enemies/volpe/stordito_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/stordito_f_2",
+  "path": "enemies/volpe/stordito_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/walk_b_1",
+  "path": "enemies/volpe/walk_b_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/walk_b_2",
+  "path": "enemies/volpe/walk_b_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/walk_b_3",
+  "path": "enemies/volpe/walk_b_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/walk_b_4",
+  "path": "enemies/volpe/walk_b_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/walk_bq_1",
+  "path": "enemies/volpe/walk_bq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/walk_bq_2",
+  "path": "enemies/volpe/walk_bq_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/walk_bq_3",
+  "path": "enemies/volpe/walk_bq_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/walk_bq_4",
+  "path": "enemies/volpe/walk_bq_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/walk_f_1",
+  "path": "enemies/volpe/walk_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/walk_f_2",
+  "path": "enemies/volpe/walk_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/walk_f_3",
+  "path": "enemies/volpe/walk_f_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/walk_f_4",
+  "path": "enemies/volpe/walk_f_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/walk_fq_1",
+  "path": "enemies/volpe/walk_fq_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/walk_fq_2",
+  "path": "enemies/volpe/walk_fq_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/walk_fq_3",
+  "path": "enemies/volpe/walk_fq_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/walk_fq_4",
+  "path": "enemies/volpe/walk_fq_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/walk_s_1",
+  "path": "enemies/volpe/walk_s_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/walk_s_2",
+  "path": "enemies/volpe/walk_s_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/walk_s_3",
+  "path": "enemies/volpe/walk_s_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "enemies/volpe/walk_s_4",
+  "path": "enemies/volpe/walk_s_4.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/ali/overlay_f_1",
+  "path": "fx/ali/overlay_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/ali/overlay_f_2",
+  "path": "fx/ali/overlay_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/bollicine/overlay_f_1",
+  "path": "fx/bollicine/overlay_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/bollicine/overlay_f_2",
+  "path": "fx/bollicine/overlay_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/esplosione/burst_f_1",
+  "path": "fx/esplosione/burst_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/esplosione/burst_f_2",
+  "path": "fx/esplosione/burst_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/esplosione/burst_f_3",
+  "path": "fx/esplosione/burst_f_3.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/ragnatela/overlay_f_1",
+  "path": "fx/ragnatela/overlay_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/sagoma/stand_f_1",
+  "path": "fx/sagoma/stand_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/word_BURP",
+  "path": "fx/word_BURP.png",
+  "w": 256,
+  "h": 128,
+  "anchor": [
+   128,
+   64
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/word_BUUURP",
+  "path": "fx/word_BUUURP.png",
+  "w": 256,
+  "h": 128,
+  "anchor": [
+   128,
+   64
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/word_BYE",
+  "path": "fx/word_BYE.png",
+  "w": 256,
+  "h": 128,
+  "anchor": [
+   128,
+   64
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/word_FIZZ",
+  "path": "fx/word_FIZZ.png",
+  "w": 256,
+  "h": 128,
+  "anchor": [
+   128,
+   64
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/word_GLOP",
+  "path": "fx/word_GLOP.png",
+  "w": 256,
+  "h": 128,
+  "anchor": [
+   128,
+   64
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/word_GRRR",
+  "path": "fx/word_GRRR.png",
+  "w": 256,
+  "h": 128,
+  "anchor": [
+   128,
+   64
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/word_MMPF",
+  "path": "fx/word_MMPF.png",
+  "w": 256,
+  "h": 128,
+  "anchor": [
+   128,
+   64
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/word_POP",
+  "path": "fx/word_POP.png",
+  "w": 256,
+  "h": 128,
+  "anchor": [
+   128,
+   64
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/word_QUACK",
+  "path": "fx/word_QUACK.png",
+  "w": 256,
+  "h": 128,
+  "anchor": [
+   128,
+   64
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/word_stordito",
+  "path": "fx/word_stordito.png",
+  "w": 256,
+  "h": 128,
+  "anchor": [
+   128,
+   64
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/word_STUCK",
+  "path": "fx/word_STUCK.png",
+  "w": 256,
+  "h": 128,
+  "anchor": [
+   128,
+   64
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/word_ZZZ",
+  "path": "fx/word_ZZZ.png",
+  "w": 256,
+  "h": 128,
+  "anchor": [
+   128,
+   64
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/bar/empty",
+  "path": "hud/bar/empty.png",
+  "w": 1920,
+  "h": 200,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/bar/preview",
+  "path": "hud/bar/preview.png",
+  "w": 1920,
+  "h": 200,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/crosshair/idle",
+  "path": "hud/crosshair/idle.svg",
+  "w": 64,
+  "h": 64,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_grande/addormentato",
+  "path": "hud/face_grande/addormentato.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_grande/assonnato",
+  "path": "hud/face_grande/assonnato.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_grande/colpito",
+  "path": "hud/face_grande/colpito.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_grande/fizz",
+  "path": "hud/face_grande/fizz.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_grande/ghigno",
+  "path": "hud/face_grande/ghigno.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_grande/invincibile",
+  "path": "hud/face_grande/invincibile.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_grande/sbadiglio",
+  "path": "hud/face_grande/sbadiglio.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_grande/sveglio",
+  "path": "hud/face_grande/sveglio.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_grande/trapped",
+  "path": "hud/face_grande/trapped.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_orsa/addormentato",
+  "path": "hud/face_orsa/addormentato.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_orsa/assonnato",
+  "path": "hud/face_orsa/assonnato.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_orsa/colpito",
+  "path": "hud/face_orsa/colpito.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_orsa/fizz",
+  "path": "hud/face_orsa/fizz.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_orsa/ghigno",
+  "path": "hud/face_orsa/ghigno.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_orsa/invincibile",
+  "path": "hud/face_orsa/invincibile.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_orsa/sbadiglio",
+  "path": "hud/face_orsa/sbadiglio.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_orsa/sveglio",
+  "path": "hud/face_orsa/sveglio.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_orsa/trapped",
+  "path": "hud/face_orsa/trapped.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_piccolo/addormentato",
+  "path": "hud/face_piccolo/addormentato.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_piccolo/assonnato",
+  "path": "hud/face_piccolo/assonnato.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_piccolo/colpito",
+  "path": "hud/face_piccolo/colpito.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_piccolo/fizz",
+  "path": "hud/face_piccolo/fizz.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_piccolo/ghigno",
+  "path": "hud/face_piccolo/ghigno.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_piccolo/invincibile",
+  "path": "hud/face_piccolo/invincibile.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_piccolo/sbadiglio",
+  "path": "hud/face_piccolo/sbadiglio.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_piccolo/sveglio",
+  "path": "hud/face_piccolo/sveglio.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/face_piccolo/trapped",
+  "path": "hud/face_piccolo/trapped.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/gift/closed",
+  "path": "hud/gift/closed.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/gift/open",
+  "path": "hud/gift/open.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/pillow/full",
+  "path": "hud/pillow/full.svg",
+  "w": 96,
+  "h": 96,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/pillow/used",
+  "path": "hud/pillow/used.svg",
+  "w": 96,
+  "h": 96,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/popup/acorn",
+  "path": "hud/popup/acorn.png",
+  "w": 1024,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/popup/iddqd",
+  "path": "hud/popup/iddqd.png",
+  "w": 1024,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/popup/secret",
+  "path": "hud/popup/secret.png",
+  "w": 1024,
+  "h": 256,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/trapped/jelly",
+  "path": "hud/trapped/jelly.svg",
+  "w": 1920,
+  "h": 1080,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/trapped/licorice",
+  "path": "hud/trapped/licorice.svg",
+  "w": 1920,
+  "h": 1080,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/biglietto",
+  "path": "items/biglietto.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/campanella",
+  "path": "items/campanella.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/caramelle",
+  "path": "items/caramelle.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/cartellino",
+  "path": "items/cartellino.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/castagna_oro",
+  "path": "items/castagna_oro.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/checkpoint",
+  "path": "items/checkpoint.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/checkpointOn",
+  "path": "items/checkpointOn.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/chiave_ferro",
+  "path": "items/chiave_ferro.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/cioccolata",
+  "path": "items/cioccolata.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/confetti",
+  "path": "items/confetti.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/fischietto",
+  "path": "items/fischietto.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/fizz",
+  "path": "items/fizz.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/frecce",
+  "path": "items/frecce.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/gelatina",
+  "path": "items/gelatina.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/gessetto_blu",
+  "path": "items/gessetto_blu.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/gessetto_rosso",
+  "path": "items/gessetto_rosso.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/ghianda",
+  "path": "items/ghianda.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/gumball",
+  "path": "items/gumball.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/lanterna",
+  "path": "items/lanterna.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/liquirizie",
+  "path": "items/liquirizie.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/mappa",
+  "path": "items/mappa.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/mazzo_chiavi",
+  "path": "items/mazzo_chiavi.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/miele",
+  "path": "items/miele.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/mieleGrande",
+  "path": "items/mieleGrande.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/pallone",
+  "path": "items/pallone.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/pickup_fionda",
+  "path": "items/pickup_fionda.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/pickup_sparaconfetti",
+  "path": "items/pickup_sparaconfetti.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/pickup_zampata",
+  "path": "items/pickup_zampata.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/piuma_blu",
+  "path": "items/piuma_blu.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/piuma_rossa",
+  "path": "items/piuma_rossa.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/skipass",
+  "path": "items/skipass.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/sparaGelatina",
+  "path": "items/sparaGelatina.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/spBalestra",
+  "path": "items/spBalestra.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/spBfg",
+  "path": "items/spBfg.png",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/spFizz",
+  "path": "items/spFizz.png",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/spLiquirizia",
+  "path": "items/spLiquirizia.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/spZucchero",
+  "path": "items/spZucchero.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/stivali",
+  "path": "items/stivali.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/superMiele",
+  "path": "items/superMiele.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/tazzona",
+  "path": "items/tazzona.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/zainetto",
+  "path": "items/zainetto.png",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/zuccheroFilato",
+  "path": "items/zuccheroFilato.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/biberon/fly_f_1",
+  "path": "projectiles/biberon/fly_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/biberon/fly_f_2",
+  "path": "projectiles/biberon/fly_f_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/biberon/splat_f_1",
+  "path": "projectiles/biberon/splat_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   256
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/broccolo/fly_f_1",
+  "path": "projectiles/broccolo/fly_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/broccolo/fly_f_2",
+  "path": "projectiles/broccolo/fly_f_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/broccolo/splat_f_1",
+  "path": "projectiles/broccolo/splat_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/camomilla/fly_f_1",
+  "path": "projectiles/camomilla/fly_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/camomilla/fly_f_2",
+  "path": "projectiles/camomilla/fly_f_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/camomilla/splat_f_1",
+  "path": "projectiles/camomilla/splat_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/caramella/fly_f_1",
+  "path": "projectiles/caramella/fly_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/caramella/fly_f_2",
+  "path": "projectiles/caramella/fly_f_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/caramella/splat_f_1",
+  "path": "projectiles/caramella/splat_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/confetti/fly_f_1",
+  "path": "projectiles/confetti/fly_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/confetti/fly_f_2",
+  "path": "projectiles/confetti/fly_f_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/confetti/splat_f_1",
+  "path": "projectiles/confetti/splat_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/fizz/fly_f_1",
+  "path": "projectiles/fizz/fly_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/fizz/fly_f_2",
+  "path": "projectiles/fizz/fly_f_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/fizz/splat_f_1",
+  "path": "projectiles/fizz/splat_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/freccia/fly_f_1",
+  "path": "projectiles/freccia/fly_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/freccia/fly_f_2",
+  "path": "projectiles/freccia/fly_f_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/freccia/splat_f_1",
+  "path": "projectiles/freccia/splat_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/gelatina/fly_f_1",
+  "path": "projectiles/gelatina/fly_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/gelatina/fly_f_2",
+  "path": "projectiles/gelatina/fly_f_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/gelatina/splat_f_1",
+  "path": "projectiles/gelatina/splat_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/gumball/fly_f_1",
+  "path": "projectiles/gumball/fly_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/gumball/fly_f_2",
+  "path": "projectiles/gumball/fly_f_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/gumball/splat_f_1",
+  "path": "projectiles/gumball/splat_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   256
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/lacci/fly_f_1",
+  "path": "projectiles/lacci/fly_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/lacci/fly_f_2",
+  "path": "projectiles/lacci/fly_f_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/lacci/splat_f_1",
+  "path": "projectiles/lacci/splat_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/marmellata/fly_f_1",
+  "path": "projectiles/marmellata/fly_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/marmellata/fly_f_2",
+  "path": "projectiles/marmellata/fly_f_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/marmellata/splat_f_1",
+  "path": "projectiles/marmellata/splat_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/nota/fly_f_1",
+  "path": "projectiles/nota/fly_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/nota/fly_f_2",
+  "path": "projectiles/nota/fly_f_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/nota/splat_f_1",
+  "path": "projectiles/nota/splat_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/nuvola/fly_f_1",
+  "path": "projectiles/nuvola/fly_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/nuvola/fly_f_2",
+  "path": "projectiles/nuvola/fly_f_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/nuvola/splat_f_1",
+  "path": "projectiles/nuvola/splat_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/rondella/fly_f_1",
+  "path": "projectiles/rondella/fly_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/rondella/fly_f_2",
+  "path": "projectiles/rondella/fly_f_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/rondella/splat_f_1",
+  "path": "projectiles/rondella/splat_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/schiuma/fly_f_1",
+  "path": "projectiles/schiuma/fly_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/schiuma/fly_f_2",
+  "path": "projectiles/schiuma/fly_f_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/schiuma/splat_f_1",
+  "path": "projectiles/schiuma/splat_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/zuppa/fly_f_1",
+  "path": "projectiles/zuppa/fly_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/zuppa/fly_f_2",
+  "path": "projectiles/zuppa/fly_f_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/zuppa/splat_f_1",
+  "path": "projectiles/zuppa/splat_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "props/exit_off",
+  "path": "props/exit_off.svg",
+  "w": 512,
+  "h": 768,
+  "anchor": [
+   256,
+   768
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "props/exit_on",
+  "path": "props/exit_on.svg",
+  "w": 512,
+  "h": 768,
+  "anchor": [
+   256,
+   768
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "props/lever_off",
+  "path": "props/lever_off.png",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "props/lever_on",
+  "path": "props/lever_on.png",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "props/lever_secret_off",
+  "path": "props/lever_secret_off.png",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "props/lever_secret_on",
+  "path": "props/lever_secret_on.png",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "screens/ending/background",
+  "path": "screens/ending/background.png",
+  "w": 1920,
+  "h": 1080,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "screens/episode2/background",
+  "path": "screens/episode2/background.png",
+  "w": 1920,
+  "h": 1080,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "screens/intermission/background",
+  "path": "screens/intermission/background.png",
+  "w": 1920,
+  "h": 1080,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "screens/title/animated",
+  "path": "screens/title/animated.svg",
+  "w": 1920,
+  "h": 1080,
+  "source": "canvas"
+ },
+ {
+  "key": "screens/title/background",
+  "path": "screens/title/background.png",
+  "w": 1920,
+  "h": 1080,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/ceil_aula",
+  "path": "textures/ceil_aula.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/ceil_baita",
+  "path": "textures/ceil_baita.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/ceil_cemento",
+  "path": "textures/ceil_cemento.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/ceil_galleria",
+  "path": "textures/ceil_galleria.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/ceil_lampade",
+  "path": "textures/ceil_lampade.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/ceil_parcheggio",
+  "path": "textures/ceil_parcheggio.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/ceil_spogliatoio",
+  "path": "textures/ceil_spogliatoio.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/ceil_tetto",
+  "path": "textures/ceil_tetto.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/ceil_travi",
+  "path": "textures/ceil_travi.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/ceil_travi_lamellari",
+  "path": "textures/ceil_travi_lamellari.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/ceil_tunnel",
+  "path": "textures/ceil_tunnel.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/ceil_volta",
+  "path": "textures/ceil_volta.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/door",
+  "path": "textures/door.svg",
+  "w": 512,
+  "h": 768,
+  "anchor": [
+   256,
+   768
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/door_open",
+  "path": "textures/door_open.svg",
+  "w": 512,
+  "h": 768,
+  "anchor": [
+   256,
+   768
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_acqua",
+  "path": "textures/floor_acqua.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_acqua_2",
+  "path": "textures/floor_acqua_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_alzaia",
+  "path": "textures/floor_alzaia.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_asfalto",
+  "path": "textures/floor_asfalto.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_assi",
+  "path": "textures/floor_assi.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_assi_neve",
+  "path": "textures/floor_assi_neve.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_astuccio",
+  "path": "textures/floor_astuccio.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_banco",
+  "path": "textures/floor_banco.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_binari",
+  "path": "textures/floor_binari.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_campo",
+  "path": "textures/floor_campo.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_campo_riga",
+  "path": "textures/floor_campo_riga.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_cemento",
+  "path": "textures/floor_cemento.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_ciottoli",
+  "path": "textures/floor_ciottoli.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_erba",
+  "path": "textures/floor_erba.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_erba_bagnata",
+  "path": "textures/floor_erba_bagnata.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_fango",
+  "path": "textures/floor_fango.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_fango_2",
+  "path": "textures/floor_fango_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_fiume",
+  "path": "textures/floor_fiume.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_fiume_2",
+  "path": "textures/floor_fiume_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_foglie",
+  "path": "textures/floor_foglie.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_foglie_rosse",
+  "path": "textures/floor_foglie_rosse.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_ghiaccio",
+  "path": "textures/floor_ghiaccio.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_ghiaia",
+  "path": "textures/floor_ghiaia.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_gradoni",
+  "path": "textures/floor_gradoni.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_lamiera",
+  "path": "textures/floor_lamiera.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_lastre",
+  "path": "textures/floor_lastre.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_lastricato",
+  "path": "textures/floor_lastricato.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_lift",
+  "path": "textures/floor_lift.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_linoleum",
+  "path": "textures/floor_linoleum.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_mattonelle",
+  "path": "textures/floor_mattonelle.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_neve",
+  "path": "textures/floor_neve.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_pannelli_solari",
+  "path": "textures/floor_pannelli_solari.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_parcheggio",
+  "path": "textures/floor_parcheggio.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_parquet",
+  "path": "textures/floor_parquet.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_piastrelle",
+  "path": "textures/floor_piastrelle.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_pontile",
+  "path": "textures/floor_pontile.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_pozzanghera",
+  "path": "textures/floor_pozzanghera.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_pozzanghera_2",
+  "path": "textures/floor_pozzanghera_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_prato",
+  "path": "textures/floor_prato.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_prato_riga",
+  "path": "textures/floor_prato_riga.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_righello",
+  "path": "textures/floor_righello.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_roccia",
+  "path": "textures/floor_roccia.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_scalini",
+  "path": "textures/floor_scalini.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_seggiolini",
+  "path": "textures/floor_seggiolini.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_sentiero",
+  "path": "textures/floor_sentiero.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_strisce",
+  "path": "textures/floor_strisce.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_tegole",
+  "path": "textures/floor_tegole.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_terra",
+  "path": "textures/floor_terra.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_terra_battuta",
+  "path": "textures/floor_terra_battuta.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_traghetto",
+  "path": "textures/floor_traghetto.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/floor_zucchero",
+  "path": "textures/floor_zucchero.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/rail_balaustra",
+  "path": "textures/rail_balaustra.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/rail_canne",
+  "path": "textures/rail_canne.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/rail_recinto",
+  "path": "textures/rail_recinto.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/rail_rete",
+  "path": "textures/rail_rete.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/rail_rete_pista",
+  "path": "textures/rail_rete_pista.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/rail_traliccio",
+  "path": "textures/rail_traliccio.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/rail_vetro",
+  "path": "textures/rail_vetro.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/sky",
+  "path": "textures/sky.svg",
+  "w": 2048,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/sky_e1m2",
+  "path": "textures/sky_e1m2.svg",
+  "w": 2048,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/sky_e1m3",
+  "path": "textures/sky_e1m3.svg",
+  "w": 2048,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/sky_e1m4",
+  "path": "textures/sky_e1m4.svg",
+  "w": 2048,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/sky_e1m6",
+  "path": "textures/sky_e1m6.svg",
+  "w": 2048,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/sky_e1m7",
+  "path": "textures/sky_e1m7.svg",
+  "w": 2048,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/sky_e1m8",
+  "path": "textures/sky_e1m8.svg",
+  "w": 2048,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/sky_e1m9",
+  "path": "textures/sky_e1m9.svg",
+  "w": 2048,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/switch_off",
+  "path": "textures/switch_off.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/switch_on",
+  "path": "textures/switch_on.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_baita",
+  "path": "textures/wall_baita.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_cancello",
+  "path": "textures/wall_cancello.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_cartelloni",
+  "path": "textures/wall_cartelloni.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_cartelloni_stadio",
+  "path": "textures/wall_cartelloni_stadio.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_casa",
+  "path": "textures/wall_casa.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_cattedra",
+  "path": "textures/wall_cattedra.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_cava",
+  "path": "textures/wall_cava.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_cemento",
+  "path": "textures/wall_cemento.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_chiesa",
+  "path": "textures/wall_chiesa.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_condominio",
+  "path": "textures/wall_condominio.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_facciata",
+  "path": "textures/wall_facciata.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_fienile",
+  "path": "textures/wall_fienile.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_finestra",
+  "path": "textures/wall_finestra.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_galleria",
+  "path": "textures/wall_galleria.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_gradinata",
+  "path": "textures/wall_gradinata.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_intonaco",
+  "path": "textures/wall_intonaco.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_lamiera",
+  "path": "textures/wall_lamiera.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_lavagna",
+  "path": "textures/wall_lavagna.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_legnaia",
+  "path": "textures/wall_legnaia.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_legno",
+  "path": "textures/wall_legno.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_libri",
+  "path": "textures/wall_libri.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_listelli",
+  "path": "textures/wall_listelli.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_mattoni",
+  "path": "textures/wall_mattoni.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_mura",
+  "path": "textures/wall_mura.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_muraglione",
+  "path": "textures/wall_muraglione.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_neve",
+  "path": "textures/wall_neve.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_palestra",
+  "path": "textures/wall_palestra.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_pannelli",
+  "path": "textures/wall_pannelli.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_piastrelle",
+  "path": "textures/wall_piastrelle.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_pietra",
+  "path": "textures/wall_pietra.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_roccia",
+  "path": "textures/wall_roccia.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_rovi",
+  "path": "textures/wall_rovi.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_siepe",
+  "path": "textures/wall_siepe.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_silos",
+  "path": "textures/wall_silos.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_spogliatoio",
+  "path": "textures/wall_spogliatoio.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_staccionata",
+  "path": "textures/wall_staccionata.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_tronchi",
+  "path": "textures/wall_tronchi.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_tunnel",
+  "path": "textures/wall_tunnel.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "textures/wall_vetrata",
+  "path": "textures/wall_vetrata.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/balestra/fire_1",
+  "path": "weapons/balestra/fire_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/balestra/fire_2",
+  "path": "weapons/balestra/fire_2.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/balestra/idle_1",
+  "path": "weapons/balestra/idle_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/bfg/charge_1",
+  "path": "weapons/bfg/charge_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/bfg/fire_1",
+  "path": "weapons/bfg/fire_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/bfg/idle_1",
+  "path": "weapons/bfg/idle_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/fionda/idle_1",
+  "path": "weapons/fionda/idle_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/fionda/pull_1",
+  "path": "weapons/fionda/pull_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/fionda/release_1",
+  "path": "weapons/fionda/release_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/fizz/idle_1",
+  "path": "weapons/fizz/idle_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/fizz/spray_1",
+  "path": "weapons/fizz/spray_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/fizz/spray_2",
+  "path": "weapons/fizz/spray_2.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/gelatina/fire_1",
+  "path": "weapons/gelatina/fire_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/gelatina/idle_1",
+  "path": "weapons/gelatina/idle_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/gelatina/recoil_1",
+  "path": "weapons/gelatina/recoil_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/liquirizia/fire_1",
+  "path": "weapons/liquirizia/fire_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/liquirizia/idle_1",
+  "path": "weapons/liquirizia/idle_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/liquirizia/reload_1",
+  "path": "weapons/liquirizia/reload_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/sparaconfetti/fire_1",
+  "path": "weapons/sparaconfetti/fire_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/sparaconfetti/idle_1",
+  "path": "weapons/sparaconfetti/idle_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/sparaconfetti/recoil_1",
+  "path": "weapons/sparaconfetti/recoil_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/zampata/attack_1",
+  "path": "weapons/zampata/attack_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/zampata/attack_2",
+  "path": "weapons/zampata/attack_2.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/zampata/idle_1",
+  "path": "weapons/zampata/idle_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/zucchero/fire_1",
+  "path": "weapons/zucchero/fire_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/zucchero/idle_1",
+  "path": "weapons/zucchero/idle_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/zucchero/recoil_1",
+  "path": "weapons/zucchero/recoil_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ }
+]

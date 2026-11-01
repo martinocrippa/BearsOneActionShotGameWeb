@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Texture ripetibile: siepe di foglie a punta">
+  <defs>
+    <path id="sLeaf" d="M0 -20 C9 -9 9 9 0 20 C-9 9 -9 -9 0 -20 Z" fill="#2F8A3A" stroke="#111" stroke-width="3" stroke-linejoin="round"/>
+    <g id="sDark"><use href="#sLeaf"/><path d="M-4 8 l7 -10 M-2 15 l6 -8 M-5 0 l6 -8" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"/></g>
+    <pattern id="sPat" width="128" height="128" patternUnits="userSpaceOnUse">
+      <rect width="128" height="128" fill="#2F8A3A"/>
+      <path d="M0 0 L128 128 M64 0 L128 64 M0 64 L64 128" stroke="#111" stroke-width="1.5" opacity=".0"/>
+      <use href="#sDark" transform="translate(20 22) rotate(20)"/>
+      <use href="#sLeaf" transform="translate(58 10) rotate(-30)"/><use href="#sLeaf" transform="translate(58 138) rotate(-30)"/>
+      <use href="#sDark" transform="translate(98 28) rotate(40)"/>
+      <use href="#sLeaf" transform="translate(38 58) rotate(-10)"/>
+      <use href="#sDark" transform="translate(82 64) rotate(65)"/>
+      <use href="#sLeaf" transform="translate(122 72) rotate(-40)"/><use href="#sLeaf" transform="translate(-6 72) rotate(-40)"/>
+      <use href="#sLeaf" transform="translate(14 104) rotate(30)"/><use href="#sLeaf" transform="translate(142 104) rotate(30)"/>
+      <use href="#sDark" transform="translate(56 104) rotate(-60)"/>
+      <use href="#sLeaf" transform="translate(100 106) rotate(15)"/>
+      <use href="#sLeaf" transform="translate(110 -2) rotate(80)"/><use href="#sLeaf" transform="translate(110 126) rotate(80)"/>
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="url(#sPat)"/>
+</svg>

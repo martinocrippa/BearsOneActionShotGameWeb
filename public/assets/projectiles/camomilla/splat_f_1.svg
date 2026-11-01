@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Palla di camomilla che si spiaccica: petali sparpagliati e vapore">
+  <g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M96 76 C90 66 100 56 110 60 C114 48 132 50 132 62 C144 62 144 78 132 80 C128 88 108 88 104 82 C96 84 92 80 96 76 Z" fill="#F4ECD8" stroke-width="4"/>
+    <path d="M134 60 C142 50 152 58 148 46" fill="none" stroke-width="3"/>
+    <path d="M128 106 C142 108 152 100 162 112 C176 114 180 126 168 134 C176 146 164 154 152 150 C146 162 130 162 124 152 C110 158 98 150 104 140 C90 136 92 120 106 120 C104 110 116 104 128 106 Z" fill="#FFD400" stroke-width="5"/>
+    <path d="M150 150 l8 -11 M160 146 l6 -9 M140 156 l6 -9" fill="none" stroke-width="2"/>
+    <g fill="#F2A516" stroke-width="2.5"><circle cx="124" cy="128" r="3.5"/><circle cx="140" cy="122" r="3.5"/><circle cx="150" cy="134" r="3.5"/><circle cx="132" cy="142" r="3.5"/><circle cx="96" cy="176" r="3"/><circle cx="182" cy="168" r="3"/><circle cx="176" cy="92" r="3"/></g>
+    <g fill="#F4ECD8" stroke-width="4">
+      <ellipse cx="66" cy="128" rx="14" ry="7" transform="rotate(-20 66 128)"/>
+      <ellipse cx="196" cy="120" rx="14" ry="7" transform="rotate(30 196 120)"/>
+      <ellipse cx="80" cy="176" rx="14" ry="7" transform="rotate(40 80 176)"/>
+      <ellipse cx="128" cy="196" rx="14" ry="7" transform="rotate(95 128 196)"/>
+      <ellipse cx="178" cy="184" rx="14" ry="7" transform="rotate(-50 178 184)"/>
+      <ellipse cx="192" cy="80" rx="14" ry="7" transform="rotate(-35 192 80)"/>
+      <ellipse cx="70" cy="96" rx="14" ry="7" transform="rotate(25 70 96)"/>
+    </g>
+    <path d="M56 150 l-12 4 M210 146 l12 2 M128 214 l0 12" fill="none" stroke-width="3"/>
+  </g>
+</svg>

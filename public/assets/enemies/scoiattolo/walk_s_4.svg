@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Scoiattolo walk s frame 4">
+<defs>
+<g id="sEye" stroke="#111" stroke-linecap="round" stroke-linejoin="round"><path d="M-17 2 C-11 -10 9 -12 18 -2 C11 8 -7 10 -17 2 Z" fill="#F4ECD8" stroke-width="4.2"/><circle cx="7" cy="0" r="5" fill="#111" stroke="none"/><circle cx="5" cy="-2" r="1.4" fill="#FFFFFF" stroke="none"/><path d="M-18 2 C-11 -13 11 -15 20 -2 C10 0 -6 1 -18 2 Z" fill="#D2632A" stroke-width="4.2"/></g>
+</defs>
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(0 4)">
+<path d="M236 450 C190 450 170 380 186 320 C196 284 226 272 240 290 C252 306 236 320 226 340 C214 366 224 410 252 430 Z" fill="#D2632A" stroke-width="5"/>
+<path d="M188 340 l8 -11 M186 358 l8 -11 M188 376 l8 -11 M192 394 l8 -11 M200 410 l8 -11" fill="none" stroke-width="2"/>
+<path d="M204 312 C196 332 196 360 204 386" fill="none" stroke-width="3"/>
+</g>
+<path transform="translate(-4 0)" d="M232 488 C230 478 236 470 248 470 L268 470 C276 474 280 480 280 488 Z" fill="#D2632A" stroke-width="5"/>
+<g transform="translate(0 4)">
+<path d="M236 350 C228 380 228 430 244 448 L280 448 C292 430 292 380 284 350 C276 342 244 342 236 350 Z" fill="#D2632A" stroke-width="5"/>
+<path d="M270 356 C282 384 284 424 276 444 L268 444 C274 420 274 384 264 360 Z" fill="#F3D9B1" stroke-width="3"/>
+<path d="M236 466 C226 442 234 420 256 418 C276 420 284 444 276 466 Z" fill="#D2632A" stroke-width="5"/>
+<path d="M262 462 l8 -11 M270 458 l6 -9" fill="none" stroke-width="2"/>
+</g>
+<path transform="translate(4 0)" d="M252 488 C250 478 256 470 268 470 L292 470 C300 474 304 480 304 488 Z" fill="#D2632A" stroke-width="5"/>
+<g transform="translate(0 4)">
+<path d="M290 384 L336 384 C342 384 344 392 338 394 L320 394 L318 410 L304 410 L304 394 L290 394 Z" fill="#28C2B4" stroke-width="5"/>
+<path d="M300 368 L320 368 L320 384 L300 384 Z" fill="#FF5A1F" stroke-width="4"/>
+<path d="M304 362 L316 362 L316 368 L304 368 Z M336 386 L346 386 L346 392 L336 392 Z" fill="#FFD400" stroke-width="3"/>
+<path d="M262 362 L298 398 L308 390 L272 356 Z M300 392 C296 402 304 410 314 406 C318 402 318 396 314 392 Z" fill="#D2632A" stroke-width="5"/>
+<g transform="translate(252 254)">
+<path d="M-18 10 L-28 -32 L-20 -24 L-16 -38 L0 2 Z" fill="#D2632A" stroke-width="5"/>
+<path d="M-14 2 L-20 -20" fill="none" stroke-width="3"/>
+<path d="M-40 44 C-40 18 -22 0 2 0 C24 0 36 14 40 28 C52 34 66 42 72 52 C76 60 72 68 62 70 C50 74 40 76 32 82 C20 92 2 96 -14 90 C-32 82 -40 64 -40 44 Z" fill="#D2632A" stroke-width="5"/>
+<path d="M-6 92 l10 -14 M4 92 l10 -14 M14 88 l9 -12" fill="none" stroke-width="2"/>
+<path d="M-40 58 L-48 64 L-38 68 L-44 76 L-34 76" fill="none" stroke-width="3"/>
+<path d="M32 40 C46 38 64 42 72 54 C72 64 60 70 42 72 C32 62 28 48 32 40 Z" fill="#F3D9B1" stroke-width="3"/>
+<path d="M66 50 C72 46 78 50 78 56 C76 60 70 60 66 56 Z" fill="#111" stroke="none"/>
+<path d="M54 70 L56 88 L64 87 L62 70 Z" fill="#F4ECD8" stroke-width="3"/>
+<path d="M38 68 C48 72 58 72 70 66" fill="none" stroke-width="4"/><path d="M38 68 C34 66 33 62 36 59" fill="none" stroke-width="3"/>
+<use href="#sEye" transform="translate(20 30) scale(.75)"/>
+<path d="M8 18 C16 12 28 12 36 18" fill="none" stroke-width="5"/>
+</g>
+</g>
+</g>
+</svg>

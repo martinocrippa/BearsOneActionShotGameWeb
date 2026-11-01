@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Papero in picchiata tied f frame 1 (legato con la liquirizia)">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<path d="M180 452 L154 444 L160 456 L146 462 L164 466 L182 470 Z M182 470 L156 470 L164 478 L152 486 L184 486 Z" fill="#FF5A1F" stroke-width="4"/>
+<path d="M192 414 C240 408 260 408 308 414 C336 424 342 472 316 488 L184 488 C158 472 164 424 192 414 Z" fill="#FFD400" stroke-width="5"/>
+<path d="M290 486 l10 -14 M302 482 l10 -14 M312 474 l8 -11" fill="none" stroke-width="2"/>
+<path d="M226 418 C222 398 212 388 200 384 C206 396 206 408 212 420 Z" fill="#FFD400" stroke-width="4"/>
+<path d="M200 415 C216 440 216 462 204 487" fill="none" stroke-width="15"/>
+<path d="M203 420 C217 440 217 458 209 473" fill="none" stroke="#F4ECD8" stroke-width="2.5"/>
+<path d="M238 415 C254 440 254 462 242 487" fill="none" stroke-width="15"/>
+<path d="M241 420 C255 440 255 458 247 473" fill="none" stroke="#F4ECD8" stroke-width="2.5"/>
+<path d="M276 415 C292 440 292 462 280 487" fill="none" stroke-width="15"/>
+<path d="M279 420 C293 440 293 458 285 473" fill="none" stroke="#F4ECD8" stroke-width="2.5"/>
+<path d="M266 418 C290 410 300 430 316 416" fill="none" stroke-width="11"/>
+<path d="M270 414 C286 408 296 422 310 413" fill="none" stroke="#F4ECD8" stroke-width="2"/>
+<circle cx="250" cy="408" r="22" fill="#111" stroke-width="3"/>
+<path d="M250 408 m-8 0 a8 8 0 1 1 16 0 a12 12 0 1 1 -24 0 a16 16 0 1 1 32 0" fill="none" stroke="#F4ECD8" stroke-width="2"/>
+<circle cx="250" cy="408" r="6" fill="#FF2D8A" stroke-width="3"/>
+<g transform="translate(330 400) rotate(-12) translate(-256 -350)">
+<path d="M220 344 C214 318 232 300 256 300 C280 300 298 318 292 344 C286 360 272 368 256 368 C240 368 226 360 220 344 Z" fill="#FFD400" stroke-width="5"/>
+<path d="M266 366 l8 -11 M276 362 l8 -11 M284 356 l7 -10" fill="none" stroke-width="2"/>
+<circle cx="240" cy="338" r="10" fill="#F4ECD8" stroke-width="3"/><path d="M229 336 C232 326 248 326 251 336 Z" fill="#FFD400" stroke-width="3"/><circle cx="242" cy="341" r="2.6" fill="#111" stroke="none"/>
+<circle cx="273" cy="338" r="11" fill="#F4ECD8" stroke-width="3"/><path d="M261 336 C264 325 282 325 285 336 Z" fill="#FFD400" stroke-width="3"/><circle cx="270" cy="341" r="2.8" fill="#111" stroke="none"/>
+<path d="M228 322 L250 330 M262 330 L288 320" fill="none" stroke-width="5"/>
+<g transform="translate(-8 -20) rotate(-24 256 300)">
+<path d="M206 334 C204 296 228 276 256 276 C284 276 308 296 306 334 C288 328 224 328 206 334 Z" fill="#9C968A" stroke-width="5"/>
+<path d="M200 334 C232 324 280 324 312 334" fill="none" stroke-width="10"/><path d="M200 334 C232 324 280 324 312 334" fill="none" stroke="#9C968A" stroke-width="5"/>
+<path d="M238 290 C244 296 250 296 254 290" fill="none" stroke-width="3"/>
+<path d="M286 310 l7 -10 M292 318 l6 -9" fill="none" stroke-width="2"/>
+<path d="M264 300 C264 292 280 292 280 300 Z" fill="#6B4226" stroke-width="2.5"/>
+<path d="M266 300 C266 310 272 315 272 315 C272 315 278 310 278 300 Z" fill="#D4A017" stroke-width="2.5"/>
+</g>
+<path d="M234 352 C240 344 272 344 278 352 C282 364 270 374 256 374 C242 374 230 364 234 352 Z" fill="#FF5A1F" stroke-width="4"/>
+<circle cx="248" cy="353" r="1.8" fill="#111" stroke="none"/><circle cx="264" cy="353" r="1.8" fill="#111" stroke="none"/>
+<path d="M240 366 C250 360 262 360 274 366" fill="none" stroke-width="3"/>
+</g>
+</g>
+</svg>

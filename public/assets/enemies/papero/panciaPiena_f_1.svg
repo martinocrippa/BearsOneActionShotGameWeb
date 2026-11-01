@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Papero in picchiata full f frame 1 (pancia piena)">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<path d="M196 456 C170 470 140 474 116 466 C134 458 150 452 170 446 Z" fill="#FFD400" stroke-width="4"/>
+<path d="M352 452 C380 462 406 462 424 452 C406 446 388 440 366 438 Z" fill="#FFD400" stroke-width="4"/>
+<path d="M300 386 L312 346 M332 392 L352 352" fill="none" stroke-width="9"/><path d="M300 386 L312 346 M332 392 L352 352" fill="none" stroke="#FF5A1F" stroke-width="4"/>
+<path d="M298 346 L312 330 L326 346 C320 352 304 352 298 346 Z M340 352 L356 338 L368 356 C362 362 346 360 340 352 Z" fill="#FF5A1F" stroke-width="4"/>
+<path d="M176 470 C168 420 216 376 280 378 C344 380 376 424 364 472 C344 492 196 492 176 470 Z" fill="#FFD400" stroke-width="5"/>
+<path d="M330 478 l12 -17 M344 470 l10 -14 M354 456 l8 -11 M360 440 l6 -9" fill="none" stroke-width="2"/>
+<path d="M262 420 C268 428 278 428 284 420" fill="none" stroke-width="3"/>
+<g transform="translate(162 430) rotate(-70) translate(-256 -334)">
+<path d="M220 344 C214 318 232 300 256 300 C280 300 298 318 292 344 C286 360 272 368 256 368 C240 368 226 360 220 344 Z" fill="#FFD400" stroke-width="5"/>
+<path d="M266 366 l8 -11 M276 362 l8 -11 M284 356 l7 -10" fill="none" stroke-width="2"/>
+<path d="M228 340 C234 330 246 330 252 340 M262 338 C268 328 280 328 286 338" fill="none" stroke-width="3.5"/>
+<path d="M206 334 C204 296 228 276 256 276 C284 276 308 296 306 334 C288 328 224 328 206 334 Z" fill="#9C968A" stroke-width="5"/>
+<path d="M200 334 C232 324 280 324 312 334" fill="none" stroke-width="10"/><path d="M200 334 C232 324 280 324 312 334" fill="none" stroke="#9C968A" stroke-width="5"/>
+<path d="M238 290 C244 296 250 296 254 290" fill="none" stroke-width="3"/>
+<path d="M286 310 l7 -10 M292 318 l6 -9" fill="none" stroke-width="2"/>
+<path d="M264 300 C264 292 280 292 280 300 Z" fill="#6B4226" stroke-width="2.5"/>
+<path d="M266 300 C266 310 272 315 272 315 C272 315 278 310 278 300 Z" fill="#D4A017" stroke-width="2.5"/>
+<path d="M234 352 C240 344 272 344 278 352 C282 364 270 374 256 374 C242 374 230 364 234 352 Z" fill="#FF5A1F" stroke-width="4"/>
+<circle cx="248" cy="353" r="1.8" fill="#111" stroke="none"/><circle cx="264" cy="353" r="1.8" fill="#111" stroke="none"/>
+<path d="M238 362 C250 367 262 367 276 359" fill="none" stroke-width="3"/>
+</g>
+<circle cx="164" cy="384" r="5" fill="#F4ECD8" stroke-width="3"/><circle cx="178" cy="352" r="7" fill="#F4ECD8" stroke-width="3"/>
+<path d="M190 270 C184 248 206 236 222 246 C232 226 262 228 266 244 C284 234 306 242 304 262 C322 266 322 290 302 292 C298 306 272 308 262 298 C248 310 222 308 216 296 C196 300 182 284 190 270 Z" fill="#F4ECD8" stroke-width="4"/>
+<path d="M206 256 L206 282 M206 256 C220 256 222 268 206 269 M206 269 C224 269 224 282 206 282 M228 256 L228 276 C228 284 242 284 242 276 L242 256 M248 282 L248 256 C262 256 264 269 248 269 M254 269 L264 282 M270 282 L270 256 C286 256 286 270 270 270" fill="none" stroke-width="5"/>
+</g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Betulla">
+  <g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M234 488 C238 400 240 300 244 190 L268 190 C272 300 274 400 278 488 Z" fill="#F4ECD8" stroke-width="5"/>
+    <path d="M244 230 L210 196 M268 260 L300 224" fill="none" stroke-width="7"/>
+    <path d="M244 230 L210 196 M268 260 L300 224" fill="none" stroke="#F4ECD8" stroke-width="2"/>
+    <g fill="#111" stroke="none">
+      <path d="M240 440 C248 436 256 438 262 442 C256 446 248 446 240 440 Z"/>
+      <path d="M252 400 C260 396 270 398 274 402 C266 406 258 406 252 400 Z"/>
+      <path d="M238 350 C244 346 252 348 256 352 C250 356 244 356 238 350 Z"/>
+      <path d="M256 300 C262 296 268 298 270 302 C264 306 258 306 256 300 Z"/>
+      <path d="M244 260 C250 256 256 258 258 262 C252 266 246 266 244 260 Z"/>
+    </g>
+    <path d="M266 470 l6 -9 M268 440 l6 -9 M268 410 l5 -7 M266 380 l5 -7 M266 350 l5 -7" fill="none" stroke-width="2"/>
+    <path d="M256 44 C296 40 330 64 336 98 C374 104 396 140 384 176 C404 200 392 240 360 246 C344 270 304 276 284 258 C268 274 236 276 220 260 C192 274 150 262 144 232 C112 222 104 184 124 162 C110 130 130 96 166 94 C176 62 214 42 256 44 Z" fill="#8CC85A" stroke-width="5"/>
+    <path d="M190 130 C200 120 214 118 224 124 M290 110 C302 104 316 108 322 118 M170 196 C182 188 196 190 204 198 M300 200 C312 192 330 196 336 206 M240 168 C250 160 264 160 272 168" fill="none" stroke-width="3"/>
+    <path d="M330 232 l10 -14 M342 226 l10 -14 M352 214 l9 -12 M300 252 l10 -14 M312 250 l10 -14 M364 196 l8 -11 M372 182 l6 -9" fill="none" stroke-width="2"/>
+  </g>
+</svg>

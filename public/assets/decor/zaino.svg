@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 1024" width="512" height="1024" style="display: block" role="img" aria-label="Zaino blu gigante rovesciato">
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M10 1000 H502" stroke-width="5"/>
+<path d="M40 1000 C30 820 50 640 120 560 C180 500 340 500 400 560 C470 640 486 820 474 1000 Z" fill="#3B8DE0" stroke-width="7"/>
+<path d="M90 980 C84 840 100 700 160 640" fill="none" stroke="#7FD0F0" stroke-width="10"/>
+<path d="M120 780 H400 V960 H120 Z" fill="#1F5FBF" stroke-width="6"/>
+<path d="M120 800 C200 790 320 790 400 800" fill="none" stroke="#FFD74A" stroke-width="8"/>
+<path d="M120 800 C200 790 320 790 400 800" fill="none" stroke-width="3"/>
+<path d="M256 800 V840" stroke-width="5"/><rect x="240" y="836" width="32" height="24" fill="#9C968A" stroke-width="4"/>
+<path d="M160 540 C170 440 340 440 352 540" fill="none" stroke-width="22"/>
+<path d="M160 540 C170 440 340 440 352 540" fill="none" stroke="#1F5FBF" stroke-width="14"/>
+<circle cx="190" cy="660" r="34" fill="#FFD74A" stroke-width="5"/><path d="M178 650 l24 0 l-12 22 z" fill="#E0503C" stroke-width="3"/>
+<circle cx="330" cy="680" r="30" fill="#E0503C" stroke-width="5"/><path d="M314 680 h32 M330 664 v32" fill="none" stroke="#F4ECD8" stroke-width="5"/>
+<path d="M474 1000 C500 960 506 900 490 860" fill="none" stroke-width="16"/>
+<path d="M474 1000 C500 960 506 900 490 860" fill="none" stroke="#1F5FBF" stroke-width="9"/>
+<path d="M420 980 l8 -11 M422 952 l8 -11 M424 924 l8 -11 M426 896 l8 -11 M428 868 l8 -11 M430 840 l8 -11 M432 812 l8 -11 M434 784 l8 -11 M436 756 l8 -11 M438 728 l8 -11 M440 700 l8 -11 M442 672 l8 -11 M444 644 l8 -11 M446 616 l8 -11" fill="none" stroke-width="2"/>
+<path d="M300 1000 L330 930 L470 960 L452 1000 Z" fill="#E0503C" stroke-width="5"/><path d="M330 930 L470 960" fill="none" stroke="#F4ECD8" stroke-width="4"/>
+<path d="M60 1000 L230 960 L240 980 L76 1000 Z" fill="#FFD74A" stroke-width="5"/><path d="M230 960 L262 968 L240 980 Z" fill="#F3D9B1" stroke-width="4"/>
+</g>
+</svg>

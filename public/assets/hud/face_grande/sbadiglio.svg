@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Faccia HUD Grande che sbadiglia">
+<defs>
+<clipPath id="ch"><path d="M95 74 C118 46 172 44 194 72 C204 86 216 94 240 99 C262 103 272 118 263 133 C252 150 232 162 212 166 C200 178 184 184 163 184 C146 194 126 196 112 190 C88 176 70 158 69 130 C68 104 79 86 95 74 Z"/></clipPath>
+</defs>
+<g transform="scale(.9846) translate(-40 24)" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<path class="fur" d="M88 82 C68 62 76 30 102 34 C120 37 126 54 118 66 Z" fill="#CF9A62" stroke-width="3.5"/>
+<path d="M95 70 C89 58 95 47 104 46" fill="none" stroke-width="2.5"/>
+<path class="fur" d="M95 74 C118 46 172 44 194 72 C204 86 216 94 240 99 C262 103 272 118 263 133 C252 150 232 162 212 166 C200 178 184 184 163 184 C146 194 126 196 112 190 C88 176 70 158 69 130 C68 104 79 86 95 74 Z" fill="#CF9A62" stroke-width="4"/>
+<g clip-path="url(#ch)" fill="none" stroke-width="2"><path d="M128 200 l12 -17 M135 200 l12 -17 M142 199 l12 -17 M149 198 l12 -17 M156 196 l12 -17 M163 194 l12 -17 M170 192 l12 -17 M177 190 l12 -17 M184 186 l12 -17"/></g>
+<path d="M110 62 L108 30 L124 48 L132 22 L146 46 L164 30 L164 60 Z" fill="#A8733F" stroke-width="3.5"/>
+<path class="fur" d="M150 58 C150 34 174 24 188 40 C196 50 192 62 184 70 Z" fill="#CF9A62" stroke-width="3.5"/>
+<path d="M160 54 C162 42 172 38 180 44" fill="none" stroke-width="2.5"/>
+<path class="fur-light" d="M198 108 C222 98 254 102 262 124 C262 142 242 158 212 162 C196 150 190 122 198 108 Z" fill="#F1D7AE" stroke-width="3"/>
+<path d="M72 138 L60 146 L74 150 L62 162 L78 164 L70 174" fill="none" stroke-width="3"/>
+<ellipse cx="258" cy="117" rx="15" ry="11" fill="#111" stroke="none"/><ellipse cx="253" cy="112" rx="4.5" ry="2.6" fill="#F4ECD8" stroke="none"/>
+<path d="M232 128 C236 136 240 140 246 140" fill="none" stroke-width="3"/>
+<g fill="none">
+<path d="M160 96 C168 104 182 104 192 96" stroke-width="4"/>
+<path d="M196 102 C202 108 200 114 194 112 C192 108 194 104 196 102 Z" fill="#7FD0F0" stroke-width="2.5"/>
+<path d="M150 74 C166 64 186 64 202 74" stroke-width="5.5"/>
+<path d="M166 144 C168 200 228 204 238 140 C214 150 186 152 166 144 Z" fill="#111" stroke-width="4"/>
+<path d="M184 184 C196 196 214 194 224 180 C210 186 196 186 184 184 Z" fill="#FF8FB3" stroke-width="2.5"/>
+<path d="M186 148 L186 156 L194 156 L194 149 Z M202 149 L202 157 L210 157 L210 149 Z" fill="#F4ECD8" stroke-width="2.5"/>
+</g>
+</g>
+</svg>

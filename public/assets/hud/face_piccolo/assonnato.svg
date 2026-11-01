@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Faccia HUD Piccolo assonnato">
+<defs>
+<clipPath id="ch"><path d="M95 74 C118 46 172 44 194 72 C204 86 216 94 240 99 C262 103 272 118 263 133 C252 150 232 162 212 166 C200 178 184 184 163 184 C146 194 126 196 112 190 C88 176 70 158 69 130 C68 104 79 86 95 74 Z"/></clipPath>
+<g id="gl" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round"><path d="M146 92 L110 82" stroke-width="6"/><path d="M148 80 C162 76 186 76 198 80 C201 92 201 106 197 116 C184 120 162 120 149 116 C145 104 145 90 148 80 Z" stroke-width="13"/><path d="M148 80 C162 76 186 76 198 80 C201 92 201 106 197 116 C184 120 162 120 149 116 C145 104 145 90 148 80 Z" stroke="#22B14C" stroke-width="7"/><path d="M199 92 L207 92" stroke-width="7"/><path d="M207 82 C214 79 223 80 228 84 L226 112 C220 116 211 116 207 112 Z" stroke-width="11"/><path d="M207 82 C214 79 223 80 228 84 L226 112 C220 116 211 116 207 112 Z" stroke="#22B14C" stroke-width="6"/></g>
+</defs>
+<g transform="scale(.9846) translate(-40 24)" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<path class="fur" d="M88 82 C68 62 76 30 102 34 C120 37 126 54 118 66 Z" fill="#9A6239" stroke-width="3.5"/>
+<path d="M95 70 C89 58 95 47 104 46" fill="none" stroke-width="2.5"/>
+<path class="fur" d="M95 74 C118 46 172 44 194 72 C204 86 216 94 240 99 C262 103 272 118 263 133 C252 150 232 162 212 166 C200 178 184 184 163 184 C146 194 126 196 112 190 C88 176 70 158 69 130 C68 104 79 86 95 74 Z" fill="#9A6239" stroke-width="4"/>
+<g clip-path="url(#ch)" fill="none" stroke-width="2"><path d="M128 200 l12 -17 M135 200 l12 -17 M142 199 l12 -17 M149 198 l12 -17 M156 196 l12 -17 M163 194 l12 -17 M170 192 l12 -17 M177 190 l12 -17 M184 186 l12 -17"/></g>
+<path d="M98 70 L84 18 L112 50 L110 2 L134 46 L148 -6 L154 44 L178 8 L170 58 L190 40 L180 70 Z" fill="#6E4122" stroke-width="3.5"/>
+<path d="M112 50 L106 30 M134 46 L132 26 M154 44 L158 24 M170 58 L176 44" fill="none" stroke-width="2"/>
+<path class="fur" d="M150 58 C150 34 174 24 188 40 C196 50 192 62 184 70 Z" fill="#9A6239" stroke-width="3.5"/>
+<path class="fur-light" d="M198 108 C222 98 254 102 262 124 C262 142 242 158 212 162 C196 150 190 122 198 108 Z" fill="#E2B88A" stroke-width="3"/>
+<path d="M72 138 L60 146 L74 150 L62 162 L78 164 L70 174" fill="none" stroke-width="3"/>
+<ellipse cx="258" cy="117" rx="15" ry="11" fill="#111" stroke="none"/><ellipse cx="253" cy="112" rx="4.5" ry="2.6" fill="#F4ECD8" stroke="none"/>
+<g fill="none">
+<g transform="translate(174 98) scale(1.1)">
+<path d="M-17 2 C-15 -14 13 -16 18 -2 C14 10 -10 12 -17 2 Z" fill="#F4ECD8" stroke-width="2.6"/>
+<circle cx="5" cy="3" r="6" fill="#7A4A1E" stroke="none"/><circle cx="5" cy="3" r="2.3" fill="#111" stroke="none"/>
+<path class="fur" d="M-18 0 C-12 -17 12 -19 20 -4 L20 2 C10 3 -6 3 -18 3 Z" fill="#9A6239" stroke-width="2.6"/>
+<path d="M-11 10 C-4 13 6 13 13 9" stroke-width="2.2"/>
+</g>
+<use href="#gl"/>
+<path d="M150 70 C166 66 184 68 200 74" stroke-width="5"/>
+<path d="M180 160 C192 168 210 168 222 158 C208 162 194 162 180 160 Z" fill="#111" stroke-width="3"/>
+</g>
+</g>
+</svg>

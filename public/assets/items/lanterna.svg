@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Lanterna a petrolio accesa">
+<defs><path id="kS" d="M0 -14 L4 -4 L14 0 L4 4 L0 14 L-4 4 L-14 0 L-4 -4 Z" fill="#FFD400" stroke="#111" stroke-width="2.5" stroke-linejoin="round"/></defs><g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M108 52 C108 30 148 30 148 52" fill="none" stroke-width="7"/>
+<path d="M104 60 L152 60 L146 76 L110 76 Z" fill="#2F4A3A" stroke-width="4"/>
+<path d="M96 76 L160 76 L168 96 L88 96 Z" fill="#2F4A3A" stroke-width="5"/>
+<path d="M94 96 L162 96 L158 192 L98 192 Z" fill="#FFD74A" stroke-width="5"/>
+<path d="M128 170 C112 150 120 130 128 118 C136 130 144 150 128 170 Z" fill="#FF5A1F" stroke-width="3"/>
+<path d="M128 166 C122 154 126 144 128 138 C132 146 134 156 128 166 Z" fill="#F4ECD8" stroke-width="2"/>
+<path d="M94 96 L98 192 M162 96 L158 192 M128 96 L128 116" fill="none" stroke="#2F4A3A" stroke-width="5"/>
+<path d="M88 192 L168 192 L172 214 L84 214 Z" fill="#2F4A3A" stroke-width="5"/>
+<path d="M102 108 C104 104 108 102 112 103" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+<path d="M60 130 l-18 -4 M196 130 l18 -4 M66 170 l-16 8 M190 170 l16 8" fill="none" stroke="#FFD74A" stroke-width="5"/>
+<path d="M70 232 C110 226 150 226 190 232" fill="none" stroke-width="3"/>
+<path d="M150 200 l7 -10" fill="none" stroke-width="2"/>
+<use href="#kS" transform="translate(206 70) scale(.8)"/><use href="#kS" transform="translate(48 210) scale(.55)"/>
+</g>
+</svg>

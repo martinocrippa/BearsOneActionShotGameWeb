@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 1024" width="512" height="1024" style="display: block" role="img" aria-label="Lampione di ferro antico verde scuro acceso">
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M220 1000 L292 1000 L282 960 L230 960 Z" fill="#2F4A3A" stroke-width="5"/>
+<path d="M232 960 C236 930 244 910 246 880 L266 880 C268 910 276 930 280 960 Z" fill="#2F4A3A" stroke-width="5"/>
+<path d="M246 880 L250 320 L262 320 L266 880 Z" fill="#2F4A3A" stroke-width="5"/>
+<path d="M238 600 L274 600 L274 616 L238 616 Z M240 420 L272 420 L272 434 L240 434 Z" fill="#2F4A3A" stroke-width="4"/>
+<path d="M256 330 C220 300 190 316 196 346 M256 330 C292 300 322 316 316 346" fill="none" stroke-width="8"/>
+<path d="M256 330 C220 300 190 316 196 346 M256 330 C292 300 322 316 316 346" fill="none" stroke="#2F4A3A" stroke-width="3"/>
+<path d="M236 320 L276 320 L270 300 L242 300 Z" fill="#2F4A3A" stroke-width="4"/>
+<path d="M214 300 L298 300 L282 220 L230 220 Z" fill="#FFD74A" stroke-width="5"/>
+<path d="M256 300 L256 220 M236 300 L244 220 M276 300 L268 220" fill="none" stroke="#2F4A3A" stroke-width="4"/>
+<path d="M222 222 L290 222 L256 170 Z" fill="#2F4A3A" stroke-width="5"/>
+<circle cx="256" cy="162" r="10" fill="#2F4A3A" stroke-width="4"/>
+<path d="M190 250 l-22 -6 M322 250 l22 -6 M200 290 l-20 10 M312 290 l20 10" fill="none" stroke="#FFD74A" stroke-width="5"/>
+<path d="M226 240 C230 232 236 230 242 232" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+<path d="M262 400 l8 -11 M262 500 l8 -11 M262 700 l8 -11 M262 800 l8 -11 M272 930 l8 -11" fill="none" stroke="#111" stroke-width="2"/><path d="M196 1002 C240 996 280 996 320 1002" fill="none" stroke-width="3"/></g>
+</svg>

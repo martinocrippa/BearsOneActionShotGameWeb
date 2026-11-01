@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Tre funghi rossi a pois">
+  <g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M150 488 C152 456 154 430 152 410 L184 410 C182 430 184 456 188 488 Z" fill="#F4ECD8" stroke-width="5"/>
+    <path d="M110 414 C112 366 140 344 168 344 C198 344 226 366 228 414 C190 422 150 422 110 414 Z" fill="#E3262B" stroke-width="5"/>
+    <g fill="#F4ECD8" stroke-width="3"><circle cx="146" cy="380" r="9"/><circle cx="184" cy="368" r="7"/><circle cx="206" cy="396" r="6"/><circle cx="128" cy="402" r="5"/></g>
+    <path d="M178 486 l8 -11 M180 470 l6 -9" fill="none" stroke-width="2"/>
+    <path d="M246 488 C250 430 252 380 250 330 L290 330 C288 380 290 430 296 488 Z" fill="#F4ECD8" stroke-width="5"/>
+    <path d="M234 386 C244 380 294 380 304 386" fill="none" stroke-width="3"/>
+    <path d="M190 336 C192 270 230 236 270 236 C312 236 350 270 352 336 C298 348 244 348 190 336 Z" fill="#E3262B" stroke-width="5"/>
+    <g fill="#F4ECD8" stroke-width="3"><circle cx="240" cy="284" r="12"/><circle cx="292" cy="266" r="9"/><circle cx="318" cy="306" r="10"/><circle cx="214" cy="318" r="7"/><circle cx="270" cy="318" r="6"/></g>
+    <path d="M318 336 l10 -14 M330 334 l10 -14 M340 330 l8 -11 M282 486 l8 -11 M284 468 l6 -9" fill="none" stroke-width="2"/>
+    <path d="M344 488 C346 468 348 454 346 442 L366 442 C366 454 368 468 372 488 Z" fill="#F4ECD8" stroke-width="5"/>
+    <path d="M318 446 C320 414 338 400 356 400 C376 400 394 414 396 446 C370 452 344 452 318 446 Z" fill="#E3262B" stroke-width="5"/>
+    <g fill="#F4ECD8" stroke-width="2.5"><circle cx="346" cy="422" r="6"/><circle cx="372" cy="416" r="5"/></g>
+  </g>
+</svg>

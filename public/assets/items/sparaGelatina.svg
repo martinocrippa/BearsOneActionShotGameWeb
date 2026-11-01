@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Spara-gelatina a terra da raccogliere">
+<defs><clipPath id="wgP"><rect x="82" y="102" width="68" height="42" rx="10"/></clipPath></defs>
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M42 234 l6 -8 M52 234 l6 -8 M62 234 l6 -8 M100 234 l6 -8 M110 234 l6 -8 M120 234 l6 -8 M130 234 l6 -8 M140 234 l6 -8 M150 234 l6 -8 M160 234 l6 -8 M170 234 l6 -8 M180 234 l6 -8 M190 234 l6 -8 M200 234 l6 -8 M210 234 l6 -8" fill="none" stroke-width="2"/>
+  <path d="M66 192 L58 226 C57 230 60 232 64 232 L88 231 C92 231 94 228 94 224 L98 192 Z" fill="#1F5FBF" stroke-width="5"/>
+  <path d="M100 192 C100 210 116 216 128 206" fill="none" stroke-width="4"/>
+  <g clip-path="url(#wgP)" stroke="none"><rect x="82" y="112" width="68" height="34" fill="#5AB030" fill-opacity="0.6"/></g>
+  <path d="M86 114 C102 110 128 118 146 112" fill="none" stroke-width="2"/>
+  <circle cx="102" cy="128" r="4" fill="#F4ECD8" stroke-width="2"/><circle cx="128" cy="134" r="3" fill="#F4ECD8" stroke-width="2"/>
+  <rect x="82" y="102" width="68" height="42" rx="10" fill="none" stroke-width="4"/>
+  <path d="M90 96 L142 96 L144 104 L88 104 Z" fill="#FFD400" stroke-width="3"/>
+  <path d="M38 164 C38 152 46 146 56 146 L176 142 C182 142 186 146 186 152 L186 182 C186 188 182 192 176 192 L56 194 C46 194 38 188 38 178 Z" fill="#1F5FBF" stroke-width="5"/>
+  <path d="M60 178 L176 176 L176 186 L60 188 Z" fill="#FFD400" stroke-width="3"/>
+  <path d="M150 188 l8 -11 M160 188 l8 -11 M170 186 l8 -11" fill="none" stroke-width="2"/>
+  <path d="M184 136 L214 120 C220 118 222 122 222 128 L222 202 C222 208 220 212 214 210 L184 198 Z" fill="#FFD400" stroke-width="5"/>
+  <path d="M212 132 C216 150 216 180 212 198" fill="none" stroke-width="3"/>
+  <path d="M226 156 C232 166 230 176 224 178 C220 176 220 166 226 156 Z" fill="#5AB030" fill-opacity="0.6" stroke-width="3"/>
+</g>
+</svg>

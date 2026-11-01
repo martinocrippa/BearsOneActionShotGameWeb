@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Scoiattolo idle fq frame 1">
+<defs>
+<clipPath id="sCH"><path d="M80 64 C104 40 150 40 176 60 C192 72 206 80 226 88 C246 96 252 112 240 124 C228 138 206 146 186 150 C170 166 140 172 116 166 C88 158 66 138 64 110 C62 90 68 76 80 64 Z"/></clipPath>
+<g id="sEye" stroke="#111" stroke-linecap="round" stroke-linejoin="round"><path d="M-17 2 C-11 -10 9 -12 18 -2 C11 8 -7 10 -17 2 Z" fill="#F4ECD8" stroke-width="4.2"/><circle cx="7" cy="0" r="5" fill="#111" stroke="none"/><circle cx="5" cy="-2" r="1.4" fill="#FFFFFF" stroke="none"/><path d="M-18 2 C-11 -13 11 -15 20 -2 C10 0 -6 1 -18 2 Z" fill="#D2632A" stroke-width="4.2"/></g>
+<g id="sEye2" stroke="#111" stroke-linecap="round" stroke-linejoin="round"><path d="M-17 2 C-13 -12 11 -14 18 -2 C12 10 -9 12 -17 2 Z" fill="#F4ECD8" stroke-width="4.2"/><circle cx="-5" cy="-3" r="4.5" fill="#111" stroke="none"/></g>
+</defs>
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<path d="M228 446 C176 430 168 330 194 280 C210 252 236 256 240 276 C242 294 224 302 216 326 C206 358 222 404 252 424 Z" fill="#D2632A" stroke-width="5"/>
+<path d="M190 310 l8 -11 M188 328 l8 -11 M188 346 l8 -11 M190 364 l8 -11 M194 382 l8 -11" fill="none" stroke-width="2"/>
+<path d="M210 296 C202 318 200 346 208 374" fill="none" stroke-width="3"/>
+<path d="M226 360 L212 404 L224 410 L238 372 Z M210 404 C204 414 212 424 222 420 C226 416 226 410 224 406 Z" fill="#D2632A" stroke-width="5"/>
+<path d="M226 470 C218 450 226 430 244 428 L254 470 Z M262 470 C262 446 272 428 290 430 C300 446 296 462 290 470 Z" fill="#D2632A" stroke-width="5"/>
+<path d="M222 488 C220 478 226 470 238 470 L256 470 C262 474 266 480 266 488 Z M256 488 C254 478 260 470 272 470 L294 470 C302 474 306 480 306 488 Z" fill="#D2632A" stroke-width="5"/>
+<path d="M226 350 C218 380 218 430 234 448 L284 448 C298 430 298 380 290 350 C280 340 236 340 226 350 Z" fill="#D2632A" stroke-width="5"/>
+<path d="M246 360 C240 390 242 428 254 442 L274 442 C284 428 286 390 280 360 C272 354 254 354 246 360 Z" fill="#F3D9B1" stroke-width="3"/>
+<path d="M280 440 l10 -14 M286 424 l6 -9" fill="none" stroke-width="2"/>
+<path d="M306 382 L344 386 C350 388 350 396 344 396 L326 396 L322 412 L310 410 L312 394 L304 392 Z" fill="#28C2B4" stroke-width="5"/>
+<path d="M312 366 L330 368 L328 384 L310 382 Z" fill="#FF5A1F" stroke-width="4"/>
+<path d="M314 360 L326 361 L326 367 L314 366 Z M344 388 L354 389 L353 395 L344 395 Z" fill="#FFD400" stroke-width="3"/>
+<path d="M282 362 L304 394 L314 386 L292 356 Z M306 384 C302 394 310 402 320 398 C324 394 322 386 316 384 Z" fill="#D2632A" stroke-width="5"/>
+<g transform="translate(254 254) scale(.7) translate(-128 -42)">
+<path d="M70 70 L58 10 L66 18 L70 4 L96 56 Z" fill="#D2632A" stroke-width="7.1"/>
+<path d="M80 64 C104 40 150 40 176 60 C192 72 206 80 226 88 C246 96 252 112 240 124 C228 138 206 146 186 150 C170 166 140 172 116 166 C88 158 66 138 64 110 C62 90 68 76 80 64 Z" fill="#D2632A" stroke-width="7.1"/>
+<g clip-path="url(#sCH)" fill="none" stroke-width="2.9"><path d="M126 180 l12 -17 M136 180 l12 -17 M146 177 l12 -17 M156 173 l12 -17"/></g>
+<path d="M130 50 L142 2 L148 14 L156 4 L168 58 Z" fill="#D2632A" stroke-width="7.1"/>
+<path d="M70 118 L58 126 L72 130 L62 140" fill="none" stroke-width="4.3"/>
+<path d="M176 100 C200 92 236 98 242 116 C240 132 220 142 196 146 C180 136 172 114 176 100 Z" fill="#F3D9B1" stroke-width="4.3"/>
+<ellipse cx="244" cy="110" rx="9" ry="7" fill="#111" stroke="none"/>
+<path d="M214 140 L216 166 L228 165 L227 139 Z M227 139 L228 165 L240 162 L238 136 Z" fill="#F4ECD8" stroke-width="4"/>
+<path d="M194 138 C210 142 226 140 242 130" fill="none" stroke-width="5.7"/><path d="M194 138 C188 134 188 128 193 125" fill="none" stroke-width="4.3"/>
+<use href="#sEye2" transform="translate(210 80) scale(.6)"/>
+<use href="#sEye" transform="translate(160 94) scale(1.1)"/>
+<path d="M140 74 C154 62 174 62 188 72" fill="none" stroke-width="7.1"/>
+</g>
+</g>
+</svg>

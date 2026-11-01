@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Donnola cammina bq frame 1">
+<defs>
+<clipPath id="dCH"><path d="M96 74 C112 52 158 46 190 60 C210 68 236 78 256 88 C270 96 270 112 258 118 C236 128 212 132 192 134 C176 150 148 158 122 152 C96 146 80 128 80 108 C80 94 86 82 96 74 Z"/></clipPath>
+<g id="dEye" stroke="#111" stroke-linecap="round" stroke-linejoin="round"><path d="M-17 2 C-11 -10 9 -12 18 -2 C11 8 -7 10 -17 2 Z" fill="#F4ECD8" stroke-width="4.5"/><circle cx="7" cy="0" r="5" fill="#111" stroke="none"/><circle cx="5" cy="-2" r="1.4" fill="#FFFFFF" stroke="none"/><path d="M-18 2 C-11 -13 11 -15 20 -2 C10 0 -6 1 -18 2 Z" fill="#8B5A36" stroke-width="4.5"/></g>
+<path id="dStar" d="M0 -11 L3 -3 L11 -3 L5 2 L7 10 L0 5 L-7 10 L-5 2 L-11 -3 L-3 -3 Z" fill="#FFD400" stroke="#111" stroke-width="2.5" stroke-linejoin="round"/>
+</defs>
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(0 0)"><g transform="translate(283.7 352.4) rotate(35.5)"><path d="M0 0 L0 -92" fill="none" stroke-width="12"/><path d="M0 0 L0 -92" fill="none" stroke="#9C968A" stroke-width="6"/><g transform="translate(0 -104)"><path d="M-26 0 C-26 24 26 24 26 0 Z" fill="#9C968A" stroke-width="5"/><path d="M-24 2 C-10 8 10 8 24 2" fill="none" stroke-width="2"/></g></g><g transform="rotate(8 270 306)"><path d="M274 302 L294 346 L284 352 L266 312 Z M296 344 C298 354 290 362 282 358 C278 354 280 346 284 344 Z" fill="#8B5A36" stroke-width="5"/></g></g><g transform="translate(-6 0)"><path d="M234 428 L232 476 L252 476 L252 428 Z" fill="#8B5A36" stroke-width="5"/><path d="M226 488 C224 480 228 474 238 474 L254 474 C260 478 262 484 262 488 Z" fill="#8B5A36" stroke-width="5"/></g><g transform="translate(8 0)"><path d="M262 428 L264 474 L282 474 L280 428 Z" fill="#8B5A36" stroke-width="5"/><path d="M262 486 C262 478 268 474 276 474 L290 474 C296 478 298 484 298 486 Z" fill="#8B5A36" stroke-width="5"/></g><g transform="translate(0 0)"><path d="M236 284 C228 320 226 380 230 440 L282 440 C286 380 284 320 276 284 Z" fill="#8B5A36" stroke-width="5"/>
+<path d="M240 300 L272 336 M272 300 L240 336" fill="none" stroke="#F4ECD8" stroke-width="7"/>
+<path d="M240 300 L272 336 M272 300 L240 336" fill="none" stroke-width="2"/>
+<path d="M256 340 L240 330 L240 350 Z M256 340 L272 330 L272 350 Z" fill="#F4ECD8" stroke-width="3"/><circle cx="256" cy="340" r="5" fill="#F4ECD8" stroke-width="3"/>
+<path d="M270 432 l8 -11 M276 420 l6 -9" fill="none" stroke-width="2"/><g transform="rotate(-12 240 304)"><path d="M236 300 L220 360 L230 364 L246 312 Z M218 358 C212 368 220 376 228 372 C232 368 232 362 230 360 Z" fill="#8B5A36" stroke-width="5"/></g><g transform="rotate(-6 246 426)"><path d="M248 430 C232 450 210 456 196 444 C188 436 196 428 204 434 C216 442 232 436 246 420 Z" fill="#8B5A36" stroke-width="5"/><path d="M196 444 C188 436 196 428 204 434 C200 436 198 440 196 444 Z" fill="#6B4226" stroke-width="3"/></g><g transform="translate(256 208)"><path d="M14 8 C12 -4 24 -10 32 -4 C36 2 34 8 28 12 Z" fill="#8B5A36" stroke-width="5"/>
+<path d="M-36 40 C-38 16 -22 0 0 0 C22 0 36 14 38 30 C46 34 50 40 48 46 C46 50 40 52 36 50 C32 64 18 76 0 80 C-20 78 -34 62 -36 40 Z" fill="#8B5A36" stroke-width="5"/>
+<path d="M-30 14 C-40 4 -36 -8 -24 -6 C-18 -2 -18 6 -22 10 Z" fill="#8B5A36" stroke-width="5"/>
+<ellipse cx="46" cy="42" rx="4" ry="3" fill="#111" stroke="none"/>
+<path d="M12 74 l9 -12 M20 68 l8 -11 M26 60 l6 -8" fill="none" stroke-width="2"/>
+<path d="M-36 44 L-44 48 L-36 52 L-42 58" fill="none" stroke-width="3"/>
+<g transform="rotate(-8 0 0)"><path d="M-30 8 C-36 -8 -26 -24 -12 -22 C-10 -36 12 -38 16 -24 C30 -26 38 -10 30 4 C10 -2 -14 0 -30 8 Z" fill="#F4ECD8" stroke-width="5"/>
+<path d="M-30 8 C-12 0 12 -2 30 4 L30 12 C12 6 -12 8 -30 16 Z" fill="#F4ECD8" stroke-width="5"/></g></g></g>
+</g>
+</svg>

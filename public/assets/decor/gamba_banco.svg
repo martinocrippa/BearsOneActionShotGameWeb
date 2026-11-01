@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 1024" width="512" height="1024" style="display: block" role="img" aria-label="Gamba del banco gigante: colonna di metallo grigio">
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M60 40 H452 V120 H60 Z" fill="#E8C070" stroke-width="6"/>
+<path d="M60 120 H452 V150 H60 Z" fill="#C8A06A" stroke-width="5"/>
+<path d="M90 70 C200 64 320 76 430 68" fill="none" stroke-width="3"/>
+<path d="M120 150 H392 V190 H120 Z" fill="#9C968A" stroke-width="5"/>
+<path d="M214 190 C210 450 212 700 210 930 L302 930 C300 700 302 450 298 190 Z" fill="#9C968A" stroke-width="6"/>
+<path d="M232 210 C228 450 230 700 228 910" fill="none" stroke="#F4ECD8" stroke-width="7"/>
+<path d="M276 230 C278 450 276 700 278 910" fill="none" stroke-width="3"/>
+<path d="M284 900 l8 -11 M284 878 l8 -11 M284 856 l8 -11 M284 834 l8 -11 M284 812 l8 -11 M284 790 l8 -11 M284 768 l8 -11 M284 746 l8 -11 M284 724 l8 -11 M284 702 l8 -11 M284 680 l8 -11 M284 658 l8 -11 M284 636 l8 -11 M284 614 l8 -11 M284 592 l8 -11 M284 570 l8 -11 M284 548 l8 -11 M284 526 l8 -11 M284 504 l8 -11 M284 482 l8 -11 M284 460 l8 -11 M284 438 l8 -11 M284 416 l8 -11 M284 394 l8 -11 M284 372 l8 -11 M284 350 l8 -11 M284 328 l8 -11 M284 306 l8 -11 M284 284 l8 -11 M284 262 l8 -11" fill="none" stroke-width="2"/>
+<path d="M214 420 H298 M214 680 H298" fill="none" stroke-width="3"/>
+<circle cx="256" cy="420" r="6" fill="#111"/><circle cx="256" cy="680" r="6" fill="#111"/>
+<path d="M196 930 H316 C326 930 330 940 328 952 L322 1000 H190 L184 952 C182 940 186 930 196 930 Z" fill="#2A2A30" stroke-width="6"/>
+<path d="M200 950 C230 946 280 946 312 950" fill="none" stroke="#9C968A" stroke-width="3"/>
+<path d="M140 1000 H372" stroke-width="5"/>
+</g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Auto blu parcheggiata">
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M40 380 C40 340 70 326 110 322 L160 260 C176 240 200 232 230 232 L350 232 C380 232 400 244 416 266 L452 320 C478 326 488 344 488 372 L488 418 C488 432 478 440 464 440 L56 440 C46 440 40 432 40 420 Z" fill="#3B8DE0" stroke-width="6"/>
+<path d="M120 322 L170 266 C180 254 196 250 214 250 L262 250 L262 322 Z" fill="#8FB8D8" stroke-width="5"/>
+<path d="M278 322 L278 250 L344 250 C362 250 376 258 388 274 L420 322 Z" fill="#8FB8D8" stroke-width="5"/>
+<path d="M140 300 L180 262 M296 300 L330 262" fill="none" stroke="#FFFFFF" stroke-width="6"/>
+<path d="M270 330 V430 M150 360 H186 M300 360 H336" fill="none" stroke-width="4"/>
+<path d="M44 360 H84 L90 384 H44 Z" fill="#FFD400" stroke-width="4"/>
+<path d="M470 352 H488 V380 H462 Z" fill="#E0503C" stroke-width="4"/>
+<path d="M190 404 H250 V428 H190 Z" fill="#F4F4EE" stroke-width="4"/>
+<path d="M200 416 h6 M212 416 h6 M224 416 h6 M236 416 h6" fill="none" stroke="#9C968A" stroke-width="3"/>
+<circle cx="130" cy="444" r="44" fill="#2A2A30" stroke-width="6"/><circle cx="130" cy="444" r="18" fill="#9C968A" stroke-width="4"/>
+<circle cx="398" cy="444" r="44" fill="#2A2A30" stroke-width="6"/><circle cx="398" cy="444" r="18" fill="#9C968A" stroke-width="4"/>
+<path d="M420 400 l8 -11 M436 400 l8 -11 M452 400 l8 -11 M300 420 l8 -11 M316 420 l8 -11" fill="none" stroke-width="2"/>
+<path d="M30 488 H500" stroke-width="5"/>
+</g>
+</svg>

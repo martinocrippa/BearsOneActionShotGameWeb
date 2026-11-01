@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Scoiattolo walk b frame 4">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(4 0)"><path d="M214 488 C210 478 218 470 232 470 L252 470 C256 478 256 484 254 488 Z M222 470 C214 450 222 428 240 426 L252 426 L252 470 Z" fill="#D2632A" stroke-width="5"/></g>
+<g transform="translate(-4 0)"><path d="M298 488 C302 478 294 470 280 470 L260 470 C256 478 256 484 258 488 Z M290 470 C298 450 290 428 272 426 L260 426 L260 470 Z" fill="#D2632A" stroke-width="5"/></g>
+<g transform="translate(0 4)">
+<path d="M222 350 C214 380 212 430 230 448 L282 448 C300 430 298 380 290 350 C280 340 232 340 222 350 Z" fill="#D2632A" stroke-width="5"/>
+<path d="M226 360 L210 410 L222 416 L236 372 Z M206 408 C200 418 208 428 218 424 C222 420 222 414 220 410 Z" fill="#D2632A" stroke-width="5"/>
+<path d="M300 412 L312 412 L312 434 L300 434 Z" fill="#28C2B4" stroke-width="4"/>
+<path d="M286 360 L304 404 L292 410 L278 372 Z M306 400 C312 410 304 420 294 416 C290 412 290 406 292 402 Z" fill="#D2632A" stroke-width="5"/>
+<path d="M256 444 C226 430 214 350 232 296 C242 266 272 266 276 290 C280 312 262 318 258 340 C254 372 264 414 276 436 Z" fill="#D2632A" stroke-width="5"/>
+<path d="M248 306 C238 330 238 364 246 396" fill="none" stroke-width="3"/>
+<path d="M264 336 l8 -11 M260 354 l8 -11 M260 372 l8 -11 M262 390 l8 -11 M266 408 l8 -11" fill="none" stroke-width="2"/>
+<g transform="translate(256 254)">
+<path d="M-34 12 L-46 -30 L-40 -22 L-36 -36 L-14 4 Z M34 12 L46 -30 L40 -22 L36 -36 L14 4 Z" fill="#D2632A" stroke-width="5"/>
+<path d="M-42 50 C-46 20 -30 0 0 0 C30 0 46 20 42 50 C40 72 24 90 0 92 C-24 90 -40 72 -42 50 Z" fill="#D2632A" stroke-width="5"/>
+<path d="M16 84 l10 -14 M24 78 l10 -14 M31 70 l8 -11" fill="none" stroke-width="2"/>
+<path d="M-42 54 L-52 60 L-42 64 L-48 72 L-38 72 M42 54 L52 60 L42 64 L48 72 L38 72" fill="none" stroke-width="3"/>
+</g>
+</g>
+</g>
+</svg>

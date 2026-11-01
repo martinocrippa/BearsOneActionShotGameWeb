@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 96 96" width="96" height="96" style="display: block" role="img" aria-label="Cuscino pieno, vita">
+<defs><clipPath id="pfC"><path d="M12 30 C28 20 68 20 84 30 C90 44 90 54 84 68 C68 78 28 78 12 68 C6 54 6 44 12 30 Z"/></clipPath></defs>
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M12 30 C28 20 68 20 84 30 C90 44 90 54 84 68 C68 78 28 78 12 68 C6 54 6 44 12 30 Z" fill="#F4ECD8" stroke-width="5"/>
+<path d="M18 42 C38 38 58 38 78 42 M18 56 C38 52 58 52 78 56" fill="none" stroke="#7D5CFF" stroke-width="4"/>
+<g clip-path="url(#pfC)" fill="none" stroke-width="2"><path d="M60 80 l12 -17 M68 80 l12 -17 M76 80 l12 -17 M84 76 l10 -14"/></g>
+<path d="M12 30 L4 24 M84 30 L92 24 M12 68 L4 74 M84 68 L92 74" fill="none" stroke-width="4"/>
+</g>
+</svg>

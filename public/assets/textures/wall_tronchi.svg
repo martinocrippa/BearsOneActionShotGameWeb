@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Texture ripetibile: muro di tronchi verticali">
+  <rect width="512" height="512" fill="#6B4226"/>
+  <g fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 0 C34 90 46 170 38 256 C32 340 44 430 40 512 M88 0 C94 110 82 200 90 300 C96 390 84 450 88 512" stroke-width="3"/>
+    <path d="M168 0 C162 80 174 180 166 270 C160 360 172 440 168 512 M214 0 C220 100 208 210 216 310 C222 400 210 460 214 512" stroke-width="3"/>
+    <path d="M296 0 C290 120 302 220 294 300 C288 380 300 450 296 512 M344 0 C350 90 338 190 346 280 C352 370 340 450 344 512" stroke-width="3"/>
+    <path d="M424 0 C418 100 430 200 422 290 C416 380 428 450 424 512 M470 0 C476 120 464 230 472 320 C478 410 466 470 470 512" stroke-width="3"/>
+    <path d="M110 30 l10 -14 M112 60 l10 -14 M110 120 l10 -14 M112 200 l10 -14 M110 280 l10 -14 M112 360 l10 -14 M110 440 l10 -14 M112 490 l10 -14 M238 40 l10 -14 M240 150 l10 -14 M238 230 l10 -14 M240 330 l10 -14 M238 420 l10 -14 M366 30 l10 -14 M368 110 l10 -14 M366 220 l10 -14 M368 300 l10 -14 M366 400 l10 -14 M368 480 l10 -14 M494 50 l10 -14 M496 140 l10 -14 M494 240 l10 -14 M496 350 l10 -14 M494 450 l10 -14" stroke-width="2"/>
+  </g>
+  <g stroke="#111" stroke-linejoin="round">
+    <ellipse cx="64" cy="200" rx="14" ry="20" fill="#C8A06A" stroke-width="4"/><ellipse cx="64" cy="200" rx="6" ry="9" fill="none" stroke-width="2.5"/>
+    <ellipse cx="190" cy="410" rx="12" ry="17" fill="#C8A06A" stroke-width="4"/><ellipse cx="190" cy="410" rx="5" ry="8" fill="none" stroke-width="2.5"/>
+    <ellipse cx="320" cy="120" rx="15" ry="21" fill="#C8A06A" stroke-width="4"/><ellipse cx="320" cy="120" rx="6" ry="9" fill="none" stroke-width="2.5"/>
+    <ellipse cx="448" cy="330" rx="12" ry="18" fill="#C8A06A" stroke-width="4"/><ellipse cx="448" cy="330" rx="5" ry="8" fill="none" stroke-width="2.5"/>
+  </g>
+  <path d="M0 0 V512 M128 0 V512 M256 0 V512 M384 0 V512 M512 0 V512" fill="none" stroke="#111" stroke-width="6"/>
+</svg>

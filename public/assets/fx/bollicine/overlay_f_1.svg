@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Bollicine di cola intorno al personaggio, frame 1">
+  <g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="140" cy="440" r="14" fill="#F4ECD8" fill-opacity=".55" stroke-width="3"/>
+    <path d="M132.3 438.6 C133 433 137.2 431.6 140.7 431.3" fill="none" stroke="#FFFFFF" stroke-width="3.1"/>
+    <circle cx="124" cy="380" r="10" fill="#F4ECD8" fill-opacity=".55" stroke-width="3"/>
+    <path d="M118.5 379 C119 375 122 374 124.5 373.8" fill="none" stroke="#FFFFFF" stroke-width="2.2"/>
+    <circle cx="152" cy="326" r="16" fill="#F4ECD8" fill-opacity=".55" stroke-width="3"/>
+    <path d="M143.2 324.4 C144 318 148.8 316.4 152.8 316.1" fill="none" stroke="#FFFFFF" stroke-width="3.5"/>
+    <circle cx="132" cy="262" r="9" fill="#F4ECD8" fill-opacity=".55" stroke-width="3"/>
+    <path d="M127 261.1 C127.5 257.5 130.2 256.6 132.4 256.4" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="150" cy="210" r="12" fill="#F4ECD8" fill-opacity=".55" stroke-width="3"/>
+    <path d="M143.4 208.8 C144 204 147.6 202.8 150.6 202.6" fill="none" stroke="#FFFFFF" stroke-width="2.6"/>
+    <circle cx="120" cy="170" r="7" fill="#F4ECD8" fill-opacity=".55" stroke-width="2.5"/>
+    <path d="M116.2 169.3 C116.5 166.5 118.6 165.8 120.3 165.7" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <circle cx="368" cy="452" r="13" fill="#F4ECD8" fill-opacity=".55" stroke-width="3"/>
+    <path d="M360.9 450.7 C361.5 445.5 365.4 444.2 368.6 443.9" fill="none" stroke="#FFFFFF" stroke-width="2.9"/>
+    <circle cx="384" cy="392" r="9" fill="#F4ECD8" fill-opacity=".55" stroke-width="3"/>
+    <path d="M379.1 391.1 C379.5 387.5 382.2 386.6 384.4 386.4" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="360" cy="336" r="15" fill="#F4ECD8" fill-opacity=".55" stroke-width="3"/>
+    <path d="M351.8 334.5 C352.5 328.5 357 327 360.8 326.7" fill="none" stroke="#FFFFFF" stroke-width="3.3"/>
+    <circle cx="386" cy="272" r="10" fill="#F4ECD8" fill-opacity=".55" stroke-width="3"/>
+    <path d="M380.5 271 C381 267 384 266 386.5 265.8" fill="none" stroke="#FFFFFF" stroke-width="2.2"/>
+    <circle cx="362" cy="214" r="12" fill="#F4ECD8" fill-opacity=".55" stroke-width="3"/>
+    <path d="M355.4 212.8 C356 208 359.6 206.8 362.6 206.6" fill="none" stroke="#FFFFFF" stroke-width="2.6"/>
+    <circle cx="392" cy="170" r="7" fill="#F4ECD8" fill-opacity=".55" stroke-width="2.5"/>
+    <path d="M388.1 169.3 C388.5 166.5 390.6 165.8 392.4 165.7" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <circle cx="220" cy="150" r="10" fill="#F4ECD8" fill-opacity=".55" stroke-width="3"/>
+    <path d="M214.5 149 C215 145 218 144 220.5 143.8" fill="none" stroke="#FFFFFF" stroke-width="2.2"/>
+    <circle cx="258" cy="128" r="14" fill="#F4ECD8" fill-opacity=".55" stroke-width="3"/>
+    <path d="M250.3 126.6 C251 121 255.2 119.6 258.7 119.3" fill="none" stroke="#FFFFFF" stroke-width="3.1"/>
+    <circle cx="296" cy="148" r="9" fill="#F4ECD8" fill-opacity=".55" stroke-width="3"/>
+    <path d="M291.1 147.1 C291.5 143.5 294.2 142.6 296.4 142.4" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="238" cy="100" r="7" fill="#F4ECD8" fill-opacity=".55" stroke-width="2.5"/>
+    <path d="M234.2 99.3 C234.5 96.5 236.6 95.8 238.3 95.7" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <circle cx="282" cy="92" r="8" fill="#F4ECD8" fill-opacity=".55" stroke-width="2.5"/>
+    <path d="M277.6 91.2 C278 88 280.4 87.2 282.4 87" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+    <circle cx="196" cy="112" r="6" fill="#F4ECD8" fill-opacity=".55" stroke-width="2.5"/>
+    <path d="M192.7 111.4 C193 109 194.8 108.4 196.3 108.3" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <circle cx="320" cy="112" r="6" fill="#F4ECD8" fill-opacity=".55" stroke-width="2.5"/>
+    <path d="M316.7 111.4 C317 109 318.8 108.4 320.3 108.3" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <circle cx="108" cy="300" r="6" fill="#F4ECD8" fill-opacity=".55" stroke-width="2.5"/>
+    <path d="M104.7 299.4 C105 297 106.8 296.4 108.3 296.3" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <circle cx="404" cy="320" r="6" fill="#F4ECD8" fill-opacity=".55" stroke-width="2.5"/>
+    <path d="M400.7 319.4 C401 317 402.8 316.4 404.3 316.3" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <circle cx="100" cy="220" r="5" fill="#F4ECD8" fill-opacity=".55" stroke-width="2.5"/>
+    <circle cx="410" cy="234" r="5" fill="#F4ECD8" fill-opacity=".55" stroke-width="2.5"/>
+    <path d="M402 140 l6 -8 M412 150 l9 -3 M392 136 l-1 -10" fill="none" stroke-width="3"/>
+
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Sasso">
+  <defs>
+    <pattern id="ssDots" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><circle cx="3.5" cy="3.5" r="1.5" fill="#111"/></pattern>
+    <clipPath id="ssClip"><path d="M120 488 C108 440 130 380 176 350 C206 330 250 318 296 330 C346 344 386 384 396 432 C402 456 398 476 390 488 Z"/></clipPath>
+  </defs>
+  <g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M120 488 C108 440 130 380 176 350 C206 330 250 318 296 330 C346 344 386 384 396 432 C402 456 398 476 390 488 Z" fill="#9C968A" stroke-width="5"/>
+    <g clip-path="url(#ssClip)"><path d="M300 330 C330 380 340 440 330 490 L400 490 L400 330 Z" fill="url(#ssDots)" stroke="none"/></g>
+    <path d="M176 366 L206 356 L196 372 Z M232 342 L254 338 L246 350 Z" fill="#F4ECD8" stroke-width="2.5"/>
+    <path d="M196 380 L226 400 L220 432 M286 360 L300 392 M170 450 C190 440 214 444 226 456" fill="none" stroke-width="3"/>
+    <path d="M150 488 C160 476 186 472 210 476" fill="none" stroke-width="3"/>
+  </g>
+</svg>

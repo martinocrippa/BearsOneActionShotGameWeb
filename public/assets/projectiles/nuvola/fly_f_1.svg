@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Palla di zucchero filato rosa in volo, frame 1">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M44 152 C30 160 22 156 14 166 M52 176 C40 188 34 186 26 196 M206 92 C222 82 228 88 240 78" fill="none" stroke-width="4"/>
+    <path d="M203.6 123.9 Q226.1 150.5 192.6 163.7 Q202.8 192.7 174.3 189 Q162.6 219.8 133.3 201.9 Q113.8 224.6 102.5 195 Q77.7 207.4 77.5 180.5 Q44.3 175.5 59.6 143.9 Q34.5 125.2 59.3 107.6 Q45.1 84.3 73.7 83.9 Q75 48.1 106.8 54.9 Q122.9 28.3 141.5 54.2 Q161.4 37.8 164.6 65.4 Q195 64 190.5 95.2 Q222.7 101.9 203.6 123.9 Z" fill="#FF8FB3" stroke-width="5"/>
+    <path d="M112.2 163.8 C120.2 149.8 134.2 151.8 140.2 161.8 M99.4 99 C107.4 85 121.4 87 127.4 97 M121.9 150.4 C129.9 136.4 143.9 138.4 149.9 148.4 M126 147.8 C134 133.8 148 135.8 154 145.8 M112.2 114.7 C120.2 100.7 134.2 102.7 140.2 112.7 " fill="none" stroke="#FF2D8A" stroke-width="3.5"/>
+    <path d="M90 92 C100 82 116 78 128 80" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+    <path d="M118 198 l8 -11 M126.8 192 l8 -11 M135.5 186 l8 -11 M144.2 180 l8 -11 M153 174 l8 -11 M161.8 168 l8 -11 M170.5 162 l8 -11 M179.2 156 l8 -11 M188 150 l8 -11 " fill="none" stroke-width="2"/>
+  </g>
+</svg>

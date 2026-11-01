@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Grande che sbadiglia con le braccia stirate">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<path class="fur" d="M202 252 L170 176 L184 168 L216 244 Z M162 172 C156 156 170 148 180 154 C186 158 186 166 182 172 Z M310 252 L342 176 L328 168 L296 244 Z M350 172 C356 156 342 148 332 154 C326 158 326 166 330 172 Z" fill="#CF9A62" stroke-width="5"/>
+<path d="M210 342 L302 342 L298 472 L264 472 L256 392 L248 472 L214 472 Z" fill="#22B14C" stroke-width="5"/>
+<path d="M256 346 L256 392" fill="none" stroke-width="3"/>
+<path d="M204 488 C202 476 208 468 222 468 L250 468 C254 476 254 482 252 488 Z M308 488 C310 476 304 468 290 468 L262 468 C258 476 258 482 260 488 Z" fill="#111" stroke-width="5"/>
+<path d="M208 482 H250 M262 482 H304" stroke="#F4ECD8" stroke-width="3"/>
+<path d="M200 250 L186 214 L200 206 L214 240 Z M312 250 L326 214 L312 206 L298 240 Z" fill="#F28A16" stroke-width="5"/>
+<path d="M200 246 C218 234 294 234 312 246 L304 350 L208 350 Z" fill="#F28A16" stroke-width="5"/>
+<path d="M290 348 l12 -17 M296 334 l10 -14 M300 318 l8 -11 M282 470 l10 -14 M286 452 l8 -11" fill="none" stroke-width="2"/>
+<g transform="translate(256 136) scale(1.1)">
+<path class="fur" d="M-44 18 C-56 0 -46 -16 -30 -10 C-24 -6 -24 4 -28 10 Z M44 18 C56 0 46 -16 30 -10 C24 -6 24 4 28 10 Z" fill="#CF9A62" stroke-width="4.5"/>
+<path d="M-40 10 C-44 2 -40 -6 -32 -4 M40 10 C44 2 40 -6 32 -4" fill="none" stroke-width="2.7"/>
+<path class="fur" d="M-50 54 C-56 26 -40 2 0 0 C40 2 56 26 50 54 C46 74 32 90 0 98 C-32 90 -46 74 -50 54 Z" fill="#CF9A62" stroke-width="4.5"/>
+<path d="M22 90 l10 -14 M30 84 l10 -14 M38 76 l9 -12" fill="none" stroke-width="1.8"/>
+<path d="M-26 8 L-24 -18 L-12 -4 L0 -24 L12 -4 L24 -18 L26 8 C10 2 -10 2 -26 8 Z" fill="#A8733F" stroke-width="4.5"/>
+<path class="fur-light" d="M-22 60 C-16 48 16 48 22 60 C26 76 14 90 0 92 C-14 90 -26 76 -22 60 Z" fill="#F1D7AE" stroke-width="2.7"/>
+<path d="M-14 64 C-16 98 16 98 14 64 C8 60 -8 60 -14 64 Z" fill="#111" stroke-width="3.6"/>
+<path d="M-8 86 C-4 94 6 94 10 86 C4 88 -4 88 -8 86 Z" fill="#FF8FB3" stroke="none"/>
+<path d="M-6 63 L-6 69 L-1 69 L-1 63 Z M1 63 L1 69 L6 69 L6 63 Z" fill="#F4ECD8" stroke-width="1.8"/>
+<path d="M-8 52 C-4 47 4 47 8 52 C4 58 -4 58 -8 52 Z" fill="#111" stroke="none"/>
+<path d="M-30 40 C-24 46 -14 46 -8 40 M8 40 C14 46 24 46 30 40" fill="none" stroke-width="3.6"/>
+<path d="M32 44 C36 50 34 54 30 52 C28 48 30 46 32 44 Z" fill="#7FD0F0" stroke-width="1.8"/>
+<path d="M6 24 C16 18 26 18 36 24 M-6 24 C-16 18 -26 18 -36 24" fill="none" stroke-width="5"/>
+</g>
+</g>
+</svg>

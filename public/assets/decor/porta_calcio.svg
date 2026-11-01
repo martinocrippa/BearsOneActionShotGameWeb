@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Porta da calcio con la rete">
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M40 120 L120 60 L392 60 L472 120" fill="none" stroke="#9C968A" stroke-width="5"/>
+<path d="M120 60 L120 486 M392 60 L392 486 M120 300 L40 300 M392 300 L472 300" fill="none" stroke="#9C968A" stroke-width="3"/>
+<path d="M60 132 C62 250 58 360 36 470 M109 132 C111 250 107 360 91 470 M158 132 C160 250 156 360 146 470 M207 132 C209 250 205 360 201 470 M256 132 C258 250 254 360 256 470 M305 132 C307 250 303 360 311 470 M354 132 C356 250 352 360 366 470 M403 132 C405 250 401 360 421 470 M452 132 C454 250 450 360 476 470 M44 150 C180 156 330 146 468 152 M44 198 C180 204 330 194 468 200 M44 246 C180 252 330 242 468 248 M44 294 C180 300 330 290 468 296 M44 342 C180 348 330 338 468 344 M44 390 C180 396 330 386 468 392 M44 438 C180 444 330 434 468 440" fill="none" stroke="#9C968A" stroke-width="2.5"/>
+<path d="M60 482 C200 492 320 478 452 484" fill="none" stroke="#9C968A" stroke-width="3"/>
+<path d="M18 488 L22 116 L490 112 L494 488 L470 488 L468 140 L46 144 L44 488 Z" fill="#F4F4EE" stroke-width="5"/>
+<path d="M30 160 L32 470 M480 158 L482 470" fill="none" stroke="#9C968A" stroke-width="2.5"/>
+<path d="M30 200 l8 -10 M30 240 l8 -10 M30 280 l8 -10 M30 320 l8 -10 M30 360 l8 -10 M30 400 l8 -10 M30 440 l8 -10" fill="none" stroke-width="2"/>
+<path d="M120 128 l8 -10 M220 128 l8 -10 M320 128 l8 -10 M420 128 l8 -10" fill="none" stroke-width="2"/>
+<path d="M10 492 C120 486 380 498 502 490" fill="none" stroke-width="3"/>
+</g>
+</svg>

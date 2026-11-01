@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Schizzo di marmellata all'impatto">
+  <g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M114 154 C114 170 118 180 114 190 C110 196 104 190 106 182 C108 172 108 164 108 154 Z M146 150 C146 162 150 168 146 176 C142 180 138 174 140 168 C141 162 140 156 140 150 Z" fill="#FF5A1F" stroke-width="4"/>
+    <path d="M128 90 C136 104 146 94 154 106 C166 106 178 116 168 126 C178 136 172 150 158 146 C154 160 140 166 132 156 C124 168 106 164 106 150 C92 152 82 142 92 132 C80 124 86 108 100 110 C100 96 118 90 128 90 Z" fill="#FF5A1F" stroke-width="5"/>
+    <path d="M110 120 C118 112 132 112 140 118" fill="none" stroke-width="3"/>
+    <path d="M120 132 C124 126 132 128 130 135 C128 140 118 139 120 132 Z M146 124 C149 121 154 123 152 128 C150 131 144 129 146 124 Z" fill="#F2A516" stroke-width="3"/>
+    <path d="M150 146 l8 -11 M160 140 l6 -9" fill="none" stroke-width="2"/>
+    <path d="M62 100 C66 96 72 100 70 105 C68 109 60 107 62 100 Z M188 92 C192 88 198 92 196 98 C194 102 186 100 188 92 Z M196 150 C199 147 204 150 202 154 C200 157 194 155 196 150 Z M66 160 C69 157 74 160 72 164 C70 167 64 165 66 160 Z M126 62 C129 59 134 62 132 66 C130 69 124 67 126 62 Z" fill="#FF5A1F" stroke-width="3"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 1024" width="512" height="1024" style="display: block" role="img" aria-label="Campanile moderno in intonaco bianco con feritoie, cella campanaria aperta, tetto di lamiera e croce">
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M172 1000 L174 330 L338 330 L340 1000 Z" fill="#F1E8D6" stroke-width="6"/>
+<path d="M300 336 L334 336 L336 994 L300 994 Z" fill="#DDD2BD" stroke="none"/>
+<path d="M306 380 l6.8 -9.8 M313 380 l6.8 -9.8 M320 380 l6.8 -9.8 M327 380 l6.8 -9.8 M306 426 l6.8 -9.8 M313 426 l6.8 -9.8 M320 426 l6.8 -9.8 M327 426 l6.8 -9.8 M306 472 l6.8 -9.8 M313 472 l6.8 -9.8 M320 472 l6.8 -9.8 M327 472 l6.8 -9.8 M306 518 l6.8 -9.8 M313 518 l6.8 -9.8 M320 518 l6.8 -9.8 M327 518 l6.8 -9.8 M306 564 l6.8 -9.8 M313 564 l6.8 -9.8 M320 564 l6.8 -9.8 M327 564 l6.8 -9.8 M306 610 l6.8 -9.8 M313 610 l6.8 -9.8 M320 610 l6.8 -9.8 M327 610 l6.8 -9.8 M306 656 l6.8 -9.8 M313 656 l6.8 -9.8 M320 656 l6.8 -9.8 M327 656 l6.8 -9.8 M306 702 l6.8 -9.8 M313 702 l6.8 -9.8 M320 702 l6.8 -9.8 M327 702 l6.8 -9.8 M306 748 l6.8 -9.8 M313 748 l6.8 -9.8 M320 748 l6.8 -9.8 M327 748 l6.8 -9.8 M306 794 l6.8 -9.8 M313 794 l6.8 -9.8 M320 794 l6.8 -9.8 M327 794 l6.8 -9.8 M306 840 l6.8 -9.8 M313 840 l6.8 -9.8 M320 840 l6.8 -9.8 M327 840 l6.8 -9.8 M306 886 l6.8 -9.8 M313 886 l6.8 -9.8 M320 886 l6.8 -9.8 M327 886 l6.8 -9.8 M306 932 l6.8 -9.8 M313 932 l6.8 -9.8 M320 932 l6.8 -9.8 M327 932 l6.8 -9.8 M306 978 l6.8 -9.8 M313 978 l6.8 -9.8 M320 978 l6.8 -9.8 M327 978 l6.8 -9.8 " fill="none" stroke-width="2"/>
+<path d="M172 948 L340 948 L340 1000 L172 1000 Z" fill="#9C968A" stroke-width="5"/>
+<path d="M206 426 q0 -6 6 -6 h4 q6 0 6 6 V640 H206 Z" fill="#3A3F46" stroke-width="3"/><path d="M210 430 V626" stroke="#7F97A8" stroke-width="2" fill="none"/>
+<path d="M236 426 q0 -6 6 -6 h4 q6 0 6 6 V640 H236 Z" fill="#3A3F46" stroke-width="3"/><path d="M240 430 V626" stroke="#7F97A8" stroke-width="2" fill="none"/>
+<path d="M206 706 q0 -6 6 -6 h4 q6 0 6 6 V880 H206 Z" fill="#3A3F46" stroke-width="3"/><path d="M210 710 V866" stroke="#7F97A8" stroke-width="2" fill="none"/>
+<path d="M236 706 q0 -6 6 -6 h4 q6 0 6 6 V880 H236 Z" fill="#3A3F46" stroke-width="3"/><path d="M240 710 V866" stroke="#7F97A8" stroke-width="2" fill="none"/>
+<path d="M266 566 q0 -6 6 -6 h4 q6 0 6 6 V760 H266 Z" fill="#3A3F46" stroke-width="3"/><path d="M270 570 V746" stroke="#7F97A8" stroke-width="2" fill="none"/>
+<path d="M166 330 L346 330 L346 316 L166 316 Z" fill="#9C968A" stroke-width="5"/>
+<path d="M180 316 L180 196 L332 196 L332 316 Z" fill="#2B2F35" stroke-width="5"/>
+<path d="M180 196 L204 196 L204 316 L180 316 Z M308 196 L332 196 L332 316 L308 316 Z M244 196 L268 196 L268 316 L244 316 Z" fill="#F1E8D6" stroke-width="4"/>
+<path d="M312 200 L330 200 L330 312 L312 312 Z" fill="#DDD2BD" stroke="none"/>
+<path d="M224 214 L224 222 M224 222 C208 222 206 254 204 270 L244 270 C242 254 240 222 224 222 Z" fill="#D4A017" stroke-width="4"/><circle cx="224" cy="276" r="6" fill="#D4A017" stroke-width="3"/><path d="M212 240 C212 234 216 230 220 228" fill="none" stroke="#FFD400" stroke-width="3"/>
+<path d="M232 260 l5 -7 M238 262 l5 -7" fill="none" stroke-width="2"/>
+<path d="M150 196 L362 196 L362 176 L150 176 Z" fill="#9C968A" stroke-width="5"/><path d="M152 182 H360" stroke="#C9C3B6" stroke-width="2"/>
+<path d="M250 176 L250 70 L262 70 L262 176 Z M226 104 L286 104 L286 116 L226 116 Z" fill="#2B2F35" stroke-width="4"/>
+<path d="M253 76 V170" stroke="#6E6A62" stroke-width="2"/>
+</g>
+</svg>

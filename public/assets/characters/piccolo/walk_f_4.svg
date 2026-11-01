@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Piccolo cammina verso lo schermo, frame 4">
+  <defs>
+    <g id="pkE" stroke="#111" stroke-linecap="round" stroke-linejoin="round"><path d="M-17 2 C-15 -14 13 -16 18 -2 C14 10 -10 12 -17 2 Z" fill="#F4ECD8" stroke-width="4.2"/><circle cx="5" cy="-1" r="6.6" fill="#7A4A1E" stroke="none"/><circle cx="5" cy="-1" r="2.3" fill="#111" stroke="none"/><path class="fur" d="M-18 0 C-12 -17 12 -19 20 -4 C10 -9 -6 -9 -18 0 Z" fill="#9A6239" stroke-width="4.2"/></g>
+  </defs>
+  <g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(3 0)">
+      <path class="fur" d="M226 420 L224 470 L250 470 L248 420 Z" fill="#9A6239" stroke-width="5"/>
+      <path d="M214 488 C212 476 218 466 232 466 L252 466 C256 474 256 482 254 488 Z" fill="#111" stroke-width="5"/>
+      <path d="M218 482 H252" stroke="#F4ECD8" stroke-width="3"/>
+    </g>
+    <g transform="translate(-3 0)">
+      <path class="fur" d="M264 420 L262 470 L288 470 L286 420 Z" fill="#9A6239" stroke-width="5"/>
+      <path d="M298 488 C300 476 294 466 280 466 L260 466 C256 474 256 482 258 488 Z" fill="#111" stroke-width="5"/>
+      <path d="M260 482 H294" stroke="#F4ECD8" stroke-width="3"/>
+    </g>
+    <g transform="translate(0 4)">
+      <path d="M218 376 L294 376 L298 424 L262 426 L256 406 L250 426 L214 424 Z" fill="#FFD400" stroke-width="5"/>
+      <path class="fur" d="M212 304 L196 376 L210 380 L222 318 Z M192 376 C186 388 196 398 208 394 C214 390 214 382 210 378 Z" fill="#9A6239" stroke-width="5"/>
+      <path d="M218 300 L200 330 L214 338 L224 320 Z" fill="#E3262B" stroke-width="5"/>
+      <path d="M218 300 C232 292 280 292 294 300 L298 384 L214 384 Z" fill="#E3262B" stroke-width="5"/>
+      <path d="M284 382 l10 -14 M288 368 l8 -11 M284 422 l8 -11" fill="none" stroke-width="2"/>
+      <path class="fur" d="M298 304 L292 352 L276 352 L284 314 Z" fill="#9A6239" stroke-width="5"/>
+      <path d="M294 300 L304 330 L290 336 L284 316 Z" fill="#E3262B" stroke-width="5"/>
+      <g>
+        <path d="M240 334 L276 334 L278 364 L238 364 Z" fill="#FFD400" stroke-width="5"/>
+        <path d="M238 350 L278 350 L278 356 L238 356 Z" fill="#FF2D8A" stroke-width="2.5"/>
+        <path d="M250 326 L264 326 L264 334 L250 334 Z" fill="#1F5FBF" stroke-width="3"/>
+        <circle cx="258" cy="342" r="13" fill="#E3262B" stroke-width="4"/><circle cx="258" cy="342" r="6" fill="#111" stroke="none"/>
+        <path class="fur" d="M270 356 C262 368 272 380 284 376 C292 372 292 360 284 354 Z" fill="#9A6239" stroke-width="5"/>
+      </g>
+      <g transform="translate(256 204)">
+        <path class="fur" d="M-44 18 C-56 0 -46 -16 -30 -10 C-24 -6 -24 4 -28 10 Z M44 18 C56 0 46 -16 30 -10 C24 -6 24 4 28 10 Z" fill="#9A6239" stroke-width="5"/>
+        <path d="M-40 10 C-44 2 -40 -6 -32 -4 M40 10 C44 2 40 -6 32 -4" fill="none" stroke-width="3"/>
+        <path class="fur" d="M-50 54 C-56 26 -40 2 0 0 C40 2 56 26 50 54 C46 74 32 90 0 98 C-32 90 -46 74 -50 54 Z" fill="#9A6239" stroke-width="5"/>
+        <path d="M22 90 l10 -14 M30 84 l10 -14 M38 76 l9 -12" fill="none" stroke-width="2"/>
+        <path d="M-36 10 L-48 -36 L-26 -6 L-24 -50 L-8 -10 L0 -60 L8 -10 L26 -48 L26 -6 L48 -34 L36 12 C20 4 -20 4 -36 10 Z" fill="#6E4122" stroke-width="5"/>
+        <path class="fur-light" d="M-22 60 C-16 48 16 48 22 60 C26 76 14 90 0 92 C-14 90 -26 76 -22 60 Z" fill="#E2B88A" stroke-width="3"/>
+        <path d="M-10 60 C-6 54 6 54 10 60 C6 68 -6 68 -10 60 Z" fill="#111" stroke="none"/>
+        <use href="#pkE" transform="translate(20 42) scale(-.7 .7)"/><use href="#pkE" transform="translate(-20 42) scale(.7 .7)"/>
+        <g fill="none">
+          <path d="M4 30 C14 27 28 27 36 30 C38 38 38 48 36 54 C26 57 12 57 4 54 C2 46 2 38 4 30 Z M-4 30 C-14 27 -28 27 -36 30 C-38 38 -38 48 -36 54 C-26 57 -12 57 -4 54 C-2 46 -2 38 -4 30 Z" stroke-width="12"/>
+          <path d="M4 30 C14 27 28 27 36 30 C38 38 38 48 36 54 C26 57 12 57 4 54 C2 46 2 38 4 30 Z M-4 30 C-14 27 -28 27 -36 30 C-38 38 -38 48 -36 54 C-26 57 -12 57 -4 54 C-2 46 -2 38 -4 30 Z" stroke="#22B14C" stroke-width="6.5"/>
+          <path d="M-4 40 L4 40" stroke-width="7"/>
+        </g>
+        <path d="M6 18 C12 10 28 10 36 18 M-6 18 C-12 10 -28 10 -36 18" fill="none" stroke-width="5"/>
+        <path d="M-16 70 C-8 86 12 86 20 68 C8 74 -6 74 -16 70 Z" fill="#111" stroke-width="4"/>
+        <path d="M-12 71 L-9 76 L-5 72 L-1 77 L3 73 L7 77 L11 72 L16 70" fill="#F4ECD8" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

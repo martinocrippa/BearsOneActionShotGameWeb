@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Faccia HUD Orsa sveglia">
+<defs>
+<clipPath id="ch"><path d="M95 74 C118 46 172 44 194 72 C204 86 216 94 240 99 C262 103 272 118 263 133 C252 150 232 162 212 166 C200 178 184 184 163 184 C146 194 126 196 112 190 C88 176 70 158 69 130 C68 104 79 86 95 74 Z"/></clipPath>
+</defs>
+<g transform="scale(.9846) translate(-40 24)" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<path d="M92 84 C52 70 28 112 38 160 C46 138 58 120 84 116 Z" fill="#5A3620" stroke-width="3.5"/>
+<path d="M50 110 C44 124 42 136 44 146 M62 100 C56 112 54 122 54 132" fill="none" stroke-width="2.5"/>
+<path class="fur" d="M88 82 C68 62 76 30 102 34 C120 37 126 54 118 66 Z" fill="#8B5A36" stroke-width="3.5"/>
+<path d="M95 70 C89 58 95 47 104 46" fill="none" stroke-width="2.5"/>
+<path class="fur" d="M95 74 C118 46 172 44 194 72 C204 86 216 94 240 99 C262 103 272 118 263 133 C252 150 232 162 212 166 C200 178 184 184 163 184 C146 194 126 196 112 190 C88 176 70 158 69 130 C68 104 79 86 95 74 Z" fill="#8B5A36" stroke-width="4"/>
+<g clip-path="url(#ch)" fill="none" stroke-width="2"><path d="M128 200 l12 -17 M135 200 l12 -17 M142 199 l12 -17 M149 198 l12 -17 M156 196 l12 -17 M163 194 l12 -17 M170 192 l12 -17 M177 190 l12 -17 M184 186 l12 -17"/></g>
+<path class="fur" d="M150 58 C150 34 174 24 188 40 C196 50 192 62 184 70 Z" fill="#8B5A36" stroke-width="3.5"/>
+<path d="M160 54 C162 42 172 38 180 44" fill="none" stroke-width="2.5"/>
+<path d="M90 80 C120 52 170 48 198 74" fill="none" stroke-width="15"/><path d="M90 80 C120 52 170 48 198 74" fill="none" stroke="#1F5FBF" stroke-width="9"/>
+<path class="fur-light" d="M198 108 C222 98 254 102 262 124 C262 142 242 158 212 162 C196 150 190 122 198 108 Z" fill="#D9A877" stroke-width="3"/>
+<path d="M72 138 L60 146 L74 150 L62 162 L78 164 L70 174" fill="none" stroke-width="3"/>
+<ellipse cx="258" cy="117" rx="15" ry="11" fill="#111" stroke="none"/><ellipse cx="253" cy="112" rx="4.5" ry="2.6" fill="#F4ECD8" stroke="none"/>
+<path d="M232 128 C236 136 240 140 246 140" fill="none" stroke-width="3"/>
+<g transform="translate(176 100) scale(1.15)"><path d="M-18 3 C-10 -7 8 -9 19 -3 C12 5 -6 7 -18 3 Z" fill="#F4ECD8" stroke-width="2.6"/><circle cx="7" cy="0" r="5" fill="#4A2C17" stroke="none"/><circle cx="7" cy="0" r="2.7" fill="#111" stroke="none"/><circle cx="5.5" cy="1.8" r="1" fill="#FFFFFF" stroke="none"/><path class="fur" d="M-19 3 C-10 -12 10 -14 21 -3 C10 -1 -6 0 -19 3 Z" fill="#8B5A36" stroke-width="2.6"/><path d="M-18 3 L-27 -3" fill="none" stroke-width="2.6"/></g>
+<path d="M150 84 L176 74 L200 81" fill="none" stroke-width="5"/>
+<path d="M170 160 C188 170 210 164 230 150" fill="none" stroke-width="4"/><path d="M170 160 C163 156 163 149 170 146" fill="none" stroke-width="3"/>
+<path d="M200 166 L201 176 L210 175 L209 164 Z" fill="#F4ECD8" stroke-width="2.5"/>
+</g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Puzzola walk b frame 3">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<path d="M232 420 L230 472 L248 472 L250 420 Z M218 488 C216 478 222 470 236 470 L250 470 C254 478 254 484 252 488 Z" fill="#2A2A30" stroke-width="5"/>
+<g transform="translate(0 -14)"><path d="M262 420 L264 472 L282 472 L280 420 Z M294 488 C296 478 290 470 276 470 L262 470 C258 478 258 484 260 488 Z" fill="#2A2A30" stroke-width="5"/></g>
+<path d="M226 284 C214 330 216 400 232 428 L280 428 C296 400 298 330 286 284 C274 274 238 274 226 284 Z" fill="#2A2A30" stroke-width="5"/><path d="M238 290 C232 330 234 380 242 420 M274 290 C280 330 278 380 270 420" fill="none" stroke="#F4ECD8" stroke-width="6"/>
+<g transform="rotate(18 234 300)"><path d="M228 296 L208 360 L220 366 L240 308 Z M204 358 C198 370 208 380 218 376 C222 372 222 364 218 360 Z" fill="#2A2A30" stroke-width="5"/></g>
+<path d="M284 296 L304 360 L292 366 L272 308 Z M308 358 C314 370 304 380 294 376 C290 372 290 364 294 360 Z" fill="#2A2A30" stroke-width="5"/>
+<g transform="rotate(-5 262 420)"><path d="M256 426 C228 420 214 340 232 270 C240 240 272 240 278 262 C284 284 266 292 264 316 C260 352 270 396 284 420 Z" fill="#2A2A30" stroke-width="5"/><path d="M258 252 C248 290 248 352 262 408" fill="none" stroke="#F4ECD8" stroke-width="9"/></g>
+<g transform="translate(256 196)">
+<path d="M-36 14 C-46 2 -40 -12 -26 -8 C-20 -4 -20 4 -24 8 Z M36 14 C46 2 40 -12 26 -8 C20 -4 20 4 24 8 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M-44 50 C-48 20 -30 0 0 0 C30 0 48 20 44 50 C42 72 26 92 0 94 C-26 92 -42 72 -44 50 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M-8 0 C-10 30 -10 62 -6 94 L6 94 C10 62 10 30 8 0 Z" fill="#F4ECD8" stroke-width="3"/>
+<path d="M-44 54 L-54 60 L-44 64 L-50 72 L-40 72 M44 54 L54 60 L44 64 L50 72 L40 72" fill="none" stroke="#F4ECD8" stroke-width="3"/>
+</g>
+</g>
+</svg>

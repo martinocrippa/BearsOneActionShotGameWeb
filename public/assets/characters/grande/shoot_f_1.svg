@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Grande prende la mira con lo spara-gelatina verso lo schermo">
+  <defs>
+    <g id="grE" stroke="#111" stroke-linecap="round" stroke-linejoin="round"><path d="M-19 3 C-11 -9 10 -10 20 -1 C12 8 -8 9 -19 3 Z" fill="#F4ECD8" stroke-width="3.8"/><circle cx="5" cy="1" r="5.4" fill="#7F9A86" stroke="none"/><circle cx="5" cy="1" r="2.8" fill="#111" stroke="none"/><path class="fur" d="M-20 2 C-11 -13 11 -14 21 -2 C10 -4 -6 -4 -20 2 Z" fill="#CF9A62" stroke-width="3.8"/><path d="M-12 9 C-4 12 6 12 14 8" fill="none" stroke-width="3.2"/></g>
+  </defs>
+  <g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M210 342 L302 342 L304 472 L268 472 L256 392 L244 472 L208 472 Z" fill="#22B14C" stroke-width="5"/>
+    <path d="M284 470 l10 -14 M288 452 l8 -11" fill="none" stroke-width="2"/>
+    <path d="M198 488 C196 476 202 468 216 468 L246 468 C250 476 250 482 248 488 Z M314 488 C316 476 310 468 296 468 L266 468 C262 476 262 482 264 488 Z" fill="#111" stroke-width="5"/>
+    <path d="M202 482 H246 M266 482 H310" stroke="#F4ECD8" stroke-width="3"/>
+    <path d="M200 246 C218 234 294 234 312 246 L304 350 L208 350 Z" fill="#F28A16" stroke-width="5"/>
+    <path class="fur" d="M202 250 L194 322 L212 328 L216 268 Z M310 250 L318 322 L300 328 L296 268 Z" fill="#CF9A62" stroke-width="5"/>
+    <path d="M200 246 L184 282 L198 290 L210 272 Z M312 246 L328 282 L314 290 L302 272 Z" fill="#F28A16" stroke-width="5"/>
+    <path d="M226 262 L286 262 L286 300 L226 300 Z" fill="#5AB030" fill-opacity=".6" stroke-width="5"/>
+    <circle cx="240" cy="284" r="4" fill="#F4ECD8" stroke-width="2"/><circle cx="268" cy="276" r="3" fill="#F4ECD8" stroke-width="2"/>
+    <path d="M212 298 L300 298 L306 352 L206 352 Z" fill="#1F5FBF" stroke-width="5"/>
+    <path d="M214 336 L298 336" fill="none" stroke="#FFD400" stroke-width="6"/>
+    <path d="M286 350 l10 -14 M294 346 l8 -11" fill="none" stroke-width="2"/>
+    <ellipse cx="256" cy="324" rx="28" ry="19" fill="#FFD400" stroke-width="5"/>
+    <ellipse cx="256" cy="324" rx="16" ry="10" fill="#111" stroke="none"/>
+    <path class="fur" d="M196 318 C186 330 196 346 210 342 C218 338 216 324 208 318 Z M316 318 C326 330 316 346 302 342 C294 338 296 324 304 318 Z" fill="#CF9A62" stroke-width="5"/>
+    <g transform="translate(256 136) scale(1.1)">
+      <path class="fur" d="M-44 18 C-56 0 -46 -16 -30 -10 C-24 -6 -24 4 -28 10 Z M44 18 C56 0 46 -16 30 -10 C24 -6 24 4 28 10 Z" fill="#CF9A62" stroke-width="4.5"/>
+      <path d="M-40 10 C-44 2 -40 -6 -32 -4 M40 10 C44 2 40 -6 32 -4" fill="none" stroke-width="2.7"/>
+      <path class="fur" d="M-50 54 C-56 26 -40 2 0 0 C40 2 56 26 50 54 C46 74 32 90 0 98 C-32 90 -46 74 -50 54 Z" fill="#CF9A62" stroke-width="4.5"/>
+      <path d="M22 90 l10 -14 M30 84 l10 -14 M38 76 l9 -12" fill="none" stroke-width="1.8"/>
+      <path d="M-26 8 L-24 -18 L-12 -4 L0 -24 L12 -4 L24 -18 L26 8 C10 2 -10 2 -26 8 Z" fill="#A8733F" stroke-width="4.5"/>
+      <path class="fur-light" d="M-22 60 C-16 48 16 48 22 60 C26 76 14 90 0 92 C-14 90 -26 76 -22 60 Z" fill="#F1D7AE" stroke-width="2.7"/>
+      <path d="M-10 60 C-6 54 6 54 10 60 C6 68 -6 68 -10 60 Z" fill="#111" stroke="none"/>
+      <use href="#grE" transform="translate(20 40) scale(-.7 .7)"/><use href="#grE" transform="translate(-20 40) scale(.7 .7)"/>
+      <path d="M6 31 L36 23 M-6 31 L-36 23" fill="none" stroke-width="5"/>
+      <path d="M-18 70 C-10 90 14 90 22 68 C8 76 -6 76 -18 70 Z" fill="#111" stroke-width="3.6"/>
+      <path d="M-14 71 C-2 77 10 77 18 70 L17 75 C6 81 -4 81 -13 76 Z" fill="#F4ECD8" stroke-width="1.8"/>
+    </g>
+  </g>
+</svg>

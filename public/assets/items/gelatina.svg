@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Barattolo di gelatina verde">
+  <g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M78 232 C70 232 66 226 66 218 L66 110 C66 100 72 94 82 94 L174 94 C184 94 190 100 190 110 L190 218 C190 226 186 232 178 232 Z" fill="#F4ECD8" stroke-width="5"/>
+    <path d="M70 140 C100 132 156 132 186 140 L186 218 C186 224 182 228 176 228 L80 228 C74 228 70 224 70 218 Z" fill="#5AB030" fill-opacity=".6" stroke-width="3"/>
+    <g fill="#F4ECD8" stroke-width="2.5"><circle cx="100" cy="176" r="6"/><circle cx="140" cy="160" r="4"/><circle cx="156" cy="198" r="7"/><circle cx="116" cy="208" r="3.5"/></g>
+    <path d="M84 110 L84 132 M84 150 L84 200" fill="none" stroke="#F4ECD8" stroke-width="6"/>
+    <path d="M74 94 C74 82 82 76 94 76 L162 76 C174 76 182 82 182 94 Z" fill="#FFD400" stroke-width="5"/>
+    <path d="M88 86 L168 86" fill="none" stroke-width="2.5"/>
+    <path d="M168 228 l10 -14 M176 216 l8 -11 M180 200 l6 -9 M180 184 l6 -9 M180 168 l6 -9" fill="none" stroke-width="2"/>
+  </g>
+</svg>

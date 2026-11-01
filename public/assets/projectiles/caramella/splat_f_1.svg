@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Caramella che si rompe: carta aperta a stella e due pezzi">
+  <g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M128 70 L142 108 L184 96 L156 128 L190 156 L148 152 L140 192 L124 156 L86 176 L104 140 L66 122 L106 114 L96 76 Z" fill="#FFD400" stroke-width="5"/>
+    <path d="M128 90 L134 112 M170 104 L150 120 M172 152 L148 142 M138 178 L132 152 M98 166 L114 146 M82 124 L104 126 M104 88 L114 110" fill="none" stroke-width="3"/>
+    <path d="M100 132 C102 118 114 112 126 114 L122 132 L128 146 C116 150 102 146 100 132 Z" fill="#E3262B" stroke-width="5"/>
+    <path d="M108 122 L112 142" fill="none" stroke="#F4ECD8" stroke-width="6"/>
+    <path d="M136 116 C150 114 160 122 158 134 C156 146 144 150 134 146 L140 132 L134 118 Z" fill="#E3262B" stroke-width="5"/>
+    <path d="M146 118 L144 146" fill="none" stroke="#F4ECD8" stroke-width="6"/>
+    <path d="M150 144 l6 -9" fill="none" stroke-width="2"/>
+    <path d="M196 72 L200 82 L210 84 L202 90 L204 100 L196 94 L188 100 L190 90 L182 84 L192 82 Z" fill="#F4ECD8" stroke-width="3"/>
+    <path d="M60 80 l-10 -10 M48 102 l-14 0 M208 186 l10 10" fill="none" stroke-width="3"/>
+  </g>
+</svg>

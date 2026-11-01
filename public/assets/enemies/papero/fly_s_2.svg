@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Papero in picchiata fly s frame 2 (ala giu)">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(0 -8)">
+<path d="M206 400 L184 390 L192 406 L180 414 L204 418 Z" fill="#FFD400" stroke-width="4"/>
+<g transform="rotate(-14 258 452)">
+<path d="M250 450 L248 466 M266 450 L268 466" fill="none" stroke-width="8"/><path d="M250 450 L248 466 M266 450 L268 466" fill="none" stroke="#FF5A1F" stroke-width="3.5"/>
+<path d="M238 472 L250 462 L268 470 C262 476 246 476 238 472 Z M256 472 L268 462 L286 470 C280 476 264 476 256 472 Z" fill="#FF5A1F" stroke-width="4"/>
+</g>
+<path d="M204 400 C200 428 226 452 262 452 C296 450 310 428 304 400 C298 376 274 366 252 366 C226 366 208 378 204 400 Z" fill="#FFD400" stroke-width="5"/>
+<path d="M276 448 l10 -14 M288 440 l8 -11 M298 428 l6 -9" fill="none" stroke-width="2"/>
+<path d="M234 342 C228 316 244 300 266 300 C288 300 302 316 298 342 C294 358 282 366 266 366 C248 366 238 358 234 342 Z" fill="#FFD400" stroke-width="5"/>
+<path d="M268 364 l8 -11 M278 360 l7 -10" fill="none" stroke-width="2"/>
+<circle cx="280" cy="340" r="12" fill="#F4ECD8" stroke-width="3"/><circle cx="285" cy="336" r="3" fill="#111" stroke="none"/>
+<path d="M220 334 C218 296 242 276 270 276 C298 276 318 296 316 334 C298 328 238 328 220 334 Z" fill="#9C968A" stroke-width="5"/>
+<path d="M214 334 C246 324 290 324 322 334" fill="none" stroke-width="10"/><path d="M214 334 C246 324 290 324 322 334" fill="none" stroke="#9C968A" stroke-width="5"/>
+<path d="M248 290 C254 296 260 296 264 290" fill="none" stroke-width="3"/>
+<path d="M300 312 l7 -10 M306 320 l6 -9" fill="none" stroke-width="2"/>
+<path d="M298 300 C298 294 310 294 310 300 Z" fill="#6B4226" stroke-width="2.5"/>
+<path d="M299 300 C299 308 304 312 304 312 C304 312 309 308 309 300 Z" fill="#D4A017" stroke-width="2.5"/>
+<path d="M296 340 C312 334 336 338 344 346 C344 354 330 360 306 360 C298 356 294 348 296 340 Z" fill="#FF5A1F" stroke-width="4"/>
+<path d="M302 352 C318 353 330 351 340 348" fill="none" stroke-width="3"/>
+<circle cx="330" cy="342" r="1.8" fill="#111" stroke="none"/>
+<g transform="rotate(-142 254 392)">
+<path d="M236 392 C244 350 266 318 300 296 C300 330 290 362 272 398 Z" fill="#FFD400" stroke-width="5"/>
+<path d="M262 344 L278 352 M252 368 L268 374 M276 320 L288 330" fill="none" stroke-width="3"/>
+</g>
+</g>
+</g>
+</svg>

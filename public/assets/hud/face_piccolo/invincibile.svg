@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Faccia HUD Piccolo invincibile con occhiali da sole">
+<defs>
+<clipPath id="ch"><path d="M95 74 C118 46 172 44 194 72 C204 86 216 94 240 99 C262 103 272 118 263 133 C252 150 232 162 212 166 C200 178 184 184 163 184 C146 194 126 196 112 190 C88 176 70 158 69 130 C68 104 79 86 95 74 Z"/></clipPath>
+</defs>
+<g transform="scale(.9846) translate(-40 24)" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<path class="fur" d="M88 82 C68 62 76 30 102 34 C120 37 126 54 118 66 Z" fill="#9A6239" stroke-width="3.5"/>
+<path d="M95 70 C89 58 95 47 104 46" fill="none" stroke-width="2.5"/>
+<path class="fur" d="M95 74 C118 46 172 44 194 72 C204 86 216 94 240 99 C262 103 272 118 263 133 C252 150 232 162 212 166 C200 178 184 184 163 184 C146 194 126 196 112 190 C88 176 70 158 69 130 C68 104 79 86 95 74 Z" fill="#9A6239" stroke-width="4"/>
+<g clip-path="url(#ch)" fill="none" stroke-width="2"><path d="M128 200 l12 -17 M135 200 l12 -17 M142 199 l12 -17 M149 198 l12 -17 M156 196 l12 -17 M163 194 l12 -17 M170 192 l12 -17 M177 190 l12 -17 M184 186 l12 -17"/></g>
+<path d="M98 70 L84 18 L112 50 L110 2 L134 46 L148 -6 L154 44 L178 8 L170 58 L190 40 L180 70 Z" fill="#6E4122" stroke-width="3.5"/>
+<path d="M112 50 L106 30 M134 46 L132 26 M154 44 L158 24 M170 58 L176 44" fill="none" stroke-width="2"/>
+<path class="fur" d="M150 58 C150 34 174 24 188 40 C196 50 192 62 184 70 Z" fill="#9A6239" stroke-width="3.5"/>
+<path class="fur-light" d="M198 108 C222 98 254 102 262 124 C262 142 242 158 212 162 C196 150 190 122 198 108 Z" fill="#E2B88A" stroke-width="3"/>
+<path d="M72 138 L60 146 L74 150 L62 162 L78 164 L70 174" fill="none" stroke-width="3"/>
+<ellipse cx="258" cy="117" rx="15" ry="11" fill="#111" stroke="none"/><ellipse cx="253" cy="112" rx="4.5" ry="2.6" fill="#F4ECD8" stroke="none"/>
+<g fill="none">
+<path d="M146 92 L110 82" stroke-width="6"/><path d="M146 92 L110 82" stroke="#22B14C" stroke-width="2.5"/>
+<path d="M146 84 L202 82 L200 112 C188 118 160 118 150 112 Z" fill="#111" stroke-width="11"/>
+<path d="M146 84 L202 82 L200 112 C188 118 160 118 150 112 Z" stroke="#22B14C" stroke-width="5"/>
+<path d="M202 92 L208 92" stroke-width="8"/>
+<path d="M208 84 L232 86 L230 108 C224 112 214 112 208 108 Z" fill="#111" stroke-width="10"/>
+<path d="M208 84 L232 86 L230 108 C224 112 214 112 208 108 Z" stroke="#22B14C" stroke-width="4.5"/>
+<path d="M158 94 L172 89 M160 104 L182 96" stroke="#F4ECD8" stroke-width="3"/>
+<path d="M146 70 L204 68" stroke-width="5.5"/>
+<path d="M190 88 L192 94 L198 96 L192 98 L190 104 L188 98 L182 96 L188 94 Z" fill="#FFD400" stroke-width="1.5"/>
+<path d="M172 160 C192 164 212 162 230 152" stroke-width="4.5"/>
+<path d="M230 152 C234 148 234 143 230 140" stroke-width="3"/>
+<path d="M200 163 L201 173 L210 172 L209 161 Z" fill="#F4ECD8" stroke-width="2.5"/>
+<path d="M150 166 C158 174 168 178 178 178" stroke-width="3"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Palla di camomilla calda in volo, frame 1">
+  <defs><mask id="cmA1"><circle cx="150" cy="150" r="64" fill="#fff"/><circle cx="136" cy="134" r="62" fill="#000"/></mask></defs>
+  <g transform="translate(128 128) scale(.55) translate(-150 -150)" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <g fill="#F4ECD8" stroke-width="7.3">
+      <ellipse cx="224" cy="150" rx="24" ry="11"/>
+      <ellipse cx="202" cy="202" rx="24" ry="11" transform="rotate(45 202 202)"/>
+      <ellipse cx="150" cy="224" rx="24" ry="11" transform="rotate(90 150 224)"/>
+      <ellipse cx="98" cy="202" rx="24" ry="11" transform="rotate(135 98 202)"/>
+      <ellipse cx="76" cy="150" rx="24" ry="11"/>
+      <ellipse cx="98" cy="98" rx="24" ry="11" transform="rotate(45 98 98)"/>
+      <ellipse cx="150" cy="76" rx="24" ry="11" transform="rotate(90 150 76)"/>
+      <ellipse cx="202" cy="98" rx="24" ry="11" transform="rotate(135 202 98)"/>
+    </g>
+    <path d="M150 86 C186 85 214 114 214 150 C213 186 185 214 150 214 C114 213 86 186 86 150 C87 114 114 86 153 87" fill="#FFD400" stroke-width="9"/>
+    <g mask="url(#cmA1)" fill="none" stroke-width="3.6"><path d="M112 230 l60 -86 M122 230 l60 -86 M132 230 l60 -86 M142 230 l60 -86 M152 230 l60 -86 M162 230 l60 -86 M172 230 l60 -86 M182 230 l60 -86 M192 230 l60 -86"/></g>
+    <g fill="#F2A516" stroke-width="3.6"><circle cx="130" cy="126" r="5"/><circle cx="152" cy="118" r="5"/><circle cx="170" cy="130" r="5"/><circle cx="128" cy="150" r="5"/><circle cx="150" cy="144" r="5"/><circle cx="140" cy="170" r="5"/></g>
+    <path d="M104 44 C98 34 108 24 118 28 C122 16 140 18 140 30 C152 30 152 46 140 48 C136 56 116 56 112 50 C104 52 100 48 104 44 Z" fill="#F4ECD8" stroke-width="6.4"/>
+    <path d="M168 34 C164 24 174 16 182 20 C188 10 204 14 202 26 C212 28 210 42 200 42 C194 50 178 48 176 42 C168 44 164 38 168 34 Z" fill="#F4ECD8" stroke-width="6.4"/>
+    <path d="M132 76 C126 68 136 62 130 54 M168 72 C162 64 172 58 166 50" fill="none" stroke-width="5.5"/>
+  </g>
+</svg>

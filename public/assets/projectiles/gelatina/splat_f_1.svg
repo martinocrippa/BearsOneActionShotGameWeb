@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Schizzo di gelatina verde all'impatto">
+  <g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M128 98 C140 108 152 96 162 108 C178 108 186 122 174 130 C184 142 172 156 158 150 C152 164 134 166 128 154 C118 166 100 160 102 148 C86 150 78 136 90 128 C80 118 90 104 104 108 C106 96 120 92 128 98 Z" fill="#5AB030" fill-opacity="0.6" stroke-width="5"/>
+    <path d="M108 120 C114 112 124 110 132 112" fill="none" stroke="#F4ECD8" stroke-width="6"/>
+    <circle cx="140" cy="134" r="5" fill="none" stroke-width="2.5"/><circle cx="118" cy="140" r="3.5" fill="none" stroke-width="2.5"/>
+    <path d="M150 152 l7 -10 M160 146 l5 -7" fill="none" stroke-width="2"/>
+    <path d="M66 98 C70 92 78 96 76 102 C74 108 64 106 66 98 Z M188 90 C192 86 198 90 196 96 C194 100 186 98 188 90 Z M196 162 C199 158 205 161 203 166 C201 170 194 168 196 162 Z M70 168 C73 164 79 167 77 172 C75 176 68 174 70 168 Z M126 66 C129 62 135 65 133 70 C131 74 124 72 126 66 Z M132 190 C135 186 141 189 139 194 C137 198 130 196 132 190 Z" fill="#5AB030" fill-opacity="0.6" stroke-width="3"/>
+  </g>
+</svg>

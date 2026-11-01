@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Spara-liquirizie a terra da raccogliere">
+
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M30 234 l6 -8 M40 234 l6 -8 M50 234 l6 -8 M60 234 l6 -8 M70 234 l6 -8 M80 234 l6 -8 M90 234 l6 -8 M100 234 l6 -8 M110 234 l6 -8 M120 234 l6 -8 M130 234 l6 -8 M140 234 l6 -8 M150 234 l6 -8 M160 234 l6 -8 M170 234 l6 -8 M180 234 l6 -8 M190 234 l6 -8 M200 234 l6 -8 M210 234 l6 -8 M220 234 l6 -8" fill="none" stroke-width="2"/>
+  <path d="M22 206 C20 194 28 184 40 182 L104 172 L110 204 L44 228 C32 232 24 222 22 206 Z" fill="#C8A06A" stroke-width="5"/>
+  <path d="M40 196 C58 192 78 186 96 182" fill="none" stroke="#6B4226" stroke-width="3"/>
+  <path d="M100 168 L132 164 L136 210 L104 214 Z" fill="#C8A06A" stroke-width="5"/>
+  <path d="M106 176 L134 172 L135 184 L107 188 Z" fill="#2A2A30" stroke-width="3"/>
+  <path d="M110 214 C112 222 122 226 130 220" fill="none" stroke-width="4"/>
+  <path d="M132 168 L232 158 C238 158 240 164 238 168 L134 182 Z" fill="#2A2A30" stroke-width="5"/>
+  <path d="M134 184 L238 172 C242 174 242 180 238 184 L135 198 Z" fill="#2A2A30" stroke-width="5"/>
+  <path d="M146 172 L226 164" fill="none" stroke="#9C968A" stroke-width="3"/>
+  <path d="M176 160 L188 158 L190 196 L178 198 Z" fill="#C8A06A" stroke-width="3"/>
+  <ellipse cx="238" cy="171" rx="5" ry="13" fill="#111" stroke-width="3"/>
+  <path d="M72 222 l8 -11 M84 216 l8 -11 M200 196 l8 -11 M212 194 l8 -11" fill="none" stroke-width="2"/>
+  <g transform="translate(70 203) scale(0.591)">
+    <circle r="22" fill="#2A2A30" stroke-width="5.1"/>
+    <path d="M0 -14 C9 -14 14 -6 14 2 C14 10 6 15 -2 14 C-9 13 -12 6 -10 0 C-8 -6 -2 -8 3 -6" fill="none" stroke="#F4ECD8" stroke-width="4.1"/>
+    <circle r="5" fill="#FF2D8A" stroke-width="4.2"/></g>
+</g>
+</svg>

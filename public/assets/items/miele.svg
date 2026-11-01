@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Vasetto piccolo di miele">
+  <defs><clipPath id="mpLid"><path d="M70 120 L186 120 L186 146 L70 146 Z"/></clipPath></defs>
+  <g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M84 232 C78 232 76 226 76 220 L76 156 C76 148 82 144 90 144 L166 144 C174 144 180 148 180 156 L180 220 C180 226 178 232 172 232 Z" fill="#F2A516" stroke-width="5"/>
+    <path d="M70 120 L186 120 L186 146 L70 146 Z" fill="#F4ECD8" stroke="none"/>
+    <g clip-path="url(#mpLid)" fill="#E3262B" stroke="none"><path d="M70 120 H86 V133 H70 Z M102 120 H118 V133 H102 Z M134 120 H150 V133 H134 Z M166 120 H182 V133 H166 Z M86 133 H102 V146 H86 Z M118 133 H134 V146 H118 Z M150 133 H166 V146 H150 Z"/></g>
+    <path d="M70 120 L186 120 L186 146 L70 146 Z" fill="none" stroke-width="5"/>
+    <path d="M100 170 C116 162 140 162 156 170 L156 206 C140 212 116 212 100 206 Z" fill="#F4ECD8" stroke-width="3"/>
+    <path d="M122 176 C128 172 134 174 134 180 C134 186 128 188 122 184 C116 188 110 186 110 180 C110 174 116 172 122 176 Z" fill="#F2A516" stroke-width="2.5"/>
+    <path d="M86 146 C86 156 92 162 92 170 C92 176 84 176 84 170" fill="#F2A516" stroke-width="3"/>
+    <path d="M162 230 l9 -12 M168 220 l8 -11 M172 206 l6 -9 M174 190 l5 -7" fill="none" stroke-width="2"/>
+  </g>
+</svg>

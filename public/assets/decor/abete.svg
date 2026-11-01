@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Abete">
+  <g transform="translate(256 444) scale(2)" stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M-12 -40 C-12 -14 -13 4 -14 22 L14 22 C13 4 12 -14 12 -40 Z" fill="#6B4226" stroke-width="2.5"/>
+    <path d="M4 -30 L6 14" fill="none" stroke-width="1.5"/>
+    <path d="M0 -200 L40 -130 L24 -131 L62 -60 L40 -61 L84 10 L-84 9 L-40 -60 L-62 -61 L-24 -130 L-40 -129 Z" fill="#2F8A3A" stroke-width="2.5"/>
+    <path d="M-20 -140 C-10 -134 4 -134 14 -140 M-36 -70 C-16 -62 12 -62 30 -70 M-50 0 C-20 6 20 6 52 0" fill="none" stroke-width="1.5"/>
+    <path d="M14 -150 l8 -11 M20 -140 l8 -11 M26 -130 l6 -9 M30 -100 l8 -11 M38 -90 l8 -11 M44 -80 l8 -11 M48 -70 l6 -9 M46 -26 l8 -11 M54 -16 l8 -11 M62 -6 l8 -11 M70 4 l6 -9" fill="none" stroke-width="1"/>
+  </g>
+</svg>

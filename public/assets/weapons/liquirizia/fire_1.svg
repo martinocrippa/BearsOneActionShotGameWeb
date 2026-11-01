@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 512" width="1024" height="512" style="display: block" role="img" aria-label="Spara-liquirizie che spara: doppio sbuffo e frammenti di liquirizia">
+
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M420 150 C410 140 418 126 430 132 C438 138 430 150 420 150 Z" fill="#2A2A30" stroke-width="3"/>
+  <path d="M612 140 C604 130 612 118 624 124 C632 130 624 142 612 140 Z" fill="#2A2A30" stroke-width="3"/>
+  <path d="M390 210 C376 200 382 186 396 190 M640 214 C654 204 648 190 634 194" fill="none" stroke="#2A2A30" stroke-width="7"/>
+  <path d="M470 120 C460 112 466 100 476 104 C484 110 478 120 470 120" fill="none" stroke="#2A2A30" stroke-width="6"/>
+  <path d="M564 108 C574 100 584 108 578 118" fill="none" stroke="#2A2A30" stroke-width="6"/>
+  <g transform="translate(512 140) scale(0.636)">
+    <circle r="22" fill="#2A2A30" stroke-width="4.7"/>
+    <path d="M0 -14 C9 -14 14 -6 14 2 C14 10 6 15 -2 14 C-9 13 -12 6 -10 0 C-8 -6 -2 -8 3 -6" fill="none" stroke="#F4ECD8" stroke-width="3.8"/>
+    <circle r="5" fill="#FF2D8A" stroke-width="3.9"/></g>
+  <path d="M380 250 L350 246 M650 246 L680 242 M512 100 L512 74 M440 178 L420 160 M590 176 L610 158" fill="none" stroke-width="4"/>
+<g transform="translate(470 222) scale(1.1)">
+    <path d="M-40 10 C-58 4 -56 -22 -36 -24 C-36 -46 -8 -52 2 -36 C14 -54 44 -44 40 -22 C60 -20 62 8 42 12 C38 30 12 32 2 20 C-10 34 -36 30 -40 10 Z" fill="#F4ECD8" stroke-width="5"/>
+    <path d="M-24 -10 C-18 -20 -8 -24 0 -22" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+    <path d="M20 14 l8 -11 M30 10 l8 -11" fill="none" stroke-width="2"/></g>
+<g transform="translate(556 216) scale(1.1)">
+    <path d="M-40 10 C-58 4 -56 -22 -36 -24 C-36 -46 -8 -52 2 -36 C14 -54 44 -44 40 -22 C60 -20 62 8 42 12 C38 30 12 32 2 20 C-10 34 -36 30 -40 10 Z" fill="#F4ECD8" stroke-width="5"/>
+    <path d="M-24 -10 C-18 -20 -8 -24 0 -22" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+    <path d="M20 14 l8 -11 M30 10 l8 -11" fill="none" stroke-width="2"/></g>
+<g transform="translate(0 14)">
+  <path d="M432 398 L448 262 L508 262 L512 398 Z" fill="#2A2A30" stroke-width="5"/>
+  <path d="M512 398 L516 262 L576 262 L592 398 Z" fill="#2A2A30" stroke-width="5"/>
+  <path d="M458 280 L450 380 M528 280 L526 380" fill="none" stroke="#9C968A" stroke-width="4"/>
+  <path d="M440 330 L584 330 L586 348 L438 348 Z" fill="#C8A06A" stroke-width="4"/>
+  <path d="M572 300 l8 -11 M576 320 l8 -11 M580 370 l8 -11 M584 388 l8 -11" fill="none" stroke="#F4ECD8" stroke-width="2"/>
+  <ellipse cx="478" cy="262" rx="32" ry="16" fill="#2A2A30" stroke-width="5"/>
+  <ellipse cx="546" cy="262" rx="32" ry="16" fill="#2A2A30" stroke-width="5"/>
+  <ellipse cx="478" cy="262" rx="20" ry="9" fill="#111" stroke="none"/>
+  <ellipse cx="546" cy="262" rx="20" ry="9" fill="#111" stroke="none"/>
+  <circle cx="478" cy="262" r="4" fill="#FF2D8A" stroke-width="2"/><circle cx="546" cy="262" r="4" fill="#FF2D8A" stroke-width="2"/>
+  <path d="M498 238 L526 238 L528 252 L496 252 Z" fill="#9C968A" stroke-width="3"/>
+  <path d="M392 512 L420 392 L604 392 L632 512 Z" fill="#C8A06A" stroke-width="5"/>
+  <path d="M436 410 C440 440 436 470 430 500 M470 404 C474 430 470 462 466 506 M560 404 C556 436 560 470 562 506 M592 412 C588 440 594 476 598 500" fill="none" stroke="#6B4226" stroke-width="3"/>
+  <path d="M416 412 L608 412 L612 428 L412 428 Z" fill="#2A2A30" stroke-width="3"/>
+  <path d="M404 470 L620 470 L625 488 L399 488 Z" fill="#2A2A30" stroke-width="3"/>
+  <path d="M598 440 l8 -11 M604 458 l8 -11 M612 500 l8 -11 M620 510 l8 -11" fill="none" stroke-width="2"/>
+  <g transform="translate(512 449) scale(0.864)">
+    <circle r="22" fill="#2A2A30" stroke-width="4.6"/>
+    <path d="M0 -14 C9 -14 14 -6 14 2 C14 10 6 15 -2 14 C-9 13 -12 6 -10 0 C-8 -6 -2 -8 3 -6" fill="none" stroke="#F4ECD8" stroke-width="2.8"/>
+    <circle r="5" fill="#FF2D8A" stroke-width="2.9"/></g>
+  <path class="fur" d="M292 512 C284 456 322 404 384 392 C416 386 438 404 436 432 C434 462 416 488 402 512 Z" fill="#9A6239" stroke-width="5"/>
+  <path class="fur-light" d="M310 512 C314 476 336 452 366 446 C358 474 350 494 348 512 Z" fill="#E2B88A" stroke-width="3"/>
+  <path d="M410 400 C426 392 444 400 442 416 M412 428 C430 422 446 432 442 448 M410 456 C426 452 440 462 436 476" fill="none" stroke-width="3"/>
+  <path class="fur" d="M732 512 C740 456 702 404 640 392 C608 386 586 404 588 432 C590 462 608 488 622 512 Z" fill="#9A6239" stroke-width="5"/>
+  <path class="fur-light" d="M714 512 C710 476 688 452 658 446 C666 474 674 494 676 512 Z" fill="#E2B88A" stroke-width="3"/>
+  <path d="M614 400 C598 392 580 400 582 416 M612 428 C594 422 578 432 582 448 M614 456 C598 452 584 462 588 476" fill="none" stroke-width="3"/>
+  <path d="M698 508 l12 -17 M710 508 l10 -14 M720 500 l8 -11" fill="none" stroke-width="2"/>
+</g>
+</g>
+</svg>

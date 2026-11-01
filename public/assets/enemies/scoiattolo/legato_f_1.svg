@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Scoiattolo tied f frame 1 (legato con la liquirizia)">
+<defs>
+<g id="sEye" stroke="#111" stroke-linecap="round" stroke-linejoin="round"><path d="M-17 2 C-11 -10 9 -12 18 -2 C11 8 -7 10 -17 2 Z" fill="#F4ECD8" stroke-width="4.2"/><circle cx="7" cy="0" r="5" fill="#111" stroke="none"/><circle cx="5" cy="-2" r="1.4" fill="#FFFFFF" stroke="none"/><path d="M-18 2 C-11 -13 11 -15 20 -2 C10 0 -6 1 -18 2 Z" fill="#D2632A" stroke-width="4.2"/></g>
+<g id="sEye2" stroke="#111" stroke-linecap="round" stroke-linejoin="round"><path d="M-17 2 C-13 -12 11 -14 18 -2 C12 10 -9 12 -17 2 Z" fill="#F4ECD8" stroke-width="4.2"/><circle cx="-5" cy="-3" r="4.5" fill="#111" stroke="none"/></g>
+</defs>
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(-62 -4)">
+<path d="M232 440 C170 420 160 320 190 270 C206 244 234 248 238 268 C240 286 222 296 214 320 C204 352 220 400 252 420 Z" fill="#D2632A" stroke-width="5"/>
+<path d="M186 300 l8 -11 M184 318 l8 -11 M184 336 l8 -11 M186 354 l8 -11 M190 372 l8 -11 M196 390 l8 -11" fill="none" stroke-width="2"/>
+<path d="M206 290 C198 310 196 340 204 370" fill="none" stroke-width="3"/>
+</g>
+<path d="M150 446 C130 440 120 456 130 466 C138 472 150 470 160 466 Z M156 470 C134 468 126 484 138 488 L164 488 Z" fill="#D2632A" stroke-width="5"/>
+<path d="M130 452 L138 456 M128 462 L138 462 M136 478 L144 480" fill="none" stroke-width="3"/>
+<path d="M182 404 C230 398 270 398 318 404 C346 414 352 472 326 488 L174 488 C148 472 154 414 182 404 Z" fill="#D2632A" stroke-width="5"/>
+<path d="M300 486 l10 -14 M312 482 l10 -14 M322 474 l8 -11" fill="none" stroke-width="2"/>
+<path d="M196 470 C230 478 300 478 330 468 C332 476 330 482 326 486 L200 486 C196 482 194 476 196 470 Z" fill="#F3D9B1" stroke-width="3"/>
+<path d="M194 405 C210 433 210 459 198 487" fill="none" stroke-width="15"/>
+<path d="M197 410 C211 433 211 454 203 471" fill="none" stroke="#F4ECD8" stroke-width="2.5"/>
+<path d="M234 405 C250 433 250 459 238 487" fill="none" stroke-width="15"/>
+<path d="M237 410 C251 433 251 454 243 471" fill="none" stroke="#F4ECD8" stroke-width="2.5"/>
+<path d="M274 405 C290 433 290 459 278 487" fill="none" stroke-width="15"/>
+<path d="M277 410 C291 433 291 454 283 471" fill="none" stroke="#F4ECD8" stroke-width="2.5"/>
+<path d="M310 405 C326 433 326 459 314 487" fill="none" stroke-width="15"/>
+<path d="M313 410 C327 433 327 454 319 471" fill="none" stroke="#F4ECD8" stroke-width="2.5"/>
+<path d="M274 408 C298 400 308 420 324 406" fill="none" stroke-width="11"/>
+<path d="M278 404 C294 398 304 412 318 403" fill="none" stroke="#F4ECD8" stroke-width="2"/>
+<circle cx="258" cy="398" r="22" fill="#111" stroke-width="3"/>
+<path d="M258 398 m-8 0 a8 8 0 1 1 16 0 a12 12 0 1 1 -24 0 a16 16 0 1 1 32 0" fill="none" stroke="#F4ECD8" stroke-width="2"/>
+<circle cx="258" cy="398" r="6" fill="#FF2D8A" stroke-width="3"/>
+<g transform="translate(356 368) rotate(-14)">
+<path d="M-34 12 L-46 -30 L-40 -22 L-36 -36 L-14 4 Z M34 12 L46 -30 L40 -22 L36 -36 L14 4 Z" fill="#D2632A" stroke-width="5"/>
+<path d="M-30 2 L-38 -18 M30 2 L38 -18" fill="none" stroke-width="3"/>
+<path d="M-42 46 C-46 20 -30 2 0 0 C30 2 46 20 42 46 C38 66 24 82 0 92 C-24 82 -38 66 -42 46 Z" fill="#D2632A" stroke-width="5"/>
+<path d="M18 84 l10 -14 M26 78 l10 -14 M33 70 l8 -11" fill="none" stroke-width="2"/>
+<path d="M-42 50 L-52 56 L-42 60 L-48 68 L-38 68 M42 50 L52 56 L42 60 L48 68 L38 68" fill="none" stroke-width="3"/>
+<path d="M-18 56 C-12 46 12 46 18 56 C22 72 12 84 0 86 C-12 84 -22 72 -18 56 Z" fill="#F3D9B1" stroke-width="3"/>
+<path d="M-7 56 C-4 51 4 51 7 56 C4 61 -4 61 -7 56 Z" fill="#111" stroke="none"/>
+<path d="M-14 76 C-6 68 8 68 16 76" fill="none" stroke-width="4"/><path d="M-4 77 L-4 83 L3 83 L3 75 Z" fill="#F4ECD8" stroke-width="2.5"/>
+<use href="#sEye" transform="translate(16 36) scale(-.7 .7)"/>
+<use href="#sEye2" transform="translate(-18 38) scale(.55)"/>
+<path d="M4 28 L32 16 M-6 30 L-32 20" fill="none" stroke-width="5"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Cartello di legno NO SLEEPING!">
+  <g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M240 488 L242 300 L270 300 L272 488 Z" fill="#6B4226" stroke-width="5"/>
+    <path d="M262 486 l8 -11 M262 466 l8 -11 M262 446 l8 -11 M262 426 l8 -11" fill="none" stroke-width="2"/>
+    <g transform="rotate(-4 256 230)">
+      <path d="M96 150 C180 144 330 144 416 150 L412 312 C330 318 180 318 100 312 Z" fill="#C8A06A" stroke-width="5"/>
+      <path d="M100 222 C200 218 310 218 412 222" fill="none" stroke-width="2.5"/>
+      <path d="M380 310 l10 -14 M392 308 l10 -14 M402 300 l8 -11" fill="none" stroke-width="2"/>
+      <circle cx="116" cy="168" r="4" fill="#111" stroke="none"/><circle cx="396" cy="168" r="4" fill="#111" stroke="none"/>
+      <g fill="none" stroke-width="10">
+        <path d="M227 208 L227 168 L251 208 L251 168"/>
+        <path d="M273 168 C287 168 287 208 273 208 C259 208 259 168 273 168 Z"/>
+      </g>
+      <g fill="none" stroke="#111" stroke-width="11">
+        <path d="M148 234 C142 228 126 230 126 240 C126 250 148 248 148 260 C148 272 130 272 124 266"/>
+        <path d="M158 230 L158 270 L180 270"/>
+        <path d="M212 230 L188 230 L188 270 L212 270 M188 250 L206 250"/>
+        <path d="M244 230 L220 230 L220 270 L244 270 M220 250 L238 250"/>
+        <path d="M252 270 L252 230 L268 230 C280 230 280 250 268 250 L252 250"/>
+        <path d="M294 230 L294 270"/>
+        <path d="M310 270 L310 230 L334 270 L334 230"/>
+        <path d="M366 236 C360 228 344 230 344 250 C344 272 366 272 366 256 L356 256"/>
+        <path d="M382 230 L382 256"/>
+      </g>
+      <g fill="none" stroke="#E3262B" stroke-width="6">
+        <path d="M148 234 C142 228 126 230 126 240 C126 250 148 248 148 260 C148 272 130 272 124 266"/>
+        <path d="M158 230 L158 270 L180 270"/>
+        <path d="M212 230 L188 230 L188 270 L212 270 M188 250 L206 250"/>
+        <path d="M244 230 L220 230 L220 270 L244 270 M220 250 L238 250"/>
+        <path d="M252 270 L252 230 L268 230 C280 230 280 250 268 250 L252 250"/>
+        <path d="M294 230 L294 270"/>
+        <path d="M310 270 L310 230 L334 270 L334 230"/>
+        <path d="M366 236 C360 228 344 230 344 250 C344 272 366 272 366 256 L356 256"/>
+        <path d="M382 230 L382 256"/>
+      </g>
+      <circle cx="382" cy="268" r="6" fill="#E3262B" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

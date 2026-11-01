@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2048 512" width="2048" height="512" style="display: block" role="img" aria-label="Cielo panoramico ripetibile in orizzontale con nuvole a fumetto">
+  <defs>
+    <g id="cCloud" stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M-120 30 C-140 0 -110 -30 -80 -20 C-76 -56 -30 -66 -6 -40 C10 -76 70 -72 76 -30 C110 -40 136 -6 120 24 C140 40 120 64 96 56 C80 76 40 72 30 58 C10 76 -40 74 -50 56 C-80 70 -120 60 -120 30 Z" fill="#F4ECD8" stroke-width="5"/>
+      <path d="M-60 56 C-40 46 -10 48 10 56 M60 54 C80 46 100 48 112 40" fill="none" stroke-width="3"/>
+      <path d="M50 66 l8 -11 M64 64 l8 -11 M100 52 l8 -11" fill="none" stroke-width="2"/>
+    </g>
+  </defs>
+  <rect width="2048" height="512" fill="#7FD0F0"/>
+  <use href="#cCloud" transform="translate(260 150)"/>
+  <use href="#cCloud" transform="translate(760 260) scale(.7)"/>
+  <use href="#cCloud" transform="translate(1150 120) scale(1.2)"/>
+  <use href="#cCloud" transform="translate(1600 290) scale(.8)"/>
+  <use href="#cCloud" transform="translate(1880 140) scale(.6)"/>
+  <use href="#cCloud" transform="translate(520 380) scale(.5)"/>
+  <g fill="none" stroke="#111" stroke-width="3" stroke-linecap="round">
+    <path d="M420 230 C470 220 520 236 570 226 M440 250 C480 244 510 252 540 248"/>
+    <path d="M940 380 C990 370 1040 386 1090 376 M960 400 C1000 394 1030 402 1060 398"/>
+    <path d="M1360 210 C1410 200 1460 216 1510 206"/>
+    <path d="M1760 420 C1810 410 1860 426 1910 416 M1780 440 C1820 434 1850 442 1880 438"/>
+    <path d="M60 330 C110 320 160 336 210 326"/>
+  </g>
+</svg>

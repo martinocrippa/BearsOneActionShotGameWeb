@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Tazzona di cioccolata calda con la panna e adesivo punk">
+  <g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M100 70 C92 56 108 48 100 34 M128 66 C120 52 136 44 128 30 M156 70 C148 56 164 48 156 34" fill="none" stroke-width="3.5"/>
+    <path d="M190 128 C232 126 234 196 186 196" fill="none" stroke-width="18"/>
+    <path d="M190 128 C232 126 234 196 186 196" fill="none" stroke="#28C2B4" stroke-width="9"/>
+    <path d="M52 108 L204 108 L192 218 C190 228 180 232 170 232 L86 232 C76 232 66 228 64 218 Z" fill="#28C2B4" stroke-width="5"/>
+    <g transform="rotate(-10 118 172)"><path d="M90 150 L146 146 L150 192 L94 196 Z" fill="#FFD400" stroke-width="3.5"/>
+      <path d="M114 154 L104 174 L118 172 L110 190 L134 166 L120 168 L128 154 Z" fill="#111" stroke="none"/></g>
+    <path d="M170 228 l12 -17 M182 226 l11 -16 M184 204 l8 -11 M186 184 l8 -11 M188 164 l8 -11" fill="none" stroke-width="2"/>
+    <ellipse cx="128" cy="108" rx="76" ry="13" fill="#6B4226" stroke-width="4"/>
+    <path d="M62 108 C52 88 74 74 94 84 C100 62 134 58 140 78 C154 62 186 70 182 92 C200 92 204 108 194 112 C164 120 92 120 62 108 Z" fill="#F4ECD8" stroke-width="4"/>
+    <path d="M98 92 C108 82 124 82 132 92 M148 90 C156 84 168 86 172 94" fill="none" stroke-width="2.5"/>
+    <rect x="150" y="66" width="24" height="20" rx="4" fill="#FF8FB3" stroke-width="3.5" transform="rotate(-14 162 76)"/>
+    <rect x="86" y="72" width="20" height="17" rx="4" fill="#FFFFFF" stroke-width="3.5" transform="rotate(12 96 80)"/>
+  </g>
+</svg>

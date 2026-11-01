@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Palla di gelatina verde in volo, frame 1">
+  <g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M128 92 C150 92 165 108 164 129 C163 150 148 164 127 164 C106 163 92 148 92 127 C93 107 108 92 131 93" fill="#5AB030" fill-opacity="0.6" stroke-width="5"/>
+    <path d="M106 118 C108 108 116 102 124 100" fill="none" stroke="#F4ECD8" stroke-width="6"/>
+    <circle cx="138" cy="134" r="5" fill="none" stroke-width="2.5"/><circle cx="122" cy="146" r="3.5" fill="none" stroke-width="2.5"/><circle cx="146" cy="116" r="3" fill="none" stroke-width="2.5"/>
+    <path d="M140 160 l8 -11 M150 154 l7 -10 M157 144 l5 -7" fill="none" stroke-width="2"/>
+    <path d="M78 120 l-14 -2 M76 136 l-16 2 M82 150 l-12 6" fill="none" stroke-width="3"/>
+  </g>
+</svg>

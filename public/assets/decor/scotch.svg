@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Rotolo di scotch gigante in piedi">
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M30 488 H482" stroke-width="5"/>
+<circle cx="256" cy="270" r="216" fill="#D8D0B0" stroke-width="7"/>
+<circle cx="256" cy="270" r="180" fill="none" stroke-width="3"/>
+<circle cx="256" cy="270" r="150" fill="none" stroke-width="2.5"/>
+<circle cx="256" cy="270" r="120" fill="#C8A06A" stroke-width="6"/>
+<circle cx="256" cy="270" r="96" fill="#F4ECD8" stroke-width="5"/>
+<path d="M100 180 C130 120 190 84 256 80" fill="none" stroke="#FFFFFF" stroke-width="10"/>
+<path d="M440 360 C470 400 470 450 446 486 L420 486 C436 450 436 410 418 380 Z" fill="#D8D0B0" stroke-width="5"/>
+<path d="M380 440 l8 -11 M392 422 l8 -11 M404 404 l8 -11 M416 386 l8 -11 M428 368 l8 -11 M440 350 l8 -11" fill="none" stroke-width="2"/>
+</g>
+</svg>

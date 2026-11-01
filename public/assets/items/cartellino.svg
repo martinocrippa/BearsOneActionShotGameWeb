@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Cartellino giallo">
+<defs><path id="kS" d="M0 -14 L4 -4 L14 0 L4 4 L0 14 L-4 4 L-14 0 L-4 -4 Z" fill="#FFD400" stroke="#111" stroke-width="2.5" stroke-linejoin="round"/></defs><g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M84 224 L52 64 L148 46 L180 206 Z" fill="#111" stroke-width="5" transform="translate(10 6)"/>
+<path d="M84 224 L52 64 L148 46 L180 206 Z" fill="#FFD400" stroke-width="5"/>
+<path d="M68 82 L76 120 M62 72 C90 66 110 62 130 60" fill="none" stroke="#FFFFFF" stroke-width="6"/>
+<path d="M140 190 l8 -11 M150 176 l8 -11 M162 196 l8 -11" fill="none" stroke-width="2"/>
+<path d="M40 232 C100 226 170 236 220 230" fill="none" stroke-width="3"/>
+<use href="#kS" transform="translate(196 60)"/><use href="#kS" transform="translate(38 170) scale(.7)"/><use href="#kS" transform="translate(208 150) scale(.6)"/>
+</g>
+</svg>

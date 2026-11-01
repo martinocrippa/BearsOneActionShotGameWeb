@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Ghianda d'oro">
+  <defs>
+    <clipPath id="ghCap"><path d="M64 104 C64 72 92 54 128 54 C164 54 192 72 192 104 C170 112 86 112 64 104 Z"/></clipPath>
+    <path id="ghStar" d="M0 -14 L4 -4 L14 0 L4 4 L0 14 L-4 4 L-14 0 L-4 -4 Z" fill="#FFD400" stroke="#111" stroke-width="2.5" stroke-linejoin="round"/>
+  </defs>
+  <g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M78 104 C76 150 96 196 128 232 C160 196 180 150 178 104 Z" fill="#D4A017" stroke-width="5"/>
+    <path d="M98 120 C96 150 106 180 122 204" fill="none" stroke="#F4ECD8" stroke-width="6"/>
+    <path d="M150 210 l8 -11 M160 196 l8 -11 M166 180 l8 -11 M170 162 l7 -10 M172 144 l6 -9" fill="none" stroke-width="2"/>
+    <path d="M64 104 C64 72 92 54 128 54 C164 54 192 72 192 104 C170 112 86 112 64 104 Z" fill="#FFD400" stroke-width="5"/>
+    <g clip-path="url(#ghCap)" fill="none" stroke-width="2.5"><path d="M60 70 L200 110 M60 90 L200 130 M60 50 L200 90 M200 70 L60 110 M200 50 L60 90 M200 90 L60 130"/></g>
+    <path d="M124 56 C122 44 128 34 138 30" fill="none" stroke-width="10"/>
+    <path d="M124 56 C122 44 128 34 138 30" fill="none" stroke="#6B4226" stroke-width="5"/>
+    <use href="#ghStar" transform="translate(42 70)"/>
+    <use href="#ghStar" transform="translate(212 92) scale(.8)"/>
+    <use href="#ghStar" transform="translate(200 186) scale(.6)"/>
+    <use href="#ghStar" transform="translate(52 170) scale(.7)"/>
+  </g>
+</svg>

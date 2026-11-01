@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Fila di armadietti dello spogliatoio">
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M60 70 L192 70 L192 480 L60 480 Z" fill="#9C968A" stroke-width="5"/><path d="M90 100 L162 100 M90 114 L162 114 M90 128 L162 128 M90 142 L162 142" fill="none" stroke-width="4"/><path d="M166 260 L166 310" fill="none" stroke-width="10"/><path d="M166 260 L166 310" fill="none" stroke="#FF7A12" stroke-width="5"/><path d="M172 380 l8 -11 M172 410 l8 -11 M172 440 l8 -11" fill="none" stroke-width="2"/><path d="M190 70 L322 70 L322 480 L190 480 Z" fill="#9C968A" stroke-width="5"/><path d="M220 100 L292 100 M220 114 L292 114 M220 128 L292 128 M220 142 L292 142" fill="none" stroke-width="4"/><path d="M296 260 L296 310" fill="none" stroke-width="10"/><path d="M296 260 L296 310" fill="none" stroke="#FF7A12" stroke-width="5"/><path d="M302 380 l8 -11 M302 410 l8 -11 M302 440 l8 -11" fill="none" stroke-width="2"/><path d="M320 70 L452 70 L452 480 L320 480 Z" fill="#9C968A" stroke-width="5"/><path d="M350 100 L422 100 M350 114 L422 114 M350 128 L422 128 M350 142 L422 142" fill="none" stroke-width="4"/><path d="M426 260 L426 310" fill="none" stroke-width="10"/><path d="M426 260 L426 310" fill="none" stroke="#FF7A12" stroke-width="5"/><path d="M432 380 l8 -11 M432 410 l8 -11 M432 440 l8 -11" fill="none" stroke-width="2"/>
+<path d="M320 70 L452 70 L452 480 L320 480 Z" fill="#14161A" stroke-width="5"/>
+<path d="M452 70 L500 92 L500 462 L452 480 Z" fill="#9C968A" stroke-width="5"/>
+<path d="M470 110 L486 116 M470 124 L486 130 M470 138 L486 144" fill="none" stroke-width="3"/>
+<path d="M332 160 C370 150 410 156 440 166 L436 300 C400 312 360 306 336 296 Z" fill="#FF7A12" stroke-width="4"/>
+<path d="M336 200 L438 210 M336 240 L436 250" fill="none" stroke="#14161A" stroke-width="5"/>
+<path d="M340 470 C360 430 420 430 440 470 Z" fill="#F4F4EE" stroke-width="4"/>
+<path d="M50 60 L462 60 L462 72 L50 72 Z M50 480 L462 480 L462 494 L50 494 Z" fill="#14161A" stroke-width="4"/>
+</g>
+</svg>

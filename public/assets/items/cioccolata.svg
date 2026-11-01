@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Tazza di cioccolata calda con panna e marshmallow">
+  <g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M110 112 C102 98 118 90 110 76 M134 108 C126 94 142 86 134 72 M156 112 C148 98 164 90 156 76" fill="none" stroke-width="3.5"/>
+    <path d="M176 166 C206 164 208 208 172 208" fill="none" stroke-width="15"/>
+    <path d="M176 166 C206 164 208 208 172 208" fill="none" stroke="#E3262B" stroke-width="7"/>
+    <path d="M78 150 L178 150 L170 222 C168 230 160 232 152 232 L104 232 C96 232 88 230 86 222 Z" fill="#E3262B" stroke-width="5"/>
+    <g fill="#F4ECD8" stroke-width="2.5"><circle cx="100" cy="172" r="6"/><circle cx="128" cy="196" r="6"/><circle cx="104" cy="214" r="5"/><circle cx="150" cy="170" r="5"/></g>
+    <path d="M150 228 l12 -17 M160 228 l11 -16 M158 206 l8 -11" fill="none" stroke-width="2"/>
+    <ellipse cx="128" cy="150" rx="50" ry="10" fill="#6B4226" stroke-width="4"/>
+    <path d="M92 150 C86 134 102 124 116 132 C122 118 146 118 150 132 C164 126 178 138 166 150 C150 156 108 156 92 150 Z" fill="#F4ECD8" stroke-width="4"/>
+    <path d="M118 136 C124 130 134 130 140 136" fill="none" stroke-width="2.5"/>
+    <rect x="136" y="122" width="22" height="18" rx="4" fill="#FF8FB3" stroke-width="3.5" transform="rotate(-14 147 131)"/>
+  </g>
+</svg>

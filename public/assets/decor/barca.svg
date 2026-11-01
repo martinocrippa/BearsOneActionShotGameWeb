@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Barca di legno a remi tirata in secca">
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M30 420 C60 470 140 486 256 486 C372 486 452 470 482 420 L470 404 C420 420 360 426 256 426 C152 426 92 420 42 404 Z" fill="#8B5A36" stroke-width="6"/>
+<path d="M42 404 C92 420 152 426 256 426 C360 426 420 420 470 404 L462 380 C410 396 352 402 256 402 C160 402 102 396 50 380 Z" fill="#C8A06A" stroke-width="5"/>
+<path d="M60 440 C140 458 372 458 452 440" fill="none" stroke-width="3"/>
+<path d="M80 462 C160 474 352 474 432 462" fill="none" stroke-width="2.5"/>
+<path d="M30 420 C40 400 46 380 50 380" fill="none" stroke-width="5"/>
+<path d="M136 392 L136 430 M376 392 L376 430" fill="none" stroke="#6B4226" stroke-width="10"/>
+<path d="M136 392 L136 430 M376 392 L376 430" fill="none" stroke-width="2"/>
+<path d="M120 362 L330 452 M140 352 L120 362 L110 384 L130 390 Z" fill="none" stroke-width="9"/>
+<path d="M120 362 L330 452" fill="none" stroke="#C8A06A" stroke-width="4"/>
+<path d="M300 440 L360 462 L350 478 L292 456 Z" fill="#C8A06A" stroke-width="4"/>
+<path d="M430 400 C450 408 470 404 482 420" fill="none" stroke="#E3262B" stroke-width="5"/>
+<path d="M10 492 C140 484 380 496 502 488" fill="none" stroke-width="3"/>
+<path d="M300 476 l8 -11 M330 474 l8 -11 M360 470 l8 -11 M390 466 l8 -11 M420 458 l8 -11" fill="none" stroke="#111" stroke-width="2"/><path d="M60 494 q6 -8 12 0 q-6 8 -12 0 Z" fill="#C4622A" stroke-width="2"/><path d="M200 498 q6 -8 12 0 q-6 8 -12 0 Z" fill="#C4622A" stroke-width="2"/><path d="M410 494 q6 -8 12 0 q-6 8 -12 0 Z" fill="#C4622A" stroke-width="2"/></g>
+</svg>

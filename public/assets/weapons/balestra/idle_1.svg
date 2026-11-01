@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 512" width="1024" height="512" style="display: block" role="img" aria-label="Balestra di zucchero in prima persona, ferma, freccia incoccata">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M296 318 C350 236 674 236 728 318" fill="none" stroke="#111" stroke-width="32"/>
+  <path d="M296 318 C350 236 674 236 728 318" fill="none" stroke="#FFFFFF" stroke-width="22"/>
+  <path d="M296 318 C350 236 674 236 728 318" fill="none" stroke="#E3262B" stroke-width="22" stroke-dasharray="16 18" stroke-linecap="butt"/>
+  <path d="M330 280 C390 240 470 232 512 232" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+  <circle cx="296" cy="318" r="13" fill="#FF8FB3" stroke-width="4"/><circle cx="728" cy="318" r="13" fill="#FF8FB3" stroke-width="4"/>
+  <g transform="translate(0 0)">
+  <path d="M404 512 L474 300 L550 300 L620 512 Z" fill="#FF2D8A" stroke-width="5"/>
+  <path d="M412 476 L612 476 L618 494 L406 494 Z" fill="#FFD400" stroke-width="3"/>
+  <path d="M478 330 L456 420 M546 330 L568 420" fill="none" stroke-width="3"/>
+  <path d="M574 352 l8 -11 M582 382 l8 -11 M590 412 l8 -11 M600 446 l8 -11" fill="none" stroke-width="2"/>
+  <path d="M482 300 L494 196 L530 196 L542 300 Z" fill="#F4ECD8" stroke-width="5"/>
+  <path d="M500 296 L506 204 M524 296 L518 204" fill="none" stroke-width="2.5"/>
+  <path d="M470 292 L554 292 L560 312 L464 312 Z" fill="#FFD400" stroke-width="4"/>
+  <circle cx="512" cy="200" r="9" fill="#FFD400" stroke-width="4"/>
+  </g>
+  <g transform="translate(0 0)">
+  <defs><clipPath id="baA360"><path d="M500 360 L506 196 L518 196 L524 360 Z"/></clipPath></defs>
+  <path d="M500 360 L506 196 L518 196 L524 360 Z" fill="#FFFFFF" stroke="none"/>
+  <g clip-path="url(#baA360)" fill="#E3262B" stroke="none"><path d="M490 360 L540 346 L540 356 L490 370 Z"/><path d="M490 338 L540 324 L540 334 L490 348 Z"/><path d="M490 316 L540 302 L540 312 L490 326 Z"/><path d="M490 294 L540 280 L540 290 L490 304 Z"/><path d="M490 272 L540 258 L540 268 L490 282 Z"/><path d="M490 250 L540 236 L540 246 L490 260 Z"/><path d="M490 228 L540 214 L540 224 L490 238 Z"/><path d="M490 206 L540 192 L540 202 L490 216 Z"/></g>
+  <path d="M500 360 L506 196 L518 196 L524 360 Z" fill="none" stroke-width="4"/>
+  <path d="M504 196 C500 184 524 184 520 196 Z" fill="#E3262B" stroke-width="4"/>
+  <path d="M496 360 L480 382 L500 378 Z M528 360 L544 382 L524 378 Z" fill="#FF8FB3" stroke-width="3.5"/>
+  </g>
+  <path d="M296 318 L512 356 L728 318" fill="none" stroke="#111" stroke-width="5"/>
+  <path d="M296 318 L512 356 L728 318" fill="none" stroke="#F4ECD8" stroke-width="2"/>
+  <path class="fur" d="M292 512 C284 456 322 404 384 392 C416 386 438 404 436 432 C434 462 416 488 402 512 Z" fill="#9A6239" stroke-width="5"/>
+  <path class="fur-light" d="M310 512 C314 476 336 452 366 446 C358 474 350 494 348 512 Z" fill="#E2B88A" stroke-width="3"/>
+  <path d="M410 400 C426 392 444 400 442 416 M412 428 C430 422 446 432 442 448 M410 456 C426 452 440 462 436 476" fill="none" stroke-width="3"/>
+  <path class="fur" d="M732 512 C740 456 702 404 640 392 C608 386 586 404 588 432 C590 462 608 488 622 512 Z" fill="#9A6239" stroke-width="5"/>
+  <path class="fur-light" d="M714 512 C710 476 688 452 658 446 C666 474 674 494 676 512 Z" fill="#E2B88A" stroke-width="3"/>
+  <path d="M614 400 C598 392 580 400 582 416 M612 428 C594 422 578 432 582 448 M614 456 C598 452 584 462 588 476" fill="none" stroke-width="3"/>
+  <path d="M698 508 l12 -17 M710 508 l10 -14 M720 500 l8 -11" fill="none" stroke-width="2"/>
+</g>
+</svg>

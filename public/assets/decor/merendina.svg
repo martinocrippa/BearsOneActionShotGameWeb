@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Merendina incartata gigante con involucro inventato">
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M40 488 H472" stroke-width="5"/>
+<path d="M70 300 L40 270 L60 330 L36 360 L66 380 L40 420 L74 430 L70 486 L440 486 L442 430 L476 420 L450 380 L478 360 L452 330 L472 270 L442 300 Z" fill="#F0A81E" stroke-width="6"/>
+<path d="M70 300 H442 V486 H70 Z" fill="#F0A81E" stroke-width="5"/>
+<path d="M70 330 H442 M70 456 H442" fill="none" stroke="#E0503C" stroke-width="10"/>
+<path d="M70 330 H442 M70 456 H442" fill="none" stroke-width="3"/>
+<path d="M150 360 C170 352 200 352 220 362 C240 352 270 352 290 362 C310 352 340 352 360 362 L360 430 L150 430 Z" fill="#7A5134" stroke-width="4"/>
+<path d="M160 380 C200 372 300 372 350 380" fill="none" stroke="#F3D9B1" stroke-width="5"/>
+<path d="M100 314 C200 308 300 314 420 310" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+<path d="M420 476 l8 -11 M423 450 l8 -11 M426 424 l8 -11 M429 398 l8 -11 M432 372 l8 -11 M435 346 l8 -11" fill="none" stroke-width="2"/>
+</g>
+</svg>

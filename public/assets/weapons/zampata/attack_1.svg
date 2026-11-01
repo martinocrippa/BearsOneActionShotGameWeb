@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 512" width="1024" height="512" style="display: block" role="img" aria-label="Zampata, colpo 1">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M770 430 l90 40 M760 384 l100 30 M790 340 l80 18 M740 470 l70 40" fill="none" stroke-width="5"/>
+  <g transform="translate(580 250) rotate(-32) scale(1.08)">
+    <path class="fur" d="M-70 60 C-80 140 -86 220 -90 330 L90 330 C86 220 80 140 70 60 Z" fill="#9A6239" stroke-width="5"/>
+    <path d="M60 150 l12 -17 M64 180 l12 -17 M68 210 l12 -17 M70 240 l12 -17" fill="none" stroke-width="2"/>
+    <path d="M-82 -96 L-78 -118 L-66 -100 Z M-34 -126 L-28 -148 L-18 -128 Z M18 -128 L28 -148 L34 -126 Z M66 -100 L78 -118 L82 -96 Z" fill="#F4ECD8" stroke-width="3"/>
+    <path class="fur" d="M-66 -52 C-94 -52 -96 -100 -66 -104 C-40 -104 -40 -56 -66 -52 Z M-24 -78 C-54 -80 -52 -134 -22 -134 C6 -132 4 -78 -24 -78 Z M24 -78 C-4 -78 -6 -132 22 -134 C52 -134 54 -80 24 -78 Z M66 -52 C40 -56 40 -104 66 -104 C96 -100 94 -52 66 -52 Z" fill="#9A6239" stroke-width="5"/>
+    <path class="fur" d="M-92 10 C-96 -50 -60 -96 0 -98 C60 -96 96 -50 92 10 C88 70 50 100 0 102 C-50 100 -88 70 -92 10 Z" fill="#9A6239" stroke-width="5"/>
+    <path class="fur-light" d="M-50 20 C-56 -20 -20 -34 0 -24 C20 -34 56 -20 50 20 C46 50 20 62 0 60 C-20 62 -46 50 -50 20 Z" fill="#E2B88A" stroke-width="3"/>
+    <path class="fur-light" d="M-62 -84 C-76 -84 -78 -58 -62 -56 C-48 -58 -48 -84 -62 -84 Z M-22 -110 C-38 -110 -40 -82 -22 -80 C-6 -82 -6 -110 -22 -110 Z M22 -110 C6 -110 6 -82 22 -80 C40 -82 38 -110 22 -110 Z M62 -84 C48 -84 48 -58 62 -56 C78 -58 76 -84 62 -84 Z" fill="#E2B88A" stroke-width="3"/>
+    <path d="M40 90 l12 -17 M54 82 l12 -17 M66 70 l12 -17 M76 56 l10 -14" fill="none" stroke-width="2"/>
+  </g>
+  <path d="M700 200 l70 -10 M690 160 l60 -26 M716 240 l64 6" fill="none" stroke-width="4"/>
+</g>
+</svg>

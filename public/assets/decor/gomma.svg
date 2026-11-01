@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Gomma rosa gigante con un angolo consumato">
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+<path d="M60 488 H460" stroke-width="5"/>
+<path d="M86 300 L120 270 L440 270 L440 486 L86 486 Z" fill="#FF8FC8" stroke-width="6"/>
+<path d="M440 270 L476 300 L476 486 L440 486 Z" fill="#E0709F" stroke-width="5"/>
+<path d="M86 300 C100 286 108 276 120 270" fill="none" stroke-width="3"/>
+<path d="M100 300 C150 296 300 300 430 296" fill="none" stroke="#FFFFFF" stroke-width="6"/>
+<path d="M160 340 H380 V430 H160 Z" fill="#3B8DE0" stroke-width="5"/>
+<path d="M180 370 C220 362 300 366 360 360 M180 400 C230 394 300 398 360 394" fill="none" stroke="#F4ECD8" stroke-width="5"/>
+<path d="M448 470 l8 -11 M450 448 l8 -11 M452 426 l8 -11 M454 404 l8 -11 M456 382 l8 -11 M458 360 l8 -11 M460 338 l8 -11 M462 316 l8 -11" fill="none" stroke-width="2"/>
+<circle cx="70" cy="470" r="6" fill="#FF8FC8" stroke-width="3"/><circle cx="52" cy="480" r="4" fill="#FF8FC8" stroke-width="2.5"/>
+</g>
+</svg>

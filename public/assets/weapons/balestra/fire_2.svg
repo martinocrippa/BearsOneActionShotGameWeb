@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 512" width="1024" height="512" style="display: block" role="img" aria-label="Balestra di zucchero, corda che vibra e nuova freccia che sale">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M296 318 C350 236 674 236 728 318" fill="none" stroke="#111" stroke-width="32"/>
+  <path d="M296 318 C350 236 674 236 728 318" fill="none" stroke="#FFFFFF" stroke-width="22"/>
+  <path d="M296 318 C350 236 674 236 728 318" fill="none" stroke="#E3262B" stroke-width="22" stroke-dasharray="16 18" stroke-linecap="butt"/>
+  <path d="M330 280 C390 240 470 232 512 232" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+  <circle cx="296" cy="318" r="13" fill="#FF8FB3" stroke-width="4"/><circle cx="728" cy="318" r="13" fill="#FF8FB3" stroke-width="4"/>
+  <g transform="translate(0 3)">
+  <path d="M404 512 L474 300 L550 300 L620 512 Z" fill="#FF2D8A" stroke-width="5"/>
+  <path d="M412 476 L612 476 L618 494 L406 494 Z" fill="#FFD400" stroke-width="3"/>
+  <path d="M478 330 L456 420 M546 330 L568 420" fill="none" stroke-width="3"/>
+  <path d="M574 352 l8 -11 M582 382 l8 -11 M590 412 l8 -11 M600 446 l8 -11" fill="none" stroke-width="2"/>
+  <path d="M482 300 L494 196 L530 196 L542 300 Z" fill="#F4ECD8" stroke-width="5"/>
+  <path d="M500 296 L506 204 M524 296 L518 204" fill="none" stroke-width="2.5"/>
+  <path d="M470 292 L554 292 L560 312 L464 312 Z" fill="#FFD400" stroke-width="4"/>
+  <circle cx="512" cy="200" r="9" fill="#FFD400" stroke-width="4"/>
+  </g>
+  <g transform="translate(0 3)">
+  <defs><clipPath id="baA470"><path d="M500 470 L506 300 L518 300 L524 470 Z"/></clipPath></defs>
+  <path d="M500 470 L506 300 L518 300 L524 470 Z" fill="#FFFFFF" stroke="none"/>
+  <g clip-path="url(#baA470)" fill="#E3262B" stroke="none"><path d="M490 470 L540 456 L540 466 L490 480 Z"/><path d="M490 448 L540 434 L540 444 L490 458 Z"/><path d="M490 426 L540 412 L540 422 L490 436 Z"/><path d="M490 404 L540 390 L540 400 L490 414 Z"/><path d="M490 382 L540 368 L540 378 L490 392 Z"/><path d="M490 360 L540 346 L540 356 L490 370 Z"/><path d="M490 338 L540 324 L540 334 L490 348 Z"/><path d="M490 316 L540 302 L540 312 L490 326 Z"/><path d="M490 294 L540 280 L540 290 L490 304 Z"/></g>
+  <path d="M500 470 L506 300 L518 300 L524 470 Z" fill="none" stroke-width="4"/>
+  <path d="M504 300 C500 288 524 288 520 300 Z" fill="#E3262B" stroke-width="4"/>
+  <path d="M496 470 L480 492 L500 488 Z M528 470 L544 492 L524 488 Z" fill="#FF8FB3" stroke-width="3.5"/>
+  </g>
+  <path d="M296 318 C340 326 380 300 420 324 C460 344 500 312 512 330 C540 344 580 306 620 326 C660 344 700 308 728 318" fill="none" stroke="#111" stroke-width="5"/>
+  <path d="M330 300 l-6 -10 M400 296 l-2 -12 M620 296 l2 -12 M690 300 l6 -10" fill="none" stroke-width="3"/>
+  <path d="M470.0 140.0 L472.6 146.4 L479.5 146.9 L474.3 151.4 L475.9 158.1 L470.0 154.5 L464.1 158.1 L465.7 151.4 L460.5 146.9 L467.4 146.4 Z" fill="#FFD400" stroke-width="3.5"/><path d="M560.0 120.0 L562.1 125.1 L567.6 125.5 L563.4 129.1 L564.7 134.5 L560.0 131.6 L555.3 134.5 L556.6 129.1 L552.4 125.5 L557.9 125.1 Z" fill="#FF8FB3" stroke-width="3.5"/>
+  <path class="fur" d="M292 512 C284 456 322 404 384 392 C416 386 438 404 436 432 C434 462 416 488 402 512 Z" fill="#9A6239" stroke-width="5"/>
+  <path class="fur-light" d="M310 512 C314 476 336 452 366 446 C358 474 350 494 348 512 Z" fill="#E2B88A" stroke-width="3"/>
+  <path d="M410 400 C426 392 444 400 442 416 M412 428 C430 422 446 432 442 448 M410 456 C426 452 440 462 436 476" fill="none" stroke-width="3"/>
+  <path class="fur" d="M732 512 C740 456 702 404 640 392 C608 386 586 404 588 432 C590 462 608 488 622 512 Z" fill="#9A6239" stroke-width="5"/>
+  <path class="fur-light" d="M714 512 C710 476 688 452 658 446 C666 474 674 494 676 512 Z" fill="#E2B88A" stroke-width="3"/>
+  <path d="M614 400 C598 392 580 400 582 416 M612 428 C594 422 578 432 582 448 M614 456 C598 452 584 462 588 476" fill="none" stroke-width="3"/>
+  <path d="M698 508 l12 -17 M710 508 l10 -14 M720 500 l8 -11" fill="none" stroke-width="2"/>
+</g>
+</svg>

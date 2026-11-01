@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" style="display: block" role="img" aria-label="Volpe cammina, vista dietro, frame 4">
+<defs>
+<clipPath id="voCH"><path d="M90 80 C110 54 160 50 186 74 C206 92 236 108 274 126 C281 130 279 140 270 142 C242 150 214 160 190 168 C170 186 130 192 104 182 C80 172 70 140 74 114 C76 100 82 88 90 80 Z"/></clipPath>
+<g id="voEye" stroke="#111" stroke-linecap="round" stroke-linejoin="round"><path d="M-18 3 C-10 -5 8 -7 19 -2 C12 4 -6 6 -18 3 Z" fill="#F4ECD8" stroke-width="4.2"/><circle cx="6" cy="0" r="4.6" fill="#FFD400" stroke="none"/><ellipse cx="6" cy="0" rx="1.5" ry="4" fill="#111" stroke="none"/><path d="M-19 3 C-10 -12 10 -14 21 -2 C10 -2 -6 -1 -19 3 Z" fill="#F28A16" stroke-width="4.2"/><path d="M-18 3 L-26 -2" fill="none" stroke-width="4.2"/></g>
+<g id="voEyeP" stroke="#111" stroke-linecap="round" stroke-linejoin="round"><path d="M-18 3 C-10 -5 8 -7 19 -2 C12 4 -6 6 -18 3 Z" fill="#F4ECD8" stroke-width="2.6"/><circle cx="6" cy="0" r="4.6" fill="#FFD400" stroke="none"/><ellipse cx="6" cy="0" rx="1.5" ry="4" fill="#111" stroke="none"/><path d="M-19 3 C-10 -12 10 -14 21 -2 C10 -2 -6 -1 -19 3 Z" fill="#F28A16" stroke-width="2.6"/><path d="M-18 3 L-26 -2" fill="none" stroke-width="2.6"/></g>
+<g id="voBro" stroke="#111" stroke-linecap="round" stroke-linejoin="round"><path d="M-4 4 L-3 16 L3 16 L4 4 Z" fill="#8CC85A" stroke-width="3"/><circle cx="-6" cy="1" r="6.5" fill="#22B14C" stroke-width="3"/><circle cx="6" cy="1" r="6.5" fill="#22B14C" stroke-width="3"/><circle cx="0" cy="-6" r="7" fill="#22B14C" stroke-width="3"/></g>
+<path id="voStar" d="M0 -11 L3 -3 L11 -3 L5 2 L7 10 L0 5 L-7 10 L-5 2 L-11 -3 L-3 -3 Z" fill="#FFD400" stroke="#111" stroke-width="2.5" stroke-linejoin="round"/>
+</defs>
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(0 -4)">
+<path d="M312 392 L340 396 L338 406 L310 402 Z" fill="#9C968A" stroke-width="4"/>
+</g>
+<g transform="translate(-1 -15)">
+<path d="M232 400 L230 470 L250 470 L252 400 Z" fill="#F28A16" stroke-width="5"/>
+<path d="M220 488 C218 476 224 466 236 466 L254 466 C256 474 256 482 254 488 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M224 482 H252" stroke="#F4ECD8" stroke-width="3"/>
+</g>
+<path d="M260 400 L262 470 L282 470 L280 400 Z" fill="#F28A16" stroke-width="5"/>
+<path d="M292 488 C294 476 288 466 276 466 L258 466 C256 474 256 482 258 488 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M260 482 H288" stroke="#F4ECD8" stroke-width="3"/>
+<g transform="translate(0 -4)">
+<path d="M222 296 L206 360 L218 366 L234 310 Z M290 296 L312 380 L300 386 L280 310 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M204 358 C198 370 208 380 218 376 C222 372 222 364 218 360 Z M306 380 C310 392 304 400 296 398 C292 394 292 386 296 382 Z" fill="#F28A16" stroke-width="5"/>
+</g>
+<g transform="translate(0 -4)">
+<path d="M222 290 C236 280 276 280 290 290 L298 406 L214 406 Z" fill="#2A2A30" stroke-width="5"/>
+<g fill="#9C968A" stroke-width="2"><circle cx="230" cy="300" r="3.5"/><circle cx="246" cy="296" r="3.5"/><circle cx="266" cy="296" r="3.5"/><circle cx="282" cy="300" r="3.5"/></g>
+<path d="M218 398 H294" stroke="#F4ECD8" stroke-width="2.5"/>
+</g>
+<g transform="translate(0 -4)">
+<path d="M256 424 C226 420 210 350 228 290 C236 260 270 260 276 282 C282 304 262 312 260 336 C258 370 268 402 282 416 Z" fill="#F28A16" stroke-width="5"/>
+<path d="M228 292 C236 264 268 262 274 280 C260 282 244 286 234 300 Z" fill="#F4ECD8" stroke-width="3"/>
+<path d="M264 330 l8 -11 M262 350 l8 -11 M262 370 l8 -11 M266 390 l8 -11" fill="none" stroke-width="2"/>
+</g>
+<g transform="translate(0 -4)">
+<g transform="translate(256 200)">
+<path d="M-38 14 L-44 -32 L-14 4 Z M38 14 L44 -32 L14 4 Z" fill="#2A2A30" stroke-width="5"/>
+<path d="M-44 34 C-46 12 -24 0 0 0 C24 0 46 12 44 34 C46 56 30 80 0 88 C-30 80 -46 56 -44 34 Z" fill="#F28A16" stroke-width="5"/>
+<path d="M18 80 l9 -12 M28 72 l8 -11 M36 62 l6 -8" fill="none" stroke-width="2"/>
+<path d="M-46 48 L-54 52 L-44 56 M46 48 L54 52 L44 56" fill="none" stroke-width="3"/>
+</g>
+</g>
+</g>
+</svg>
