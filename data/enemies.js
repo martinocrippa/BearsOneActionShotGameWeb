@@ -62,7 +62,7 @@ export const ENEMIES = {
     placeholder: { fur: '#f4ecd8', belly: '#ffffff', accent: '#e3262b', ears: 'none', tail: 'plume', bird: true, cap: '#1f5fbf', tall: true },
   },
   maiale: {
-    name: 'Maiale in blu', doom: 'Cyberdemon', hp: 2600, speed: 2.1, radius: 1.1, height: 3.5, scale: 4.4, canvas: 1024,
+    name: 'Maiale', doom: 'Cyberdemon', hp: 2600, speed: 2.1, radius: 1.1, height: 3.5, scale: 4.4, canvas: 1024,
     sight: 50, painChance: 0.04, boss: true,
     attack: { projectile: 'biberon', range: 45, windup: 0.6, cooldown: [1.6, 2.4], speed: 15, sleep: 22, spread: 0.02, burst: 3, splash: { radius: 2.6, sleep: 10 } },
     sounds: { alert: 'oink', pain: 'oink', knock: 'oink', shoot: 'launch' },

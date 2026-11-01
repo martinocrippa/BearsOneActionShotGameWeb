@@ -62,6 +62,22 @@ Nei menu bastano frecce, `INVIO` e `ESC`.
 | `IDCLEV` + numero | Salta al livello (1–9) |
 | `IDBONUS` | Sblocca il bonus SWEET SHOT |
 
+### Password dei livelli
+
+Si scrivono in **PASSWORD** nel menu: si parte da quel livello a difficoltà *It Tickles*, con 3 cuscini e le armi dei livelli prima.
+
+| Livello | Orsa | Piccolo | Grande |
+| --- | --- | --- | --- |
+| E1M1 The Clearing | `BB2N-Q7HG-5TG` | `BDN8-KSS9-TKQ` | `BGCS-DF64-KDQ` |
+| E1M2 Increa Park | `BKNW-55P7-3MQ` | `BMCH-XQ32-RFJ` | `BNZ3-RDFT-G7B` |
+| E1M3 The Pitch in the Rain | `BSB8-QH8D-W5V` | `BTZS-J5K7-MWN` | `BWND-CQW2-CL6` |
+| E1M4 School at Dawn | `B2ZH-9V7G-DXX` | `B4M3-4JJ8-4QQ` | `B6BM-V5V3-SGN` |
+| E1M5 Break Time | `B9MR-JDLN-7Z8` | `CCBC-BZXH-WPX` | `CDXV-5MBB-MHX` |
+| E1M6 The Castle | `CH93-DN45-44B` | `CKXL-7BGX-ST4` | `CML6-ZWSR-JNB` |
+| E1M7 The River | `CQXB-L6JD-W5L` | `CSLV-FRT7-MWL` | `CT9F-8D72-CMB` |
+| E1M8 The Stadium | `CZLN-DXDD-4C4` | `C287-7KP7-R54` | `C4WR-Z632-HWV` |
+| E1M9 Snowy Peaks (segreto) | `C78S-F97N-H2S` | `C9WC-8WKG-7SS` | `DCKW-3JV9-WLL` |
+
 ## Privacy
 
 Non esce niente dal computer, nemmeno dalla versione online: nessuna statistica, nessun tracciamento, nessun account. Salvataggio e bonus sbloccato stanno nel `localStorage` del browser con il prefisso `orsi:` e si azzerano svuotando i dati del sito. L'unico collegamento esterno è il regalo alla fine dell'episodio: apre un video sul canale ufficiale della Serie A, in una nuova scheda, solo se lo si clicca.

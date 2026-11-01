@@ -33,7 +33,7 @@ Per controllare un livello: `node scripts/check-level.mjs levels/defs/e1m2.js`. 
 | `6` | Oca (vola) | Cacodemon |
 | `7` | Papero in picchiata (vola) | Lost Soul |
 | `8` | Gallo generale (mini-boss) | Baron of Hell |
-| `9` | Maiale in blu (boss) | Cyberdemon |
+| `9` | Maiale (boss) | Cyberdemon |
 
 ### Oggetti
 | Car. | Cosa | Car. | Cosa |
