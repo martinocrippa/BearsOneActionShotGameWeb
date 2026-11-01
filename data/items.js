@@ -28,6 +28,13 @@ export const ITEMS = {
   spBalestra: { name: 'Balestra', weapon: 'balestra', ammo: 'frecce', amount: 40, msg: 'YOU GOT THE SUGAR CROSSBOW! (7)', sound: 'weapon', fit: 0.5 },
   spFizz: { name: 'Estintore FIZZ', weapon: 'fizz', ammo: 'fizz', amount: 80, msg: 'YOU GOT THE FIZZ EXTINGUISHER! (8)', sound: 'weapon', fit: 0.65 },
   spBfg: { name: 'B.F.G.', weapon: 'bfg', ammo: 'gumball', amount: 40, msg: 'YOU GOT THE B.F.G.! BIG FAT GUMBALL! (9)', sound: 'weapon', fit: 0.7 },
+  // bonus weapons: the prizes of the bonus rooms (data/tricks.js), and their sweets
+  spCarpa: { name: 'Sputa-carpa', weapon: 'sputacarpa', ammo: 'acqua', amount: 150, msg: 'YOU GOT THE CARP SQUIRTER! (0)', sound: 'weapon', fit: 0.6 },
+  spPalloni: { name: 'Sparapalloni', weapon: 'sparapalloni', ammo: 'palloni', amount: 20, msg: 'YOU GOT THE BALL BLASTER! (0)', sound: 'weapon', fit: 0.6 },
+  spTorte: { name: 'Lancia-torte', weapon: 'lanciatorte', ammo: 'torte', amount: 12, msg: 'YOU GOT THE PIE CATAPULT! (0)', sound: 'weapon', fit: 0.6 },
+  acqua: { name: 'Secchiello d\'acqua', ammo: 'acqua', amount: 60, msg: 'A bucket of water.', sound: 'pickup', fit: 0.5 },
+  palloni: { name: 'Retina di palloni', ammo: 'palloni', amount: 6, msg: 'A net of footballs.', sound: 'pickup', fit: 0.55 },
+  torte: { name: 'Vassoio di torte', ammo: 'torte', amount: 4, msg: 'A tray of cream pies.', sound: 'pickup', fit: 0.5 },
 };
 
 // Keys: they change with the place (DOOM's red/blue/yellow cards). `color` = the lock on the doors and the HUD.
@@ -75,6 +82,9 @@ export const DECOR = {
   albero_autunno: { r: 0.5, h: 6, color: '#c27a2e' },
   panchina: { r: 0.6, h: 0.9, color: '#8b5a36' },
   cestino: { r: 0.3, h: 1, color: '#3f6b32', pop: { radius: 2.5, damage: 70 } },
+  // bonus rooms (data/tricks.js)
+  porta_rigori: { r: 0, h: 2.6, color: '#f4f4ee' },
+  palo_giostra: { r: 0.3, h: 3.6, color: '#e3262b' },
   // E1M3 pitch
   porta_calcio: { r: 0, h: 2.5, color: '#f4f4ee' },
   panchina_coperta: { r: 0.9, h: 2.2, color: '#14161a' },

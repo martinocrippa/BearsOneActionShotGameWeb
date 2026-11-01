@@ -82,6 +82,27 @@ const DRAW = {
     ${[[480, 210, '#ff2d8a'], [540, 200, '#ffd400'], [510, 260, '#28c2b4'], [560, 250, '#e3262b'], [460, 260, '#7d5cff']].map(([x, y, c]) => `<circle cx="${x}" cy="${y}" r="26" fill="${c}" ${L(3)}/>`).join('')}
     <g class="w-flash">${star(512, 110, 90, '#ff2d8a')}${star(512, 110, 50, '#ffd400')}</g>
     ${arms(o)}${paw(o, 400, 440, 1)}${paw(o, 624, 440, 1)}`,
+  // bonus weapons (key 0) and the fishing rod of the fishing trick
+  sputacarpa: o => `
+    <g transform="rotate(-90 512 330)"><path d="M400 330 C440 230 584 230 624 330 C584 430 440 430 400 330 Z" fill="#ffc21a" ${L(7)}/>
+      <path d="M624 330 L700 280 L700 380 Z" fill="#ffc21a" ${L(6)}/><circle cx="450" cy="310" r="14" fill="${INK}"/></g>${hatch(560, 512, 5, 160, -72, 14)}
+    <g class="w-flash">${[[512, 130, 26], [490, 80, 18], [536, 60, 14], [512, 30, 10]].map(([x, y, r]) => `<circle cx="${x}" cy="${y}" r="${r}" fill="#7fc8f0" ${L(3)}/>`).join('')}</g>
+    ${arms(o)}${paw(o, 430, 440, 0.95)}${paw(o, 594, 440, 0.95)}`,
+  sparapalloni: o => `
+    <path d="M420 520 L450 250 L574 250 L604 520 Z" fill="#e3262b" ${L(7)}/>${hatch(560, 512, 6, 210, -72, 14)}
+    <ellipse cx="512" cy="250" rx="62" ry="18" fill="#3a1010" ${L(5)}/><rect x="620" y="330" width="26" height="150" rx="8" fill="#9aa0a6" ${L(4)}/>
+    <g class="w-flash"><circle cx="512" cy="150" r="54" fill="#fff" ${L(5)}/><path d="M512 120 l22 16 l-8 26 h-28 l-8 -26 Z" fill="${INK}"/></g>
+    ${arms(o)}${paw(o, 430, 440, 0.95)}${paw(o, 594, 440, 0.95)}`,
+  lanciatorte: o => `
+    <rect x="380" y="440" width="264" height="40" rx="10" fill="#9aa0a6" ${L(6)}/>
+    <path d="M512 450 L512 250" stroke="${INK}" stroke-width="34" stroke-linecap="round"/><path d="M512 450 L512 250" stroke="#c08a4f" stroke-width="22" stroke-linecap="round"/>
+    <g class="w-ammo"><ellipse cx="512" cy="230" rx="80" ry="30" fill="#fffaf0" ${L(5)}/><path d="M440 230 C460 190 564 190 584 230" fill="#fffaf0" ${L(4)}/><circle cx="512" cy="186" r="14" fill="#e3262b" ${L(3)}/></g>
+    ${arms(o)}${paw(o, 430, 440, 0.95)}${paw(o, 594, 440, 0.95)}`,
+  canna: o => `
+    <path d="M512 520 L560 60" stroke="${INK}" stroke-width="26" stroke-linecap="round"/><path d="M512 520 L560 60" stroke="#a0632d" stroke-width="14" stroke-linecap="round"/>
+    <path class="w-flash" d="M560 60 C620 140 600 300 640 400" fill="none" stroke="#fff" stroke-width="4"/>
+    <circle cx="528" cy="380" r="30" fill="#9aa0a6" ${L(5)}/>
+    ${arms(o)}${paw(o, 470, 450, 0.95)}${paw(o, 540, 330, 0.8)}`,
 };
 
 // Claude Design's frames (weapons/<weapon>/<frame>): shown while idle, then the firing sequence [frame, ms].
@@ -91,6 +112,7 @@ const FRAMES = {
   fionda: { idle: 'idle_1', fire: [['pull_1', 70], ['release_1', 170]] },
   sparaconfetti: { idle: 'idle_1', fire: [['fire_1', 90], ['recoil_1', 150]] },
   gelatina: { idle: 'idle_1', fire: [['fire_1', 50], ['recoil_1', 50]] },
+  canna: { idle: 'idle_1', fire: [['pull_1', 160], ['pull_2', 900]] }, // the fishing trick's rod (data/tricks.js)
 };
 for (const [k, w] of Object.entries(WEAPONS)) if (w.frames) FRAMES[k] = w.frames;
 

@@ -1,6 +1,7 @@
 // Signposts: a board with a few words and an arrow that shows the way to something (a key, its door, the exit).
 // Written in the level definition: signs: [{ x, z, text, to }] — x, z = column and row in the map text,
-// to = 'exit' | a key id (where the key lies) | 'door:<key id>' (the door it opens) | absent (no arrow).
+// to = 'exit' | a key id (where the key lies) | 'door:<key id>' (the door it opens) | 'bonus' (the bonus room's
+// door) | absent (no arrow).
 // The arrow follows the real way there (around walls, through doors), not the straight line.
 // A sign whose goal cannot be reached yet (the yellow card lies behind the whistle door) asks for the key that comes
 // first instead: "FIND THE WHISTLE FIRST!", with the arrow to it, until that key is in the bear's paws.
@@ -10,6 +11,7 @@ import { cellCenter, progression } from './level.js';
 export function signTargets(level, to) {
   if (!to) return [];
   if (to === 'exit') return level.entities.filter(e => e.type === 'exit' && !e.secret).map(e => [e.cx, e.cz]);
+  if (to === 'bonus') return level.cells.filter(c => c.door?.bonus).map(c => [c.cx, c.cz]);
   if (to.startsWith('door:')) {
     const key = to.slice(5);
     return level.cells.filter(c => c.door?.key === key).map(c => [c.cx, c.cz]);

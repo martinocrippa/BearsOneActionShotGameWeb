@@ -70,7 +70,8 @@ export const THINGS = {
   W: { type: 'item', id: 'spBfg' },
 };
 // Doors and secret walls: D opens with the first key, d with the second, ':' with nothing (just walk into it),
-// S is a secret wall that opens when touched.
+// S is a secret wall that opens when touched. A level can add its own doors in the legend (`doors`), e.g. the
+// door of a bonus room: { '(': { bonus: true } } (opens with nothing, closes behind the bear during the trick).
 export const DOOR_CHARS = { D: 0, d: 1, ':': null };
 
 const asFloor = f => (typeof f === 'string' ? { style: f } : f);
@@ -100,7 +101,7 @@ export function parseLevel(text, legend = FOREST) {
         if (w.low) Object.assign(cell, { low: true, h: w.h, fx: { slow: 1, sleepy: 0, slip: false, liquid: false } });
       } else if (floors[ch]) {
         applyFloor(cell, asFloor(floors[ch]));
-      } else if (!THINGS[ch] && !decor[ch] && !(ch in DOOR_CHARS) && ch !== 'S') unknown.push(cell);
+      } else if (!THINGS[ch] && !decor[ch] && !(ch in DOOR_CHARS) && !legend.doors?.[ch] && ch !== 'S') unknown.push(cell);
       cells.push(cell);
     }
   }
@@ -112,7 +113,8 @@ export function parseLevel(text, legend = FOREST) {
     if (floors[cell.ch]) continue;
     if (walls[cell.ch] && !cell.mover) continue; // the level's legend wins over the shared characters
     const thing = !walls[cell.ch] && THINGS[cell.ch], deco = !walls[cell.ch] && decor[cell.ch];
-    const door = !walls[cell.ch] && cell.ch in DOOR_CHARS, secret = !walls[cell.ch] && cell.ch === 'S';
+    const ownDoor = legend.doors?.[cell.ch];
+    const door = !walls[cell.ch] && (cell.ch in DOOR_CHARS || !!ownDoor), secret = !walls[cell.ch] && cell.ch === 'S';
     if (!thing && !deco && !door && !secret && !cell.mover) continue;
     const votes = {};
     for (let dz = -1; dz <= 1; dz++) for (let dx = -1; dx <= 1; dx++) {
@@ -125,9 +127,9 @@ export function parseLevel(text, legend = FOREST) {
 
     if (door) {
       const slot = DOOR_CHARS[cell.ch];
-      cell.door = { key: slot === null ? null : keys[slot] || null };
+      cell.door = ownDoor ? { key: null, ...ownDoor } : { key: slot === null ? null : keys[slot] || null };
       cell.wall = 'door';
-      entities.push({ type: 'door', key: cell.door.key, ch: cell.ch, cx: cell.cx, cz: cell.cz, ...cellCenter(cell.cx, cell.cz) });
+      entities.push({ type: 'door', key: cell.door.key, bonus: !!cell.door.bonus, ch: cell.ch, cx: cell.cx, cz: cell.cz, ...cellCenter(cell.cx, cell.cz) });
       continue;
     }
     if (secret) {

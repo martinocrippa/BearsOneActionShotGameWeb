@@ -1177,6 +1177,17 @@
   "source": "zip"
  },
  {
+  "key": "decor/palo_giostra",
+  "path": "decor/palo_giostra.svg",
+  "w": 256,
+  "h": 768,
+  "anchor": [
+   128,
+   768
+  ],
+  "source": "zip"
+ },
+ {
   "key": "decor/panchina",
   "path": "decor/panchina.svg",
   "w": 512,
@@ -1239,6 +1250,17 @@
   "anchor": [
    256,
    488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "decor/porta_rigori",
+  "path": "decor/porta_rigori.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
   ],
   "source": "zip"
  },
@@ -1432,6 +1454,17 @@
  {
   "key": "doors/biglietto/open",
   "path": "doors/biglietto/open.svg",
+  "w": 512,
+  "h": 1024,
+  "anchor": [
+   256,
+   1024
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "doors/bonus/closed",
+  "path": "doors/bonus/closed.png",
   "w": 512,
   "h": 1024,
   "anchor": [
@@ -4851,6 +4884,28 @@
   "source": "zip"
  },
  {
+  "key": "fx/acqua/overlay_f_1",
+  "path": "fx/acqua/overlay_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/acqua/overlay_f_2",
+  "path": "fx/acqua/overlay_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
   "key": "fx/ali/overlay_f_1",
   "path": "fx/ali/overlay_f_1.svg",
   "w": 512,
@@ -4928,8 +4983,41 @@
   "source": "zip"
  },
  {
+  "key": "fx/panna/overlay_f_1",
+  "path": "fx/panna/overlay_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/panna/overlay_f_2",
+  "path": "fx/panna/overlay_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
   "key": "fx/ragnatela/overlay_f_1",
   "path": "fx/ragnatela/overlay_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/rete/overlay_f_1",
+  "path": "fx/rete/overlay_f_1.svg",
   "w": 512,
   "h": 512,
   "anchor": [
@@ -4946,6 +5034,17 @@
   "anchor": [
    256,
    488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/word_ACHOO",
+  "path": "fx/word_ACHOO.png",
+  "w": 256,
+  "h": 128,
+  "anchor": [
+   128,
+   64
   ],
   "source": "zip"
  },
@@ -5005,6 +5104,17 @@
   "source": "zip"
  },
  {
+  "key": "fx/word_GOAL",
+  "path": "fx/word_GOAL.png",
+  "w": 256,
+  "h": 128,
+  "anchor": [
+   128,
+   64
+  ],
+  "source": "zip"
+ },
+ {
   "key": "fx/word_GRRR",
   "path": "fx/word_GRRR.png",
   "w": 256,
@@ -5040,6 +5150,17 @@
  {
   "key": "fx/word_QUACK",
   "path": "fx/word_QUACK.png",
+  "w": 256,
+  "h": 128,
+  "anchor": [
+   128,
+   64
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "fx/word_SPLAT",
+  "path": "fx/word_SPLAT.png",
   "w": 256,
   "h": 128,
   "anchor": [
@@ -5511,6 +5632,50 @@
   "source": "zip"
  },
  {
+  "key": "hud/trick/star",
+  "path": "hud/trick/star.svg",
+  "w": 128,
+  "h": 128,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/trick/try_off",
+  "path": "hud/trick/try_off.svg",
+  "w": 64,
+  "h": 64,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "hud/trick/try_on",
+  "path": "hud/trick/try_on.svg",
+  "w": 64,
+  "h": 64,
+  "anchor": [
+   0,
+   0
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/acqua",
+  "path": "items/acqua.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   240
+  ],
+  "source": "zip"
+ },
+ {
   "key": "items/biglietto",
   "path": "items/biglietto.svg",
   "w": 256,
@@ -5786,6 +5951,17 @@
   "source": "zip"
  },
  {
+  "key": "items/palloni",
+  "path": "items/palloni.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   240
+  ],
+  "source": "zip"
+ },
+ {
   "key": "items/pickup_fionda",
   "path": "items/pickup_fionda.svg",
   "w": 256,
@@ -5885,6 +6061,17 @@
   "source": "zip"
  },
  {
+  "key": "items/spCarpa",
+  "path": "items/spCarpa.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   240
+  ],
+  "source": "zip"
+ },
+ {
   "key": "items/spFizz",
   "path": "items/spFizz.png",
   "w": 256,
@@ -5903,6 +6090,28 @@
   "anchor": [
    128,
    232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/spPalloni",
+  "path": "items/spPalloni.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   240
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "items/spTorte",
+  "path": "items/spTorte.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   240
   ],
   "source": "zip"
  },
@@ -5951,6 +6160,17 @@
   "source": "zip"
  },
  {
+  "key": "items/torte",
+  "path": "items/torte.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   240
+  ],
+  "source": "zip"
+ },
+ {
   "key": "items/zainetto",
   "path": "items/zainetto.png",
   "w": 256,
@@ -5969,6 +6189,39 @@
   "anchor": [
    128,
    232
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/acqua/fly_f_1",
+  "path": "projectiles/acqua/fly_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/acqua/fly_f_2",
+  "path": "projectiles/acqua/fly_f_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/acqua/splat_f_1",
+  "path": "projectiles/acqua/splat_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
   ],
   "source": "zip"
  },
@@ -6402,6 +6655,39 @@
   "source": "zip"
  },
  {
+  "key": "projectiles/pallone/fly_f_1",
+  "path": "projectiles/pallone/fly_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/pallone/fly_f_2",
+  "path": "projectiles/pallone/fly_f_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/pallone/splat_f_1",
+  "path": "projectiles/pallone/splat_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
   "key": "projectiles/rondella/fly_f_1",
   "path": "projectiles/rondella/fly_f_1.svg",
   "w": 256,
@@ -6459,6 +6745,39 @@
  {
   "key": "projectiles/schiuma/splat_f_1",
   "path": "projectiles/schiuma/splat_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/torta/fly_f_1",
+  "path": "projectiles/torta/fly_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/torta/fly_f_2",
+  "path": "projectiles/torta/fly_f_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "projectiles/torta/splat_f_1",
+  "path": "projectiles/torta/splat_f_1.svg",
   "w": 256,
   "h": 256,
   "anchor": [
@@ -7949,6 +8268,347 @@
   "source": "zip"
  },
  {
+  "key": "topi/cavaliere/cheer_f_1",
+  "path": "topi/cavaliere/cheer_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "topi/cavaliere/cheer_f_2",
+  "path": "topi/cavaliere/cheer_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "topi/cavaliere/idle_f_1",
+  "path": "topi/cavaliere/idle_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "topi/cavaliere/idle_f_2",
+  "path": "topi/cavaliere/idle_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "topi/cavaliere/sad_f_1",
+  "path": "topi/cavaliere/sad_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "topi/cavaliere/talk_f_1",
+  "path": "topi/cavaliere/talk_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "topi/cavaliere/talk_f_2",
+  "path": "topi/cavaliere/talk_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "topi/pescatore/cheer_f_1",
+  "path": "topi/pescatore/cheer_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "topi/pescatore/cheer_f_2",
+  "path": "topi/pescatore/cheer_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "topi/pescatore/idle_f_1",
+  "path": "topi/pescatore/idle_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "topi/pescatore/idle_f_2",
+  "path": "topi/pescatore/idle_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "topi/pescatore/sad_f_1",
+  "path": "topi/pescatore/sad_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "topi/pescatore/talk_f_1",
+  "path": "topi/pescatore/talk_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "topi/pescatore/talk_f_2",
+  "path": "topi/pescatore/talk_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "topi/portiere/cheer_f_1",
+  "path": "topi/portiere/cheer_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "topi/portiere/cheer_f_2",
+  "path": "topi/portiere/cheer_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "topi/portiere/dive_f_1",
+  "path": "topi/portiere/dive_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "topi/portiere/idle_f_1",
+  "path": "topi/portiere/idle_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "topi/portiere/idle_f_2",
+  "path": "topi/portiere/idle_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "topi/portiere/ready_f_1",
+  "path": "topi/portiere/ready_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "topi/portiere/sad_f_1",
+  "path": "topi/portiere/sad_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "topi/portiere/talk_f_1",
+  "path": "topi/portiere/talk_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "topi/portiere/talk_f_2",
+  "path": "topi/portiere/talk_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "trick/bersaglio/hit_f_1",
+  "path": "trick/bersaglio/hit_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "trick/bersaglio/spin_f_1",
+  "path": "trick/bersaglio/spin_f_1.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "trick/bersaglio/spin_f_2",
+  "path": "trick/bersaglio/spin_f_2.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "trick/bersaglio/spin_f_3",
+  "path": "trick/bersaglio/spin_f_3.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   128
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "trick/carpa_oro/jump_f_1",
+  "path": "trick/carpa_oro/jump_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "trick/carpa_oro/jump_f_2",
+  "path": "trick/carpa_oro/jump_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "trick/carpa/jump_f_1",
+  "path": "trick/carpa/jump_f_1.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "trick/carpa/jump_f_2",
+  "path": "trick/carpa/jump_f_2.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "zip"
+ },
+ {
   "key": "weapons/balestra/fire_1",
   "path": "weapons/balestra/fire_1.svg",
   "w": 1024,
@@ -8006,6 +8666,39 @@
  {
   "key": "weapons/bfg/idle_1",
   "path": "weapons/bfg/idle_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/canna/idle_1",
+  "path": "weapons/canna/idle_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/canna/pull_1",
+  "path": "weapons/canna/pull_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/canna/pull_2",
+  "path": "weapons/canna/pull_2.svg",
   "w": 1024,
   "h": 512,
   "anchor": [
@@ -8114,6 +8807,39 @@
   "source": "zip"
  },
  {
+  "key": "weapons/lanciatorte/fire_1",
+  "path": "weapons/lanciatorte/fire_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/lanciatorte/fire_2",
+  "path": "weapons/lanciatorte/fire_2.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/lanciatorte/idle_1",
+  "path": "weapons/lanciatorte/idle_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
   "key": "weapons/liquirizia/fire_1",
   "path": "weapons/liquirizia/fire_1.svg",
   "w": 1024,
@@ -8171,6 +8897,72 @@
  {
   "key": "weapons/sparaconfetti/recoil_1",
   "path": "weapons/sparaconfetti/recoil_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/sparapalloni/fire_1",
+  "path": "weapons/sparapalloni/fire_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/sparapalloni/fire_2",
+  "path": "weapons/sparapalloni/fire_2.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/sparapalloni/idle_1",
+  "path": "weapons/sparapalloni/idle_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/sputacarpa/fire_1",
+  "path": "weapons/sputacarpa/fire_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/sputacarpa/fire_2",
+  "path": "weapons/sputacarpa/fire_2.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "zip"
+ },
+ {
+  "key": "weapons/sputacarpa/idle_1",
+  "path": "weapons/sputacarpa/idle_1.svg",
   "w": 1024,
   "h": 512,
   "anchor": [

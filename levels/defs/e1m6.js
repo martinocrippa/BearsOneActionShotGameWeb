@@ -11,7 +11,10 @@ export default {
     { x: 30, z: 16, text: 'FIND THE IRON KEY!', to: 'chiave_ferro' },
     { x: 15, z: 18, text: 'IRON KEY DOOR', to: 'door:chiave_ferro' },
     { x: 51, z: 25, text: 'EXIT', to: 'exit' },
+    { x: 28, z: 42, text: 'BONUS ROOM', to: 'bonus' },
   ],
+  // bonus room (data/tricks.js): the knight mouse's tournament yard next to the start
+  trick: { id: 'joust', topo: 'cavaliere', x: 24, z: 44, target: { x: 21, z: 40 }, prize: 'spTorte' },
   legend: {
     wallHeight: 6, // taller than usual: the keep top is at +4
     walls: {
@@ -49,9 +52,11 @@ export default {
       '&': { style: 'lastricato', h: 4, lift: 1.5, color: '#a89f8a' }, // lift up the keep
     },
     decor: {
+      ')': 'palo_giostra', // the bonus room's joust pole
       a: 'castagno', i: 'ricci', e: 'maesta', w: 'pozzo_pietra', t: 'torcia', y: 'asino', x: 'trattorino',
       f: 'spaventapasseri', z: 'cesto_castagne', b: 'balla', j: 'panchina', s: 'sasso', N: 'ceppo',
     },
+    doors: { '(': { bonus: true } }, // the bonus room's door (levels/LEGENDA.md)
     keys: ['castagna_oro', 'chiave_ferro'],
     secret: 'pietra',
   },

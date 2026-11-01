@@ -16,6 +16,8 @@ const CUP = '<svg viewBox="0 0 40 40"><path d="M6 12 H30 L28 34 C27 37 9 37 8 34
 const MAX_LIVES = 3;
 
 const img = (url, cls = '') => `<img src="${url}" alt="" class="${cls}">`;
+// A bonus room's tries: a whole wedge of cheese, or a nibbled one (until Claude Design's hud/trick/try_on|try_off).
+const CHEESE = (whole) => `<svg viewBox="0 0 64 64"><path d="M6 50 L58 50 L58 26 L6 46 Z" fill="${whole ? '#ffd400' : '#cfc7b0'}" stroke="#111" stroke-width="4" stroke-linejoin="round"/>${whole ? '<circle cx="40" cy="40" r="4" fill="#e0a800"/><circle cx="50" cy="34" r="3" fill="#e0a800"/>' : '<path d="M30 50 a8 8 0 0 1 14 0" fill="#f4ecd8" stroke="#111" stroke-width="3"/>'}</svg>`;
 
 // The lives as pillows (HUD and the GOODNIGHT screen): the drawn full/used pillows, else coded ones.
 export function pillowsHtml(n) {
@@ -32,7 +34,7 @@ export function createHud(root) {
   const cupIcon = assetUrl('items/cioccolata') ? img(assetUrl('items/cioccolata')) : CUP;
   root.insertAdjacentHTML('beforeend', `
     <div class="vignette"></div><div class="mud-band"></div><div class="trapped"></div><div class="splats"></div><div class="flash"></div><canvas class="automap"></canvas><div class="tags"></div><div class="instruct"></div>
-    <div class="crosshair${assetUrl('hud/crosshair/idle') ? ' drawn' : ''}">${assetUrl('hud/crosshair/idle') ? img(assetUrl('hud/crosshair/idle')) : ''}</div>
+    <div class="crosshair${assetUrl('hud/crosshair/idle') ? ' drawn' : ''}">${assetUrl('hud/crosshair/idle') ? img(assetUrl('hud/crosshair/idle')) : ''}</div><div class="lockmark"></div><div class="trickbox"></div>
     <div class="messages"></div>
     <div class="popup"></div>
     <div class="hud">
@@ -41,7 +43,7 @@ export function createHud(root) {
       <div class="hud-cell hud-face"></div>
       <div class="hud-cell hud-armor"><span class="lbl">CHOCO</span><div class="cup">${cupIcon}<b>0%</b></div></div>
       <div class="hud-cell hud-keys"><span class="lbl">KEYS</span><div class="keys"></div></div>
-      <div class="hud-cell hud-arms"><span class="lbl">WEAPONS</span><div class="slots">${[1, 2, 3, 4, 5, 6, 7, 8, 9].map(n => `<span data-slot="${n}">${n}</span>`).join('')}</div></div>
+      <div class="hud-cell hud-arms"><span class="lbl">WEAPONS</span><div class="slots">${[1, 2, 3, 4, 5, 6, 7, 8, 9, 0].map(n => `<span data-slot="${n}">${n || '★'}</span>`).join('')}</div></div>
     </div>`);
   const $ = sel => root.querySelector(sel);
   const ammoNum = $('.hud-ammo b'), ammoLbl = $('.hud-ammo span');
@@ -51,7 +53,7 @@ export function createHud(root) {
   const msgs = $('.messages'), flash = $('.flash'), vignette = $('.vignette'), hud = $('.hud'), popup = $('.popup');
   const tags = $('.tags'), instructEl = $('.instruct');
   let instructTimer = null;
-  const splats = $('.splats'), sleepCell = $('.hud-sleep'), trappedEl = $('.trapped'), mapCanvas = $('.automap'), crosshair = $('.crosshair');
+  const splats = $('.splats'), sleepCell = $('.hud-sleep'), trappedEl = $('.trapped'), mapCanvas = $('.automap'), crosshair = $('.crosshair'), lockmark = $('.lockmark'), trickEl = $('.trickbox');
   let mapOn = false;
   const faceCache = new Map();
   let last = {}, popupTimer = null;
@@ -96,6 +98,24 @@ export function createHud(root) {
       }
       const vig = Math.min(0.85, (sleep.value / 100) ** 1.4).toFixed(2);
       if (vig !== last.vig) { vignette.style.opacity = vig; last.vig = vig; }
+    },
+    // A bonus room's trick: the cheese wedges (tries left) and, for the timing tricks, the bar with its needle:
+    // the gold and green stripes (fishing), the posts and where the keeper dived (penalty). null = hidden.
+    trick(s) {
+      trickEl.classList.toggle('show', !!s);
+      if (!s) { last.trick = null; return; }
+      const g = s.gauge;
+      const id = `${s.tries}|${g?.gold?.at ?? ''}|${g?.posts ?? ''}|${g?.keeper ?? ''}`;
+      if (id !== last.trick) {
+        last.trick = id;
+        const cheese = whole => { const url = assetUrl(`hud/trick/${whole ? 'try_on' : 'try_off'}`); return url ? img(url) : CHEESE(whole); };
+        const pct = v => `${(v * 100).toFixed(1)}%`;
+        const band = (cls, at, half) => `<i class="${cls}" style="left:${pct(at - half)};width:${pct(half * 2)}"></i>`;
+        const zones = !g ? '' : g.gold ? band('green', g.green.at, g.green.half) + band('gold', g.gold.at, g.gold.half)
+          : `${band('post', g.posts / 2, g.posts / 2)}${band('post', 1 - g.posts / 2, g.posts / 2)}${g.keeper !== null ? band('keeper', g.keeper, 0.2) : ''}`;
+        trickEl.innerHTML = `<div class="tries">${Array.from({ length: s.of }, (_, i) => cheese(i < s.tries)).join('')}</div>${g ? `<div class="gauge">${zones}<b class="needle"></b></div>` : ''}`;
+      }
+      if (g) trickEl.querySelector('.needle').style.left = `${(g.pos * 100).toFixed(1)}%`;
     },
     // A bigger instruction box at the top (training; Italian, it explains how to play).
     instruct(text) {
@@ -161,12 +181,13 @@ export function createHud(root) {
       while (tags.children.length > 3) tags.firstChild.remove();
       setTimeout(() => t.remove(), 1400);
     },
-    // Crosshair on the locked opponent (x, y in px of the 3D view), or back in the middle (null).
-    aim(x, y) {
+    // The auto-aim: a red mark over the head of the locked opponent (x, y in px of the 3D view), else the crosshair
+    // in the middle (null), or nothing (`hide`, just after a knock-out).
+    aim(x, y, hide = false) {
       const locked = x !== null && x !== undefined;
-      crosshair.classList.toggle('locked', locked);
-      crosshair.style.left = locked ? `${x}px` : '';
-      crosshair.style.top = locked ? `${y}px` : '';
+      crosshair.classList.toggle('off', locked || hide);
+      lockmark.classList.toggle('on', locked);
+      if (locked) { lockmark.style.left = `${x}px`; lockmark.style.top = `${y}px`; }
     },
     // DOOM's automap, shown while TAB is held down (letting go brings the game back: no one gets stuck in it)
     showMap(on) { mapOn = on; mapCanvas.classList.toggle('show', on); },

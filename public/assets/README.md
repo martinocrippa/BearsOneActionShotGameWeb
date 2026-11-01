@@ -1,6 +1,6 @@
 # Disegni definitivi
 
-Qui ci sono i disegni di Claude Design dell'MVP e dell'Episodio 1 completo (passi E1-1 … E1-11), importati dallo zip
+Qui ci sono i disegni di Claude Design dell'MVP e dell'Episodio 1 completo (passi E1-1 … E1-12), importati dallo zip
 `docs/design/orsi-assets-E1.zip` (estratto) con:
 ```
 node scripts/import-assets-zip.mjs <cartella orsi-assets estratta dallo zip> [--clean]
@@ -56,6 +56,7 @@ pelliccia (`class="fur"`, `"fur-light"`) prende il colore dell'orso scelto.
 | Leva, ascensore | `textures/switch_off\|on`, `textures/floor_lift` | | |
 | Cieli | `textures/sky`, `textures/sky_e1mN` | 2048×512 | si ripetono in orizzontale |
 | Armi in mano | `weapons/<arma>/<azione>_<frame>` | 1024×512 | |
-| HUD | `hud/face_<orso>/<umore>`, `hud/trapped/<jelly\|licorice>`, `hud/gift/<closed\|open>` | | |
+| HUD | `hud/face_<orso>/<umore>`, `hud/trapped/<jelly\|licorice>`, `hud/gift/<closed\|open>`, `hud/trick/<try_on\|try_off\|star>` | | |
+| Stanze bonus | `topi/<pescatore\|portiere\|cavaliere>/<idle\|talk\|cheer\|sad>_f_<n>` (il portiere anche `ready_f_1`, `dive_f_1`), `trick/<carpa\|carpa_oro>/jump_f_<n>`, `trick/bersaglio/<spin_f_1..3\|hit_f_1>`, `doors/bonus/closed`, `weapons/canna/<idle_1\|pull_1\|pull_2>` | 512×512 (bersaglio 256) | topi: piedi y=488, alti ~230 px |
 | Schermate | `screens/<title\|intermission\|ending\|episode2>/background` | 1920×1080 | senza scritte: le scritte le mette il gioco |
 | Bonus SWEET SHOT | `bonus/<dawn\|noon\|night>/<panorama\|front>`, `bonus/birds/<uccello>/<posa>`, `bonus/rifle/idle_f_1` | 3200×1080, 256, 1024×256 | |

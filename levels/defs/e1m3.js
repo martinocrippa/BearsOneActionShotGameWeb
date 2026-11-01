@@ -14,7 +14,10 @@ export default {
     { x: 28, z: 29, text: 'FIND THE YELLOW CARD!', to: 'cartellino' },
     { x: 54, z: 8, text: 'YELLOW CARD DOOR', to: 'door:cartellino' },
     { x: 45, z: 30, text: 'EXIT', to: 'exit' },
+    { x: 10, z: 39, text: 'BONUS ROOM', to: 'bonus' },
   ],
+  // bonus room (data/tricks.js): the goalkeeper mouse on the little pitch by the car park
+  trick: { id: 'penalty', topo: 'portiere', x: 2, z: 40, spot: { x: 6, z: 40 }, target: { x: 1, z: 40 }, prize: 'spPalloni' },
   legend: {
     wallHeight: 6, // tall flats: the canopy roof and the church ledge stand at 3-3.8 m
     walls: {
@@ -47,9 +50,11 @@ export default {
       R: { style: 'tegole', h: 3.8, color: '#9c968a' },             // church roof ledge (secret): the 'tegole' drawing is the grey metal sheet roof
     },
     decor: {
+      ')': 'porta_rigori', // the bonus room's goal
       a: 'porta_calcio', b: 'panchina_coperta', p: 'cassa_palloni', j: 'faro', i: 'lampione',
       e: 'coni', T: 'campanile', x: 'armadietti', z: 'cestino', s: 'panchina',
     },
+    doors: { '(': { bonus: true } }, // the bonus room's door (levels/LEGENDA.md)
     keys: ['fischietto', 'cartellino'],
     secret: 'condominio', // every S sits in a wall of flats
   },

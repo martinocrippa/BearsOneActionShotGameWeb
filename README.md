@@ -30,7 +30,7 @@ Solo tastiera, come nel DOOM originale: la mira in alto e in basso è automatica
 | Schivare (di lato) | `A` `D`, oppure `SHIFT` + `←` `→` | **chi guida**: `←` `→` |
 | Sparare | `SPAZIO` | **chi spara**: `SPAZIO` |
 | Saltare | `ALT GR` (o `INVIO`) | **chi guida**: `ALT GR` |
-| Armi | `Q` `E` o `1`–`9` | **chi spara**: `Q` `E` |
+| Armi | `Q` `E` o `1`–`9`; `0` le armi bonus | **chi spara**: `Q` `E` |
 | Mappa (finché è premuto) | `TAB` | |
 | Pausa / musica | `ESC` / `M` | |
 
@@ -44,6 +44,7 @@ Nei menu bastano frecce, `INVIO` e `ESC`.
 - **Tre orsi** con un loro talento (più veloce, salta più in alto, resiste di più al sonno), **nove avversari** e **nove armi**: zampata, fionda di caramelle, sparaconfetti, liquirizie, gelatina, zucchero filato, balestra, estintore FIZZ e la B.F.G. (Big Fat Gumball). Ogni arma ha il suo effetto comico.
 - **La barra del Sonno** al posto della salute: il miele sveglia, la cioccolata calda fa da armatura, tre addormentate e compare YOU LOSE.
 - **Cartelli** che dicono cosa cercare, con una freccia che indica la strada giusta da dove li guardi (e se prima serve un'altra chiave, chiedono quella). Sulla mappa (`TAB`) le chiavi ancora da prendere hanno il colore della loro porta. I **cestini** colpiti scoppiano in coriandoli, come i barili di DOOM.
+- **Stanze bonus** a Increa, al campo dell'Arca e al castello: dietro una porta **BONUS** un Topo propone una sfida con 3 tentativi (pesca della carpa d'oro, rigori contro il Topo portiere, giostra con la fionda). Chi vince prende un'**arma assurda** sul tasto `0`: Sputa-carpa, Sparapalloni, Lancia-torte.
 - **LEARN**: un livello di allenamento con le istruzioni e le sagome di cartone.
 - **BONUS: SWEET SHOT**, che si sblocca alla fine dell'episodio: tiro a segno con il fucile a bastoncino di zucchero su anatre, uccellini e gufi, in tre livelli (*Dawn at the Pond*, *Noon in the Woods*, *Night of the Owls*).
 - **Quattro difficoltà**, da *Sleepy Cub* a *Ultra-Sugar*. Salvataggio automatico ai checkpoint e una password in stile anni '90 per continuare su un altro computer.
@@ -68,15 +69,15 @@ Si scrivono in **PASSWORD** nel menu: si parte da quel livello a difficoltà *It
 
 | Livello | Orsa | Piccolo | Grande |
 | --- | --- | --- | --- |
-| E1M1 The Clearing | `BB2N-Q7HG-5TG` | `BDN8-KSS9-TKQ` | `BGCS-DF64-KDQ` |
-| E1M2 Increa Park | `BKNW-55P7-3MQ` | `BMCH-XQ32-RFJ` | `BNZ3-RDFT-G7B` |
-| E1M3 The Pitch in the Rain | `BSB8-QH8D-W5V` | `BTZS-J5K7-MWN` | `BWND-CQW2-CL6` |
-| E1M4 School at Dawn | `B2ZH-9V7G-DXX` | `B4M3-4JJ8-4QQ` | `B6BM-V5V3-SGN` |
-| E1M5 Break Time | `B9MR-JDLN-7Z8` | `CCBC-BZXH-WPX` | `CDXV-5MBB-MHX` |
-| E1M6 The Castle | `CH93-DN45-44B` | `CKXL-7BGX-ST4` | `CML6-ZWSR-JNB` |
-| E1M7 The River | `CQXB-L6JD-W5L` | `CSLV-FRT7-MWL` | `CT9F-8D72-CMB` |
-| E1M8 The Stadium | `CZLN-DXDD-4C4` | `C287-7KP7-R54` | `C4WR-Z632-HWV` |
-| E1M9 Snowy Peaks (segreto) | `C78S-F97N-H2S` | `C9WC-8WKG-7SS` | `DCKW-3JV9-WLL` |
+| E1M1 The Clearing | `BF4Q-GSVG-BBHLN` | `BQRZ-69SK-HSDG4` | `B3G9-WQQN-N99CJ` |
+| E1M2 Increa Park | `CNTT-HK5N-T4R84` | `CZJ4-723R-3LN44` | `C98D-XHZV-84KZJ` |
+| E1M3 The Pitch in the Rain | `DWLX-96S6-8G75J` | `D798-2MRB-FX4ZQ` | `FJZJ-Q4PF-MGZXG` |
+| E1M4 School at Dawn | `F6C4-FTJ4-4C674` | `GG3C-6BG7-9T36D` | `GRQM-VRFC-HCX22` |
+| E1M5 Break Time | `HD47-CN9K-VCQTQ` | `HPSG-357N-3TMPX` | `H2HQ-SL5R-9CJLD` |
+| E1M6 The Castle | `JMVB-N6XP-HF44D` | `JXKL-FMVS-NWZ24` | `J88T-54SW-VFVV4` |
+| E1M7 The River | `KVMF-L2N5-9FNPS` | `K7BP-CHL9-GWKK8` | `LHZX-3XKD-NFGJJ` |
+| E1M8 The Stadium | `L5DK-7F78-FFV9J` | `MF3T-WV6C-LWR5X` | `MQQ5-NC4G-SFNZX` |
+| E1M9 Snowy Peaks (segreto) | `NC5L-237D-Z9X7J` | `NNSV-RJ5H-7RT3X` | `NZH6-HZ3M-D9QZ8` |
 
 ## Privacy
 

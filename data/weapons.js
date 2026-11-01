@@ -54,6 +54,28 @@ export const WEAPONS = {
     projectile: { kind: 'gumball', speed: 22, damage: [300, 400], spread: 0, count: 1, size: 2.2, splash: { radius: 9, damage: [150, 260] } },
     effect: 'esplosione', sound: 'bfg', frames: { idle: 'idle_1', fire: [['charge_1', 600], ['fire_1', 300]] },
   },
+
+  // Bonus weapons (key 0, pressed again for the next one): won in the bonus rooms' tricks (`trick` in a level's
+  // definition, data/tricks.js). `bounce` = times a shot bounces off the walls, `lob` = gravity of a shot thrown in
+  // an arc (m/s²).
+  // The golden carp held like a hose: short squirts of water. The opponent ends up soaked, sneezing.
+  sputacarpa: {
+    slot: 0, bonus: true, name: 'Sputa-carpa', ammo: 'acqua', cost: 1, cooldown: 0.14,
+    projectile: { kind: 'acqua', speed: 17, damage: [6, 9], spread: 0.07, count: 2, ttl: 0.6, size: 1 },
+    effect: 'fradicio', sound: 'splash', frames: { idle: 'idle_1', fire: [['fire_1', 60], ['fire_2', 80]] },
+  },
+  // A home-made cannon of footballs that bounce off the walls. The opponent ends up tangled in the goal net.
+  sparapalloni: {
+    slot: 0, bonus: true, name: 'Sparapalloni', ammo: 'palloni', cost: 1, cooldown: 0.55,
+    projectile: { kind: 'pallone', speed: 21, damage: [30, 42], spread: 0.02, count: 1, ttl: 2.5, size: 0.9, bounce: 3 },
+    effect: 'inRete', sound: 'boing', frames: { idle: 'idle_1', fire: [['fire_1', 90], ['fire_2', 140]] },
+  },
+  // A spoon catapult: cream pies thrown in an arc, a little splash where they land. A pie in the face.
+  lanciatorte: {
+    slot: 0, bonus: true, name: 'Lancia-torte', ammo: 'torte', cost: 1, cooldown: 0.8,
+    projectile: { kind: 'torta', speed: 15, damage: [45, 60], spread: 0.02, count: 1, ttl: 3, size: 1.1, lob: 9, splash: { radius: 1.8, damage: [25, 40] } },
+    effect: 'torta', sound: 'pie', frames: { idle: 'idle_1', fire: [['fire_1', 120], ['fire_2', 200]] },
+  },
 };
 
 // `max` doubles with the backpack (zainetto).
@@ -66,6 +88,10 @@ export const AMMO = {
   frecce: { max: 300, start: 0, label: 'SUGAR ARROWS' },
   fizz: { max: 300, start: 0, label: 'FIZZ' },
   gumball: { max: 300, start: 0, label: 'GUMBALLS' },
+  // the bonus weapons'
+  acqua: { max: 200, start: 0, label: 'WATER' },
+  palloni: { max: 40, start: 0, label: 'BALLS' },
+  torte: { max: 30, start: 0, label: 'PIES' },
 };
 
 export const START_WEAPONS = ['zampata', 'fionda', 'sparaconfetti'];

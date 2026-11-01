@@ -55,7 +55,7 @@ test('password round-trips the progress and rejects typos', () => {
     ammo: { caramelle: 120, confetti: 20, gelatina: 300, gumball: 80 },
   };
   const code = encodePassword(save);
-  assert.match(code, /^[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{3}$/);
+  assert.match(code, /^[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{5}$/);
   const back = decodePassword(code.toLowerCase());
   assert.equal(back.bear, 'piccolo');
   assert.equal(back.lives, 2);

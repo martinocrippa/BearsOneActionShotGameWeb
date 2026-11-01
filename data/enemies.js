@@ -83,4 +83,8 @@ export const EFFECTS = {
   angioletto: { label: 'angioletto', pose: 'pain', overlay: 'ali', overlayFrames: 2, float: true, word: 'BYE!', sound: 'angel' },
   rutto: { label: 'rutto di cola', pose: 'stordito', frames: 2, overlay: 'bollicine', overlayFrames: 2, word: 'BUUURP!', sound: 'burp' },
   esplosione: { label: 'esploso in dolciumi', pose: 'pain', vanish: true, word: 'POP!', sound: 'bfg' },
+  // the bonus weapons'
+  fradicio: { label: 'fradicio', pose: 'stordito', frames: 2, overlay: 'acqua', overlayFrames: 2, word: 'ACHOO!', sound: 'splash' },
+  inRete: { label: 'impigliato nella rete', pose: 'stordito', frames: 2, overlay: 'rete', word: 'GOAL!', sound: 'cheer' },
+  torta: { label: 'torta in faccia', pose: 'pain', overlay: 'panna', overlayFrames: 2, word: 'SPLAT!', sound: 'pie' },
 };

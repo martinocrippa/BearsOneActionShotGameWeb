@@ -3,6 +3,7 @@
 // items on 256 with the base on y=240. Real drawings in public/assets/ replace these by name.
 import { L, hatch, eye3q, star, word, svgDoc, INK } from './ink.js';
 import { genericEnemy, genericProjectile, genericItem, genericDecor, leverExit, overlaySprite, NEW_SPLAT_COLORS, hasSplat, genericSplat } from './placeholders.js';
+import { goalSprite, poleSprite } from './tricks.js';
 
 export { overlaySprite };
 
@@ -213,14 +214,15 @@ export function exitSprite(on, kind = 'mushroom') {
     ${on ? star(110, 170, 20) + star(410, 170, 20) : ''}`);
 }
 
-export function doorTexture(lock = null) {
-  // Used as a canvas texture on the door box: logs + acorn lock (or a lock plate of the key's colour). 256×512.
+export function doorTexture(lock = null, bonus = false) {
+  // Used as a canvas texture on the door box: logs + acorn lock (or a lock plate of the key's colour; a star on a
+  // bonus room's door). 256×512.
   return svgDoc(256, 512, `
     <rect width="256" height="512" fill="#8a5a33"/>
     ${[0, 1, 2, 3, 4].map(i => `<rect x="${i * 51 + 2}" y="4" width="48" height="504" rx="18" fill="${i % 2 ? '#9c6a3e' : '#7f512c'}" ${L(4)}/>`).join('')}
     <rect x="12" y="120" width="232" height="26" fill="#5a3620" ${L(4)}/><rect x="12" y="380" width="232" height="26" fill="#5a3620" ${L(4)}/>
     <circle cx="128" cy="262" r="46" fill="#3a2414" ${L(5)}/>
-    ${lock ? `<circle cx="128" cy="262" r="34" fill="${lock}" ${L(4)}/><path d="M120 250 a8 8 0 1 1 16 0 l-4 22 h-8 Z" fill="${INK}"/>`
+    ${bonus ? `${star(128, 262, 58)}${word(128, 112, 'BONUS', 44, '#ffd400', -4)}` : lock ? `<circle cx="128" cy="262" r="34" fill="${lock}" ${L(4)}/><path d="M120 250 a8 8 0 1 1 16 0 l-4 22 h-8 Z" fill="${INK}"/>`
     : `<path d="M104 252 C104 300 152 300 152 252 Z" fill="#ffd400" ${L(3.5)}/><path d="M98 254 C96 226 160 226 158 254 Z" fill="#a0632d" ${L(3.5)}/>`}
     <rect width="256" height="512" fill="none" stroke="${INK}" stroke-width="10"/>`, { wobble: false });
 }
@@ -245,6 +247,8 @@ export function decorSprite(id, w = 512, h = 512) {
       <rect x="${x - r * 0.3}" y="${b - r * 1.4}" width="${r * 0.6}" height="${r * 1.4}" fill="#f4ecd8" ${L(4)}/>
       <path d="M${x - r} ${b - r * 1.3} C${x - r} ${b - r * 2.5} ${x + r} ${b - r * 2.5} ${x + r} ${b - r * 1.3} Z" fill="#e3262b" ${L(4)}/>
       <circle cx="${x - r * 0.3}" cy="${b - r * 1.8}" r="${r * 0.18}" fill="#fff"/><circle cx="${x + r * 0.35}" cy="${b - r * 1.65}" r="${r * 0.14}" fill="#fff"/>`).join(''));
+    case 'porta_rigori': return goalSprite();
+    case 'palo_giostra': return poleSprite();
     case 'cartello': return svgDoc(256, 512, `
       <rect x="116" y="200" width="24" height="304" fill="#7a4a24" ${L(4)}/>
       <path d="M20 40 L236 52 L230 222 L26 210 Z" fill="#f4ecd8" ${L(5)}/>

@@ -20,7 +20,7 @@ const CONTROLS = `
       <p>${key('A')}${key('D')} o ${key('SHIFT')}+${key('←')}${key('→')} <b>SCHIVA</b></p>
       <p>${key('SPAZIO')} <b>SPARA</b></p>
       <p>${key('ALT GR')} o ${key('INVIO')} <b>SALTA</b></p>
-      <p>${key('Q')}${key('E')} o ${key('1')}-${key('9')} <b>ARMI</b></p>
+      <p>${key('Q')}${key('E')} o ${key('1')}-${key('9')} <b>ARMI</b> ${key('0')} <b>ARMI BONUS</b></p>
       <p>${key('TAB')} <b>MAPPA</b> (tienilo premuto)</p></div>
     <div class="col"><h3>IN DUE</h3>
       <p class="who">CHI GUIDA</p>
@@ -145,7 +145,7 @@ export function createScreens(root) {
 
     code(error = '') {
       const p = show(`<div class="doom-menu"><h2 class="menu-title">PASSWORD</h2>
-        <input class="code-input" maxlength="13" autocomplete="off" spellcheck="false" aria-label="Password" placeholder="XXXX-XXXX-XXX">
+        <input class="code-input" maxlength="15" autocomplete="off" spellcheck="false" aria-label="Password" placeholder="XXXX-XXXX-XXXXX">
         ${error ? '<p class="err">WRONG PASSWORD</p>' : ''}
         <nav class="menu-list">${item('ok', 'GO')}${back}</nav></div>`, 'menu', (e, done) => {
         if (e.code === 'Enter' && document.activeElement?.classList.contains('code-input')) { done('ok'); return false; }
@@ -193,6 +193,7 @@ export function createScreens(root) {
       const rows = [['CAUGHT', pct(s.kills, s.totalKills)], ['ITEMS', pct(s.items, s.totalItems)], ['SECRETS', pct(s.secrets, s.totalSecrets)]];
       const p = show(`<div class="doom-menu report"><p class="lvl">${level.name.toUpperCase()}</p><h2 class="menu-title">${training ? 'TRAINING COMPLETE!' : 'LEVEL COMPLETE!'}</h2>
         <table>${rows.map(([n, v]) => `<tr><td>${n}</td><td data-count="${v}">0%</td></tr>`).join('')}
+          ${s.totalTricks ? `<tr><td>TRICK</td><td class="trick">${s.tricks ? '★' : '—'}</td></tr>` : ''}
           <tr><td>TIME</td><td>${mmss(s.time)}</td></tr><tr class="par"><td>PAR</td><td>${mmss(level.par)}</td></tr></table>
         ${secret ? '<p class="lvl secret-exit">SECRET EXIT!</p>' : ''}
         <nav class="menu-list">${training

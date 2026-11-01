@@ -13,7 +13,10 @@ export default {
     { x: 19, z: 9, text: 'FIND THE RED QUAIL FEATHER!', to: 'piuma_rossa' },
     { x: 27, z: 20, text: 'RED QUAIL FEATHER DOOR', to: 'door:piuma_rossa' },
     { x: 48, z: 10, text: 'EXIT', to: 'exit' },
+    { x: 18, z: 38, text: 'BONUS ROOM', to: 'bonus' },
   ],
+  // bonus room (data/tricks.js): the fishing mouse on the pier in the leafy corner by the entrance
+  trick: { id: 'fishing', topo: 'pescatore', x: 11, z: 36, spot: { x: 6, z: 37 }, target: { x: 4, z: 37 }, prize: 'spCarpa' },
   legend: {
     walls: {
       '#': { style: 'cava', h: 6, color: '#c9bfa8' },          // quarry cliffs
@@ -25,6 +28,8 @@ export default {
       '%': { style: 'mattoni', switch: '_', color: '#a8503c' }, // switch on the shed: raises the bridge
     },
     floors: {
+      ')': { style: 'acqua', h: 0.35, slow: 0.6, liquid: true, color: '#4fa8d8' }, // the bonus room's pond (shallow)
+      f: { style: 'pontile', h: 0.85, color: '#9a6a3e' },                         // and its pier
       '.': 'erba',
       ',': 'terra',
       '~': { style: 'acqua', h: -0.4, slow: 0.6, liquid: true, color: '#4fa8d8' },
@@ -50,6 +55,7 @@ export default {
       a: 'albero_autunno', b: 'betulla', e: 'abete', p: 'panchina', C: 'cestino', s: 'sasso', j: 'ceppo',
       i: 'cespuglio', n: 'funghi', x: 'canne', t: 'tartarughe', y: 'balla', O: 'pozzo', N: 'trattore',
     },
+    doors: { '(': { bonus: true } }, // the bonus room's door (levels/LEGENDA.md)
     keys: ['piuma_blu', 'piuma_rossa'],
     secret: 'cava',
   },

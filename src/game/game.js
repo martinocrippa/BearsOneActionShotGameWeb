@@ -15,6 +15,7 @@ import { CHEATS } from '../../data/cheats.js';
 import { difficultyAt } from '../../data/difficulty.js';
 import { buildWorld, Billboard } from './world.js';
 import { Enemy } from './enemies.js';
+import { Trick } from './trick.js';
 import { readMove } from './input.js';
 import { svgTexture, whenLoaded, hasAsset } from '../art/registry.js';
 import { itemSprite, decorSprite, projectileSprite, splatSprite, splatOf, exitSprite, SPLAT_COLORS } from '../art/sprites.js';
@@ -25,7 +26,7 @@ const PROJECTILE_CANVAS = 256; // projectiles and splats: 256×256, centred (Cla
 const JUMP_SPEED = 7.4;
 const TURN_SPEED = 2.4;
 // Canvas size of the placeholder decor drawings (real drawings bring their own size).
-const DECOR_CANVAS = { abete: [512, 1024], betulla: [512, 1024], cespuglio: [512, 256], funghi: [256, 256], cartello: [256, 512] };
+const DECOR_CANVAS = { abete: [512, 1024], betulla: [512, 1024], cespuglio: [512, 256], funghi: [256, 256], cartello: [256, 512], porta_rigori: [1024, 512], palo_giostra: [256, 768] };
 const decorCanvas = id => DECOR_CANVAS[id] || ((DECOR[id]?.h ?? 2) > 3 ? [512, 1024] : [512, 512]);
 const rand = (a, b) => a + Math.random() * (b - a);
 const angleDiff = (a, b) => Math.atan2(Math.sin(a - b), Math.cos(a - b));
@@ -137,8 +138,10 @@ export class Game {
 
     this.stats = {
       kills: 0, totalKills: this.enemies.length, items: 0, totalItems: this.items.length,
-      secrets: 0, totalSecrets: this.secretSpots.length, time: 0,
+      secrets: 0, totalSecrets: this.secretSpots.length, time: 0, tricks: 0, totalTricks: levelDef.trick ? 1 : 0,
     };
+    // the bonus room's trick (data/tricks.js): the Topo, 3 tries, an absurd weapon as the prize
+    this.trick = levelDef.trick && !levelDef.training ? new Trick(this, levelDef.trick) : null;
 
     if (save) this.restore(save);
     this.weaponView.show(this.player.weapon, bear);
@@ -209,7 +212,10 @@ export class Game {
   sound(name) { play(name); }
 
   // counted once: the training cut-outs get back up and can be knocked out again
-  onKnockOut(e) { if (!e.counted) { e.counted = true; this.stats.kills++; } }
+  onKnockOut(e) {
+    if (!e.counted) { e.counted = true; this.stats.kills++; }
+    this.koUntil = performance.now() + 1500; // the crosshair steps aside while the comic effect plays
+  }
 
   // An opponent throws `atk.projectile` at its target (the bear, or another opponent it is quarrelling with).
   enemyShoot(e, atk, target) {
@@ -263,7 +269,7 @@ export class Game {
       if (d > 0.2 || dist > 50) continue; // generous: there is no mouse, the aim is helped (as in DOOM)
       const ey = e.y + e.def.height * 0.55;
       if (!lineOfSight(this.level, p.x, eyeY, p.z, e.x, ey, e.z)) continue;
-      if (!best || dist < best.dist) best = { e, dist, d, ey, yaw: Math.atan2(-dx, -dz) };
+      if (!best || dist < best.dist) best = { e, dist, d, ey, top: e.y + e.def.height + 0.3, yaw: Math.atan2(-dx, -dz) };
     }
     // bins that burst count too, if nearer (DOOM's auto-aim locks on barrels as well)
     for (const b of this.poppers) {
@@ -272,15 +278,16 @@ export class Game {
       if (dist > 30 || Math.abs(angleDiff(Math.atan2(-dx, -dz), yaw)) > 0.2) continue;
       const ey = b.y + b.h * 0.5;
       if (!lineOfSight(this.level, p.x, eyeY, p.z, b.x, ey, b.z)) continue;
-      if (!best || dist < best.dist) best = { e: b, dist, ey, yaw: Math.atan2(-dx, -dz) };
+      if (!best || dist < best.dist) best = { e: b, dist, ey, top: b.y + b.h + 0.3, yaw: Math.atan2(-dx, -dz) };
     }
     return best;
   }
 
   tryFire(dt) {
     const p = this.player, w = WEAPONS[p.weapon];
-    if (p.cooldown > 0) return;
-    if (w.ammo && !p.infinite && p.ammo[w.ammo] < w.cost) { this.autoSwitch(); return; }
+    if (p.cooldown > 0 || this.trick?.blocksFire) return;
+    const free = p.infinite || this.trick?.freeShots; // the joust's slingshot shots cost no candy
+    if (w.ammo && !free && p.ammo[w.ammo] < w.cost) { this.autoSwitch(); return; }
     // the B.F.G. charges for a moment before firing (as in DOOM)
     if (w.charge) {
       if (p.charge === 0) { this.weaponView.fire(); play('charge'); }
@@ -290,7 +297,7 @@ export class Game {
     } else this.weaponView.fire();
     p.cooldown = w.cooldown;
     if (w.face) p.fireFaceT = 0.3;
-    if (w.ammo && !p.infinite) p.ammo[w.ammo] -= w.cost;
+    if (w.ammo && !free) p.ammo[w.ammo] -= w.cost;
     play(w.sound);
     // Shooting is noisy: opponents nearby wake up (as in DOOM).
     for (const e of this.enemies) if (Math.hypot(e.x - p.x, e.z - p.z) < 18) e.alert();
@@ -319,12 +326,14 @@ export class Game {
     const pr = w.projectile, aim = this.autoAim(p.yaw, p.pitch);
     const ox = p.x - Math.sin(p.yaw) * 0.5, oz = p.z - Math.cos(p.yaw) * 0.5, oy = p.y + p.eye - 0.25 - p.sink;
     for (let i = 0; i < pr.count; i++) {
-      const yaw = aim.yaw + rand(-pr.spread, pr.spread), pitch = aim.pitch + rand(-pr.spread, pr.spread) * 0.6;
+      // a pie is thrown upwards a little: it flies in an arc (`lob`)
+      const yaw = aim.yaw + rand(-pr.spread, pr.spread), pitch = aim.pitch + rand(-pr.spread, pr.spread) * 0.6 + (pr.lob ? 0.22 : 0);
       const dir = { x: -Math.sin(yaw) * Math.cos(pitch), y: Math.sin(pitch), z: -Math.cos(yaw) * Math.cos(pitch) };
       this.spawnProjectile('player', pr.kind, ox, oy, oz, dir, pr.speed * rand(0.95, 1.05), {
-        damage: rand(...pr.damage), effect: w.effect, variant: i, ttl: pr.ttl, size: pr.size, splash: pr.splash,
+        damage: rand(...pr.damage), effect: w.effect, variant: i, ttl: pr.ttl, size: pr.size, splash: pr.splash, bounce: pr.bounce, lob: pr.lob,
       });
     }
+    this.trick?.shot(this.projectiles.at(-1));
   }
 
   autoSwitch() {
@@ -506,20 +515,31 @@ export class Game {
   }
 
   tryPickup(it) {
-    const p = this.player, def = ITEMS[it.id];
-    if (!def) return;
+    const def = ITEMS[it.id];
+    if (!def || !this.grant(def)) return;
+    it.taken = true;
+    it.bb.remove();
+    this.stats.items++;
+  }
+
+  // A bonus room's prize (an item of data/items.js), given straight into the bear's paws.
+  grantItem(id) { if (ITEMS[id]) this.grant(ITEMS[id]); }
+
+  // What an item does for the bear (picked up, or won). false: no use for it now (it stays on the ground).
+  grant(def) {
+    const p = this.player;
     if (def.sleep) {
-      if (p.sleep.value <= 0 && !def.always) return;
+      if (p.sleep.value <= 0 && !def.always) return false;
       addSleep(p.sleep, def.sleep);
     } else if (def.armor) {
-      if (!addArmor(p.sleep, def.armor, def.cap)) return;
+      if (!addArmor(p.sleep, def.armor, def.cap)) return false;
     } else if (def.weapon) {
       const isNew = !p.weapons.includes(def.weapon);
       if (isNew) p.weapons.push(def.weapon);
       p.ammo[def.ammo] = Math.min(this.ammoMax(def.ammo), p.ammo[def.ammo] + Math.round(def.amount * this.diff.ammo));
       if (isNew) { this.selectWeapon(def.weapon); p.grinT = 1.6; }
     } else if (def.ammo) {
-      if (p.ammo[def.ammo] >= this.ammoMax(def.ammo)) return;
+      if (p.ammo[def.ammo] >= this.ammoMax(def.ammo)) return false;
       p.ammo[def.ammo] = Math.min(this.ammoMax(def.ammo), p.ammo[def.ammo] + Math.round(def.amount * this.diff.ammo));
     } else if (def.backpack) {
       p.backpack = true;
@@ -531,13 +551,11 @@ export class Game {
     }
     if (def.key) p.keys.add(def.key);
     this.hud.tag(...pickupTag(def, this.diff.ammo));
-    it.taken = true;
-    it.bb.remove();
-    this.stats.items++;
     this.hud.message(def.msg);
     if (def.popup) this.hud.popup(def.popup);
     this.hud.flash('pickup');
     play(def.sound);
+    return true;
   }
 
   // Switches and floor triggers move every cell drawn with the given characters:
@@ -574,7 +592,7 @@ export class Game {
       return Math.abs(cc.x - p.x) < CELL / 2 + p.r + 0.3 && Math.abs(cc.z - p.z) < CELL / 2 + p.r + 0.3;
     };
     for (const d of this.doors) {
-      if (d.moving || d.cell.open) continue;
+      if (d.moving || d.cell.open || d.closing || d.cell.door.locked) continue; // locked: a bonus room during its trick
       const c = cellCenter(d.cell.cx, d.cell.cz);
       if (Math.hypot(c.x - p.x, c.z - p.z) > CELL / 2 + 1.1) continue;
       const key = d.cell.door.key;
@@ -612,6 +630,12 @@ export class Game {
   }
 
   animateMovers(dt) {
+    // a bonus room's door closing behind the bear (down again, solid once nearly shut)
+    for (const d of this.doors) if (d.closing && d.t > 0) {
+      d.t = Math.max(0, d.t - dt);
+      d.mesh.position.y = d.y0 + (d.height - d.base - 0.3) * d.t;
+      if (d.t < 0.7) d.cell.open = false;
+    }
     for (const d of this.doors) if (d.moving && d.t < 1) {
       d.t = Math.min(1, d.t + dt);
       // the door starts below the floor (walls do): it rises until its bottom edge is near the top of the opening
@@ -679,9 +703,11 @@ export class Game {
     for (const ev of this.input.takeEvents()) {
       if (ev.code === 'Escape' || ev.code === 'KeyP') { this.callbacks.onPause(); return; }
       if (ev.code === 'KeyM') this.callbacks.onToggleMusic();
-      const m = /^Digit([1-9])$/.exec(ev.code);
-      if (m && this.warpWait) { this.warpWait = false; this.paused = true; this.callbacks.onWarp?.(+m[1] - 1); return; }
-      if (m) { const k = weaponBySlot(+m[1]); if (k) this.selectWeapon(k); }
+      if (ev.code === 'Space') this.trick?.press(); // even a quick tap counts in a timing trick
+      const m = /^Digit([0-9])$/.exec(ev.code);
+      if (m && m[1] !== '0' && this.warpWait) { this.warpWait = false; this.paused = true; this.callbacks.onWarp?.(+m[1] - 1); return; }
+      if (m && m[1] === '0') this.cycleBonus();
+      else if (m) { const k = weaponBySlot(+m[1]); if (k) this.selectWeapon(k); }
       const cheat = this.cheats.feed(ev.key);
       if (cheat) this.applyCheat(cheat);
       // Q/E change weapon, except while a code is being typed (IDDQD, ZUCCHERONE…)
@@ -691,14 +717,25 @@ export class Game {
     }
   }
 
+  // Key 0: the bonus weapons, one after the other.
+  cycleBonus() {
+    const bonus = Object.keys(WEAPONS).filter(k => WEAPONS[k].bonus && this.player.weapons.includes(k));
+    if (bonus.length) this.selectWeapon(bonus[(bonus.indexOf(this.player.weapon) + 1) % bonus.length]);
+  }
+
   cycleWeapon(dir) {
-    const owned = [...this.player.weapons].sort((a, b) => WEAPONS[a].slot - WEAPONS[b].slot);
+    // the bonus weapons (key 0) come after the 9
+    const order = k => WEAPONS[k].slot || 10;
+    const owned = [...this.player.weapons].sort((a, b) => order(a) - order(b));
     const i = owned.indexOf(this.player.weapon);
     this.selectWeapon(owned[(i + dir + owned.length) % owned.length]);
   }
 
   movePlayer(dt) {
     const p = this.player, input = this.input;
+    // playing a timing trick: the bear stands on the spot, facing the target
+    const hold = this.trick?.holds;
+    if (hold) { Object.assign(p, { x: hold.x, z: hold.z, yaw: hold.yaw, vx: 0, vz: 0 }); p.bob *= 0.9; return; }
     const mv = readMove(input, this.mode);
     p.yaw -= mv.turn * TURN_SPEED * dt;
 
@@ -783,8 +820,19 @@ export class Game {
         const k = Math.min(1, pr.homing * dt);
         pr.vx += (tx / l * pr.speed - pr.vx) * k; pr.vy += (ty / l * pr.speed - pr.vy) * k; pr.vz += (tz / l * pr.speed - pr.vz) * k;
       }
+      if (pr.lob) pr.vy -= pr.lob * dt; // thrown in an arc
       pr.x += pr.vx * dt; pr.y += pr.vy * dt; pr.z += pr.vz * dt;
       const c = cellAtWorld(this.level, pr.x, pr.z);
+      // footballs bounce off the walls a few times: back where it was, its speed mirrored on the side that hit
+      if (pr.bounce > 0 && pr.ttl > 0 && isSolid(c) && blocksSight(c, pr.y)) {
+        const ox = pr.x - pr.vx * dt, oz = pr.z - pr.vz * dt;
+        const hitX = blocksSight(cellAtWorld(this.level, pr.x, oz), pr.y), hitZ = blocksSight(cellAtWorld(this.level, ox, pr.z), pr.y);
+        if (hitX || !hitZ) pr.vx = -pr.vx;
+        if (hitZ || !hitX) pr.vz = -pr.vz;
+        pr.x = ox; pr.z = oz; pr.bounce--;
+        play('boing');
+        continue;
+      }
       if (pr.ttl <= 0 || blocksSight(c, pr.y) || pr.y > 40) {
         pr.dead = true;
         const bx = pr.x - pr.vx * dt, by = Math.max(pr.y, c && !isSolid(c) ? c.h + 0.1 : 0), bz = pr.z - pr.vz * dt;
@@ -872,6 +920,7 @@ export class Game {
     this.handleEvents();
     if (this.paused) return;
     this.movePlayer(dt);
+    this.trick?.update(dt);
     p.cooldown -= dt; p.hurtT -= dt; p.grinT -= dt; p.fireFaceT -= dt; p.shakeT -= dt; p.pushT -= dt;
     this.weatherDt = (this.weatherDt || 0) + dt;
     if (this.input.firing) this.tryFire(dt); else p.charge = 0;
@@ -924,13 +973,15 @@ export class Game {
     for (const s of this.splats) s.bb.place(s.x, s.y, s.z, p.yaw);
     for (const f of this.fx) f.bb.place(f.x, f.y, f.z, p.yaw);
     for (const b of this.bits) b.bb.place(b.x, b.y, b.z, p.yaw);
+    this.trick?.render(p.yaw);
     this.renderer.render(this.scene, cam);
-    // the crosshair sits on the opponent the auto-aim has locked on (red), else in the middle
+    // the opponent the auto-aim has locked on gets a red mark over its head, so nothing covers its face; else the
+    // crosshair in the middle, hidden for a moment after a knock-out so the comic effect shows whole
     const lock = !this.paused && this.aimTarget(p.yaw);
     if (lock) {
-      const v = aimPoint.set(lock.e.x, lock.ey, lock.e.z).project(cam), el = this.renderer.domElement;
+      const v = aimPoint.set(lock.e.x, lock.top, lock.e.z).project(cam), el = this.renderer.domElement;
       this.hud.aim((v.x + 1) / 2 * el.clientWidth, (1 - v.y) / 2 * el.clientHeight);
-    } else this.hud.aim(null);
+    } else this.hud.aim(null, null, performance.now() < (this.koUntil || 0) || !!this.trick?.holds); // (no crosshair while fishing or kicking)
   }
 
   resize(w, h) { this.camera.aspect = w / h; this.camera.updateProjectionMatrix(); }

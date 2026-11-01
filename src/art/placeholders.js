@@ -96,6 +96,10 @@ export function overlaySprite(name, frame = 1) {
     lacci: [150, 230, 310, 390].map((x, i) => `<path d="M${x} ${330 + (i % 2) * 20} C${x + 30} 380 ${x - 30} 430 ${x + 10} 490" fill="none" stroke="#2a1a1a" stroke-width="22" stroke-linecap="round"/><path d="M${x} ${330 + (i % 2) * 20} C${x + 30} 380 ${x - 30} 430 ${x + 10} 490" fill="none" stroke="#e3262b" stroke-width="4" stroke-dasharray="10 14"/>`).join('')
       + '<path d="M250 320 c-30 -40 -60 0 -20 10 c-40 10 -10 50 20 10 c30 40 60 0 20 -10 c40 -10 10 -50 -20 -10 z" fill="#2a1a1a"/>',
     bollicine: [[170, 200], [330, 180], [210, 120], [300, 90], [150, 300], [360, 290]].map(([x, y], i) => `<circle cx="${x + (frame === 2 ? 8 : 0)}" cy="${y - (frame === 2 ? 20 : 0)}" r="${14 + (i % 3) * 6}" fill="#c8915a" opacity=".85" ${L(3)}/>`).join(''),
+    // the bonus weapons' knock-outs: soaked, tangled in the goal net, a pie in the face
+    acqua: [[200, 240], [300, 260], [240, 330], [320, 360], [190, 400]].map(([x, y]) => `<path d="M${x} ${y + (frame === 2 ? 14 : 0)} c-8 14 -8 24 0 26 c8 -2 8 -12 0 -26 Z" fill="#7fc8f0" ${L(2.5)}/>`).join('') + `<ellipse cx="256" cy="490" rx="110" ry="14" fill="#7fc8f0" opacity=".8" ${L(3)}/>`,
+    rete: `<g fill="none" stroke="#f4f4ee" stroke-width="5">${Array.from({ length: 9 }, (_, i) => `<path d="M${130 + i * 32} 150 L${130 + i * 32} 490"/><path d="M120 ${170 + i * 36} L392 ${170 + i * 36}"/>`).join('')}</g><path d="M120 150 L392 150" ${L(6)}/>`,
+    panna: `<path d="M170 ${frame === 2 ? 140 : 130} C190 90 320 90 342 ${frame === 2 ? 140 : 130} C350 190 320 230 300 260 C296 290 284 300 280 270 C260 240 230 250 226 290 C222 310 210 300 212 270 C180 240 160 190 170 130 Z" fill="#fffaf0" ${L(4)}/><circle cx="256" cy="104" r="14" fill="#e3262b" ${L(3)}/>`,
   }[name] || '';
   return svgDoc(512, 512, inner, { wobble: false });
 }
@@ -104,6 +108,7 @@ export function overlaySprite(name, frame = 1) {
 export const NEW_SPLAT_COLORS = {
   zuppa: '#9bb84a', broccolo: '#2f8a3a', schiuma: '#f4ecd8', nota: '#7d5cff', lacci: '#2a1a1a', biberon: '#f4f4ee',
   rondella: '#2a1a1a', nuvola: '#ff8fc8', freccia: '#ff5a8a', fizz: '#8a5a20', gumball: '#ff2d8a', cuscino: '#ffffff',
+  acqua: '#7fc8f0', pallone: '#f4f4ee', torta: '#fffaf0',
 };
 export function genericProjectile(kind, variant = 0) {
   const c = NEW_SPLAT_COLORS[kind] || '#fff';
@@ -119,6 +124,9 @@ export function genericProjectile(kind, variant = 0) {
     freccia: `<path d="M6 32 H50" stroke="#ff5a8a" stroke-width="6"/><path d="M6 32 H50" stroke="#fff" stroke-width="2" stroke-dasharray="5 5"/><path d="M50 22 L62 32 L50 42 Z" fill="#fff" ${L(3)}/>`,
     fizz: [[20, 28, 8], [36, 22, 6], [42, 38, 9], [28, 42, 5]].map(([x, y, r]) => `<circle cx="${x + variant * 2}" cy="${y}" r="${r}" fill="#a0682e" opacity=".8" ${L(2)}/>`).join(''),
     gumball: `<circle cx="32" cy="32" r="26" fill="#ff2d8a" ${L(4)}/><path d="M16 22 C26 12 40 12 48 20" stroke="#ffd400" stroke-width="6" fill="none"/><path d="M14 38 C26 48 40 48 52 38" stroke="#28c2b4" stroke-width="6" fill="none"/><ellipse cx="22" cy="18" rx="6" ry="4" fill="#fff"/>`,
+    acqua: `<path d="M32 8 C44 26 50 36 48 44 C46 56 18 56 16 44 C14 36 20 26 32 8 Z" fill="#7fc8f0" ${L(3)}/><ellipse cx="26" cy="38" rx="5" ry="7" fill="#fff" opacity=".7"/>`,
+    pallone: `<circle cx="32" cy="32" r="24" fill="#f4f4ee" ${L(3.5)}/><path d="M32 22 l9 7 l-3 11 h-12 l-3 -11 Z" fill="#111" transform="rotate(${variant * 36} 32 32)"/>`,
+    torta: `<ellipse cx="32" cy="40" rx="26" ry="10" fill="#c08a4f" ${L(3)}/><path d="M8 38 C10 18 54 18 56 38 Z" fill="#fffaf0" ${L(3)}/><circle cx="32" cy="18" r="6" fill="#e3262b" ${L(2.5)}/>`,
   }[kind] || `<circle cx="32" cy="32" r="14" fill="${c}" ${L(3)}/>`;
 }
 
@@ -134,6 +142,7 @@ export function genericItem(id) {
     mappa: ['#f4ecd8', 'MAP'], liquirizie: ['#2a1a1a', 'LICO'], zuccheroFilato: ['#ff8fc8', 'COTTON'], frecce: ['#ff5a8a', 'ARROWS'],
     fizz: ['#8a5a20', 'FIZZ'], gumball: ['#ff2d8a', 'GUM'], spLiquirizia: ['#2a1a1a', '4'], spZucchero: ['#ff8fc8', '6'],
     spBalestra: ['#ff5a8a', '7'], spFizz: ['#e3262b', '8'], spBfg: ['#28c2b4', 'BFG'],
+    spCarpa: ['#e0a800', 'CARP'], spPalloni: ['#e3262b', 'BALLS'], spTorte: ['#ff8fc8', 'PIES'], acqua: ['#3b8de0', 'WATER'], palloni: ['#2a2a2a', 'BALLS'], torte: ['#ff8fc8', 'PIES'],
   }[id] || ['#9c968a', '?'];
   const weapon = id.startsWith('sp');
   const body = weapon

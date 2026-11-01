@@ -67,7 +67,7 @@ const at3 = (c, y) => [c.cx * CELL + CELL / 2, y, c.cz * CELL + CELL / 2];
 export const lin = l => Math.pow(l, 2.2);
 
 // Picture of a door: the drawn one for the key, else a placeholder with a lock of the key's colour.
-export function doorKey(key) { return key === 'ghianda' ? 'textures/door' : `doors/${key || 'plain'}/closed`; }
+export function doorKey(key, bonus = false) { return bonus ? 'doors/bonus/closed' : key === 'ghianda' ? 'textures/door' : `doors/${key || 'plain'}/closed`; }
 
 export function buildWorld(level, levelDef, { keyColors = {} } = {}) {
   const group = new THREE.Group();
@@ -124,7 +124,7 @@ export function buildWorld(level, levelDef, { keyColors = {} } = {}) {
     let mat;
     // a secret or moving wall is as tall as the walls of its style around it (a notch would give it away)
     const h = c.door || c.sw ? wallH : c.wallDef?.h ?? wallDefs.find(w => w.style === c.wall)?.h ?? wallH;
-    if (c.door) mat = material(svgTexture(doorKey(c.door.key), () => doorTexture(keyColors[c.door.key]), 256, 512));
+    if (c.door) mat = material(svgTexture(doorKey(c.door.key, c.door.bonus), () => doorTexture(c.door.bonus ? '#ffd400' : keyColors[c.door.key], c.door.bonus), 256, 512));
     else if (c.sw) mat = material(paintedTexture('textures/switch_off', 256, 512));
     else mat = material(wallTexture(`textures/wall_${c.wall}`, h - base, c.wallDef?.color));
     const mesh = new THREE.Mesh(shadedBox(CELL, h - base, CELL), mat);

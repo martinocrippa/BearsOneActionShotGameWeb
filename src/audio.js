@@ -94,6 +94,14 @@ export const SOUNDS = {
   hoot: () => { tone(420, 0.25, { type: 'sine', to: 380, vol: 0.25 }); tone(380, 0.35, { type: 'sine', to: 340, vol: 0.25, delay: 0.3 }); },
   whee: () => tone(500, 0.4, { type: 'triangle', to: 1600, vol: 0.18 }),
   puff: () => noise(0.35, { freq: 900, to: 300, vol: 0.4, type: 'lowpass' }),
+  // the bonus weapons and the bonus rooms' tricks
+  splash: () => { noise(0.3, { freq: 1200, to: 400, vol: 0.45, type: 'lowpass' }); tone(300, 0.15, { type: 'sine', to: 120, vol: 0.15 }); },
+  boing: () => tone(160, 0.35, { type: 'sine', to: 520, vol: 0.3 }),
+  pie: () => { noise(0.2, { freq: 600, vol: 0.5, type: 'lowpass' }); tone(220, 0.2, { type: 'triangle', to: 90, vol: 0.2 }); },
+  kick: () => { tone(90, 0.12, { type: 'sine', to: 50, vol: 0.5 }); noise(0.06, { freq: 1500, vol: 0.25 }); },
+  cheer: () => { noise(1.1, { freq: 1500, to: 900, vol: 0.35 }); [523, 659, 784].forEach((f, i) => tone(f, 0.2, { type: 'square', vol: 0.1, delay: i * 0.1 })); },
+  aww: () => [392, 349, 311].forEach((f, i) => tone(f, 0.35, { type: 'sawtooth', to: f * 0.92, vol: 0.14, delay: i * 0.3 })),
+  reel: () => { for (let i = 0; i < 8; i++) tone(1800, 0.03, { type: 'square', vol: 0.06, delay: i * 0.04 }); },
   lose: () => [392, 370, 349, 330].forEach((f, i) => tone(f, 0.45, { type: 'sawtooth', vol: 0.2, delay: i * 0.4 })),
 };
 

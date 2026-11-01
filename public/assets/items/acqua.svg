@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Secchiello pieno d'acqua">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<ellipse cx="128" cy="240" rx="70" ry="7" fill="#111" opacity=".18" stroke="none"/><path d="M70 120 L84 236 C110 244 146 244 172 236 L186 120 Z" fill="#9C968A" stroke-width="5"/><path d="M76 168 C110 176 146 176 180 168" fill="none" stroke-width="3"/><path d="M82 132 L92 226" fill="none" stroke="#F4ECD8" stroke-width="5"/><path d="M150 232 l8 -11 M159 232 l8 -11 M168 232 l8 -11" fill="none" stroke-width="2"/><ellipse cx="128" cy="120" rx="58" ry="16" fill="#7FD0F0" stroke-width="5"/><path d="M96 118 C110 112 124 112 138 116 M120 126 C134 122 148 122 160 126" fill="none" stroke="#FFFFFF" stroke-width="3"/><path d="M70 120 C64 60 192 60 186 120" fill="none" stroke-width="5"/><path d="M196 150 C204 162 204 172 196 176 C188 172 188 162 196 150 Z" fill="#7FD0F0" stroke-width="3"/><path d="M48 190 C54 198 54 206 48 208 C42 206 42 198 48 190 Z" fill="#7FD0F0" stroke-width="3"/>
+</g>
+</svg>

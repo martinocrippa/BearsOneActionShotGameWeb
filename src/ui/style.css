@@ -22,7 +22,7 @@ html, body { margin: 0; height: 100%; overflow: hidden; background: var(--night)
 
 /* ---------- in-game overlays ---------- */
 .vignette { position: absolute; inset: 0; opacity: 0; background: radial-gradient(ellipse at center, transparent 35%, rgba(30, 30, 90, .55) 65%, rgba(10, 10, 40, .97) 100%); transition: opacity .3s; }
-.ui:not(.playing) .vignette, .ui:not(.playing) .crosshair, .ui:not(.playing) .messages, .ui:not(.playing) .popup { display: none; }
+.ui:not(.playing) .vignette, .ui:not(.playing) .crosshair, .ui:not(.playing) .lockmark, .ui:not(.playing) .messages, .ui:not(.playing) .popup { display: none; }
 .flash { position: absolute; inset: 0; opacity: 0; }
 .flash.hurt { background: #b48cff; animation: flash .6s ease-out; }
 .flash.pickup { background: var(--yellow); animation: flash-soft .35s ease-out; }
@@ -53,7 +53,7 @@ html, body { margin: 0; height: 100%; overflow: hidden; background: var(--night)
 #app .automap { position: absolute; left: 6%; top: 4%; width: 88%; height: calc(92% - var(--hud-h)); display: none; background: rgba(244, 236, 216, .9); border: 5px solid var(--ink); box-shadow: 8px 8px 0 rgba(0, 0, 0, .35); }
 #app .automap.show { display: block; }
 /* training instructions */
-.instruct { position: absolute; left: 50%; top: 9%; transform: translateX(-50%) translateY(-20px); width: min(86vw, 860px); padding: 14px 22px; background: var(--paper); border: 5px solid var(--ink); box-shadow: 8px 8px 0 rgba(0, 0, 0, .35); font: clamp(18px, 2.8vh, 26px)/1.3 var(--hand); color: var(--ink); text-align: center; opacity: 0; pointer-events: none; z-index: 2; transition: opacity .3s, transform .3s; }
+.instruct { position: absolute; left: 50%; top: 17%; transform: translateX(-50%) translateY(-20px); width: min(86vw, 860px); padding: 14px 22px; background: var(--paper); border: 5px solid var(--ink); box-shadow: 8px 8px 0 rgba(0, 0, 0, .35); font: clamp(18px, 2.8vh, 26px)/1.3 var(--hand); color: var(--ink); text-align: center; opacity: 0; pointer-events: none; z-index: 2; transition: opacity .3s, transform .3s; }
 .instruct.show { opacity: 1; transform: translateX(-50%); }
 .ui:not(.playing) .instruct { display: none; }
 /* pickup captions above the weapon */
@@ -66,13 +66,28 @@ html, body { margin: 0; height: 100%; overflow: hidden; background: var(--night)
 /* layers: mud band under the weapon; splats, flashes and texts over it; status bar on top */
 .mud-band { z-index: 0; } .weapon-view { z-index: 1; } .splats, .flash, .messages, .popup, .trapped { z-index: 2; } .automap { z-index: 4; } .hud { z-index: 3; }
 @keyframes flash-soft { from { opacity: .3; } to { opacity: 0; } }
-.crosshair { position: absolute; left: 50%; top: calc((100% - var(--hud-h)) / 2); width: 22px; height: 22px; transform: translate(-50%, -50%); transition: left .08s linear, top .08s linear; }
-/* the auto-aim has an opponent: the crosshair sits on it and turns red */
-.crosshair.locked { width: 34px; height: 34px; }
-.crosshair.locked::before, .crosshair.locked::after { background: var(--red); }
-.crosshair.locked::before { left: 15px; height: 30px; } .crosshair.locked::after { top: 15px; width: 30px; }
-.crosshair.locked { border-radius: 50%; box-shadow: 0 0 0 3px var(--red), 0 0 0 5px var(--ink); }
-.crosshair.drawn.locked img { filter: drop-shadow(0 0 0 var(--red)) sepia(1) saturate(8) hue-rotate(-30deg); }
+.crosshair { position: absolute; left: 50%; top: calc((100% - var(--hud-h)) / 2); width: 22px; height: 22px; transform: translate(-50%, -50%); opacity: .8; transition: opacity .15s; }
+.crosshair.off { opacity: 0; }
+/* a bonus room's trick: the cheese wedges (tries) and the bar with the needle, above the weapon */
+.trickbox { position: absolute; left: 50%; top: 58%; transform: translateX(-50%); width: min(80vw, 620px); display: none; flex-direction: column; align-items: center; gap: 10px; pointer-events: none; z-index: 2; }
+.trickbox.show { display: flex; }
+.ui:not(.playing) .trickbox { display: none; }
+.trickbox .tries { display: flex; gap: 8px; }
+.trickbox .tries svg, .trickbox .tries img { width: clamp(34px, 6vh, 56px); height: auto; filter: drop-shadow(3px 3px 0 rgba(0, 0, 0, .35)); }
+.trickbox .gauge { position: relative; width: 100%; height: clamp(26px, 4.4vh, 40px); background: var(--paper); border: 5px solid var(--ink); box-shadow: 6px 6px 0 rgba(0, 0, 0, .35); }
+.trickbox .gauge i { position: absolute; top: 0; bottom: 0; }
+.trickbox .gauge .green { background: #7ed957; }
+.trickbox .gauge .gold { background: var(--yellow); border-left: 3px solid var(--ink); border-right: 3px solid var(--ink); }
+.trickbox .gauge .post { background: var(--red); }
+.trickbox .gauge .keeper { background: rgba(31, 95, 191, .55); }
+.trickbox .needle { position: absolute; top: -12px; bottom: -12px; width: 8px; margin-left: -4px; background: var(--ink); border-radius: 4px; }
+/* the auto-aim has an opponent: a red arrow bobs over its head (the face and the comic effects stay in sight) */
+.lockmark { position: absolute; display: none; width: 30px; height: 26px; transform: translate(-50%, -100%); pointer-events: none; }
+.lockmark.on { display: block; animation: lockbob .45s ease-in-out infinite alternate; }
+.lockmark::before, .lockmark::after { content: ""; position: absolute; clip-path: polygon(0 0, 100% 0, 50% 100%); }
+.lockmark::before { inset: 0; background: var(--ink); }
+.lockmark::after { left: 6px; top: 4px; width: 18px; height: 15px; background: var(--red); }
+@keyframes lockbob { to { transform: translate(-50%, calc(-100% - 7px)); } }
 .crosshair::before, .crosshair::after { content: ""; position: absolute; background: #fff; box-shadow: 0 0 0 2px var(--ink); }
 .crosshair::before { left: 10px; top: 2px; width: 3px; height: 18px; }
 .crosshair::after { top: 10px; left: 2px; height: 3px; width: 18px; }

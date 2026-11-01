@@ -27,6 +27,9 @@ function keysFor(name) {
     case 'enemies': return [`enemies/${obj}/${EFFECTS[action] || action}_${view}_${frame}`];
     case 'projectiles': return [`projectiles/${obj}/${action}_${view}_${frame}`];
     case 'characters': return [`characters/${obj}/${action}_${view}_${frame}`];
+    // bonus rooms (E1-12): the Topi and the tricks' props keep Claude Design's names
+    case 'topi': return [`topi/${obj}/${action}_${view}_${frame}`];
+    case 'trick': return [`trick/${obj}/${action}_${view}_${frame}`];
     // The other screens are mock-ups with the text baked in: the game builds its menus itself. Only the backgrounds
     // without text are used (title, intermission map, ending, episode 2 teaser).
     case 'screens': return action === 'background' && ['title', 'intermission', 'ending', 'episode2'].includes(obj) ? [`screens/${obj}/background`] : [];

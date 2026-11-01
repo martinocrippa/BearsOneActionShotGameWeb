@@ -8,6 +8,7 @@ import { ENEMIES, EFFECTS } from '../data/enemies.js';
 import { WEAPONS } from '../data/weapons.js';
 import { ITEMS, KEYS } from '../data/items.js';
 import { BEARS } from '../data/bears.js';
+import { TOPI } from '../data/tricks.js';
 
 const have = new Set(JSON.parse(readFileSync(new URL('../public/assets/assets.json', import.meta.url), 'utf8')).map(e => e.key));
 const CD_EFFECT = { stordito: 'stun', panciaPiena: 'full', guance: 'cheeks', gelatina: 'jelly', legato: 'tied' };
@@ -118,6 +119,18 @@ add(s10, 'bonus/rifle/idle_f_1', 'bonus/rifle/idle_f_1', 'fucile a bastoncino di
 // ---- E1-11: the blank signpost (the game writes the directions on it) ----
 const s11 = step('E1-11 — Cartello vuoto');
 add(s11, 'decor/cartello_vuoto/idle_f_1', 'decor/cartello_vuoto', 'tavola senza scritte: il gioco ci scrive le indicazioni');
+
+// ---- E1-12: the bonus rooms (data/tricks.js) ----
+const s12 = step('E1-12 — Stanze bonus: Topi, trick e armi assurde');
+const TOPO_POSES = ['idle_f_1', 'idle_f_2', 'talk_f_1', 'talk_f_2', 'cheer_f_1', 'cheer_f_2', 'sad_f_1'];
+for (const t of Object.keys(TOPI)) for (const p of [...TOPO_POSES, ...(t === 'portiere' ? ['ready_f_1', 'dive_f_1'] : [])]) add(s12, `topi/${t}/${p}`, `topi/${t}/${p}`);
+add(s12, 'doors/bonus/closed_f_1', 'doors/bonus/closed', 'porta della stanza bonus');
+for (const c of ['carpa', 'carpa_oro']) for (const f of [1, 2]) add(s12, `trick/${c}/jump_f_${f}`, `trick/${c}/jump_f_${f}`);
+for (const f of [1, 2, 3]) add(s12, `trick/bersaglio/spin_f_${f}`, `trick/bersaglio/spin_f_${f}`);
+add(s12, 'trick/bersaglio/hit_f_1', 'trick/bersaglio/hit_f_1');
+for (const [a, n] of [['idle', 1], ['pull', 1], ['pull', 2]]) add(s12, `weapons/canna/${a}_f_${n}`, `weapons/canna/${a}_${n}`, 'canna da pesca in prima persona');
+for (const d of ['porta_rigori', 'palo_giostra']) add(s12, `decor/${d}/idle_f_1`, `decor/${d}`);
+for (const h of ['try_on', 'try_off', 'star']) add(s12, `hud/trick/${h}_f_1`, `hud/trick/${h}`);
 
 // ---- report ----
 let total = 0, missing = 0;

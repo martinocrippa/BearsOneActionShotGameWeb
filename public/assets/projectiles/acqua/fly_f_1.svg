@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256" style="display: block" role="img" aria-label="Goccione d'acqua in volo">
+<g stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+<g transform="rotate(0 128 128)"><path d="M70 150 C86 146 98 140 106 132 M62 128 C80 128 92 126 102 122 M76 106 C88 110 98 114 104 118" fill="none" stroke="#1F5FBF" stroke-width="4"/><circle cx="62" cy="150" r="5" fill="#7FD0F0" stroke-width="2.5"/><circle cx="54" cy="120" r="4" fill="#7FD0F0" stroke-width="2.5"/><circle cx="70" cy="98" r="3.5" fill="#7FD0F0" stroke-width="2.5"/><path d="M180 128 C160 104 140 92 120 92 C96 92 82 110 82 128 C82 146 96 164 120 164 C140 164 160 152 180 128 Z" fill="#7FD0F0" stroke-width="5"/><path d="M98 116 C104 104 116 100 126 102" fill="none" stroke="#FFFFFF" stroke-width="5"/><path d="M140 154 l8 -10 M150 148 l7 -9 M160 140 l6 -8" fill="none" stroke-width="2" stroke="#1F5FBF"/></g>
+</g>
+</svg>
