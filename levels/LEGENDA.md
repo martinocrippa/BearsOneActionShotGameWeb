@@ -90,7 +90,9 @@ legend: {
                                                                         // livello, dove i bambini non capiscono la strada
   },
   decor: { a: 'albero_autunno', x: 'canne', p: { id: 'panchina' } },  // decorazioni (vedi data/items.js DECOR;
-                                               // quelle con `pop`, come il cestino, scoppiano in coriandoli se colpite)
+                                               // quelle con `pop`, come il cestino, scoppiano in coriandoli se colpite;
+                                               // quelle con `top`, come auto e trattori, si possono salire saltando,
+                                               // se il soffitto lascia 1,9 m sopra il tetto)
   keys: ['piuma_blu', 'piuma_rossa'],          // K e k (vedi data/items.js KEYS)
   secret: 'cava',                              // che aspetto ha il muro segreto S
   side: 'cava',                                // muro da mostrare sui fianchi dei pavimenti rialzati (di base: il primo muro)

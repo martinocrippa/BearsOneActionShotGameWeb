@@ -2,7 +2,7 @@
 // Screens (pause, buonanotte, report…) are handled by main.js through the callbacks.
 import * as THREE from 'three';
 import { parseLevel, CELL, cellCenter } from '../core/level.js';
-import { slide, floorUnder, ceilingOver, cellAtWorld, isSolid, blocksSight, lineOfSight, GRAVITY, STEP_HEIGHT } from '../core/physics.js';
+import { slide, floorUnder, topUnder, ceilingOver, cellAtWorld, isSolid, blocksSight, lineOfSight, GRAVITY, STEP_HEIGHT, HEAD_ROOM } from '../core/physics.js';
 import { createSleep, addSleep, addArmor, napTaken, faceFor } from '../core/sleep.js';
 import { createCheatReader } from '../core/cheats.js';
 import { encodePassword } from '../core/password.js';
@@ -102,7 +102,7 @@ export class Game {
       const d = DECOR[e.id] || { r: 0.4, h: 2 }, [cw, ch] = decorCanvas(e.id);
       const bb = new Billboard(this.scene, { fit: d.h });
       bb.texture = svgTexture(`decor/${e.id}`, () => decorSprite(e.id, cw, ch), cw, ch);
-      return { ...e, bb, r: d.r, h: d.h, pop: d.pop, popped: false };
+      return { ...e, bb, r: d.r, h: d.h, top: d.top, pop: d.pop, popped: false };
     });
     this.checkpoints = ents.filter(e => e.type === 'checkpoint').map((e, i) => {
       const bb = new Billboard(this.scene, { fit: 1.2 });
@@ -127,7 +127,10 @@ export class Game {
         x: c.x, z: c.z, y: this.level.at(s.x, s.z)?.h ?? 0, bb, arrow: undefined, shown: undefined,
       };
     });
-    this.staticObstacles = this.decor.filter(d => d.r > 0).map(d => (d.obstacle = { x: d.x, z: d.z, r: d.r }))
+    // a car or a tractor (`top` in data/items.js) is also a platform, where the ceiling leaves room for the head
+    const roomOver = d => { const c = cellAtWorld(this.level, d.x, d.z); return !c || c.ceil === null || c.ceil - (d.y + d.top) >= HEAD_ROOM; };
+    this.staticObstacles = this.decor.filter(d => d.r > 0)
+      .map(d => (d.obstacle = { x: d.x, z: d.z, r: d.r, top: d.top !== undefined && roomOver(d) ? d.y + d.top : undefined }))
       .concat(this.checkpoints.map(c => ({ x: c.x, z: c.z, r: 0.35 })))
       .concat(this.signs.map(s => ({ x: s.x, z: s.z, r: 0.25 })));
     this.poppers = this.decor.filter(d => d.pop); // bins that burst into confetti when hit
@@ -774,7 +777,10 @@ export class Game {
     p.x = r.x; p.z = r.z;
 
     // vertical: gravity, jumping, smooth step-up onto ledges, head against the ceiling
-    const floor = floorUnder(this.level, p.x, p.z, p.r * 0.6);
+    // the floor, or the roof of the car the bear stands on (its drawing is hidden meanwhile: the bear is inside it)
+    const roof = topUnder(this.staticObstacles, p.x, p.z, p.r * 0.6, p.y);
+    const floor = Math.max(floorUnder(this.level, p.x, p.z, p.r * 0.6), roof);
+    p.onTop = roof > -Infinity && p.y <= roof + 0.05 ? roof : null;
     const ceil = ceilingOver(this.level, p.x, p.z, p.r * 0.6);
     if (mv.jump && !p.jumpHeld && p.onGround) { p.vy = JUMP_SPEED * Math.sqrt(this.bear.jump); p.onGround = false; play('whoosh'); }
     p.jumpHeld = mv.jump;
@@ -956,7 +962,10 @@ export class Game {
     for (const e of this.enemies) e.render(p.yaw);
     const t = performance.now() / 1000;
     for (const it of this.items) if (!it.taken) { it.bb.light = lightAt(it.x, it.z); it.bb.place(it.x, it.y + 0.08 + Math.sin(t * 2.5 + it.phase) * 0.06, it.z, p.yaw); }
-    for (const d of this.decor) if (!d.popped) { d.bb.light = lightAt(d.x, d.z); d.bb.place(d.x, d.y, d.z, p.yaw); }
+    for (const d of this.decor) if (!d.popped) {
+      d.bb.light = lightAt(d.x, d.z); d.bb.place(d.x, d.y, d.z, p.yaw);
+      if (d.obstacle?.top !== undefined && Math.hypot(p.x - d.x, p.z - d.z) < d.r && p.y >= d.obstacle.top - 0.3) d.bb.mesh.visible = false;
+    }
     for (const c of this.checkpoints) c.bb.place(c.x, c.y, c.z, p.yaw);
     for (const s of this.signs) {
       // until the keys that come first are in the bear's paws, the sign asks for the first of them

@@ -5,6 +5,7 @@ import { CELL, WALL_HEIGHT } from './level.js';
 export const STEP_HEIGHT = 0.65; // steps and stand rows are walked up (as in DOOM); anything higher needs a jump
 export const GRAVITY = 22;
 export const BODY_HEIGHT = 1.4; // a ceiling lower than feet + this stops you
+export const HEAD_ROOM = 1.9; // over a car roof: the tallest bear's eyes + a margin, or it cannot stand there
 
 export function isSolid(cell) {
   if (!cell) return true;
@@ -63,10 +64,23 @@ export function canStand(level, x, z, r, feet, obstacles = [], tall = BODY_HEIGH
     if (c.ceil !== null && c.ceil < Math.max(feet, c.h) + tall) return false;
   }
   for (const o of obstacles) {
+    if (o.top !== undefined && feet >= o.top - STEP_HEIGHT) continue; // up onto a car roof, like a step
     const dx = x - o.x, dz = z - o.z, rr = r + o.r;
     if (dx * dx + dz * dz < rr * rr) return false;
   }
   return true;
+}
+
+// The highest top (a car roof) a body of radius r with its feet at `feet` stands on at (x, z), or -Infinity.
+// Only tops it can step or jump onto: from below, the obstacle blocks it (canStand).
+export function topUnder(obstacles, x, z, r, feet) {
+  let h = -Infinity;
+  for (const o of obstacles) {
+    if (o.top === undefined || o.top <= h || feet < o.top - STEP_HEIGHT) continue;
+    const dx = x - o.x, dz = z - o.z, rr = o.r + r;
+    if (dx * dx + dz * dz < rr * rr) h = o.top;
+  }
+  return h;
 }
 
 // Moves a body by (dx, dz), sliding along walls one axis at a time (the classic DOOM feel).
@@ -101,6 +115,7 @@ function canFly(level, x, z, r, y, tall, obstacles) {
     if (isSolid(c) || c.h > y + 0.1 || (c.ceil !== null && c.ceil < y + tall)) return false;
   }
   for (const o of obstacles) {
+    if (o.top !== undefined && y >= o.top) continue;
     const dx = x - o.x, dz = z - o.z, rr = r + o.r;
     if (dx * dx + dz * dz < rr * rr) return false;
   }

@@ -61,7 +61,8 @@ for (const [id, k] of Object.entries(KEYS)) {
 ITEMS.ghianda.fit = 0.65;
 
 // Decorations: `r` = collision radius in metres (0 = you walk through it), `h` = height of the drawing in metres,
-// `color` = main colour of the coded fallback drawing,
+// `color` = main colour of the coded fallback drawing, `top` = the bear can jump up and stand on it at that height
+// (cars, tractors: a roof or a bonnet; only where the ceiling leaves room for the bear's head),
 // `pop` = it bursts into confetti when the bear hits it, like DOOM's barrels: opponents within `radius` metres get
 // up to `damage` (the confetti effect: puffed-up cheeks), and other poppers nearby burst too.
 export const DECOR = {
@@ -78,7 +79,7 @@ export const DECOR = {
   canne: { r: 0, h: 2.2, color: '#8cc85a' },
   balla: { r: 0.7, h: 1.2, color: '#e2c060' },
   pozzo: { r: 0.8, h: 2, color: '#a8503c' },
-  trattore: { r: 1.2, h: 2.4, color: '#e3262b' },
+  trattore: { r: 1.2, h: 2.4, top: 1.8, color: '#e3262b' },
   albero_autunno: { r: 0.5, h: 6, color: '#c27a2e' },
   panchina: { r: 0.6, h: 0.9, color: '#8b5a36' },
   cestino: { r: 0.3, h: 1, color: '#3f6b32', pop: { radius: 2.5, damage: 70 } },
@@ -98,7 +99,7 @@ export const DECOR = {
   banco: { r: 0.6, h: 1.1, color: '#f0a81e' },
   sedia: { r: 0.35, h: 1, color: '#e0503c' },
   lucidatrice: { r: 0.45, h: 1.2, color: '#ff7a12' },
-  auto: { r: 1.3, h: 1.6, color: '#3b8de0' },
+  auto: { r: 1.3, h: 1.6, top: 1.4, color: '#3b8de0' },
   canestro: { r: 0.4, h: 4, color: '#ff7a12' },
   // E1M5 classroom (giant)
   gamba_banco: { r: 0.5, h: 8, color: '#9c968a' },
@@ -116,7 +117,7 @@ export const DECOR = {
   pozzo_pietra: { r: 0.8, h: 2, color: '#8a7f6c' },
   torcia: { r: 0.2, h: 2.2, color: '#ff7a12' },
   asino: { r: 0.8, h: 1.8, color: '#9c968a' },
-  trattorino: { r: 1.2, h: 2, color: '#ff7a12' },
+  trattorino: { r: 1.2, h: 2, top: 1.4, color: '#ff7a12' },
   spaventapasseri: { r: 0.4, h: 2.4, color: '#e2c060' },
   cesto_castagne: { r: 0.4, h: 0.7, color: '#8b5a36' },
   // E1M7 river
@@ -132,7 +133,7 @@ export const DECOR = {
   pupazzo: { r: 0.5, h: 1.8, color: '#f4f7fb' },
   pilone: { r: 0.6, h: 10, color: '#9c968a' },
   seggiolino: { r: 0, h: 1.6, color: '#e3262b' },
-  gatto_neve: { r: 1.6, h: 2.6, color: '#ff7a12' },
+  gatto_neve: { r: 1.6, h: 2.6, top: 1.8, color: '#ff7a12' },
   paletto: { r: 0, h: 1.6, color: '#3b8de0' },
   fontana: { r: 0.6, h: 1.4, color: '#8d8578' },
   arco: { r: 0, h: 7, color: '#3a3a3a' },

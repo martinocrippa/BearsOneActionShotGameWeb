@@ -55,7 +55,7 @@ export default {
       T: { style: 'linoleum', color: '#d6cdba', h: 2.4, ceil: 5.8, ceilStyle: 'lampade', ceilColor: '#f4f0e6', light: 0.55, say: 'Prendi la CAMPANELLA! Poi esci dall\'aula: lì fuori c\'è la porta a vetri del balcone.' }, // bell classroom upstairs (dim)
       ',': { style: 'linoleum', color: '#d6cdba', ceil: 3.5, ceilStyle: 'lampade', ceilColor: '#f4f0e6', light: 0.8 },
       _: { style: 'parquet', color: '#c8904a', ceil: 6, ceilStyle: 'lampade', ceilColor: '#f4f0e6', light: 0.9, say: 'La palestra! Per uscire prendi l\'ascensore in fondo alla palestra e sali sul tetto.' }, // gym
-      ';': { style: 'parcheggio', color: '#55585c', h: -2, ceil: 0.8, ceilStyle: 'cemento', ceilColor: '#8a8a86', light: 0.65, say: 'Il parcheggio sotto la scuola. La saracinesca gialla chiude la strada alle CHIAVI DEL BIDELLO: tocca il PULSANTE ROSSO sul muro per aprirla.' }, // sunken car park
+      ';': { style: 'parcheggio', color: '#55585c', h: -2, ceil: 1.4, ceilStyle: 'cemento', ceilColor: '#8a8a86', light: 0.65, say: 'Il parcheggio sotto la scuola. La saracinesca gialla chiude la strada alle CHIAVI DEL BIDELLO: tocca il PULSANTE ROSSO sul muro per aprirla.' }, // sunken car park
       '&': { style: 'lastre', color: '#b8b0a0', h: 2.4, lift: 0, ceil: 5.6, ceilStyle: 'travi_lamellari', ceilColor: '#c8a06a', light: 1 }, // lift to the walkway
       // the white staircase up to the walkway (0.4 m a step)
       '!': { ...STAIRS, h: 0.4 }, '?': { ...STAIRS, h: 0.8 }, '<': { ...STAIRS, h: 1.2 }, '>': { ...STAIRS, h: 1.6 }, '[': { ...STAIRS, h: 2 },

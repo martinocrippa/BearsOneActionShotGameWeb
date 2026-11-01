@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { parseLevel, validateLevel, reachableCells, progression, CELL } from '../src/core/level.js';
-import { canStand, lineOfSight, slide, floorUnder, isSolid } from '../src/core/physics.js';
+import { canStand, lineOfSight, slide, floorUnder, topUnder, isSolid } from '../src/core/physics.js';
 
 const radura = parseLevel(readFileSync(new URL('../levels/e1m1-radura.txt', import.meta.url), 'utf8'));
 
@@ -64,6 +64,21 @@ test('walls stop movement and the body slides along them', () => {
   assert.ok(r.blockedX);
   assert.ok(r.x < 8 && r.x > 7);
   assert.ok(r.z < 5);
+});
+
+test('a car roof (an obstacle with a top) blocks from below and carries a bear that jumped high enough', () => {
+  const map = parseLevel('#######\n#.....#\n#P....#\n#######\n');
+  const car = { x: 7, z: 5, r: 1.3, top: 1.4 };
+  // walking into it: stopped
+  assert.ok(!canStand(map, 7, 5, 0.35, 0, [car]));
+  assert.equal(topUnder([car], 7, 5, 0.35, 0), -Infinity);
+  // in the air within a step of the roof: over it, and the roof is its floor
+  assert.ok(canStand(map, 7, 5, 0.35, 0.9, [car]));
+  assert.equal(topUnder([car], 7, 5, 0.35, 0.9), 1.4);
+  // off the edge: no roof under the bear
+  assert.equal(topUnder([car], 7 + 2, 5, 0.35, 1.4), -Infinity);
+  // an obstacle without a top never carries anyone
+  assert.ok(!canStand(map, 7, 5, 0.35, 5, [{ x: 7, z: 5, r: 1.3 }]));
 });
 
 test('line of sight is blocked by walls', () => {

@@ -45,7 +45,7 @@ export default {
       '&': { style: 'cemento', h: 6.5, lift: 0, color: '#9a9a96' }, // lift up to the skyboxes
       '^': { style: 'cemento', h: 0.9, color: '#9a9a96' },            // ticket office step (roof is '~')
       // underground car park: dark, low ceiling; ramp from the avenue and stairs to the south concourse
-      '-': { style: 'parcheggio', h: -1.6, ceil: 1, ceilStyle: 'parcheggio', ceilColor: '#3a3c40', light: 0.55, color: '#55585e' },
+      '-': { style: 'parcheggio', h: -1.6, ceil: 1.8, ceilStyle: 'parcheggio', ceilColor: '#3a3c40', light: 0.55, color: '#55585e' },
       '+': parkStep(-0.4), '`': parkStep(-0.8), R: parkStep(-1.2),
     },
     decor: {
