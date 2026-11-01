@@ -11,7 +11,7 @@
 
 const STAIRS = { style: 'scalini', color: '#e8e4dc', ceil: 5.6, ceilStyle: 'travi_lamellari', ceilColor: '#c8a06a', light: 0.95 };
 const TIERS = { style: 'scalini', color: '#e8e4dc', light: 0.9 };
-const RAMP = h => ({ style: 'parcheggio', color: '#55585c', h, ceil: h + 3, ceilStyle: 'cemento', ceilColor: '#8a8a86', light: 0.45 });
+const RAMP = h => ({ style: 'parcheggio', color: '#55585c', h, ceil: h + 3, ceilStyle: 'cemento', ceilColor: '#8a8a86', light: 0.65 });
 
 export default {
   id: 'E1M4', name: 'School at Dawn', file: 'e1m4-scuola.txt', par: 260, music: 'e1m4',
@@ -20,8 +20,11 @@ export default {
     { x: 28, z: 42, text: 'FIND THE SCHOOL BELL!', to: 'campanella' },
     { x: 14, z: 22, text: 'SCHOOL BELL DOOR', to: 'door:campanella' },
     { x: 40, z: 13, text: 'FIND THE JANITOR\'S KEYS!', to: 'mazzo_chiavi' },
+    { x: 47, z: 14, text: 'PUSH THE RED BUTTON!', to: 'switch:N' },
     { x: 60, z: 11, text: 'JANITOR\'S KEYS DOOR', to: 'door:mazzo_chiavi' },
     { x: 56, z: 21, text: 'EXIT', to: 'exit' },
+    { x: 53, z: 36, text: 'JUMP DOWN TO THE STREET!', to: 'exit' },
+    { x: 42, z: 47, text: 'EXIT', to: 'exit' },
   ],
   legend: {
     wallHeight: 6, // the gym is 6 m tall
@@ -43,14 +46,16 @@ export default {
       t: { style: 'terra_battuta', color: '#b8865a', light: 0.9 },                   // softball diamond
       O: { style: 'asfalto', color: '#3e4044', light: 0.85 },                        // street
       z: { style: 'strisce', color: '#e8e8e0', light: 0.85 },                        // pedestrian crossing
-      y: { style: 'pannelli_solari', color: '#2f4f8f', h: 4.8, light: 1, side: 'palestra' },           // solar-panel roof of the gym block
-      '@': { style: 'pannelli_solari', color: '#2f4f8f', h: 4.8, lift: 0 },          // lift from the gym up to the roof
-      '-': { style: 'lastre', color: '#b8b0a0', ceil: 5.6, ceilStyle: 'travi_lamellari', ceilColor: '#c8a06a', light: 1 }, // atrium
-      '^': { style: 'linoleum', color: '#d6cdba', h: 2.4, ceil: 5.6, ceilStyle: 'travi_lamellari', ceilColor: '#c8a06a', light: 0.9 }, // first-floor walkway + balcony
-      T: { style: 'linoleum', color: '#d6cdba', h: 2.4, ceil: 5.8, ceilStyle: 'lampade', ceilColor: '#f4f0e6', light: 0.55 }, // bell classroom upstairs (dim)
+      // `say`: an instruction the first time the bear steps there (kids don't guess the way)
+      y: { style: 'pannelli_solari', color: '#2f4f8f', h: 4.8, light: 1, side: 'palestra', say: 'Sei sul tetto! Salta giù sulla strada e segui i cartelli EXIT fino alla leva.' }, // solar-panel roof of the gym block
+      '@': { style: 'pannelli_solari', color: '#2f4f8f', h: 4.8, lift: 0, say: 'L\'ascensore ti porta sul tetto dei pannelli solari.' }, // lift from the gym up to the roof
+      '-': { style: 'lastre', color: '#b8b0a0', ceil: 5.6, ceilStyle: 'travi_lamellari', ceilColor: '#c8a06a', light: 1, say: "L'atrio della scuola: sali la scala bianca (o prendi l'ascensore) fino al corridoio del primo piano." }, // atrium
+      '^': { style: 'linoleum', color: '#d6cdba', h: 2.4, ceil: 5.6, ceilStyle: 'travi_lamellari', ceilColor: '#c8a06a', light: 0.9, say: "Il corridoio del primo piano: la CAMPANELLA è nell'aula in fondo, oltre la porta." }, // first-floor walkway
+      e: { style: 'linoleum', color: '#d6cdba', h: 2.4, light: 0.9, say: 'Salta giù nel giardino! La porta della campanella è in fondo, dall\'altra parte degli spalti.' }, // the balcony over the garden
+      T: { style: 'linoleum', color: '#d6cdba', h: 2.4, ceil: 5.8, ceilStyle: 'lampade', ceilColor: '#f4f0e6', light: 0.55, say: 'Prendi la CAMPANELLA! Poi esci dall\'aula: lì fuori c\'è la porta a vetri del balcone.' }, // bell classroom upstairs (dim)
       ',': { style: 'linoleum', color: '#d6cdba', ceil: 3.5, ceilStyle: 'lampade', ceilColor: '#f4f0e6', light: 0.8 },
-      _: { style: 'parquet', color: '#c8904a', ceil: 6, ceilStyle: 'lampade', ceilColor: '#f4f0e6', light: 0.9 },  // gym
-      ';': { style: 'parcheggio', color: '#55585c', h: -2, ceil: 0.8, ceilStyle: 'cemento', ceilColor: '#8a8a86', light: 0.4 }, // sunken car park
+      _: { style: 'parquet', color: '#c8904a', ceil: 6, ceilStyle: 'lampade', ceilColor: '#f4f0e6', light: 0.9, say: 'La palestra! Per uscire prendi l\'ascensore in fondo alla palestra e sali sul tetto.' }, // gym
+      ';': { style: 'parcheggio', color: '#55585c', h: -2, ceil: 0.8, ceilStyle: 'cemento', ceilColor: '#8a8a86', light: 0.65, say: 'Il parcheggio sotto la scuola. La saracinesca gialla chiude la strada alle CHIAVI DEL BIDELLO: tocca il PULSANTE ROSSO sul muro per aprirla.' }, // sunken car park
       '&': { style: 'lastre', color: '#b8b0a0', h: 2.4, lift: 0, ceil: 5.6, ceilStyle: 'travi_lamellari', ceilColor: '#c8a06a', light: 1 }, // lift to the walkway
       // the white staircase up to the walkway (0.4 m a step)
       '!': { ...STAIRS, h: 0.4 }, '?': { ...STAIRS, h: 0.8 }, '<': { ...STAIRS, h: 1.2 }, '>': { ...STAIRS, h: 1.6 }, '[': { ...STAIRS, h: 2 },

@@ -227,7 +227,7 @@ export function buildWorld(level, levelDef, { keyColors = {} } = {}) {
 
   const ground = new THREE.Mesh(new THREE.PlaneGeometry(width * CELL * 6, height * CELL * 6), new THREE.MeshBasicMaterial({ color: skyDef.ground || '#5fae5a' }));
   ground.rotation.x = -Math.PI / 2;
-  ground.position.set(width * CELL / 2, -1.05, height * CELL / 2);
+  ground.position.set(width * CELL / 2, base - 0.05, height * CELL / 2); // under the lowest floor: a sunken car park must not look flooded
   group.add(ground);
 
   const weather = levelDef.weather ? new Weather(group, levelDef.weather) : null;

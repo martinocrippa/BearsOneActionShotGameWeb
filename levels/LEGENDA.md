@@ -85,8 +85,9 @@ legend: {
     '&': { style: 'assi', h: 2, lift: 0 },                              // ASCENSORE: sta a 2 m, scende a 0 quando arrivi
     '_': { style: 'pietra', h: -2, to: 0 },                             // pavimento che SALE a 0 quando scatta la leva con '_' (ponte)
     '*': { style: 'erba', trigger: 'N' },                               // camminandoci sopra scatta tutto ciò che ha il carattere N
-    'a': { style: 'erba', say: 'Premi SPAZIO per sparare!' },           // ALLENAMENTO: la prima volta che ci passi mostra
-                                                                        // l'istruzione (testo, o { solo, coop })
+    'a': { style: 'erba', say: 'Premi SPAZIO per sparare!' },           // ISTRUZIONE: la prima volta che ci passi mostra
+                                                                        // il testo in italiano (o { solo, coop }); in ogni
+                                                                        // livello, dove i bambini non capiscono la strada
   },
   decor: { a: 'albero_autunno', x: 'canne', p: { id: 'panchina' } },  // decorazioni (vedi data/items.js DECOR;
                                                // quelle con `pop`, come il cestino, scoppiano in coriandoli se colpite)
@@ -144,7 +145,7 @@ signs: [
 ```
 - `x`, `z`: colonna e riga della mappa di testo (si parte da 0). Il cartello sta sul pavimento di quella cella: deve essere libera (niente oggetti, avversari o decorazioni).
 - `text`: le parole, in inglese e brevi (stanno su 3 righe al massimo).
-- `to`: dove porta la freccia: `'exit'`, l'id di una chiave (dove sta la chiave), `'door:<id chiave>'` (la porta che apre) o `'bonus'` (la porta della stanza bonus). La freccia segue la strada vera, gira con lo sguardo di chi legge e non svela mai i passaggi segreti. Se l'obiettivo (una chiave o l'uscita) si raggiunge solo con una chiave che l'orso non ha ancora, il cartello scrive da solo "FIND THE <chiave> FIRST!" con la freccia verso quella chiave; i cartelli delle porte restano come sono.
+- `to`: dove porta la freccia: `'exit'`, l'id di una chiave (dove sta la chiave), `'door:<id chiave>'` (la porta che apre) `'bonus'` (la porta della stanza bonus) o `'switch:<carattere>'` (il pulsante sul muro che muove quel carattere; `'switch'` = un pulsante qualsiasi). La freccia segue la strada vera, gira con lo sguardo di chi legge e non svela mai i passaggi segreti. Se l'obiettivo (una chiave o l'uscita) si raggiunge solo con una chiave che l'orso non ha ancora, il cartello scrive da solo "FIND THE <chiave> FIRST!" con la freccia verso quella chiave; i cartelli delle porte restano come sono.
 - `node scripts/place-signs.mjs levels/defs/e1mN.js` propone i cartelli lungo la catena partenza → chiave → porta → … → uscita; poi si guardano nel gioco e si sistemano a mano. `npm test` controlla che ogni cartello stia su un pavimento raggiungibile e che la freccia trovi la strada.
 
 - `training: true` (solo `levels/defs/training.js`): gli avversari diventano sagome di cartone che si rialzano, il livello non salva nulla e finisce con la sua pagella.

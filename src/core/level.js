@@ -158,7 +158,7 @@ function applyFloor(cell, f, borrowed = false) {
   cell.ceil = f.ceil ?? null; // null = open sky
   cell.ceilStyle = f.ceilStyle || null;
   cell.side = f.side || null; // wall style of its sides where it stands above its neighbours (else legend.side)
-  cell.say = f.say || null; // an instruction shown the first time the bear steps here (training): text or { solo, coop }
+  cell.say = f.say || null; // an instruction shown the first time the bear steps here (training, hard spots): text or { solo, coop }
   cell.color = f.color || null; cell.ceilColor = f.ceilColor || null; // tint of the coded fallback pictures
   cell.light = f.light ?? 1;
   // what the floor does to the bear: slow (speed factor), sleepy (sleep per second), slip (ice), liquid (sinks in)
