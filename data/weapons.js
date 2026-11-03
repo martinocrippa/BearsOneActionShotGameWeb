@@ -25,9 +25,11 @@ export const WEAPONS = {
     projectile: { kind: 'rondella', speed: 34, damage: [7, 11], spread: 0.15, count: 12 },
     effect: 'legato', sound: 'twang', frames: { idle: 'idle_1', fire: [['fire_1', 120], ['reload_1', 420]] },
   },
+  // `pain` = how often a hit makes the opponent flinch (× its painChance): fast weapons with 1 would keep it
+  // flinching for ever, never shooting back (play-tests: the jelly blaster was too strong)
   gelatina: {
-    slot: 5, name: 'Spara-gelatina', ammo: 'gelatina', cost: 1, cooldown: 0.1,
-    projectile: { kind: 'gelatina', speed: 30, damage: [5, 8], spread: 0.03, count: 1 },
+    slot: 5, name: 'Spara-gelatina', ammo: 'gelatina', cost: 1, cooldown: 0.12, pain: 0.3,
+    projectile: { kind: 'gelatina', speed: 30, damage: [4, 7], spread: 0.03, count: 1 },
     effect: 'gelatina', sound: 'glop',
   },
   // DOOM's rocket launcher: a slow cloud of cotton candy that sticks everybody near where it lands.

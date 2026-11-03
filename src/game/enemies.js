@@ -67,13 +67,14 @@ export class Enemy {
   }
 
   // `by` = who hit it: the bear, or another opponent (then they quarrel, unless they are the same kind).
-  hit(damage, effect, dir, by) {
+  // `pain` = the weapon's flinch factor (data/weapons.js).
+  hit(damage, effect, dir, by, pain = 1) {
     if (this.out) return;
     this.alert();
     if (by && by !== this.game.player && by.kind !== this.kind && !by.out) this.target = by;
     this.hp -= damage;
     if (this.hp <= 0) return this.knockOut(effect, dir);
-    if (Math.random() < this.def.painChance) { this.state = 'pain'; this.t = 0.28; this.game.sound(this.def.sounds.pain, this); }
+    if (Math.random() < this.def.painChance * pain) { this.state = 'pain'; this.t = 0.28; this.game.sound(this.def.sounds.pain, this); }
   }
 
   knockOut(effect, dir) {
@@ -146,7 +147,8 @@ export class Enemy {
       this.state = 'windup'; this.t = atk.windup;
       return;
     }
-    if (dist > (this.def.attack.melee ? 1.2 : 2.2)) this.walk(dt, Math.atan2(-fx, -fz));
+    if (dist > (this.def.attack.melee ? 1.2 : 2.2)) this.walk(dt, foe, fx, fz, sees);
+    else this.turnTo(Math.atan2(-fx, -fz), dt);
   }
 
   attack(sees, foe, dist) {
@@ -212,19 +214,41 @@ export class Enemy {
     this.cool = rand(...this.def.attack.cooldown) * this.game.diff.fireRate;
   }
 
-  walk(dt, towards) {
-    const g = this.game;
-    let ang = towards;
-    if (this.def.zigzag) ang += Math.sin(this.anim * 3 + this.zig) * 0.9;
+  // Turns towards `ang` at a natural speed (never snapping round, so it does not look like spinning).
+  turnTo(ang, dt, rate = 7) {
+    const d = Math.atan2(Math.sin(ang - this.yaw), Math.cos(ang - this.yaw));
+    this.yaw += Math.sign(d) * Math.min(Math.abs(d), rate * dt);
+  }
+
+  // Straight at its foe while it sees it; otherwise (or after bumping into something) along the way round the walls
+  // (game.wayToBear). Stuck against something (another opponent, a tree): a short sidestep, always to the same side
+  // until it gets moving again. Too far, or no way at all: it waits, looking towards the bear.
+  walk(dt, foe, fx, fz, sees) {
+    const g = this.game, direct = Math.atan2(-fx, -fz);
+    if (sees || foe !== g.player) this.roundT = Math.max(0, (this.roundT || 0) - dt);
+    let ang = direct;
+    if (foe === g.player && (!sees || this.roundT > 0)) {
+      const to = g.wayToBear(this);
+      if (!to) { this.turnTo(direct, dt, 3); return; }
+      ang = Math.atan2(-(to.x - this.x), -(to.z - this.z));
+    } else if (this.def.zigzag) ang += Math.sin(this.anim * 3 + this.zig) * 0.9;
     if (this.detour > 0) { this.detour -= dt; ang = this.detourAng; }
     const sp = this.def.speed * dt;
     const before = { x: this.x, z: this.z };
     const r = slide(g.level, this, -Math.sin(ang) * sp, -Math.cos(ang) * sp, g.obstaclesFor(this));
     this.x = r.x; this.z = r.z;
-    this.yaw = ang;
-    if (Math.hypot(this.x - before.x, this.z - before.z) < sp * 0.3) {
-      this.detour = rand(0.4, 0.9);
-      this.detourAng = ang + (Math.random() < 0.5 ? 1 : -1) * rand(1, 2.2);
+    const mx = this.x - before.x, mz = this.z - before.z, moved = Math.hypot(mx, mz);
+    // it faces where it really goes
+    if (moved > sp * 0.3) { this.turnTo(Math.atan2(-mx, -mz), dt); this.stuck = 0; }
+    else {
+      this.roundT = 2; // walking straight did not work: go round the walls for a while
+      this.stuck = (this.stuck || 0) + 1;
+      if (this.stuck > 1 && !(this.detour > 0)) {
+        if (this.stuck > 6) { this.side = -(this.side || 1); this.stuck = 0; } // that side did not work either
+        this.side ||= Math.random() < 0.5 ? 1 : -1;
+        this.detour = rand(0.3, 0.6);
+        this.detourAng = ang + this.side * rand(0.9, 1.5);
+      }
     }
     this.floor = floorUnder(g.level, this.x, this.z, this.r * 0.5);
     if (this.fly) {

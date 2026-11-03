@@ -132,3 +132,22 @@ test('a low wall marked `low` is a step to jump onto, a plain low wall stays sol
   assert.ok(canStand(map, 3 * CELL + 1, 1 * CELL + 1, 0.35, 1.0), 'reachable with a jump');
   assert.equal(floorUnder(map, 3 * CELL + 1, 1 * CELL + 1, 0.2), 1.2);
 });
+
+test('opponents out of sight follow the way round the walls to the bear, and never up a ledge too high', async () => {
+  const { pathField, nextStep, stepsAt, UNREACHABLE } = await import('../src/core/paths.js');
+  // a wall between the opponent (left) and the bear (P, right): the way goes round the bottom
+  const map = parseLevel('#######\n#..#..#\n#..#.P#\n#.....#\n#######\n');
+  const field = pathField(map, 5, 2);
+  assert.equal(stepsAt(field, 5, 2), 0);
+  assert.equal(stepsAt(field, 1, 1), 7);
+  let at = { cx: 1, cz: 1 }, steps = 0;
+  while (stepsAt(field, at.cx, at.cz) > 0 && steps++ < 20) {
+    at = nextStep(field, map, at.cx, at.cz);
+    assert.ok(!isSolid(map.at(at.cx, at.cz)), `walked into a wall at ${at.cx},${at.cz}`);
+  }
+  assert.deepEqual(at, { cx: 5, cz: 2 });
+  // a high ledge: walkers cannot climb it (the way goes round, or there is none), flyers can
+  const ledge = parseLevel('#####\n#.^P#\n#####\n', { floors: { '.': 'erba', '^': { style: 'roccia', h: 2 } } });
+  assert.equal(stepsAt(pathField(ledge, 3, 1), 1, 1), UNREACHABLE);
+  assert.equal(stepsAt(pathField(ledge, 3, 1, { fly: true }), 1, 1), 2);
+});

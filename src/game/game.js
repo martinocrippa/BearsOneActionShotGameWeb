@@ -2,6 +2,7 @@
 // Screens (pause, buonanotte, report…) are handled by main.js through the callbacks.
 import * as THREE from 'three';
 import { parseLevel, CELL, cellCenter } from '../core/level.js';
+import { pathField, nextStep, stepsAt } from '../core/paths.js';
 import { slide, floorUnder, topUnder, ceilingOver, cellAtWorld, isSolid, blocksSight, lineOfSight, GRAVITY, STEP_HEIGHT, HEAD_ROOM } from '../core/physics.js';
 import { createSleep, addSleep, addArmor, napTaken, faceFor } from '../core/sleep.js';
 import { createCheatReader } from '../core/cheats.js';
@@ -211,6 +212,29 @@ export class Game {
     return list;
   }
 
+  // ---------- the way to the bear (src/core/paths.js) ----------
+  // Rebuilt when the bear changes cell, and twice a second anyway (doors open, lifts move).
+  updatePaths(dt) {
+    const p = this.player, cx = Math.floor(p.x / CELL), cz = Math.floor(p.z / CELL);
+    const pt = this.paths ||= { cx: -1, cz: -1, t: 0 };
+    pt.t -= dt;
+    if (cx === pt.cx && cz === pt.cz && pt.t > 0) return;
+    Object.assign(pt, { cx, cz, t: 0.5, ground: pathField(this.level, cx, cz), fly: null });
+  }
+
+  // Where an opponent should head for to reach the bear round the walls: the centre of its next cell, the bear
+  // itself when it is in the same cell, or null when there is no way (or it is too far to bother).
+  wayToBear(e, maxSteps = 30) {
+    const pt = this.paths;
+    if (!pt) return null;
+    const field = e.fly ? (pt.fly ||= pathField(this.level, pt.cx, pt.cz, { fly: true })) : pt.ground;
+    const cx = Math.floor(e.x / CELL), cz = Math.floor(e.z / CELL), d = stepsAt(field, cx, cz);
+    if (d === 0) return { x: this.player.x, z: this.player.z };
+    if (d < 0 || d > maxSteps) return null;
+    const n = nextStep(field, this.level, cx, cz);
+    return n && cellCenter(n.cx, n.cz);
+  }
+
   // ---------- events from enemies ----------
   sound(name) { play(name); }
 
@@ -333,7 +357,7 @@ export class Game {
       const yaw = aim.yaw + rand(-pr.spread, pr.spread), pitch = aim.pitch + rand(-pr.spread, pr.spread) * 0.6 + (pr.lob ? 0.22 : 0);
       const dir = { x: -Math.sin(yaw) * Math.cos(pitch), y: Math.sin(pitch), z: -Math.cos(yaw) * Math.cos(pitch) };
       this.spawnProjectile('player', pr.kind, ox, oy, oz, dir, pr.speed * rand(0.95, 1.05), {
-        damage: rand(...pr.damage), effect: w.effect, variant: i, ttl: pr.ttl, size: pr.size, splash: pr.splash, bounce: pr.bounce, lob: pr.lob,
+        damage: rand(...pr.damage), effect: w.effect, pain: w.pain, variant: i, ttl: pr.ttl, size: pr.size, splash: pr.splash, bounce: pr.bounce, lob: pr.lob,
       });
     }
     this.trick?.shot(this.projectiles.at(-1));
@@ -861,7 +885,7 @@ export class Game {
         if (e.out || e === pr.shooter) continue;
         if (Math.hypot(e.x - pr.x, e.z - pr.z) < e.r + 0.22 && pr.y > e.y && pr.y < e.y + e.def.height + 0.2) {
           const l = Math.hypot(pr.vx, pr.vz) || 1;
-          if (pr.owner === 'player') e.hit(pr.damage, pr.effect, { x: pr.vx / l, z: pr.vz / l }, p);
+          if (pr.owner === 'player') e.hit(pr.damage, pr.effect, { x: pr.vx / l, z: pr.vz / l }, p, pr.pain);
           else e.hit(pr.sleep * 1.5, 'stordito', { x: pr.vx / l, z: pr.vz / l }, pr.shooter);
           pr.dead = true;
           if (pr.splash) this.explode(pr, pr.x, pr.y, pr.z); else this.splat(pr.x, pr.y, pr.z, pr.kind);
@@ -930,6 +954,7 @@ export class Game {
     p.cooldown -= dt; p.hurtT -= dt; p.grinT -= dt; p.fireFaceT -= dt; p.shakeT -= dt; p.pushT -= dt;
     this.weatherDt = (this.weatherDt || 0) + dt;
     if (this.input.firing) this.tryFire(dt); else p.charge = 0;
+    this.updatePaths(dt);
     for (const e of this.enemies) e.update(dt);
     this.updateProjectiles(dt);
     this.animateMovers(dt);
