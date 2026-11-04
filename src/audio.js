@@ -14,6 +14,13 @@ export function unlockAudio() {
   if (ctx.state === 'suspended') ctx.resume();
 }
 
+// Tab hidden: the whole audio clock stops, so the music scheduler (which reads ctx.currentTime) stops with it and
+// picks up where it was, instead of firing a burst of late notes when the throttled timer wakes up.
+export function suspendAudio(hidden) {
+  if (!ctx) return;
+  if (hidden) { ctx.suspend(); audioEl?.pause(); } else { ctx.resume(); audioEl?.play().catch(() => {}); }
+}
+
 function tone(freq, dur, { type = 'square', vol = 0.3, to = null, delay = 0, out = master } = {}) {
   if (!ctx) return;
   const t = ctx.currentTime + delay;

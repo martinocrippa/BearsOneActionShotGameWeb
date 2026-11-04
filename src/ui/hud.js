@@ -35,7 +35,7 @@ export function createHud(root) {
   root.insertAdjacentHTML('beforeend', `
     <div class="vignette"></div><div class="mud-band"></div><div class="trapped"></div><div class="splats"></div><div class="flash"></div><canvas class="automap"></canvas><div class="tags"></div><div class="instruct"></div>
     <div class="crosshair${assetUrl('hud/crosshair/idle') ? ' drawn' : ''}">${assetUrl('hud/crosshair/idle') ? img(assetUrl('hud/crosshair/idle')) : ''}</div><div class="lockmark"></div><div class="trickbox"></div>
-    <div class="messages"></div>
+    <div class="messages" aria-live="polite"></div>
     <div class="popup"></div>
     <div class="hud">
       <div class="hud-cell hud-ammo"><b></b><span></span></div>
@@ -56,7 +56,7 @@ export function createHud(root) {
   const splats = $('.splats'), sleepCell = $('.hud-sleep'), trappedEl = $('.trapped'), mapCanvas = $('.automap'), crosshair = $('.crosshair'), lockmark = $('.lockmark'), trickEl = $('.trickbox');
   let mapOn = false;
   const faceCache = new Map();
-  let last = {}, popupTimer = null;
+  let last = {}, popupTimer = null, lastHurtFlash = -Infinity;
 
   function faceHtml(bear, mood) {
     const url = assetUrl(`hud/face_${bear.id}/${mood}`);
@@ -148,9 +148,14 @@ export function createHud(root) {
     },
     // Hit by an opponent's shot: strong flash, the shot splats on the screen, the SLEEP box jolts.
     hit(kind) {
-      // the flash takes the colour of what hit (orange jam, yellow tea, green soup…)
-      this.flash('hurt');
-      flash.style.background = HIT_FLASH[kind] || '';
+      // the flash takes the colour of what hit (orange jam, yellow tea, green soup…). At most one every 350 ms:
+      // a burst of shots stays under three full-screen flashes a second (the photosensitivity limit, WCAG 2.3.1).
+      const now = performance.now();
+      if (now - lastHurtFlash >= 350) {
+        lastHurtFlash = now;
+        this.flash('hurt');
+        flash.style.background = HIT_FLASH[kind] || '';
+      }
       const url = assetUrl(`projectiles/${kind}/splat_f_1`)
         || `data:image/svg+xml;charset=utf-8,${encodeURIComponent(splatOf(kind, SPLAT_COLORS[kind] || '#b48cff'))}`;
       const s = document.createElement('img');

@@ -1,6 +1,7 @@
 // Entry point: menus → level → pause / buonanotte / report / YOU LOSE, and back.
-import '@fontsource/bangers';
-import '@fontsource/permanent-marker';
+// Latin subset only: Italian and English need nothing else, and the vietnamese/latin-ext files stay out of dist/.
+import '@fontsource/bangers/latin-400.css';
+import '@fontsource/permanent-marker/latin-400.css';
 import './ui/style.css';
 import * as THREE from 'three';
 import { LEVELS, EPISODE, TRAINING } from '../levels/index.js';
@@ -16,7 +17,14 @@ import { createScreens } from './ui/screens.js';
 import { preloadCover } from './ui/flyer.js';
 import { SweetShot } from './bonus/sweetshot.js';
 import { BONUS_LEVELS } from '../data/bonus.js';
-import { unlockAudio, startMusic, stopMusic, toggleMusic } from './audio.js';
+import { unlockAudio, startMusic, stopMusic, toggleMusic, suspendAudio } from './audio.js';
+import { showNotice, reportError } from './ui/notice.js';
+
+window.addEventListener('error', reportError);
+// The built game keeps itself in the browser (dist/sw.js, scripts/offline-plugin.mjs): no network needed after the
+// first visit. Not in `npm run dev`, where a cache would hide every change.
+if (import.meta.env.PROD && 'serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(() => {});
+window.addEventListener('unhandledrejection', reportError);
 
 const SAVE_KEY = 'orsi:v1:save';
 
@@ -31,7 +39,23 @@ for (const [file, weight] of [['courier-prime-latin-400-normal', 400], ['courier
 }
 
 const app = document.getElementById('app');
-const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
+let renderer;
+try {
+  renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
+} catch (error) {
+  console.error(error);
+  showNotice('NIENTE GRAFICA 3D', 'Per giocare apri ORSI! in Chrome, Edge o Firefox con l’accelerazione grafica attiva.');
+  await new Promise(() => {}); // without WebGL there is nothing to play: stop here, the message stays
+}
+// The graphics card can reset mid-game (driver update, the computer waking up): everything drawn is gone, so the
+// level stops and the page offers a reload; the last checkpoint is in the save.
+renderer.domElement.addEventListener('webglcontextlost', e => {
+  e.preventDefault();
+  if (game) game.paused = true;
+  stopMusic();
+  showNotice('LA GRAFICA SI È FERMATA', 'Il computer ha fatto ripartire la scheda grafica. Ricarica: riparti dall’ultimo punto salvato.', { reload: true });
+});
+renderer.domElement.addEventListener('webglcontextrestored', () => location.reload());
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.25)); // flat ink drawings: no need for full retina, much lighter
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 app.appendChild(renderer.domElement);
@@ -291,6 +315,19 @@ async function menu() {
   }
 }
 
+
+// ---------- leaving the tab or the window ----------
+// Another tab, another window or the screen locking pauses the level (as Esc does) and silences the sound. In a
+// hidden tab the browser slows the timers down, and the music used to come back in bursts.
+function pauseFromOutside() {
+  if (game && !game.paused) pause();
+  else if (bonus && !bonus.paused && !bonus.over) { bonus.paused = true; bonus.callbacks.onPause(); }
+}
+document.addEventListener('visibilitychange', () => {
+  suspendAudio(document.hidden);
+  if (document.hidden) pauseFromOutside();
+});
+window.addEventListener('blur', pauseFromOutside);
 
 // ---------- loop ----------
 let last = performance.now();
