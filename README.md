@@ -46,8 +46,9 @@ Nei menu bastano frecce, `INVIO` e `ESC`.
 - **Cartelli** che dicono cosa cercare, con una freccia che indica la strada giusta da dove li guardi (e se prima serve un'altra chiave, chiedono quella). Sulla mappa (`TAB`) le chiavi ancora da prendere hanno il colore della loro porta. I **cestini** colpiti scoppiano in coriandoli, come i barili di DOOM. Si può **salire sulle auto e sui trattori** saltandoci sopra, e nei punti difficili compare un'istruzione in italiano.
 - **Stanze bonus** a Increa, al campo dell'Arca e al castello: dietro una porta **BONUS** un Topo propone una sfida con 3 tentativi (pesca della carpa d'oro, rigori contro il Topo portiere, giostra con la fionda). Chi vince prende un'**arma assurda** sul tasto `0`: Sputa-carpa, Sparapalloni, Lancia-torte.
 - **LEARN**: un livello di allenamento con le istruzioni e le sagome di cartone.
+- **Gara dei trattori**, un segreto a *Increa Park*: chi sale sul tetto del trattore rosso si sente chiedere *TRACTOR RACE?*. Due giri su una pista di terra attorno a un campo di fieno, dal posto di guida, contro il Cinghialotto, il Gallo e la Volpe; in due lo schermo si divide, un trattore a testa. Chi vince torna nel livello con un premio.
 - **BONUS: SWEET SHOT**, che si sblocca alla fine dell'episodio: tiro a segno con il fucile a bastoncino di zucchero su anatre, uccellini e gufi, in tre livelli (*Dawn at the Pond*, *Noon in the Woods*, *Night of the Owls*).
-- **Quattro difficoltà**, da *Sleepy Cub* a *Ultra-Sugar*. Salvataggio automatico ai checkpoint e una password in stile anni '90 per continuare su un altro computer.
+- **Quattro difficoltà**, da *Sleepy Cub* a *Ultra-Sugar*: sulle due facili l'orso cammina e gira più piano. Salvataggio automatico ai checkpoint e una password in stile anni '90 per continuare su un altro computer.
 - **Musica punk melodica** scritta come dati (`src/music.js`) e suonata dal vivo da un sintetizzatore: un brano per livello.
 
 ### Codici segreti (si scrivono mentre si gioca)

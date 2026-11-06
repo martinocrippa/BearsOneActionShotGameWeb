@@ -17,6 +17,8 @@ import { createScreens } from './ui/screens.js';
 import { preloadCover } from './ui/flyer.js';
 import { SweetShot } from './bonus/sweetshot.js';
 import { BONUS_LEVELS } from '../data/bonus.js';
+import { TractorRace } from './race/race.js';
+import { RACE } from '../data/race.js';
 import { unlockAudio, startMusic, stopMusic, toggleMusic, suspendAudio } from './audio.js';
 import { showNotice, reportError } from './ui/notice.js';
 
@@ -74,6 +76,7 @@ const input = createInput();
 
 let game = null;
 let bonus = null; // SWEET SHOT, when it is running
+let race = null;  // the TRACTOR RACE, when it is running (over the paused level)
 const BONUS_KEY = 'orsi:v1:bonus';
 const bonusUnlocked = () => { try { return localStorage.getItem(BONUS_KEY) === '1'; } catch { return false; } };
 const unlockBonus = () => { try { localStorage.setItem(BONUS_KEY, '1'); } catch { /* private window */ } };
@@ -97,10 +100,12 @@ const hudProbe = document.createElement('div');
 hudProbe.style.cssText = 'position:absolute;visibility:hidden;height:var(--hud-h);width:1px';
 ui.appendChild(hudProbe);
 function resize() {
-  const w = window.innerWidth, h = Math.max(100, window.innerHeight - hudProbe.offsetHeight);
+  // (the race has no status bar: its view takes the whole window)
+  const w = window.innerWidth, h = race ? window.innerHeight : Math.max(100, window.innerHeight - hudProbe.offsetHeight);
   renderer.setSize(w, h);
   game?.resize(w, h);
   bonus?.resize();
+  race?.resize();
 }
 window.addEventListener('resize', resize);
 resize();
@@ -180,6 +185,7 @@ async function startLevel(levelIndex, bearId, mode, difficulty, save) {
         if (v === 'again') startLevel(levelIndex, bearId, mode, difficulty, again); else quitToMenu();
       },
       onUnlockBonus: unlockBonus,
+      onTractor: tractorRace,
       // IDCLEV: jump to another level with what the bear has now
       onWarp: n => {
         if (!LEVELS[n]) { game.paused = false; hud.message(`There is no level ${n + 1} (yet).`); return; }
@@ -241,7 +247,59 @@ async function startBonus(levelIndex, bearId, mode) {
   bonus.start();
 }
 
+// ---------- TRACTOR RACE (the tractors' easter egg) ----------
+// Standing on a tractor's roof asks for a race; the level waits, paused, and gets the prize at the end.
+const HOWTO_RACE = {
+  solo: '↑ (o SPAZIO): accelera · ↓: frena · ← →: sterza. Due giri attorno al campo: occhio alle balle di fieno! Chi arriva primo vince il super miele.',
+  coop: 'Un trattore a testa! CHI GUIDA (sopra): ↑ o ALT GR accelera, ← → sterza, ↓ frena · CHI SPARA (sotto): SPAZIO accelera, A e D sterzano. Due giri attorno al campo!',
+};
+async function tractorRace() {
+  if (!game || race) return;
+  const g = game;
+  g.paused = true;
+  setPlaying(false);
+  if (await screens.raceAsk() !== 'go') { begin(); return; }
+  for (;;) {
+    const result = await runRace(g);
+    if (!result) return; // gone back to the menu meanwhile
+    stopMusic(); startMusic('intermission');
+    const v = await screens.raceResult(result);
+    if (v === 'again') continue;
+    begin();
+    hud.message(`TRACTOR RACE: ${result.place === 1 ? 'YOU WON!' : `you came ${['', '1st', '2nd', '3rd', '4th'][result.place]}.`}`);
+    g.racePrize(result.place);
+    return;
+  }
+}
+function runRace(g) {
+  return new Promise(resolve => {
+    race = new TractorRace({
+      renderer, root: app, input, mode: session.mode, bear: g.bear, difficulty: session.difficulty,
+      callbacks: {
+        onToggleMusic: () => toggleMusic(),
+        onPause: async () => {
+          stopMusic();
+          let v;
+          while ((v = await screens.pause(null)) === 'controls') await screens.controls();
+          if (v === 'resume') { screens.hide(); input.reset(); race.paused = false; startMusic(RACE.music); return; }
+          endRace(); resolve(null); quitToMenu();
+        },
+        onEnd: r => { endRace(); resolve(r); },
+      },
+    });
+    app.insertBefore(race.canvas, ui);
+    resize();
+    race.render();
+    screens.intro({ id: 'TRACTOR RACE', name: RACE.name, howto: HOWTO_RACE[session.mode] }).then(() => {
+      if (!race) return;
+      screens.hide(); input.reset(); startMusic(RACE.music); race.start();
+    });
+  });
+}
+function endRace() { race?.dispose(); race = null; resize(); }
+
 function quitToMenu() {
+  race?.dispose(); race = null;
   bonus?.dispose(); bonus = null;
   renderer.domElement.style.display = '';
   stopMusic();
@@ -320,7 +378,8 @@ async function menu() {
 // Another tab, another window or the screen locking pauses the level (as Esc does) and silences the sound. In a
 // hidden tab the browser slows the timers down, and the music used to come back in bursts.
 function pauseFromOutside() {
-  if (game && !game.paused) pause();
+  if (race && !race.paused && !race.over) { race.paused = true; race.callbacks.onPause(); }
+  else if (game && !game.paused) pause();
   else if (bonus && !bonus.paused && !bonus.over) { bonus.paused = true; bonus.callbacks.onPause(); }
 }
 document.addEventListener('visibilitychange', () => {
@@ -336,7 +395,10 @@ function frame(now) {
   // (before, a slow frame made the whole game run in slow motion, as if wading in mud).
   let dt = Math.min(0.12, (now - last) / 1000);
   last = now;
-  if (game) {
+  if (race) {
+    while (dt > 0.0001) { const step = Math.min(dt, 1 / 40); race?.update(step); dt -= step; }
+    race?.render();
+  } else if (game) {
     while (dt > 0.0001) { const step = Math.min(dt, 1 / 40); game.update(step); dt -= step; }
     if (!game.paused) game.render(); // behind the pause, sleep and report screens the last picture stays
   } else if (bonus) {
@@ -351,4 +413,4 @@ requestAnimationFrame(frame);
 menu();
 
 // Handy for testing from the browser console.
-window.__orsi = { get game() { return game; }, get bonus() { return bonus; }, session: () => session, levels: LEVELS, startLevel, startBonus, unlockBonus };
+window.__orsi = { get game() { return game; }, get bonus() { return bonus; }, get race() { return race; }, tractorRace, session: () => session, levels: LEVELS, startLevel, startBonus, unlockBonus };

@@ -5,7 +5,8 @@ import { cellAtWorld } from '../core/physics.js';
 import { addSleep, addArmor } from '../core/sleep.js';
 import { WEAPONS, AMMO } from '../../data/weapons.js';
 import { pickupTag } from './game-shared.js';
-import { ITEMS, KEYS } from '../../data/items.js';
+import { ITEMS, KEYS, DECOR } from '../../data/items.js';
+import { RACE } from '../../data/race.js';
 import { svgTexture } from '../art/registry.js';
 import { itemSprite } from '../art/sprites.js';
 import { play } from '../audio.js';
@@ -66,6 +67,23 @@ export const levelMethods = {
 
   // A bonus room's prize (an item of data/items.js), given straight into the bear's paws.
   grantItem(id) { if (ITEMS[id]) this.grant(ITEMS[id]); },
+
+  // ---------- the TRACTOR RACE (the easter egg, data/race.js) ----------
+  // Standing a moment on the roof of a tractor (`race` in DECOR) asks for a race; once per climb: the bear has to
+  // get down and up again to be asked again.
+  checkRace(dt) {
+    const p = this.player;
+    const tractor = p.onTop !== null && p.onGround && this.decor.find(d => DECOR[d.id]?.race && Math.hypot(p.x - d.x, p.z - d.z) < d.r + 0.4);
+    if (!tractor) { this.raceT = 0; if (p.onGround) this.raceAsked = false; return; }
+    if (this.raceAsked || !this.callbacks.onTractor || this.trick?.holds) return;
+    this.raceT = (this.raceT || 0) + dt;
+    if (this.raceT > 0.7) { this.raceAsked = true; this.callbacks.onTractor(); }
+  },
+
+  // The prizes of the race by the bears' best place (1 = first).
+  racePrize(place) {
+    for (const id of RACE.prizes[place - 1] || []) this.grantItem(id);
+  },
 
   // What an item does for the bear (picked up, or won). false: no use for it now (it stays on the ground).
   grant(def) {

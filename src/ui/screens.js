@@ -9,6 +9,7 @@ import { flyerHtml, animateFlyer, hasAnimatedCover } from './flyer.js';
 import { assetUrl } from '../art/registry.js';
 import { play } from '../audio.js';
 import { pillowsHtml } from './hud.js';
+import { ordinal } from '../core/race.js';
 
 
 const key = k => `<kbd>${k}</kbd>`;
@@ -35,6 +36,13 @@ const CONTROLS = `
 
 const item = (v, label, extra = '') => `<button class="mi" data-v="${v}"${extra}>${label}</button>`;
 const back = item('back', '‹ BACK', ' data-small');
+// The TRACTOR RACE's cup, in ink like the rest.
+const CUP = `<svg class="race-cup" viewBox="0 0 120 120" aria-hidden="true"><g stroke="#111" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+  <path d="M30 22 C12 22 12 50 34 54 M90 22 C108 22 108 50 86 54" fill="none" stroke-width="7"/>
+  <path d="M30 12 H90 V40 C90 62 76 76 60 76 C44 76 30 62 30 40 Z" fill="#ffd400"/>
+  <path d="M53 76 H67 V94 H53 Z" fill="#ffd400"/><path d="M36 94 H84 V108 H36 Z" fill="#e3262b"/></g>
+  <path d="M42 22 V46" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".85"/></svg>`;
+const raceTime = t => (t === null || t === undefined ? '—' : `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, '0')}`);
 
 export function createScreens(root) {
   const el = document.createElement('div');
@@ -228,6 +236,24 @@ export function createScreens(root) {
         <p class="stars">${stars}</p>
         <table><tr><td>BIRDS</td><td>${r.hits} / ${r.goal}</td></tr><tr><td>SCORE</td><td>${r.score}</td></tr></table>
         <nav class="menu-list">${r.stars && hasNext ? item('next', 'NEXT BONUS') : ''}${item('again', 'TRY AGAIN')}${item('menu', 'MENU')}</nav></div>`, 'menu');
+    },
+
+    // TRACTOR RACE: the tractor's roof asks (data/race.js); 'go' or 'back'
+    raceAsk() {
+      const pic = assetUrl('decor/trattore');
+      return show(`<div class="doom-menu race-ask">${pic ? `<img class="race-tractor" src="${pic}" alt="">` : ''}
+        <h2 class="menu-title">TRACTOR RACE?</h2>
+        <p class="race-line">Race the farm tractors round the hay field!</p>
+        <nav class="menu-list">${item('go', "LET'S RACE!", ' data-default')}${item('back', 'NO, THANKS')}</nav></div>`, 'menu');
+    },
+
+    // TRACTOR RACE: the order at the line (the bears in yellow), the cup for a win; 'again' or 'level'
+    raceResult(r) {
+      const rows = r.places.map(p => `<tr class="${p.who === 'ai' ? '' : 'bear'}"><td>${ordinal(p.place)}</td><td>${p.name}</td><td>${raceTime(p.time)}</td></tr>`).join('');
+      return show(`<div class="doom-menu report race-result"><p class="lvl">${r.name.toUpperCase()}</p>
+        ${r.place === 1 ? CUP : ''}<h2 class="menu-title">${r.place === 1 ? 'YOU WIN THE CUP!' : `${ordinal(r.place)} PLACE`}</h2>
+        <table>${rows}</table>
+        <nav class="menu-list">${item('level', 'BACK TO THE LEVEL', ' data-default')}${item('again', 'RACE AGAIN')}</nav></div>`, 'menu');
     },
 
     // End of the episode, like DOOM's text screen after E1M8: a few lines that type themselves, then the menu.

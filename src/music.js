@@ -135,6 +135,15 @@ export const SONGS = {
     },
     order: ['a', 'a', 'b', 'a', 'b'],
   },
+  // TRACTOR RACE — Hay Bale Grand Prix: galloping country-punk round the field, a whistle on top.
+  race: {
+    bpm: 208, key: 43, band: { gain: 0.95, lead: 'whistle', drive: 4 },
+    parts: {
+      a: P('0 0 5 7', 'gallop', 'gallop', { mel: '12 _ 12 14 16 _ 12 _ | 17 _ 16 _ 14 _ 12 _ | 12 _ 12 14 16 _ 19 _ | 17 _ 16 _ 14 _ _ _' }),
+      b: P('5 5 0 7', 'down', 'skate', { mel: '17 _ 17 _ 19 _ 21 _ | 19 _ 17 _ 16 _ _ _ | 14 _ 16 _ 17 _ 19 _ | 16 _ 14 _ 12 _ _ _', fill: true }),
+    },
+    order: ['a', 'a', 'b', 'a', 'b', 'b'],
+  },
   // Title: the anthem.
   title: {
     bpm: 192, key: 40, band: { lead: 'square', drive: 5 },

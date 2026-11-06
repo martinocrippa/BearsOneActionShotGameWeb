@@ -65,6 +65,7 @@ ITEMS.ghianda.fit = 0.65;
 // (cars, tractors: a roof or a bonnet; only where the ceiling leaves room for the bear's head),
 // `pop` = it bursts into confetti when the bear hits it, like DOOM's barrels: opponents within `radius` metres get
 // up to `damage` (the confetti effect: puffed-up cheeks), and other poppers nearby burst too.
+// `race` = standing on its roof asks for the TRACTOR RACE (the easter egg, data/race.js).
 export const DECOR = {
   // E1M1 forest
   abete: { r: 0.6, h: 5.5 },
@@ -79,7 +80,7 @@ export const DECOR = {
   canne: { r: 0, h: 2.2, color: '#8cc85a' },
   balla: { r: 0.7, h: 1.2, color: '#e2c060' },
   pozzo: { r: 0.8, h: 2, color: '#a8503c' },
-  trattore: { r: 1.2, h: 2.4, top: 1.8, color: '#e3262b' },
+  trattore: { r: 1.2, h: 2.4, top: 1.8, color: '#e3262b', race: true }, // its roof asks for the TRACTOR RACE (data/race.js)
   albero_autunno: { r: 0.5, h: 6, color: '#c27a2e' },
   panchina: { r: 0.6, h: 0.9, color: '#8b5a36' },
   cestino: { r: 0.3, h: 1, color: '#3f6b32', pop: { radius: 2.5, damage: 70 } },

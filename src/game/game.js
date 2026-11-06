@@ -233,7 +233,7 @@ export class Game {
     const hold = this.trick?.holds;
     if (hold) { Object.assign(p, { x: hold.x, z: hold.z, yaw: hold.yaw, vx: 0, vz: 0 }); p.bob *= 0.9; return; }
     const mv = readMove(input, this.mode);
-    p.yaw -= mv.turn * TURN_SPEED * dt;
+    p.yaw -= mv.turn * TURN_SPEED * (this.diff.turn ?? 1) * dt;
 
     // tied up: no walking until free
     if (p.trapT > 0) {
@@ -248,7 +248,7 @@ export class Game {
     const boots = p.boots > 0;
     if (p.boots > 0) { p.boots -= dt; if (p.boots <= 0) this.hud.message('The rubber boots are worn out.'); }
     const slow = fx && !boots ? fx.slow : 1;
-    const speed = RUN_SPEED * this.bear.speed * slow;
+    const speed = RUN_SPEED * this.bear.speed * slow * (this.diff.move ?? 1);
     const fwx = -Math.sin(p.yaw), fwz = -Math.cos(p.yaw), rx = Math.cos(p.yaw), rz = -Math.sin(p.yaw);
     let dx = (fwx * mv.f + rx * mv.strafe), dz = (fwz * mv.f + rz * mv.strafe);
     const len = Math.hypot(dx, dz);
@@ -343,6 +343,7 @@ export class Game {
     this.updateProjectiles(dt);
     this.animateMovers(dt);
     this.checkTriggers(dt);
+    this.checkRace(dt);
     if (Math.floor(this.time * 4) !== Math.floor((this.time - dt) * 4)) this.updateSeen();
   }
 
