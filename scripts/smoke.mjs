@@ -122,6 +122,66 @@ await page.waitForSelector('.report', { timeout: 8000 });
 await wait(1800);
 await shot('11-report');
 
+// E1M2: the hidden bonus room door, then the TRACTOR RACE won, its golden spade on three opponents
+const check = (ok, what) => { if (!ok) errors.push(`check: ${what}`); };
+await game(() => { window.__orsi.startLevel(1, 'piccolo', 'solo', 1, null); });
+await page.waitForSelector('button[data-v="go"]', { timeout: 20000 });
+await page.click('button[data-v="go"]');
+await wait(1500);
+const bonusDoor = () => game(() => { const g = window.__orsi.game, d = g.doors.find(x => x.cell.door.bonus); return d && { x: d.mesh.position.x, z: d.mesh.position.z, look: d.cell.door.look?.style, open: d.cell.open, found: !!d.cell.door.found }; });
+const door = await bonusDoor();
+check(door?.look, 'the bonus door is dressed as a wall');
+// from 6 m east of it (the room is to the west): the Topo calls, the door opens at a touch
+await game(([x, z]) => { const p = window.__orsi.game.player; p.sleep.god = true; Object.assign(p, { x: x + 6, z, y: 0, yaw: Math.PI / 2 }); }, [door.x, door.z]);
+await wait(1500);
+await shot('12-bonus-hidden');
+check(await page.evaluate(() => document.body.innerText.includes('Psst!')), 'the Topo calls "Psst!" by the hidden door');
+await page.keyboard.down('ArrowUp'); await wait(2500); await page.keyboard.up('ArrowUp');
+await wait(1000);
+const opened = await bonusDoor();
+check(opened.open && opened.found, 'the hidden bonus door opens at a touch');
+await shot('12b-bonus-open');
+
+await game(() => { window.__orsi.tractorRace(); });
+await page.waitForSelector('button[data-v="go"]', { timeout: 20000 });
+await page.click('button[data-v="go"]'); // TRACTOR RACE? LET'S RACE!
+await page.waitForSelector('button[data-v="go"]', { timeout: 20000 });
+await page.click('button[data-v="go"]'); // the race's card
+await page.waitForFunction(() => window.__orsi.race && window.__orsi.race.time > 0.3, null, { timeout: 60000 });
+// ↑ is not the gas any more; SPACE is
+await page.keyboard.down('ArrowUp'); await wait(800); await page.keyboard.up('ArrowUp');
+check(await game(() => window.__orsi.race.players[0].t.speed) < 0.5, '↑ does not accelerate');
+await page.keyboard.down('Space');
+await page.waitForFunction(() => window.__orsi.race.time > 3, null, { timeout: 60000 });
+await shot('13-race');
+check(await game(() => window.__orsi.race.players[0].t.speed) > 3, 'SPACE accelerates');
+// off the road on the right, into the field
+await page.keyboard.down('ArrowRight'); await wait(2500); await page.keyboard.up('ArrowRight');
+await wait(1500);
+await page.keyboard.up('Space');
+await shot('13b-off-road');
+check(await game(() => window.__orsi.race.players[0].t.offTrack), 'the tractor can leave the road');
+// first across the line: the cup, back to the level with the golden spade
+await game(() => { const r = window.__orsi.race; for (const x of r.racers) x.t.finished = null; r.players[0].t.finished = r.time; r.finish(); });
+await page.waitForSelector('button[data-v="level"]', { timeout: 20000 });
+await shot('14-race-result');
+check(await page.evaluate(() => /win the cup/i.test(document.body.innerText)), 'the bear that crossed first wins the cup');
+await page.click('button[data-v="level"]');
+await wait(1500);
+const spade = await game(() => {
+  const g = window.__orsi.game, p = g.player;
+  const near = g.enemies.filter(e => !e.out && !e.fly).slice(0, 3);
+  near.forEach((e, i) => { e.x = p.x - Math.sin(p.yaw) * 2.2 + Math.cos(p.yaw) * (i - 1) * 1.3; e.z = p.z - Math.cos(p.yaw) * 2.2 - Math.sin(p.yaw) * (i - 1) * 1.3; e.y = p.y; });
+  p.cooldown = 0;
+  g.tryFire(1 / 60);
+  return { weapon: p.weapon, out: near.filter(e => e.out).length, of: near.length };
+});
+await wait(500);
+await shot('15-spade');
+check(spade.weapon === 'vanga', 'the winner holds the golden spade');
+check(spade.out === spade.of && spade.of > 1, `the spade knocks out everyone in front (${spade.out}/${spade.of})`);
+console.log('race', JSON.stringify({ door: opened, spade }));
+
 console.log(errors.length ? `ERRORS:\n${errors.join('\n')}` : 'no errors');
 if (errors.length) process.exitCode = 1;
 await browser.close();

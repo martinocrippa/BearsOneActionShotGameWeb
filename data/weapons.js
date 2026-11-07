@@ -78,6 +78,15 @@ export const WEAPONS = {
     projectile: { kind: 'torta', speed: 15, damage: [45, 60], spread: 0.02, count: 1, ttl: 3, size: 1.1, lob: 9, splash: { radius: 1.8, damage: [25, 40] } },
     effect: 'torta', sound: 'pie', frames: { idle: 'idle_1', fire: [['fire_1', 120], ['fire_2', 200]] },
   },
+  // The golden spade, the TRACTOR RACE's prize for the winner (data/race.js `prizes`): the paw's swipe, much stronger.
+  // It reaches further, sweeps wider and knocks out everyone in its arc (`sweep`), flinging them away (`push`, the
+  // paw's is 4). `label` = the HUD's word under ∞. `race`: not carried by the password (its 13 characters are
+  // full; the saves keep it, and a race wins it again).
+  vanga: {
+    slot: 0, bonus: true, race: true, name: 'Vanga d\'oro', label: 'SPADE', ammo: null, cooldown: 0.6,
+    melee: { range: 3.2, cone: 0.95, damage: [70, 110], push: 11, sweep: true },
+    effect: 'stordito', sound: 'whoosh', frames: { idle: 'idle_1', fire: [['attack_1', 110], ['attack_2', 220]] },
+  },
 };
 
 // `max` doubles with the backpack (zainetto).

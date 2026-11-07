@@ -77,12 +77,13 @@ function keysFor(name) {
 
 const pack = JSON.parse(readFileSync(join(src, 'assets.json'), 'utf8'));
 // Replace the previous zip's drawings (so renamed or removed ones do not linger) but keep the ones imported
-// straight from the canvas (source "canvas", e.g. the animated cover).
+// straight from the canvas (source "canvas", e.g. the animated cover) and the ones drawn by hand in code (source
+// "code": the tractors from behind and in front, the golden spade). A zip's drawing with the same key wins.
 const manifestPath = join(OUT, 'assets.json');
 const kept = [];
 if (existsSync(manifestPath)) {
   for (const e of JSON.parse(readFileSync(manifestPath, 'utf8'))) {
-    if (!clean || (typeof e === 'object' && e.source === 'canvas')) kept.push(typeof e === 'string' ? { key: e.replace(/\.[a-z0-9]+$/i, ''), path: e } : e);
+    if (!clean || (typeof e === 'object' && (e.source === 'canvas' || e.source === 'code'))) kept.push(typeof e === 'string' ? { key: e.replace(/\.[a-z0-9]+$/i, ''), path: e } : e);
     else rmSync(join(OUT, typeof e === 'string' ? e : e.path), { force: true });
   }
 }

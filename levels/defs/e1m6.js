@@ -11,7 +11,6 @@ export default {
     { x: 30, z: 16, text: 'FIND THE IRON KEY!', to: 'chiave_ferro' },
     { x: 15, z: 18, text: 'IRON KEY DOOR', to: 'door:chiave_ferro' },
     { x: 51, z: 25, text: 'EXIT', to: 'exit' },
-    { x: 28, z: 42, text: 'BONUS ROOM', to: 'bonus' },
   ],
   // bonus room (data/tricks.js): the knight mouse's tournament yard next to the start
   trick: { id: 'joust', topo: 'cavaliere', x: 24, z: 44, target: { x: 21, z: 40 }, prize: 'spTorte' },

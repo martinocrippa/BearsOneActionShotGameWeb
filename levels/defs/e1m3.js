@@ -14,7 +14,6 @@ export default {
     { x: 28, z: 29, text: 'FIND THE YELLOW CARD!', to: 'cartellino' },
     { x: 54, z: 8, text: 'YELLOW CARD DOOR', to: 'door:cartellino' },
     { x: 45, z: 30, text: 'EXIT', to: 'exit' },
-    { x: 10, z: 39, text: 'BONUS ROOM', to: 'bonus' },
   ],
   // bonus room (data/tricks.js): the goalkeeper mouse on the little pitch by the car park
   trick: { id: 'penalty', topo: 'portiere', x: 2, z: 40, spot: { x: 6, z: 40 }, target: { x: 1, z: 40 }, prize: 'spPalloni' },

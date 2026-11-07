@@ -124,7 +124,7 @@ Un livello può avere una **stanza bonus** con un trick del Topo (regole e frasi
 ```js
 trick: { id: 'penalty', topo: 'portiere', x: 2, z: 40, spot: { x: 6, z: 40 }, target: { x: 1, z: 40 }, prize: 'spPalloni' },
 legend: {
-  doors: { '(': { bonus: true } }, // la porta BONUS: si apre senza chiave, si chiude alle spalle durante il trick
+  doors: { '(': { bonus: true } }, // la porta della stanza bonus: nascosta, si apre toccandola, si chiude alle spalle durante il trick
   decor: { ')': 'porta_rigori' },  // la porta da calcio dei rigori (o 'palo_giostra' per la giostra)
   …
 },
@@ -133,7 +133,8 @@ legend: {
 - `x`, `z`: dove sta il Topo. La stanza è tutto il pavimento che si raggiunge dal Topo senza passare muri o porte, e deve essere chiusa solo da porte con `bonus` (niente avversari dentro).
 - `spot`: dove si mette l'orso per giocare (pesca e rigori: una stella lo segna); `target`: l'acqua dove salta la carpa, la porta da calcio, il palo della giostra.
 - `prize`: l'oggetto vinto (in `data/items.js`): `spCarpa`, `spPalloni`, `spTorte`.
-- 3 tentativi; finiti senza vincere, il trick si rifà solo rigiocando il livello. Un cartello `to: 'bonus'` indica la porta.
+- 3 tentativi; finiti senza vincere, il trick si rifà solo rigiocando il livello.
+- La porta è **nascosta**: ha l'aspetto del muro più comune tra i suoi 4 vicini, con una stella di gesso disegnata sopra come unico indizio, e si apre toccandola ("YOU FOUND THE BONUS ROOM!"). Quando l'orso passa a meno di 8 m, il Topo dietro chiama "Psst! Psst!". Sulla mappa resta muro finché non si trova. Niente cartelli `to: 'bonus'`: svelerebbero il segreto (le frecce degli altri cartelli non ci passano).
 - `npm test` (`tests/tricks.test.js`) controlla che ogni stanza sia chiusa, raggiungibile e senza avversari.
 
 ## Cartelli con le indicazioni

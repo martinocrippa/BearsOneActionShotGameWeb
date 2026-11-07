@@ -4,6 +4,14 @@
 // Headings are the game's: forward = (−sin yaw, −cos yaw), steering right makes the yaw smaller.
 import { RACE } from '../../data/race.js';
 
+/** A point of the track: where (x, z), its unit tangent (tx, tz), metres from the start line (s), how it bends
+    (radians per metre, > 0 to the right).
+    @typedef {{ x: number, z: number, s: number, tx: number, tz: number, bend: number }} Sample */
+/** A tractor of the race (createTractor): where it is, how it drives, where it is in the race.
+    @typedef {{ x: number, z: number, yaw: number, speed: number, maxSpeed: number, seed: number, steer: number,
+      lap: number, i: number, side: number, dist?: number, progress: number, finished: number | null, wrongWay: boolean,
+      offTrack: boolean, bumped: number }} Tractor */
+
 export const STEP = 2;            // metres between two samples of the track
 export const TRACTOR_R = 1.3;     // a tractor's collision radius
 export const BALE_R = 0.95;       // a round bale's
@@ -42,12 +50,13 @@ export function buildTrack(def = RACE) {
     cum.push(cum[i - 1] + Math.hypot(b[0] - a[0], b[1] - a[1]));
   }
   const length = cum[dense.length], count = Math.round(length / STEP), step = length / count;
+  /** @type {Sample[]} */
   const samples = [];
   for (let k = 0, j = 0; k < count; k++) {
     const s = k * step;
     while (cum[j + 1] < s) j++;
     const a = dense[j], b = dense[(j + 1) % dense.length], t = (s - cum[j]) / (cum[j + 1] - cum[j] || 1);
-    samples.push({ x: a[0] + (b[0] - a[0]) * t, z: a[1] + (b[1] - a[1]) * t, s });
+    samples.push({ x: a[0] + (b[0] - a[0]) * t, z: a[1] + (b[1] - a[1]) * t, s, tx: 0, tz: 0, bend: 0 });
   }
   for (let k = 0; k < count; k++) {
     const a = samples[(k - 1 + count) % count], b = samples[(k + 1) % count], d = Math.hypot(b.x - a.x, b.z - a.z) || 1;
@@ -98,6 +107,7 @@ export function nearest(track, x, z, hint = null) {
   return { i: best, side: -(x - c.x) * c.tz + (z - c.z) * c.tx, dist: Math.sqrt(bd) };
 }
 
+/** @returns {Tractor} */
 export function createTractor(track, slot, { maxSpeed, seed = slot }) {
   const g = track.grid[slot];
   const t = { x: g.x, z: g.z, yaw: g.yaw, speed: 0, maxSpeed, seed, steer: 0, lap: -1, i: 0, side: 0, progress: 0, finished: null, wrongWay: false, offTrack: false, bumped: 0 };
@@ -113,7 +123,7 @@ export function driveTractor(t, ctl, dt, track, { assist = 0, bales = track.bale
   const fx = -Math.sin(t.yaw), fz = -Math.cos(t.yaw);
   // the slope along the way: climbing slows down, rolling down speeds up
   const slope = (heightAt(t.x + fx, t.z + fz, track.def) - heightAt(t.x - fx, t.z - fz, track.def)) / 2;
-  const top = t.maxSpeed * (t.offTrack ? 0.55 : 1);
+  const top = t.maxSpeed * (t.offTrack ? track.def.grass ?? 0.75 : 1);
   if (ctl.gas) t.speed += ACCEL * dt * (t.speed < 0 ? 2 : 1);
   else if (ctl.brake) t.speed -= (t.speed > 0 ? BRAKE : ACCEL * 0.6) * dt;
   else t.speed -= Math.sign(t.speed) * Math.min(Math.abs(t.speed), COAST * dt);
@@ -123,9 +133,10 @@ export function driveTractor(t, ctl, dt, track, { assist = 0, bales = track.bale
   t.steer += (clamp(ctl.steer, -1, 1) - t.steer) * Math.min(1, dt * 8);
   const grip = clamp(Math.abs(t.speed) / 4, 0, 1) * Math.sign(t.speed || 1);
   t.yaw -= t.steer * TURN * grip * dt;
-  // the helping hand: the heading turns a little towards the track's own, aiming back at the middle
+  // the helping hand: with the steering let go, the heading turns a little towards the track's own, aiming back at
+  // the middle; steering, the driver goes wherever it likes (off the road too: play-test, "I want to go off the road")
   const c = track.samples[t.i], along = yawOf(c.tx, c.tz) + clamp(t.side * 0.06, -0.35, 0.35), off = angleDiff(along, t.yaw);
-  if (assist && t.speed > 1 && Math.abs(off) < 1.3 && !ctl.brake) t.yaw += off * assist * dt * (Math.abs(ctl.steer) > 0.1 ? 0.35 : 1);
+  if (assist && t.speed > 1 && Math.abs(off) < 1.3 && !ctl.brake && Math.abs(ctl.steer) < 0.1) t.yaw += off * assist * dt;
   t.x += -Math.sin(t.yaw) * t.speed * dt;
   t.z += -Math.cos(t.yaw) * t.speed * dt;
   let hit = null;
@@ -198,9 +209,14 @@ export function aiControl(t, track, time) {
   return { gas: !(Math.abs(diff) > 0.7 && t.speed > 6), brake: false, steer: clamp(-diff * 2.5, -1, 1) };
 }
 
-/** The order of the race: who finished first, then who has gone furthest. */
+/** The order of the race: who finished first, then who has gone furthest. Tractors, or racers carrying their
+    tractor in `t` (src/race/race.js). */
+/** @template {Tractor | { t: Tractor }} T @param {T[]} list @returns {T[]} */
 export function standings(list) {
-  return [...list].sort((a, b) => {
+  /** @type {(x: Tractor | { t: Tractor }) => Tractor} */
+  const of = x => ('t' in x ? x.t : x);
+  return [...list].sort((A, B) => {
+    const a = of(A), b = of(B);
     if (a.finished !== null && b.finished !== null) return a.finished - b.finished;
     if (a.finished !== null) return -1;
     if (b.finished !== null) return 1;

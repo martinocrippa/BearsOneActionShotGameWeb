@@ -1,8 +1,8 @@
 // TRACTOR RACE: the tractors' easter egg (data/race.js), played over a paused level and back to it at the end.
 // First person from the driver's seat, like the rest of the game: the bonnet and the steering wheel are drawn by the
-// code on a 2D canvas over the 3D, with the place, the lap and a little map of the track. In two, the screen is
+// code on a 2D canvas over the 3D (src/race/cockpit.js), with the place, the lap and a little map of the track. In two, the screen is
 // split: the driver (arrows, ALT GR) on top, the shooter (A/D, SPACE) below, one tractor each.
-// The rules and the maths are in src/core/race.js; here the 3D world, the cameras, the sounds and the canvas.
+// The rules and the maths are in src/core/race.js; here the 3D world, the cameras and the sounds.
 import * as THREE from 'three';
 import { RACE } from '../../data/race.js';
 import { BEARS } from '../../data/bears.js';
@@ -15,17 +15,16 @@ import { decorCanvas } from '../game/game-shared.js';
 import { svgTexture, paintedTexture } from '../art/registry.js';
 import { paintTexture } from '../art/textures.js';
 import { decorSprite, enemySprite } from '../art/sprites.js';
-import { bearCover } from '../art/bear.js';
+import { bearCover, bearBack } from '../art/bear.js';
 import { play } from '../audio.js';
+import { RaceHud } from './cockpit.js';
 
 const FOV_H = 96;           // degrees across, whatever the shape of the view
 const SEAT = 2.15;          // the driver's eyes above the ground
 const COUNTDOWN = 3.6;      // seconds of "3 2 1" before GO
 const FAR = 190;            // the fog's end: billboards beyond it (or behind the camera) are not even placed
-const INK = '#111111';
 const RACER_COLORS = ['#ffd400', '#28c2b4', '#ff2d8a', '#ff7a12', '#7d5cff'];
 const SKY = { top: '#f3b48a', bottom: '#f7c9a8', ground: '#6f8f46' }; // the sunset of the park (E1M2)
-const font = (size, kind = 'Bangers, Impact, sans-serif') => `${Math.round(size)}px ${kind}`;
 
 const PLANE = new THREE.PlaneGeometry(1, 1);
 
@@ -64,14 +63,16 @@ class BillboardSet {
   remove() { this.mesh.removeFromParent(); this.mesh.dispose(); this.material.dispose(); }
 }
 
-function tractorTexture(id) {
+// A tractor's drawing: from the side (decor/<id>), or from behind / in front (decor/<id>_back, _front; until there is
+// one, the side drawing stands in).
+function tractorTexture(id, view = null) {
   const [cw, ch] = decorCanvas(id);
-  return svgTexture(`decor/${id}`, () => decorSprite(id, cw, ch), cw, ch);
+  return svgTexture(view ? `decor/${id}_${view}` : `decor/${id}`, () => decorSprite(id, cw, ch), cw, ch);
 }
 
 export class TractorRace {
   constructor({ renderer, root, input, mode, bear, difficulty, callbacks }) {
-    Object.assign(this, { renderer, root, input, mode, bear, callbacks });
+    this.renderer = renderer; this.root = root; this.input = input; this.mode = mode; this.bear = bear; this.callbacks = callbacks;
     this.diff = difficultyAt(difficulty);
     const level = this.level = Math.max(0, Math.min(RACE.assist.length - 1, difficulty | 0));
     this.track = buildTrack();
@@ -92,12 +93,15 @@ export class TractorRace {
     const others = RACE.speed.others[level];
     this.racers = [];
     const ais = RACE.drivers.slice(0, 4 - players);
-    ais.forEach((d, i) => this.racers.push(this.makeRacer({ slot: i, who: 'ai', name: d.name, tractor: d.tractor, maxSpeed: others * d.skill, seed: i, skill: d.skill,
-      driverTex: svgTexture(`enemies/${d.id}/${d.frame}`, () => enemySprite(d.id, 'walk', 1), ENEMIES[d.id]?.canvas || 512, ENEMIES[d.id]?.canvas || 512) })));
+    ais.forEach((d, i) => {
+      const c = ENEMIES[d.id]?.canvas || 512, frame = view => svgTexture(`enemies/${d.id}/${d.frame.replace('_f_', `_${view}_`)}`, () => enemySprite(d.id, 'walk', 1), c, c);
+      this.racers.push(this.makeRacer({ slot: i, who: 'ai', name: d.name, tractor: d.tractor, maxSpeed: others * d.skill, seed: i, skill: d.skill,
+        driverTex: { front: frame('f'), back: frame('b') } }));
+    });
     for (let p = 0; p < players; p++) {
       const b = bears[p];
       this.racers.push(this.makeRacer({ slot: ais.length + p, who: p ? 'p2' : 'p1', name: b.name.toUpperCase(), tractor: RACE.bearTractor, maxSpeed: bearTop, seed: 7 + p,
-        driverTex: svgTexture(`characters/${b.id}/walk_f_1`, () => bearCover(b, { title: false }), 512, 512), bear: b }));
+        driverTex: { front: svgTexture(`characters/${b.id}/walk_f_1`, () => bearCover(b, { title: false }), 512, 512), back: svgTexture(`race/bear_back_${b.id}`, () => bearBack(b), 512, 512) }, bear: b }));
     }
     this.players = this.racers.filter(r => r.who !== 'ai');
     this.racers.forEach((r, i) => { r.color = r.who === 'p1' ? RACER_COLORS[0] : r.who === 'p2' ? RACER_COLORS[1] : RACER_COLORS[2 + (i % 3)]; });
@@ -109,12 +113,8 @@ export class TractorRace {
     this.assist = RACE.assist[level];
     this.goal = RACE.laps * this.track.length;
 
-    this.canvas = document.createElement('canvas');
-    this.canvas.className = 'race';
-    this.ctx = this.canvas.getContext('2d');
-    this.mapPts = this.track.samples.filter((_, i) => i % 9 === 0);
-    const xs = this.track.samples.map(c => c.x), zs = this.track.samples.map(c => c.z);
-    this.mapBox = { x0: Math.min(...xs), x1: Math.max(...xs), z0: Math.min(...zs), z1: Math.max(...zs) };
+    this.hud = new RaceHud(this); // the cockpit, the numbers and the map (src/race/cockpit.js)
+
 
     this.time = -COUNTDOWN; this.paused = true; this.over = false; this.endT = null;
     this.chugT = 0; this.flash = null;
@@ -124,10 +124,17 @@ export class TractorRace {
   makeRacer({ slot, who, name, tractor, maxSpeed, seed, driverTex, bear = null, skill = 1 }) {
     const t = createTractor(this.track, slot, { maxSpeed, seed });
     const body = new Billboard(this.scene, { fit: DECOR[tractor]?.h || 2.4 });
-    body.texture = tractorTexture(tractor);
     const driver = new Billboard(this.scene, { fit: 1.15 });
-    driver.texture = driverTex;
-    return { t, who, name, tractor, body, driver, bear, skill, seat: RACE.tractors[tractor]?.seat || [0.45, 0.45], bob: Math.random() * 6, lastLap: -1 };
+    // the three drawings of the tractor and where the driver sits in each; from the side and in front the driver
+    // faces the camera, from behind it shows its back
+    const seats = RACE.tractors[tractor] || {};
+    const views = {
+      side: { body: tractorTexture(tractor), driver: driverTex.front, seat: seats.seat || [0.45, 0.45] },
+      back: { body: tractorTexture(tractor, 'back'), driver: driverTex.back, seat: seats.back || [0.5, 0.45] },
+      front: { body: tractorTexture(tractor, 'front'), driver: driverTex.front, seat: seats.front || [0.5, 0.45] },
+    };
+    body.texture = views.side.body; driver.texture = views.side.driver;
+    return { t, who, name, tractor, body, driver, bear, skill, views, bob: Math.random() * 6, lastLap: -1 };
   }
 
   // ---------- the world ----------
@@ -257,22 +264,25 @@ export class TractorRace {
   // ---------- running ----------
   start() { this.paused = false; this.input.reset(); this.beep = 4; }
 
-  resize() {
-    this.canvas.width = window.innerWidth;
-    this.canvas.height = window.innerHeight;
-  }
+  resize() { this.hud.resize(); }
 
+  /** The 2D canvas over the 3D (main.js puts it in the page). */
+  get canvas() { return this.hud.canvas; }
+
+
+  // The gas is a button, never ↑ (play-test on the Pi's pads: thumb on B, the cross only steers and brakes).
+  // Pads (the Raspberry Pi port): B = SPACE, A = ALT GR.
   controls(r) {
     const k = c => this.input.isDown(c);
     if (this.mode !== 'coop') {
       return {
-        gas: k('ArrowUp') || k('KeyW') || k('Space') || k('AltRight') || k('Enter') || k('NumpadEnter'),
+        gas: k('Space') || k('AltRight') || k('Enter') || k('NumpadEnter'),
         brake: k('ArrowDown') || k('KeyS'),
         steer: (k('ArrowRight') || k('KeyD') ? 1 : 0) - (k('ArrowLeft') || k('KeyA') ? 1 : 0),
       };
     }
-    if (r.who === 'p1') return { gas: k('ArrowUp') || k('AltRight') || k('Enter') || k('NumpadEnter'), brake: k('ArrowDown'), steer: (k('ArrowRight') ? 1 : 0) - (k('ArrowLeft') ? 1 : 0) };
-    return { gas: k('Space') || k('KeyW'), brake: k('KeyS'), steer: (k('KeyD') ? 1 : 0) - (k('KeyA') ? 1 : 0) };
+    if (r.who === 'p1') return { gas: k('AltRight') || k('Enter') || k('NumpadEnter'), brake: k('ArrowDown'), steer: (k('ArrowRight') ? 1 : 0) - (k('ArrowLeft') ? 1 : 0) };
+    return { gas: k('Space'), brake: k('KeyS'), steer: (k('KeyD') ? 1 : 0) - (k('KeyA') ? 1 : 0) };
   }
 
   update(dt) {
@@ -363,21 +373,26 @@ export class TractorRace {
     cam.updateProjectionMatrix();
   }
 
-  // Billboards turn to the camera of this view; the tractors face the way they drive.
+  // Billboards turn to the camera of this view; the tractors face the way they drive: the drawing from behind when the
+  // camera follows one, from in front when it comes the other way, from the side otherwise.
   placeBillboards(v) {
     const yaw = v.r.t.yaw, cfx = -Math.sin(yaw), cfz = -Math.cos(yaw), crx = Math.cos(yaw), crz = -Math.sin(yaw);
-    for (const set of this.props) set.place(v.r.camera.position, yaw, FAR);
+    const cam = v.r.camera.position;
+    for (const set of this.props) set.place(cam, yaw, FAR);
     for (const r of this.racers) {
       const t = r.t, mine = r === v.r;
       r.body.mesh.visible = !mine; r.driver.mesh.visible = !mine;
       if (mine) continue;
       const fx = -Math.sin(t.yaw), fz = -Math.cos(t.yaw);
-      r.body.flip = fx * crx + fz * crz < 0;
+      const dx = t.x - cam.x, dz = t.z - cam.z, away = (fx * dx + fz * dz) / (Math.hypot(dx, dz) || 1);
+      const view = r.views[away > 0.72 ? 'back' : away < -0.72 ? 'front' : 'side'];
+      r.body.texture = view.body; r.driver.texture = view.driver;
+      r.body.flip = view === r.views.side && fx * crx + fz * crz < 0;
       const y = heightAt(t.x, t.z) + Math.abs(Math.sin(r.bob * 3)) * 0.05 * Math.min(1, Math.abs(t.speed) / 5);
       r.body.place(t.x, y, t.z, yaw);
       // the driver sits just behind the drawing (the tractor hides the legs), at the seat
-      const across = (r.seat[0] - 0.5) * r.body.width * (r.body.flip ? -1 : 1);
-      r.driver.place(t.x + cfx * 0.25 + crx * across, y + r.body.height * (1 - r.body.foot) * r.seat[1], t.z + cfz * 0.25 + crz * across, yaw);
+      const across = (view.seat[0] - 0.5) * r.body.width * (r.body.flip ? -1 : 1);
+      r.driver.place(t.x + cfx * 0.25 + crx * across, y + r.body.height * (1 - r.body.foot) * view.seat[1], t.z + cfz * 0.25 + crz * across, yaw);
     }
   }
 
@@ -392,157 +407,9 @@ export class TractorRace {
       R.render(this.scene, v.r.camera);
     }
     if (views.length > 1) { R.setScissorTest(false); const s = R.getSize(new THREE.Vector2()); R.setViewport(0, 0, s.x, s.y); }
-    this.drawHud(views);
+    this.hud.draw(views);
   }
 
-  drawHud(views) {
-    const ctx = this.ctx, W = this.canvas.width, H = this.canvas.height;
-    ctx.clearRect(0, 0, W, H);
-    const sx = W / (views[0].w || W), sy = H / (views.reduce((a, v) => a + v.h, 0) || H);
-    for (const v of views) {
-      const box = { x: v.x * sx, y: v.y * sy, w: v.w * sx, h: v.h * sy };
-      this.drawCockpit(box, v.r);
-      this.drawInfo(box, v.r);
-    }
-    if (views.length > 1) { ctx.fillStyle = INK; ctx.fillRect(0, views[1].y * sy - 4, W, 8); }
-    // the little map: in the corner, or (in two) one for both, on the line between the halves
-    if (views.length > 1) this.drawMap({ x: 0, y: views[1].y * sy - 130 * (H / 720), w: W, h: H }, null, H / 720 * 1.05);
-    else this.drawMap({ x: 0, y: 0, w: W, h: H }, views[0].r, Math.max(0.6, H / 720));
-  }
-
-  text(str, x, y, size, color, align = 'center') {
-    const ctx = this.ctx;
-    ctx.font = font(size); ctx.textAlign = align; ctx.textBaseline = 'alphabetic';
-    ctx.lineJoin = 'round'; ctx.lineWidth = Math.max(3, size / 9); ctx.strokeStyle = INK; ctx.fillStyle = color;
-    ctx.strokeText(str, x, y); ctx.fillText(str, x, y);
-  }
-
-  // The red bonnet, the exhaust, the speedometer and the steering wheel with the bear's paws: drawn by the code.
-  drawCockpit(b, r) {
-    const ctx = this.ctx, s = b.h / 720, cx = b.x + b.w / 2, by = b.y + b.h, t = r.t;
-    const shakeY = t.bumped > 0 ? Math.sin(this.time * 70) * 4 * s : Math.sin(r.bob * 2.3) * 2 * s;
-    ctx.save();
-    ctx.translate(0, shakeY);
-    ctx.lineJoin = 'round'; ctx.lineCap = 'round';
-    // bonnet
-    ctx.beginPath();
-    ctx.moveTo(cx - 360 * s, by + 10); ctx.lineTo(cx - 190 * s, by - 150 * s); ctx.lineTo(cx + 190 * s, by - 150 * s); ctx.lineTo(cx + 360 * s, by + 10);
-    ctx.closePath();
-    ctx.fillStyle = '#e3262b'; ctx.fill();
-    ctx.lineWidth = 7 * s; ctx.strokeStyle = INK; ctx.stroke();
-    // its seam, the vents and a little ink hatching on the shaded side
-    // (one path for each width: fewer calls, lighter on the Raspberry Pi; the small views of the split screen skip
-    // the details)
-    const small = s < 0.75;
-    ctx.lineWidth = 4 * s;
-    ctx.beginPath(); ctx.moveTo(cx, by - 150 * s); ctx.lineTo(cx, by);
-    for (let i = 0; i < 4; i++) {
-      const y = by - 120 * s + i * 26 * s;
-      ctx.moveTo(cx + 60 * s, y); ctx.lineTo(cx + 150 * s + i * 12 * s, y);
-    }
-    ctx.stroke();
-    if (!small) {
-      ctx.lineWidth = 2.5 * s;
-      ctx.beginPath();
-      for (let i = 0; i < 7; i++) {
-        const x = cx - 300 * s + i * 22 * s;
-        ctx.moveTo(x, by); ctx.lineTo(x + 40 * s, by - 60 * s);
-      }
-      ctx.stroke();
-    }
-    // the exhaust pipe with puffs of smoke
-    ctx.fillStyle = '#2b2b2b'; ctx.lineWidth = 5 * s;
-    ctx.beginPath(); ctx.rect(cx + 205 * s, by - 330 * s, 26 * s, 190 * s); ctx.fill(); ctx.stroke();
-    const puffs = small ? 2 : 3;
-    for (let i = 0; i < puffs; i++) {
-      const k = ((this.time * (1.2 + Math.abs(t.speed) / 8) + i / puffs) % 1 + 1) % 1, rr = (10 + 22 * k) * s;
-      ctx.globalAlpha = 0.85 * (1 - k);
-      ctx.fillStyle = '#d8d2c4';
-      ctx.beginPath(); ctx.arc(cx + 218 * s + k * 30 * s, by - 345 * s - k * 120 * s, rr, 0, Math.PI * 2); ctx.fill();
-      ctx.lineWidth = 3 * s; ctx.stroke();
-    }
-    ctx.globalAlpha = 1;
-    // the speedometer
-    const gx = cx - 290 * s, gy = by - 70 * s, gr = 52 * s;
-    ctx.fillStyle = '#f4ecd8'; ctx.lineWidth = 6 * s;
-    ctx.beginPath(); ctx.arc(gx, gy, gr, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
-    const sp = Math.min(1, Math.abs(t.speed) / RACE.speed.bear), a = Math.PI * (0.8 + sp * 1.4);
-    ctx.lineWidth = 5 * s; ctx.strokeStyle = '#e3262b';
-    ctx.beginPath(); ctx.moveTo(gx, gy); ctx.lineTo(gx + Math.cos(a) * gr * 0.8, gy + Math.sin(a) * gr * 0.8); ctx.stroke();
-    ctx.strokeStyle = INK;
-    // the steering wheel: its upper half, turning with the steering
-    const wr = 175 * s, turn = t.steer * 1.1, wy = by + 6 * s;
-    ctx.lineWidth = 30 * s; ctx.strokeStyle = INK;
-    ctx.beginPath(); ctx.arc(cx, wy, wr, Math.PI, Math.PI * 2); ctx.stroke();
-    ctx.lineWidth = 16 * s; ctx.strokeStyle = '#3a3a3a';
-    ctx.beginPath(); ctx.arc(cx, wy, wr, Math.PI, Math.PI * 2); ctx.stroke();
-    ctx.strokeStyle = INK; ctx.lineWidth = 14 * s;
-    for (const k of [0, 2 / 3, 4 / 3]) {
-      const ang = -Math.PI / 2 + turn + k * Math.PI;
-      if (Math.sin(ang) > -0.05) continue; // only the spokes pointing up show
-      ctx.beginPath(); ctx.moveTo(cx, wy); ctx.lineTo(cx + Math.cos(ang) * wr, wy + Math.sin(ang) * wr); ctx.stroke();
-    }
-    ctx.fillStyle = INK; ctx.beginPath(); ctx.arc(cx, wy, 30 * s, Math.PI, Math.PI * 2); ctx.fill();
-    // the paws on the wheel
-    const fur = r.bear?.fur || '#8b5a36';
-    for (const k of [-0.62, 0.62]) {
-      const ang = -Math.PI / 2 + k + turn;
-      const px = cx + Math.cos(ang) * wr, py = wy + Math.sin(ang) * wr;
-      if (py > by) continue;
-      ctx.fillStyle = fur; ctx.lineWidth = 6 * s;
-      ctx.beginPath(); ctx.ellipse(px, py, 46 * s, 36 * s, ang + Math.PI / 2, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
-      ctx.fillStyle = r.bear?.light || '#d9a877';
-      ctx.beginPath(); ctx.arc(px, py + 4 * s, 15 * s, 0, Math.PI * 2); ctx.fill();
-    }
-    ctx.restore();
-  }
-
-  // Place, lap, time, the little map; in the middle 3 2 1 GO!, WRONG WAY!, FINAL LAP!, the result.
-  drawInfo(b, r) {
-    const ctx = this.ctx, s = Math.max(0.6, b.h / 720), t = r.t, order = standings(this.racers), place = order.indexOf(r) + 1;
-    const pad = 22 * s;
-    this.text(ordinal(place), b.x + pad, b.y + pad + 70 * s, 84 * s, place === 1 ? '#ffd400' : '#ffffff', 'left');
-    ctx.font = font(84 * s);
-    const pw = ctx.measureText(ordinal(place)).width;
-    this.text(`/${this.racers.length}`, b.x + pad + pw + 8 * s, b.y + pad + 70 * s, 44 * s, '#ffffff', 'left');
-    const lap = Math.max(1, Math.min(RACE.laps, t.lap + 1));
-    this.text(`LAP ${lap}/${RACE.laps}`, b.x + pad, b.y + pad + 118 * s, 40 * s, '#ffffff', 'left');
-    const time = Math.max(0, (t.finished ?? this.time));
-    this.text(`${Math.floor(time / 60)}:${String(Math.floor(time % 60)).padStart(2, '0')}`, b.x + pad, b.y + pad + 160 * s, 34 * s, '#f4ecd8', 'left');
-    if (this.mode === 'coop') this.text(r.name, b.x + b.w / 2, b.y + pad + 40 * s, 36 * s, r.color);
-    // the big words in the middle
-    const cx = b.x + b.w / 2, cy = b.y + b.h * 0.36;
-    if (this.time < 0) {
-      const n = Math.ceil(-this.time);
-      if (n <= 3) this.text(String(n), cx, cy + 50 * s, 170 * s, n === 1 ? '#ffd400' : '#ffffff');
-      else this.text('READY?', cx, cy + 30 * s, 110 * s, '#ffffff');
-      return;
-    }
-    const f = r.flash?.stay || (r.flash && this.time - r.flash.t < 1.6) ? r.flash : this.flash && this.time - this.flash.t < 0.9 ? this.flash : null;
-    if (f) this.text(f.text, cx, cy + 40 * s, 120 * s, f.color);
-    else if (t.wrongWay && t.finished === null) this.text('WRONG WAY!', cx, cy + 30 * s, 90 * s, '#ff2d8a');
-  }
-
-  drawMap(b, r, s) {
-    const ctx = this.ctx, box = this.mapBox, mw = 230 * s, mh = mw * (box.z1 - box.z0) / (box.x1 - box.x0);
-    const x0 = b.x + b.w - mw - 26 * s, y0 = b.y + 22 * s;
-    const P = (x, z) => [x0 + (x - box.x0) / (box.x1 - box.x0) * mw, y0 + (z - box.z0) / (box.z1 - box.z0) * mh];
-    ctx.lineJoin = 'round'; ctx.lineCap = 'round';
-    for (const [w, c] of [[16 * s, INK], [8 * s, '#e8c890']]) {
-      ctx.lineWidth = w; ctx.strokeStyle = c;
-      ctx.beginPath();
-      this.mapPts.forEach((p, i) => { const [x, y] = P(p.x, p.z); if (i) ctx.lineTo(x, y); else ctx.moveTo(x, y); });
-      ctx.closePath(); ctx.stroke();
-    }
-    const [lx, ly] = P(this.track.samples[0].x, this.track.samples[0].z);
-    ctx.fillStyle = '#ffffff'; ctx.strokeStyle = INK; ctx.lineWidth = 3 * s;
-    ctx.beginPath(); ctx.rect(lx - 3 * s, ly - 9 * s, 6 * s, 18 * s); ctx.fill(); ctx.stroke();
-    for (const o of [...this.racers].sort((a) => (a.who === 'ai' ? -1 : 1))) {
-      const [x, y] = P(o.t.x, o.t.z), rad = (o === r || (!r && o.who !== 'ai') ? 11 : 8) * s;
-      ctx.fillStyle = o.color; ctx.lineWidth = 3.5 * s; ctx.strokeStyle = INK;
-      ctx.beginPath(); ctx.arc(x, y, rad, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
-    }
-  }
 
   dispose() {
     this.over = true;
@@ -550,6 +417,6 @@ export class TractorRace {
     for (const set of this.props) set.remove();
     for (const o of this.own) o.dispose?.();
     this.scene.clear();
-    this.canvas.remove?.();
+    this.hud.dispose();
   }
 }

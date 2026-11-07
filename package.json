@@ -12,6 +12,7 @@
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
     "test": "node --test tests/*.test.js",
+    "types": "tsc -p jsconfig.json",
     "smoke": "node scripts/smoke.mjs smoke-shots",
     "offline": "node scripts/check-offline.mjs",
     "icons": "node scripts/make-icons.mjs"
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "playwright-core": "^1.64.1",
+    "typescript": "^5.6.3",
     "vite": "^8.3.5"
   }
 }

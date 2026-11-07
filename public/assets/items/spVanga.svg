@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Vanga d'oro piantata nella terra">
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+  <ellipse cx="128" cy="240" rx="64" ry="9" fill="#7A5134" stroke-width="3"/>
+  <g transform="translate(128 60) rotate(184) scale(0.5)">
+    <path d="M-15 0 L-13 -150 L13 -150 L15 0 Z" fill="#A0632D" stroke-width="7"/>
+    <path d="M-22 -150 L22 -150 L26 -196 L-26 -196 Z" fill="#9C968A" stroke-width="7"/>
+    <path d="M-86 -196 L86 -196 L92 -340 L-92 -340 Z" fill="#FFD400" stroke-width="8"/>
+    <path d="M-62 -214 L-66 -330" fill="none" stroke="#FFF6B0" stroke-width="10"/>
+    <path d="M40 -230 l14 -20 M48 -262 l14 -20 M54 -294 l14 -20" fill="none" stroke="#E0A800" stroke-width="5"/></g>
+  <path d="M100 62 H156" stroke="#111" stroke-width="16"/><path d="M100 62 H156" stroke="#A0632D" stroke-width="8"/>
+  <path d="M84 236 C96 226 160 226 172 236" fill="none" stroke-width="3"/>
+  <path d="M48 70 l9 -14 l9 14 l-9 14 Z M196 104 l7 -11 l7 11 l-7 11 Z" fill="#FFF6B0" stroke-width="3"/></g>
+</svg>

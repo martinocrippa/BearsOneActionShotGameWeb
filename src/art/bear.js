@@ -97,6 +97,29 @@ export function bearCover(o, { title = true } = {}) {
   </svg>`;
 }
 
+// Seen from behind (the TRACTOR RACE: the other bear's tractor, ahead): the back of the head, the ears, the shirt.
+// 512×512, feet on y=488 like the characters' drawings, about 300 px tall.
+export function bearBack(o) {
+  const crest = o.crest === 'crazy'
+    ? `<path d="M226 150 L214 112 L238 136 L246 100 L262 134 L282 106 L280 146 Z" fill="${o.hair}" ${L(4)}/>`
+    : o.crest === 'pony'
+      ? `<path d="M240 150 C236 130 276 130 272 150 Z" fill="${o.band || o.hair}" ${L(4)}/><path d="M246 152 C232 190 236 232 256 262 C276 232 280 190 266 152 Z" fill="${o.hair}" ${L(4)}/>`
+      : `<path d="M232 150 L234 124 L250 142 L260 118 L270 142 L284 128 L282 152 Z" fill="${o.hair}" ${L(4)}/>`;
+  const stripes = o.stripes ? [0, 1, 2].map(i => `<path d="M178 ${330 + i * 28} H334" stroke="${o.stripes}" stroke-width="10"/>`).join('') : '';
+  return `<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <path d="M196 410 L196 488 L246 488 L248 420 Z M316 410 L316 488 L266 488 L264 420 Z" fill="${o.pants}" ${L(5)}/>
+    <path d="M150 340 C140 380 146 410 160 420 L176 404 C170 384 172 360 180 340 Z M362 340 C372 380 366 410 352 420 L336 404 C342 384 340 360 332 340 Z" fill="${o.fur}" ${L(5)}/>
+    <path d="M172 300 C176 282 214 270 256 270 C298 270 336 282 340 300 L346 420 L166 420 Z" fill="${o.shirt}" ${L(6)}/>
+    ${stripes}
+    ${hatch(300, 416, 6, 90, -70, 11)}
+    <circle cx="190" cy="168" r="30" fill="${o.fur}" ${L(5)}/><circle cx="322" cy="168" r="30" fill="${o.fur}" ${L(5)}/>
+    <circle cx="190" cy="168" r="14" fill="${o.light}" ${L(3)}/><circle cx="322" cy="168" r="14" fill="${o.light}" ${L(3)}/>
+    <path d="M182 232 C176 176 212 148 256 148 C300 148 336 176 330 232 C326 268 296 286 256 286 C216 286 186 268 182 232 Z" fill="${o.fur}" ${L(6)}/>
+    <path d="M230 270 C240 262 272 262 282 270" fill="none" ${L(3)}/>
+    ${crest}
+  </svg>`;
+}
+
 // Full body in nightgown, cap and striped socks: the "buonanotte" scene. Box 300×460.
 export function bearPajama(o) {
   const legs = [118, 182].map(x => `

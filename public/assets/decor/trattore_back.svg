@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Vecchio trattore rosso visto da dietro">
+<g stroke="#111" stroke-linejoin="round" stroke-linecap="round">
+  <path d="M329 270 L329 120 L347 120 L347 270 Z" fill="#2A2A30" stroke-width="4"/><path d="M325 120 H351 V110 H325 Z" fill="#9C968A" stroke-width="4"/><path d="M338 106 C330 90 346 82 338 66 C332 54 348 44 342 32" fill="none" stroke="#9C968A" stroke-width="4"/>
+  <rect x="48" y="262" width="104" height="226" rx="43.68" fill="#2A2A30" stroke-width="5"/><path d="M58 284 L100 293 L142 284" fill="none" stroke="#F4ECD8" stroke-width="3"/><path d="M58 306 L100 315 L142 306" fill="none" stroke="#F4ECD8" stroke-width="3"/><path d="M58 328 L100 337 L142 328" fill="none" stroke="#F4ECD8" stroke-width="3"/><path d="M58 350 L100 359 L142 350" fill="none" stroke="#F4ECD8" stroke-width="3"/><path d="M58 372 L100 381 L142 372" fill="none" stroke="#F4ECD8" stroke-width="3"/><path d="M58 394 L100 403 L142 394" fill="none" stroke="#F4ECD8" stroke-width="3"/><path d="M58 416 L100 425 L142 416" fill="none" stroke="#F4ECD8" stroke-width="3"/><path d="M58 438 L100 447 L142 438" fill="none" stroke="#F4ECD8" stroke-width="3"/><path d="M58 460 L100 469 L142 460" fill="none" stroke="#F4ECD8" stroke-width="3"/><rect x="360" y="262" width="104" height="226" rx="43.68" fill="#2A2A30" stroke-width="5"/><path d="M370 284 L412 293 L454 284" fill="none" stroke="#F4ECD8" stroke-width="3"/><path d="M370 306 L412 315 L454 306" fill="none" stroke="#F4ECD8" stroke-width="3"/><path d="M370 328 L412 337 L454 328" fill="none" stroke="#F4ECD8" stroke-width="3"/><path d="M370 350 L412 359 L454 350" fill="none" stroke="#F4ECD8" stroke-width="3"/><path d="M370 372 L412 381 L454 372" fill="none" stroke="#F4ECD8" stroke-width="3"/><path d="M370 394 L412 403 L454 394" fill="none" stroke="#F4ECD8" stroke-width="3"/><path d="M370 416 L412 425 L454 416" fill="none" stroke="#F4ECD8" stroke-width="3"/><path d="M370 438 L412 447 L454 438" fill="none" stroke="#F4ECD8" stroke-width="3"/><path d="M370 460 L412 469 L454 460" fill="none" stroke="#F4ECD8" stroke-width="3"/>
+  <path d="M40 300 C40 236 160 228 168 290 L168 312 L40 312 Z" fill="#E3262B" stroke-width="5"/>
+  <path d="M472 300 C472 236 352 228 344 290 L344 312 L472 312 Z" fill="#E3262B" stroke-width="5"/>
+  <path d="M58 284 l10 -12 M72 282 l10 -12 M86 282 l10 -12" fill="none" stroke-width="2"/>
+  <rect x="150" y="300" width="212" height="104" rx="10" fill="#E3262B" stroke-width="5"/>
+  <path d="M168 330 H344 M168 352 H344" fill="none" stroke-width="2.5"/>
+  <path d="M300 398 l8 -12 M308 398 l8 -12 M316 398 l8 -12 M324 398 l8 -12 M332 398 l8 -12 M340 398 l8 -12 " fill="none" stroke-width="2"/>
+  <path d="M206 238 C206 222 306 222 306 238 L300 304 L212 304 Z" fill="#2A2A30" stroke-width="5"/>
+  <path d="M222 246 L226 290" fill="none" stroke="#F4ECD8" stroke-width="4"/>
+  <rect x="236" y="404" width="40" height="34" rx="6" fill="#9C968A" stroke-width="4"/>
+  <circle cx="256" cy="452" r="12" fill="#FFD400" stroke-width="4"/>
+  <circle cx="64" cy="300" r="10" fill="#E3262B" stroke-width="4"/><circle cx="64" cy="300" r="4" fill="#FFD400" stroke="none"/>
+  <circle cx="448" cy="300" r="10" fill="#E3262B" stroke-width="4"/><circle cx="448" cy="300" r="4" fill="#FFD400" stroke="none"/>
+  <path d="M40 488 H472" stroke-width="5"/></g>
+</svg>

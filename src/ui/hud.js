@@ -70,7 +70,7 @@ export function createHud(root) {
       const w = WEAPONS[weapon];
       const ammoText = !w.ammo ? '∞' : infinite ? '∞' : String(ammo[w.ammo]);
       if (ammoText !== last.ammo) { ammoNum.textContent = ammoText; last.ammo = ammoText; }
-      const lbl = w.ammo ? AMMO[w.ammo].label : 'PAW';
+      const lbl = w.ammo ? AMMO[w.ammo].label : w.label || 'PAW';
       if (lbl !== last.lbl) { ammoLbl.textContent = lbl; last.lbl = lbl; }
       const pct = Math.round(sleep.value);
       // the bar glows while the sleep goes up (mud, hits), so it is clear what is happening
@@ -209,7 +209,8 @@ export function createHud(root) {
       for (const c of lv.cells) {
         if (!seen(c.cx, c.cz)) continue;
         const x = ox + c.cx * s, y = oy + c.cz * s;
-        if (c.door) ctx.fillStyle = c.open ? '#e8dcc0' : KEYS[c.door.key]?.color || '#a0632d';
+        if (c.door?.look && !c.door.found) ctx.fillStyle = '#111'; // a hidden bonus door: a wall until found
+        else if (c.door) ctx.fillStyle = c.open ? '#e8dcc0' : KEYS[c.door.key]?.color || '#a0632d';
         else if (c.wall && !c.secret && !(c.mover && c.open)) {
           // only the walls that border an open cell
           const edge = [[1, 0], [-1, 0], [0, 1], [0, -1]].some(([dx, dz]) => { const n = lv.at(c.cx + dx, c.cz + dz); return n && !n.wall; });

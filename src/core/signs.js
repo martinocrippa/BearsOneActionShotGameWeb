@@ -51,7 +51,7 @@ export function signNeeds(sign, { rounds, exitRound }) {
 
 // Walkable for the arrow: open floors, doors and moving walls (they open), the low boards. Never a secret wall:
 // a sign must not give a secret away.
-const passable = c => c && (!c.wall || c.door || c.mover || c.low);
+const passable = c => c && (!c.wall || (c.door && !c.door.look) || c.mover || c.low); // (a hidden bonus door neither)
 
 // Steps from every cell to the nearest target cell (breadth-first, 4 directions).
 function distanceField(level, targets) {

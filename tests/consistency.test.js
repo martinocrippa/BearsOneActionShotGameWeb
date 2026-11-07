@@ -22,7 +22,9 @@ test('the password carries every bear, weapon and sweet of data/ (its tables are
     const back = decodePassword(encodePassword(save));
     assert.ok(back, `password for ${bear.id}`);
     assert.equal(back.bear, bear.id);
-    assert.deepEqual([...back.weapons].sort(), Object.keys(WEAPONS).sort(), 'a new weapon needs a bit in src/core/password.js');
+    // (the race's prize, the golden spade, stays out: the 13 characters are full)
+    const carried = Object.keys(WEAPONS).filter(k => !WEAPONS[k].race);
+    assert.deepEqual([...back.weapons].sort(), carried.sort(), 'a new weapon needs a bit in src/core/password.js');
     for (const [k, a] of Object.entries(AMMO)) assert.equal(back.ammo[k], a.max, `ammo ${k}: same maximum in src/core/password.js`);
   }
   const start = decodePassword(encodePassword({ level: 0, bear: BEARS[0].id, difficulty: 1, lives: 3, checkpoint: -1, weapons: [], ammo: {} }));
@@ -86,5 +88,14 @@ test('every signpost stands on a floor the bear reaches, and its arrow finds the
       assert.ok(!level.entities.some(e => e.cx === s.x && e.cz === s.z), `${d.id} sign "${s.text}" stands on something`);
       if (s.to) assert.notEqual(signDirection(level, s), null, `${d.id} sign "${s.text}": no way to ${s.to}`);
     }
+  }
+});
+
+test('every bonus room door is hidden: dressed as a wall of its level, and no signpost gives it away', () => {
+  for (const d of DEFS) {
+    const level = parseLevel(readFileSync(new URL(`../levels/${d.file}`, import.meta.url), 'utf8'), d.legend);
+    const styles = new Set(Object.values(d.legend.walls || {}).map(w => (typeof w === 'string' ? w : w.style)));
+    for (const c of level.cells.filter(x => x.door?.bonus)) assert.ok(styles.has(c.door.look?.style), `${d.id}: the bonus door at ${c.cx},${c.cz} does not look like a wall of the level`);
+    assert.ok(!(d.signs || []).some(s => s.to === 'bonus'), `${d.id}: a sign points at the bonus room`);
   }
 });

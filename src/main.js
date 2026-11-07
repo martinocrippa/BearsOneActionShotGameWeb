@@ -250,8 +250,8 @@ async function startBonus(levelIndex, bearId, mode) {
 // ---------- TRACTOR RACE (the tractors' easter egg) ----------
 // Standing on a tractor's roof asks for a race; the level waits, paused, and gets the prize at the end.
 const HOWTO_RACE = {
-  solo: '↑ (o SPAZIO): accelera · ↓: frena · ← →: sterza. Due giri attorno al campo: occhio alle balle di fieno! Chi arriva primo vince il super miele.',
-  coop: 'Un trattore a testa! CHI GUIDA (sopra): ↑ o ALT GR accelera, ← → sterza, ↓ frena · CHI SPARA (sotto): SPAZIO accelera, A e D sterzano. Due giri attorno al campo!',
+  solo: 'SPAZIO: accelera · ↓: frena · ← →: sterza. Due giri attorno al campo: occhio alle balle di fieno! Chi arriva primo vince la VANGA D\'ORO (tasto 0).',
+  coop: 'Un trattore a testa! CHI GUIDA (sopra): ALT GR accelera, ← → sterza, ↓ frena · CHI SPARA (sotto): SPAZIO accelera, A e D sterzano. Chi vince prende la VANGA D\'ORO!',
 };
 async function tractorRace() {
   if (!game || race) return;

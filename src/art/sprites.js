@@ -214,6 +214,21 @@ export function exitSprite(on, kind = 'mushroom') {
     ${on ? star(110, 170, 20) + star(410, 170, 20) : ''}`);
 }
 
+// The hint on a bonus room's hidden door (it looks like the wall beside it): a star scribbled in yellow chalk, with a
+// little arrow pointing at the wall. 256×256, transparent.
+export function bonusMark() {
+  const pts = [];
+  for (let i = 0; i < 10; i++) {
+    const a = -Math.PI / 2 + (i * Math.PI) / 5, r = i % 2 ? 34 : 84;
+    pts.push(`${(128 + Math.cos(a) * r + (i % 3) * 2).toFixed(1)} ${(120 + Math.sin(a) * r).toFixed(1)}`);
+  }
+  const chalk = (d, w) => `<path d="${d}" fill="none" stroke="#fff3a0" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>`;
+  return svgDoc(256, 256, `
+    ${chalk(`M${pts.join(' L')} Z`, 9)}
+    ${chalk(`M${pts.slice(1).join(' L')}`, 3)}
+    ${chalk('M96 214 C112 226 144 226 160 214 M150 204 L162 214 L148 224', 7)}`, { wobble: false });
+}
+
 export function doorTexture(lock = null, bonus = false) {
   // Used as a canvas texture on the door box: logs + acorn lock (or a lock plate of the key's colour; a star on a
   // bonus room's door). 256×512.

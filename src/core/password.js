@@ -10,6 +10,7 @@ const LENGTH = 13;
 const BEARS = ['orsa', 'piccolo', 'grande'];
 const START = ['zampata', 'fionda', 'sparaconfetti']; // always owned
 const WEAPON_BITS = ['liquirizia', 'gelatina', 'zucchero', 'balestra', 'fizz', 'bfg', 'sputacarpa', 'sparapalloni', 'lanciatorte'];
+/** @type {Array<[string, number]>} */
 const AMMO = [['caramelle', 200], ['confetti', 50], ['liquirizie', 50], ['gelatina', 300], ['zuccheroFilato', 50], ['frecce', 300], ['fizz', 300], ['gumball', 300],
   ['acqua', 200], ['palloni', 40], ['torte', 30]];
 const Q = 7; // 3-bit ammo buckets (of the normal maximum; a backpack can hold more, the password rounds down)
@@ -27,10 +28,11 @@ function pack(fields) {
   return n;
 }
 
+/** @returns {Array<[number, number]>} [value, bits] */
 const fieldsOf = s => [
   [s.level, 4], [BEARS.indexOf(s.bear), 2], [s.difficulty ?? 1, 2], [s.lives, 2], [s.checkpoint + 1, 3], // -1 = level start
   [s.backpack ? 1 : 0, 1], [WEAPON_BITS.reduce((m, w, i) => m | (s.weapons.includes(w) ? 1 << i : 0), 0), WEAPON_BITS.length],
-  ...AMMO.map(([k, max]) => [Math.round((Math.min(max, s.ammo[k] || 0) / max) * Q), 3]),
+  ...AMMO.map(([k, max]) => /** @type {[number, number]} */ ([Math.round((Math.min(max, s.ammo[k] || 0) / max) * Q), 3])),
 ];
 
 export function encodePassword(save) {

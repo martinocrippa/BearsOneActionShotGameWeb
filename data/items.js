@@ -32,6 +32,8 @@ export const ITEMS = {
   spCarpa: { name: 'Sputa-carpa', weapon: 'sputacarpa', ammo: 'acqua', amount: 150, msg: 'YOU GOT THE CARP SQUIRTER! (0)', sound: 'weapon', fit: 0.6 },
   spPalloni: { name: 'Sparapalloni', weapon: 'sparapalloni', ammo: 'palloni', amount: 20, msg: 'YOU GOT THE BALL BLASTER! (0)', sound: 'weapon', fit: 0.6 },
   spTorte: { name: 'Lancia-torte', weapon: 'lanciatorte', ammo: 'torte', amount: 12, msg: 'YOU GOT THE PIE CATAPULT! (0)', sound: 'weapon', fit: 0.6 },
+  // the TRACTOR RACE's prize for the winner (data/race.js): a weapon without sweets
+  spVanga: { name: 'Vanga d\'oro', weapon: 'vanga', msg: 'YOU WON THE GOLDEN SPADE! (0)', sound: 'weapon', fit: 0.9 },
   acqua: { name: 'Secchiello d\'acqua', ammo: 'acqua', amount: 60, msg: 'A bucket of water.', sound: 'pickup', fit: 0.5 },
   palloni: { name: 'Retina di palloni', ammo: 'palloni', amount: 6, msg: 'A net of footballs.', sound: 'pickup', fit: 0.55 },
   torte: { name: 'Vassoio di torte', ammo: 'torte', amount: 4, msg: 'A tray of cream pies.', sound: 'pickup', fit: 0.5 },

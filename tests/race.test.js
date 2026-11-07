@@ -81,9 +81,27 @@ test('a little one holding just the gas on the easiest level is helped round the
   assert.notEqual(t.finished, null, `stopped after ${(t.progress / track.length).toFixed(2)} laps`);
 });
 
+test('steering out, even with the most help, the tractor leaves the dirt and drives on in the field', () => {
+  const t = createTractor(track, 0, { maxSpeed: RACE.speed.bear });
+  let furthest = 0, fastOnGrass = 0;
+  for (let k = 0; k < 40 * 12; k++) {
+    // straight on for 2 s, then full lock right with the gas held
+    driveTractor(t, { gas: true, brake: false, steer: k < 80 ? 0 : 1 }, 1 / 40, track, { assist: RACE.assist[0] });
+    furthest = Math.max(furthest, Math.abs(nearest(track, t.x, t.z).side));
+    if (t.offTrack) fastOnGrass = Math.max(fastOnGrass, t.speed);
+  }
+  assert.ok(furthest > track.width / 2 + 8, `only ${furthest.toFixed(1)} m from the middle`);
+  assert.ok(fastOnGrass > RACE.speed.bear * 0.6, `on the grass at ${fastOnGrass.toFixed(1)} m/s`);
+  const f = RACE.field;
+  assert.ok(t.x >= f.x0 && t.x <= f.x1 && t.z >= f.z0 && t.z <= f.z1, 'still inside the field');
+});
+
 test('standings: the finished first, by time, then the furthest', () => {
   const a = { finished: 80, progress: 0 }, b = { finished: null, progress: 900 }, c = { finished: 75, progress: 0 }, d = { finished: null, progress: 1000 };
   assert.deepEqual(standings([a, b, c, d]), [c, a, d, b]);
+  // src/race/race.js passes its racers, each with its tractor in `t` (the bear used to come last whatever happened)
+  const racers = [b, d, a, c].map(t => ({ t }));
+  assert.deepEqual(standings(racers).map(r => r.t), [c, a, d, b]);
 });
 
 test('prizes and drivers exist in data/', () => {

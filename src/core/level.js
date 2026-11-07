@@ -129,6 +129,17 @@ export function parseLevel(text, legend = FOREST) {
       const slot = DOOR_CHARS[cell.ch];
       cell.door = ownDoor ? { key: null, ...ownDoor } : { key: slot === null ? null : keys[slot] || null };
       cell.wall = 'door';
+      // a bonus room's door is hidden: it looks like the wall beside it (the most common of its 4 neighbours), with a
+      // chalk star as the only hint (src/game/world.js), and opens when touched like a secret wall
+      if (cell.door.bonus) {
+        const votes = {};
+        for (const [dx, dz] of [[1, 0], [-1, 0], [0, 1], [0, -1]]) {
+          const n = at(cell.cx + dx, cell.cz + dz), w = n && walls[n.ch];
+          if (w && !asWall(w).mover && !asWall(w).low && !asWall(w).switch) votes[n.ch] = (votes[n.ch] || 0) + 1;
+        }
+        const best = Object.entries(votes).sort((a, b) => b[1] - a[1])[0];
+        cell.door.look = best ? { h: legend.wallHeight ?? WALL_HEIGHT, ...asWall(walls[best[0]]) } : { style: legend.secret || 'siepe' };
+      }
       entities.push({ type: 'door', key: cell.door.key, bonus: !!cell.door.bonus, ch: cell.ch, cx: cell.cx, cz: cell.cz, ...cellCenter(cell.cx, cell.cz) });
       continue;
     }

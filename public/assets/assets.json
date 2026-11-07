@@ -1419,6 +1419,28 @@
   "source": "zip"
  },
  {
+  "key": "decor/trattore_back",
+  "path": "decor/trattore_back.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "code"
+ },
+ {
+  "key": "decor/trattore_front",
+  "path": "decor/trattore_front.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "code"
+ },
+ {
   "key": "decor/trattorino",
   "path": "decor/trattorino.svg",
   "w": 512,
@@ -1428,6 +1450,28 @@
    488
   ],
   "source": "zip"
+ },
+ {
+  "key": "decor/trattorino_back",
+  "path": "decor/trattorino_back.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "code"
+ },
+ {
+  "key": "decor/trattorino_front",
+  "path": "decor/trattorino_front.svg",
+  "w": 512,
+  "h": 512,
+  "anchor": [
+   256,
+   488
+  ],
+  "source": "code"
  },
  {
   "key": "decor/zaino",
@@ -6116,6 +6160,17 @@
   "source": "zip"
  },
  {
+  "key": "items/spVanga",
+  "path": "items/spVanga.svg",
+  "w": 256,
+  "h": 256,
+  "anchor": [
+   128,
+   240
+  ],
+  "source": "code"
+ },
+ {
   "key": "items/spZucchero",
   "path": "items/spZucchero.svg",
   "w": 256,
@@ -8970,6 +9025,39 @@
    512
   ],
   "source": "zip"
+ },
+ {
+  "key": "weapons/vanga/attack_1",
+  "path": "weapons/vanga/attack_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "code"
+ },
+ {
+  "key": "weapons/vanga/attack_2",
+  "path": "weapons/vanga/attack_2.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "code"
+ },
+ {
+  "key": "weapons/vanga/idle_1",
+  "path": "weapons/vanga/idle_1.svg",
+  "w": 1024,
+  "h": 512,
+  "anchor": [
+   512,
+   512
+  ],
+  "source": "code"
  },
  {
   "key": "weapons/zampata/attack_1",

@@ -24,15 +24,22 @@ export const RACE = {
     { id: 'gallo', name: 'THE ROOSTER', tractor: 'trattorino', frame: 'walk_f_1', skill: 0.95 },
     { id: 'volpe', name: 'THE FOX', tractor: 'trattore', frame: 'walk_f_1', skill: 0.9 },
   ],
-  // The tractors' drawings (decor/<id>, facing right): where the driver sits, across the drawing (0 left … 1 right)
-  // and up from the ground (share of the drawing's height). The bears drive `bearTractor`.
-  tractors: { trattore: { seat: [0.4, 0.42] }, trattorino: { seat: [0.6, 0.3] } },
+  // The tractors' drawings: decor/<id> from the side (facing right), decor/<id>_back from behind, decor/<id>_front from
+  // in front (src/race/race.js picks the one the camera sees). Where the driver sits in each: across the drawing
+  // (0 left … 1 right) and up from the ground (share of the drawing's height). The bears drive `bearTractor`.
+  tractors: {
+    trattore: { seat: [0.4, 0.42], back: [0.5, 0.42], front: [0.5, 0.42] },
+    trattorino: { seat: [0.6, 0.3], back: [0.5, 0.3], front: [0.5, 0.3] },
+  },
+  // Off the dirt, on the grass of the field (the tractors can go anywhere inside `field`): top speed × this.
+  grass: 0.75,
   bearTractor: 'trattore',
   // By difficulty (data/difficulty.js order): top speed of the bears (times the difficulty's `move`) and of the
   // others (m/s), and how much the steering helps the bears follow the track (the little ones steer better with a hand).
   speed: { bear: 13, others: [6.8, 8.6, 11.8, 12.8] },
   assist: [1.5, 1, 0.45, 0],
-  // Prizes by place (items of data/items.js, straight into the bear's paws back in the level).
-  prizes: [['superMiele', 'caramelle'], ['mieleGrande'], ['miele'], ['caramelle']],
+  // Prizes by place (items of data/items.js, straight into the bear's paws back in the level): the winner gets the
+  // golden spade (data/weapons.js `vanga`, key 0).
+  prizes: [['superMiele', 'spVanga'], ['mieleGrande'], ['miele'], ['caramelle']],
   music: 'race',
 };

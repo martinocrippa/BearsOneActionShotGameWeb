@@ -1,0 +1,16 @@
+{
+  "//": "Type check of the plain JavaScript (JSDoc), no build step: `npm run types`. For now the pure rules (src/core) and the TRACTOR RACE; widen `include` a module at a time.",
+  "compilerOptions": {
+    "checkJs": true,
+    "allowJs": true,
+    "noEmit": true,
+    "target": "es2022",
+    "module": "es2022",
+    "moduleResolution": "bundler",
+    "lib": ["es2022", "dom", "dom.iterable"],
+    "skipLibCheck": true,
+    "maxNodeModuleJsDepth": 0,
+    "types": ["vite/client"]
+  },
+  "include": ["src/core/**/*.js", "src/race/**/*.js"]
+}

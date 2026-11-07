@@ -7,7 +7,7 @@ let musicOn = true;
 
 export function unlockAudio() {
   if (!ctx) {
-    ctx = new (window.AudioContext || window.webkitAudioContext)();
+    ctx = new (window.AudioContext || /** @type {any} */ (window).webkitAudioContext)();
     master = ctx.createGain(); master.gain.value = 0.5; master.connect(ctx.destination);
     musicGain = ctx.createGain(); musicGain.gain.value = 0.16; musicGain.connect(master);
   }

@@ -96,7 +96,7 @@ export const levelMethods = {
     } else if (def.weapon) {
       const isNew = !p.weapons.includes(def.weapon);
       if (isNew) p.weapons.push(def.weapon);
-      p.ammo[def.ammo] = Math.min(this.ammoMax(def.ammo), p.ammo[def.ammo] + Math.round(def.amount * this.diff.ammo));
+      if (def.ammo) p.ammo[def.ammo] =Math.min(this.ammoMax(def.ammo), p.ammo[def.ammo] + Math.round(def.amount * this.diff.ammo));
       if (isNew) { this.selectWeapon(def.weapon); p.grinT = 1.6; }
     } else if (def.ammo) {
       if (p.ammo[def.ammo] >= this.ammoMax(def.ammo)) return false;
@@ -153,13 +153,17 @@ export const levelMethods = {
     };
     for (const d of this.doors) {
       if (d.moving || d.cell.open || d.closing || d.cell.door.locked) continue; // locked: a bonus room during its trick
-      const c = cellCenter(d.cell.cx, d.cell.cz);
-      if (Math.hypot(c.x - p.x, c.z - p.z) > CELL / 2 + 1.1) continue;
+      const c = cellCenter(d.cell.cx, d.cell.cz), dist = Math.hypot(c.x - p.x, c.z - p.z);
+      const hidden = d.cell.door.look && !d.cell.door.found;
+      // a hidden bonus door (it looks like the wall): the Topo behind it calls "psst!" when the bear walks by
+      if (hidden && dist < 8 && (this.psstT || 0) <= this.time) { this.psstT = this.time + 20; this.hud.message('Psst! Psst!'); play('squeak'); }
+      if (dist > CELL / 2 + 1.1) continue;
       const key = d.cell.door.key;
       if (!key || p.keys.has(key)) {
         // open the whole door (all the door cells of the same kind touching this one)
-        for (const o of this.doors) if (o.cell.ch === d.cell.ch && Math.hypot(o.cell.cx - d.cell.cx, o.cell.cz - d.cell.cz) < 3.5) o.moving = true;
+        for (const o of this.doors) if (o.cell.ch === d.cell.ch && Math.hypot(o.cell.cx - d.cell.cx, o.cell.cz - d.cell.cz) < 3.5) { o.moving = true; o.cell.door.found = true; }
         if (key) this.hud.message(`The ${KEYS[key]?.name || 'key'} opens the door!`);
+        if (hidden) { this.hud.message('YOU FOUND THE BONUS ROOM!'); this.hud.popup('secret'); play('secret'); }
         play('door');
       } else if (this.deniedT <= 0) {
         this.deniedT = 2.5;

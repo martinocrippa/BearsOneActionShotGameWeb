@@ -13,7 +13,8 @@ export default {
     { x: 19, z: 9, text: 'FIND THE RED QUAIL FEATHER!', to: 'piuma_rossa' },
     { x: 27, z: 20, text: 'RED QUAIL FEATHER DOOR', to: 'door:piuma_rossa' },
     { x: 48, z: 10, text: 'EXIT', to: 'exit' },
-    { x: 18, z: 38, text: 'BONUS ROOM', to: 'bonus' },
+    // next to the red tractor (N): its roof asks for the TRACTOR RACE (data/race.js)
+    { x: 51, z: 23, text: 'JUMP ON ME!' },
   ],
   // bonus room (data/tricks.js): the fishing mouse on the pier in the leafy corner by the entrance
   trick: { id: 'fishing', topo: 'pescatore', x: 11, z: 36, spot: { x: 6, z: 37 }, target: { x: 4, z: 37 }, prize: 'spCarpa' },

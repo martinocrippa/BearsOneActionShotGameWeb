@@ -145,18 +145,25 @@ export const combatMethods = {
     for (const e of this.enemies) if (Math.hypot(e.x - p.x, e.z - p.z) < 18) e.alert();
 
     if (w.melee) {
-      let target = null, best = Infinity;
+      // the nearest opponent in reach; a sweeping weapon (the golden spade) hits every one in its arc
+      const targets = [];
       for (const e of this.enemies) {
         if (e.out) continue;
         const dx = e.x - p.x, dz = e.z - p.z, dist = Math.hypot(dx, dz);
         if (dist > w.melee.range + e.r || Math.abs(angleDiff(Math.atan2(-dx, -dz), p.yaw)) > w.melee.cone) continue;
         if (Math.abs((e.y + e.def.height / 2) - (p.y + p.eye * 0.6)) > e.def.height / 2 + 1) continue; // too high (flying)
-        if (dist < best) { best = dist; target = e; }
+        targets.push({ e, dist });
       }
-      if (target) {
-        const dx = target.x - p.x, dz = target.z - p.z, l = Math.hypot(dx, dz) || 1;
-        target.hit(rand(...w.melee.damage), w.effect, { x: dx / l, z: dz / l }, p);
-        play('splat');
+      targets.sort((a, b) => a.dist - b.dist);
+      if (!w.melee.sweep) targets.length = Math.min(1, targets.length);
+      if (targets.length) {
+        // `push` scales how far a dazed opponent is flung (the paw's 4 = the usual distance)
+        const push = (w.melee.push || 4) / 4;
+        for (const { e } of targets) {
+          const dx = e.x - p.x, dz = e.z - p.z, l = Math.hypot(dx, dz) || 1;
+          e.hit(rand(...w.melee.damage), w.effect, { x: dx / l * push, z: dz / l * push }, p);
+        }
+        play(w.melee.sweep ? 'knock' : 'splat');
       } else {
         // a paw on a bin bursts it too
         const bin = this.poppers.find(d => !d.popped && Math.hypot(d.x - p.x, d.z - p.z) < w.melee.range + d.r

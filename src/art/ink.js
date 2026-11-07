@@ -23,6 +23,7 @@ export const DEFS = `<defs>
 </defs>`;
 
 // Wraps a drawing into a complete SVG document (for <img> / textures).
+/** @param {number} w @param {number} h @param {string} inner @param {{ wobble?: boolean, viewBox?: string }} [opts] */
 export function svgDoc(w, h, inner, { wobble = true, viewBox } = {}) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="${viewBox || `0 0 ${w} ${h}`}">${DEFS}<g ${wobble ? 'filter="url(#ink)"' : ''}>${inner}</g></svg>`;
 }

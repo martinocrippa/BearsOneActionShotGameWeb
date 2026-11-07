@@ -6,7 +6,7 @@ import { CELL, WALL_HEIGHT } from '../core/level.js';
 import { isSolid } from '../core/physics.js';
 import { paintedTexture, svgTexture, assetMeta } from '../art/registry.js';
 import { paintTexture } from '../art/textures.js';
-import { doorTexture } from '../art/sprites.js';
+import { doorTexture, bonusMark } from '../art/sprites.js';
 
 // DOOM's "fake contrast": east/west faces darker than north/south, so corners read without lights.
 function shadedBox(w, h, d) {
@@ -123,18 +123,34 @@ export function buildWorld(level, levelDef, { keyColors = {} } = {}) {
     c.open = false;
     let mat;
     // a secret or moving wall is as tall as the walls of its style around it (a notch would give it away)
-    const h = c.door || c.sw ? wallH : c.wallDef?.h ?? wallDefs.find(w => w.style === c.wall)?.h ?? wallH;
-    if (c.door) mat = material(svgTexture(doorKey(c.door.key, c.door.bonus), () => doorTexture(c.door.bonus ? '#ffd400' : keyColors[c.door.key], c.door.bonus), 256, 512));
+    const look = c.door?.look; // a bonus room's hidden door: dressed as the wall beside it (src/core/level.js)
+    const h = look ? look.h ?? wallH : c.door || c.sw ? wallH : c.wallDef?.h ?? wallDefs.find(w => w.style === c.wall)?.h ?? wallH;
+    if (look) mat = material(wallTexture(`textures/wall_${look.style}`, h - base, look.color));
+    else if (c.door) mat = material(svgTexture(doorKey(c.door.key, c.door.bonus), () => doorTexture(c.door.bonus ? '#ffd400' : keyColors[c.door.key], c.door.bonus), 256, 512));
     else if (c.sw) mat = material(paintedTexture('textures/switch_off', 256, 512));
     else mat = material(wallTexture(`textures/wall_${c.wall}`, h - base, c.wallDef?.color));
     const mesh = new THREE.Mesh(shadedBox(CELL, h - base, CELL), mat);
     mesh.position.set(...at3(c, base + (h - base) / 2));
     mesh.material.color.setScalar(lin(wallLight(c)));
     // a secret wall must look exactly like the others, foot shadow included (from the ground up, as on static walls)
-    if (!c.door && !c.sw && assetMeta(`textures/wall_${c.wall}`)) {
+    if ((look || (!c.door && !c.sw)) && assetMeta(`textures/wall_${look ? look.style : c.wall}`)) {
       const skin = new THREE.Mesh(new THREE.BoxGeometry(CELL + 0.02, h, CELL + 0.02), baseShadow(h));
       skin.position.y = -base / 2;
       mesh.add(skin);
+    }
+    // the only hint of a hidden bonus door: a chalk star on every face that looks onto a floor, at a bear's eye
+    if (look) {
+      const star = new THREE.MeshBasicMaterial({ map: svgTexture('props/bonus_mark', bonusMark, 256, 256), transparent: true, alphaTest: 0.3 });
+      star.color.setScalar(lin(wallLight(c)));
+      for (const [dx, dz] of [[1, 0], [-1, 0], [0, 1], [0, -1]]) {
+        const n = level.at(c.cx + dx, c.cz + dz);
+        if (!n || (n.wall && !n.door)) continue;
+        const mark = new THREE.Mesh(PLANE, star);
+        mark.scale.set(1.1, 1.1, 1);
+        mark.position.set(dx * (CELL / 2 + 0.02), (n.h || 0) + 1.2 - mesh.position.y, dz * (CELL / 2 + 0.02));
+        mark.rotation.y = Math.atan2(dx, dz);
+        mesh.add(mark);
+      }
     }
     group.add(mesh);
     const entry = { cell: c, mesh, moving: false, t: 0, height: h, base, y0: mesh.position.y };
